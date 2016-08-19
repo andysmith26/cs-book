@@ -1,0 +1,42 @@
+#+TITLE:AP Computer Science @ WUHS
+#+OPTIONS: num:nil
+
+* Assignments                                                                     :export:
+| due | name                          |
+|-----+-------------------------------|
+| 9/5 | [[https://docs.google.com/document/d/1ZyFh37maGOOxJ1iWnVgFAn6uiMx5ujzFHA3UjcRK8QI/edit?usp%3Dsharing][return signed syllabus]]        |
+| 9/5 | [[file:create_github.html][create free account at github]] |
+| 9/5 | [[https://goo.gl/forms/oahyVok8MwP1VTKn1][first survey]]                  |
+
+* Readings                                                                        :export:
+| topic           | slides/readings |
+|-----------------+-----------------|
+| getting started | [[https://drive.google.com/uc?export%3Ddownload&id%3D0B6wBwD0pwox6aTdDdDhOZ2lsSHM][0101-Intro]]      |
+
+* Schedule
+
+** Day 2
+
+Agenda:
+- starter: 
+- lecture: 0102-Setup
+
+Assigned:
+- github roundtrip
+
+** Day 1                                                                          :export:
+
+Announcement:
+- _Bring a laptop to class every day, starting next class._
+
+Agenda:
+- starter: unplugged blobs and lines
+- group: first day role play 
+- lecture: 0101-Intro
+- solo: AP Pre-Test
+
+Assigned:
+- return signed syllabus
+- create free account at github
+- do first survey
+

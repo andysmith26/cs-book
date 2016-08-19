@@ -1,0 +1,12 @@
+#+TITLE: Sign up for a free account at github
+
+* Sign up at github.com
+- Go to github.com and follow the sign up instructions.
+- When they ask what type of plan you want, select the free one.
+- Check your email and click the verify link.
+
+* Tell me your username.
+#+begin_html
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYdBktk-OFGMx7VHpt2-t84orCBEUPEQn7KnaT9r1EBd9_Ew/viewform?embedded=true" width="700" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+#+end_html
+/If you don't see the form, click here:/ https://goo.gl/forms/tkzPpJwsEmx96jWr2
