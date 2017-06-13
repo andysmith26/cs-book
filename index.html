@@ -7,26 +7,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Starter Template for Bootstrap</title>
+  <title>WoodstockCS</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
 -->
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="extra.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+      <link href="extra.css" rel="stylesheet">
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
 
   <script>
   console.log("hello?");
@@ -69,11 +63,11 @@
           <a class="nav-link" href="#">Special Projects</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course Pages</a>
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course Pages</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Computer Programming</a>
-            <a class="dropdown-item" href="#">AP Computer Science Principles</a>
-            <a class="dropdown-item" href="#">AP Computer Science A</a>
+            <a class="dropdown-item" href="cp.html">Computer Programming</a>
+            <a class="dropdown-item" href="csp.html">AP Computer Science Principles</a>
+            <a class="dropdown-item" href="apcs.html">AP Computer Science A</a>
           </div>
         </li>
       </ul>
@@ -90,10 +84,41 @@
 </nav>
 
 <div class="container">
-
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  <div class="card-deck">
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">Programming</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">Principles</h4>
+        <h6 class="card-subtitle mb-2 text-muted">AP Computer Science Principles</h6>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title">AP Comp Sci</h4>
+        <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <a href="apcs.html" class="btn btn-primary">Class Page</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
   </div>
 
 </div><!-- /.container -->
