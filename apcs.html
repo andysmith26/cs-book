@@ -44,13 +44,69 @@
             $("#the-class").append(items.join(""));
         });
 
-        $.getJSON("http://cors.io/docs.google.com/spreadsheets/d/e/2PACX-1vTg-PdJx6LAFZDNZgugTheW5QbrUf25MLjwosfwjD68guCtcaTcCKNaTbTNDD0rKfNC5mMtu6vTh0Zq/pub?output=csv", function(data) {
+        var BADGES_SHEET_ID = "1p0gkHtT_brUY1xRpkTaUykeC247hawNp-gvVaJAxN60";
+        var BADGES_URL = "https://spreadsheets.google.com/feeds/list/" + BADGES_SHEET_ID + "/1/public/basic?alt=json"
+        $.getJSON(BADGES_URL, function(data) {
             console.log(data);
+              var rows = [];
+              var cells = data.feed.entry;
+
+              for (var i = 0; i < cells.length; i++){
+                  var rowObj = {};
+                  rowObj.timestamp = cells[i].title.$t;
+                  var rowCols = cells[i].content.$t.split(',');
+                  for (var j = 0; j < rowCols.length; j++){
+                      var keyVal = rowCols[j].split(':');
+                      if (keyVal[1]) {
+                        rowObj[keyVal[0].trim()] = keyVal[1].trim();
+                      } else {
+                        rowObj[keyVal[0].trim()] = "";
+                      }
+                  }
+                  rows.push(rowObj);
+              }
+
+              var raw = document.createElement('p');
+              raw.innerText = JSON.stringify(rows);
+              document.body.appendChild(raw);
         });
 //        https://spreadsheets.google.com/feeds/worksheets/1D4lzOfbjR6KfubON7LuuaeM4hC_oA2JZzaTr3UxEtYc/public/basic?alt=json
 //        https://spreadsheets.google.com/feeds/list/1D4lzOfbjR6KfubON7LuuaeM4hC_oA2JZzaTr3UxEtYc/od6/public/basic?alt=json
 //        http://cors.io/spreadsheets.google.com/feeds/list/1D4lzOfbjR6KfubON7LuuaeM4hC_oA2JZzaTr3UxEtYc/od6/public/values?alt=json
 
+
+// var JSONURL = 'https://spreadsheets.google.com/feeds/list/1e4bE5Xk1w1d-N3-xWCYk9ilUA2kFn2TH629lrT_w-Gk/1/public/basic?alt=json';
+//
+// function callback(data){
+//     var rows = [];
+//     var cells = data.feed.entry;
+//
+//     for (var i = 0; i < cells.length; i++){
+//         var rowObj = {};
+//         rowObj.timestamp = cells[i].title.$t;
+//         var rowCols = cells[i].content.$t.split(',');
+//         for (var j = 0; j < rowCols.length; j++){
+//             var keyVal = rowCols[j].split(':');
+//             rowObj[keyVal[0].trim()] = keyVal[1].trim();
+//         }
+//         rows.push(rowObj);
+//     }
+//
+//     var raw = document.createElement('p');
+//     raw.innerText = JSON.stringify(rows);
+//     document.body.appendChild(raw);
+// }
+//
+// $(document).ready(function(){
+//
+//     $.ajax({
+//         url:JSONURL,
+//         success: function(data){
+//             callback(data);
+//         }
+//     });
+//
+// });
 
     </script>
 </head>
