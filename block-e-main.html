@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Block E</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="assets/external/processing.min.js"></script>
+  <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
+  <script src="assets/wcs-utilities.js"></script>
+  <script>
+  console.log("hello?");
+  $.getJSON("assets/data/_A-csp.json", function(data) {
+    var classes = data.classes;
+    var items = [];
+    console.log("reading");
+    classes.reverse();
+    $.each(classes, function(num, the_class) {
+      console.log(num + ": " + the_class.date);
+      if (num == 0) {//if (the_class.date.substring(0, 5) == "READY") {
+        items.push("<h5 class='mb-1'>" + the_class.date + "</h5>");
+        items.push("<ul>")
+        $.each(the_class.agenda, function(num, the_item) {
+          items.push("<li>" + the_item + "</li>")
+        });
+        items.push("</ul>")
+      }
+    });
+    console.log("goodbye");
+    $("#the-class").append(items.join(""));
+  });
+
+  $.getJSON("http://cors.io/docs.google.com/spreadsheets/d/e/2PACX-1vTg-PdJx6LAFZDNZgugTheW5QbrUf25MLjwosfwjD68guCtcaTcCKNaTbTNDD0rKfNC5mMtu6vTh0Zq/pub?output=csv", function(data) {
+    console.log(data);
+  });
+  //        https://spreadsheets.google.com/feeds/worksheets/1D4lzOfbjR6KfubON7LuuaeM4hC_oA2JZzaTr3UxEtYc/public/basic?alt=json
+  //        https://spreadsheets.google.com/feeds/list/1D4lzOfbjR6KfubON7LuuaeM4hC_oA2JZzaTr3UxEtYc/od6/public/basic?alt=json
+  //        http://cors.io/spreadsheets.google.com/feeds/list/1D4lzOfbjR6KfubON7LuuaeM4hC_oA2JZzaTr3UxEtYc/od6/public/values?alt=json
+
+
+  </script>
+</head>
+
+<body>
+  <div id="navbar"></div>
+
+  <div class="container">
+
+
+    <div class="alert alert-success" role="alert">
+      Battlecode tournament is <strong>this Thursday</strong>.
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Featured Programmer</h3>
+        <div class="row">
+
+          <div class="col-sm-6">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          </div>
+          <div class="col-sm-6">
+            <h5>Alan Turing</h5>
+            <p><span class="strong">Career:</span> England, long ago</p>
+            <p><span class="strong">Known for</span> okokok</p>
+            <p><span class="strong">Favorite:</span> hello</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <span>TODO: create carousel</span>
+            <p><a class="btn btn-secondary" href="challenge_problems.html" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 align-middle">
+            <canvas data-processing-sources="assets/sketches/square_grapes/square_grapes.pde"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+
+
+        <h3>Looking Ahead</h3>
+        <div class="list-group-item flex-column align-items-start">
+          <p><strong>Tue, Oct 12 in class</strong> Exam: Drawing Pictures</p>
+          <p><strong>Tue, Oct 12 end of class</strong> Target date to finish Drawing Pictures project</p>
+          <p><strong>Fri, Oct 15 2nd Flex</strong> Extra Exam Session</p>
+          <p><strong>Wed, Oct 18 4pm</strong> GRADES CLOSE: ALL EXAMS AND PROJECTS DUE</p>
+        </div>
+        <br>
+        <br>
+        <h3>Agenda</h3>
+        <div id="agenda-list" class="list-group">
+          <div id="the-class" class="list-group-item flex-column align-items-start">
+          </div>
+          <div lang="" class="list-group-item flex-column align-items-start">
+            <a href="block-e-archive.html" class="btn btn-primary">View Earlier Classes...</a>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h3>Unit Resources</h3>
+        <div class="list-group-item flex-column align-items-start">
+          <h5 class="mb-1">Drawing Pictures</h5>
+          <ul>
+            <li>Standards Cover Sheet</li>
+            <li>Practice Assignments</li>
+            <li>Quiz</li>
+          </ul>
+        </div>
+        <div lang="" class="list-group-item flex-column align-items-start">
+          <a href="block-e-archive.html" class="btn btn-primary">View Earlier Units...</a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <h3>Students</h3>
+
+    <div class="card-deck">
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">andytilia</h4>
+          <p class="card-text">Likes longs walks at sunset. Favorite pet = cat. </p>
+          <span class="badge badge-pill badge-default">lefty</span>
+          <span class="badge badge-pill badge-success">challenge</span>
+          <span class="badge badge-pill badge-info">researcher</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">realobama</h4>
+          <p class="card-text">I'd like to work as an air traffic controller.</p>
+          <span class="badge badge-pill badge-warning">okish</span>
+          <span class="badge badge-pill badge-default">getting water</span>
+          <span class="badge badge-pill badge-info">researcher</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">WonderWoman</h4>
+          <p class="card-text">Computers make me feel happy. That's it.</p>
+          <span class="badge badge-pill badge-danger">senior</span>
+          <span class="badge badge-pill badge-info">lefty</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">Luke</h4>
+          <p class="card-text">don't know, don't care. I'm going to try to make this one be three lines long. ok?</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">andytilia</h4>
+          <p class="card-text">Likes longs walks at sunset. Favorite pet = cat. </p>
+          <span class="badge badge-pill badge-default">lefty</span>
+          <span class="badge badge-pill badge-success">challenge</span>
+          <span class="badge badge-pill badge-info">researcher</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">realobama</h4>
+          <p class="card-text">I'd like to work as an air traffic controller.</p>
+          <span class="badge badge-pill badge-warning">okish</span>
+          <span class="badge badge-pill badge-default">getting water</span>
+          <span class="badge badge-pill badge-info">researcher</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">WonderWoman</h4>
+          <p class="card-text">Computers make me feel happy. That's it.</p>
+          <span class="badge badge-pill badge-danger">senior</span>
+          <span class="badge badge-pill badge-info">lefty</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">Luke</h4>
+          <p class="card-text">don't know, don't care. I'm going to try to make this one be three lines long. ok?</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-deck">
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">andytilia</h4>
+          <p class="card-text">Likes longs walks at sunset. Favorite pet = cat. </p>
+          <span class="badge badge-pill badge-default">lefty</span>
+          <span class="badge badge-pill badge-success">challenge</span>
+          <span class="badge badge-pill badge-info">researcher</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">realobama</h4>
+          <p class="card-text">I'd like to work as an air traffic controller.</p>
+          <span class="badge badge-pill badge-warning">okish</span>
+          <span class="badge badge-pill badge-default">getting water</span>
+          <span class="badge badge-pill badge-info">researcher</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="130" height="130" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">WonderWoman</h4>
+          <p class="card-text">Computers make me feel happy. That's it.</p>
+          <span class="badge badge-pill badge-danger">senior</span>
+          <span class="badge badge-pill badge-info">lefty</span>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="130" height="130" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+        <div class="card-block">
+          <h4 class="card-title">Luke</h4>
+          <p class="card-text">don't know, don't care. I'm going to try to make this one be three lines long. ok?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.container -->
+
+
+</body>
+
+</html>

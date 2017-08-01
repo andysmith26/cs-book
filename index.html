@@ -1,30 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Woodstock CS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>WoodstockCS</title>
-
-
-<!--  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
--->
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-      <link href="extra.css" rel="stylesheet">
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-  <script src="wcs-utilities.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="assets/external/processing.min.js"></script>
+  <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
+  <script src="assets/wcs-utilities.js"></script>
   <script>
   console.log("hello?");
-  $.getJSON( "test.json", function( data ) {
+  $.getJSON( "assets/data/test.json", function( data ) {
     var items = [];
     console.log("reading");
     $.each( data, function( key, val ) {
@@ -49,7 +41,7 @@
 </div>
   <div class="card-deck">
     <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/placeholder-235x200.jpg" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">Programming</h4>
         <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
@@ -60,7 +52,7 @@
       </div>
     </div>
     <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/placeholder-235x200.jpg" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">Principles</h4>
         <h6 class="card-subtitle mb-2 text-muted">AP Computer Science Principles</h6>
@@ -71,7 +63,7 @@
       </div>
     </div>
     <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
+      <img class="card-img-top" src="assets/placeholder-235x200.jpg" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">AP Comp Sci</h4>
         <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
