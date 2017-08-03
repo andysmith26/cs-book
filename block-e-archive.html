@@ -27,14 +27,17 @@
       } else {
         console.log("color differently");
       }
-      items.push("<div class='list-group-item flex-column align-items-start'><h5 class='mb-1'>" + the_class.date + "</h5>");
+      items.push("<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>");
       items.push("<ul>")
       $.each(the_class.agenda, function(num, the_item) {
         items.push("<li>" + the_item + "</li>")
       });
-      items.push("</ul></div>")
-    });
+      items.push("</ul>")
+      items.push("<hr>")
+      });
+
     console.log("goodbye");
+    items.push("<div class='w-100 text-center'><img height='50' src='assets/spidey-dancing.gif'></div>")
     $("#agenda-list").append(items.join(""));
   });
   </script>
@@ -43,46 +46,46 @@
 
 <body>
   <div id="navbar"></div>
-
   <div class="container">
-
     <div class="row">
-      <div class=".col-sm-6">
-
-        <h3>Archive > Unit Resources</h3>
-        <div class="list-group-item flex-column align-items-start">
-          <h5 class="mb-1">Drawing Pictures</h5>
-          <ul>
-            <li></li>
-            <li>participate in plenary: how to draw a picture</li>
-            <li>work on your project</li>
-          </ul>
-        </div>
-        <div class="list-group-item flex-column align-items-start">
-          <h5 class="mb-1">Drawing Pictures</h5>
-          <ul>
-            <li></li>
-            <li>participate in plenary: how to draw a picture</li>
-            <li>work on your project</li>
-          </ul>
-        </div>
-        <div class="list-group-item flex-column align-items-start">
-          <h5 class="mb-1">Drawing Pictures</h5>
-          <ul>
-            <li></li>
-            <li>participate in plenary: how to draw a picture</li>
-            <li>work on your project</li>
-          </ul>
-        </div>
-
-
-      </div>
-      <div class=".col-sm-6">
-
-        <h3>Archive > Agenda</h3>
-        <div id="agenda-list" class="list-group">
+      <div class="col-sm-6">
+        <div class="card">
+          <h4 class="card-header">Previous Resources</h4>
+          <div class="card-block">
+            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+            <ul>
+              <li>Standards Cover Sheet</li>
+              <li>Practice Assignments</li>
+              <li>Quiz</li>
+            </ul>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+            <ul>
+              <li>Standards Cover Sheet</li>
+              <li>Practice Assignments</li>
+              <li>Quiz</li>
+            </ul>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+            <ul>
+              <li>Standards Cover Sheet</li>
+              <li>Practice Assignments</li>
+              <li>Quiz</li>
+            </ul>
+            <hr>
+            <small class="text-muted font-italic"><a href="resources.html" class="card-link">all of smith's resources ...</a></small>
+          </div>
         </div>
       </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <h4 class="card-header">Previous Agendas</h4>
+          <div class="card-block">
+            <div id="agenda-list"></div>
+        </div>
+      </div>
+      <br>
+      <br>
     </div>
   </div>
   <!-- /.container -->

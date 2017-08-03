@@ -14,11 +14,17 @@ canvas {
     width: 300px;
 }
 
-/*
+/* https://stackoverflow.com/a/18076167/789446 */
+.borderless td, .borderless th {
+    border: none !important;
+}
 
-BELOW FROM https://afeld.github.io/bootstrap-toc/
+/* override bootstrap's _tables.scss */
+table {
+  margin-bottom: 0 !important;
+}
 
-*/
+/* START https://afeld.github.io/bootstrap-toc/ */
 
 nav[data-toggle='toc'] {
   margin-top: 30px;
@@ -43,3 +49,5 @@ nav[data-toggle='toc'] {
     display: block;
   }
 }
+
+/* END https://afeld.github.io/bootstrap-toc/ */
