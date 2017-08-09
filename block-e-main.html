@@ -13,7 +13,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
   <script src="assets/external/processing.min.js"></script>
   <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
-  <script src="assets/wcs-utilities.js"></script>
+
   <script>
   console.log("hello?");
   $.getJSON("assets/data/blocke.json", function(data) {
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="col-sm-8">
-        <div class="alert alert-success" role="alert">
+        <div class="alert alert-custom-1" role="alert">
           Battlecode tournament is <strong>this Thursday</strong>.
         </div>
         <div class="card">
@@ -57,7 +57,7 @@
             <h4 class="card-title">Agenda</h4>
             <div id="the-class"></div>
             <hr>
-            <a href="block-e-archive.html" class="card-link">previous agendas...</a>
+            <small class="text-muted font-italic"><a href="block-e-archive.html" class="card-link">previous agendas...</a></small>
           </div>
         </div>
         <br>
@@ -92,24 +92,42 @@
             </table>
           </div>
         </div>
-        <br>
+<br>
+
         <div class="card">
           <div class="card-block">
             <h4 class="card-title">Resources</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Foundations of Game Design</h6>
             <ul>
-              <li>Standards Cover Sheet</li>
-              <li>Practice Assignments</li>
-              <li>Quiz</li>
-            </ul>
+              <li>Assessment Report, includes proficiencies and standards</li>
+              <li><a href="#slidesModal" data-toggle="modal" data-target="#slidesModal" data-slides-id="13cOp6MYbG6XuQyEZYh5gnuOQxyUATbYA9ZPZ2xjZYPk">Test Bank</li>
+              </ul>
+
+              <div class="modal fade" id="slidesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button id="slidesEditButton" type="button" class="btn btn-primary" type="submit" onClick="">Contribute a question</button>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe id="slidesIframe" src="" frameborder="0" width="755" height="472" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <hr>
-            <a href="block-e-archive.html" class="card-link">previous resources...</a>
+            <small class="text-muted font-italic"><a href="block-e-archive.html" class="card-link">previous units ...</a></small>
+            </div>
           </div>
         </div>
-        <br>
-        <br>
       </div>
-    </div>
-  </div> <!-- /.container -->
-</body>
-</html>
+      <br>
+      <br>
+    </div> <!-- /.container -->
+    <script src="assets/wcs-utilities.js"></script>
+  </body>
+  </html>

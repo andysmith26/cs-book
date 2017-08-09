@@ -14,6 +14,16 @@ canvas {
     width: 300px;
 }
 
+.alert-custom-1 {
+  background-color: #e6e6e6 !important;
+  color: #666 !important;
+}
+
+/* https://stackoverflow.com/questions/42896820/bootstrap-4-modal-width-increase */
+.modal-lg {
+    max-width: 800px !important;
+}
+
 /* https://stackoverflow.com/a/18076167/789446 */
 .borderless td, .borderless th {
     border: none !important;
