@@ -1,4 +1,4 @@
-$.get("navbar.html", function(data){
+$.get("/navbar.html", function(data){
   $("#navbar").replaceWith(data);
 });
 
@@ -10,3 +10,14 @@ $('#slidesModal').on('show.bs.modal', function (event) {
   $('#slidesIframe').attr('src',displayUrl);
   $('#slidesEditButton').attr('onClick',editUrl);
 })
+
+// autonumber blockquotes
+function autoNumberBlockquotes() {
+  console.log("autonumbering blockquotes");
+  var blockquoteNumber = 1;
+  $("blockquote").each(function(){
+    console.log($(this).text());
+    $(this).text(blockquoteNumber + ". " + $(this).text());
+    blockquoteNumber++;
+  });
+}

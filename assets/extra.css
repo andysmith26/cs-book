@@ -61,3 +61,46 @@ nav[data-toggle='toc'] {
 }
 
 /* END https://afeld.github.io/bootstrap-toc/ */
+
+
+
+/************************************************************************************
+ * CONVERTABLE S-EXPRESSIONS
+ * from http://www.bootstrapworld.org/materials/spring2017/courses/algebra/units/Supplemental/bootstrap.css
+ */
+
+
+div.student div.circleevalsexp, div.codesexp{display: inline-block;}
+/*div.circleevalsexp{float: right;}*/
+
+div.circleevalsexp .expression{
+	display:        inline-block;
+  padding-top:    6px;   /* top padding pushes the rounded corners up slightly, so as not to clip function name */
+	margin:         5px;
+	clear:          none;
+	border:         2px solid black;
+  background:     white;
+  border-radius:  20px;
+  text-align:     center;
+	-moz-border-radius: 20px;
+	-webkit-border-radius:20px;
+}
+
+div.circleevalsexp .value{
+	display:        inline-block;
+	margin:         10px 10px 5px 10px;
+  vertical-align: top;
+}
+
+div.circleevalsexp .operator{
+  display:        block;
+  height:         20px;
+  text-align:     center;
+  width:          100%;
+  border-bottom:  solid 2px black;
+  border-radius:  15px 15px 0px 0px; /* top left, top right, bottom right, bottom left */
+}
+
+div.circleevalsexp .lParen, div.circleevalsexp .rParen{display: none;}*/
+
+/* end bootstrap */
