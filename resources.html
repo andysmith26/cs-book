@@ -1,191 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Resources</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-  <script src="assets/external/processing.min.js"></script>
-  <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
-  <script src="assets/wcs-utilities.js"></script>
 
-</head>
+  <head>
+    <title>Woodstock CS</title>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <script src="/assets/external/processing.min.js"></script>
 
-<body>
-  <div id="navbar"></div>
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+  </head>
 
-  <div class="container">
-
-    <div class="row">
-      <div class="col-4">
-        <h5>Github</h5>
-        <ul class="list-group">
-          <a class="list-group-item" href="#get-started-with-git-and-github">get started with git and github</a>
-          <a class="list-group-item" href="#write-a-good-commit-message">write a good commit message</a>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h5>Java</h5>
-        <ul class="list-group">
-          <a class="list-group-item" href="#cras">Cras justo odio</a>
-          <a class="list-group-item" href="#cras">Cras justo odio</a>
-          <a class="list-group-item" href="#cras">Cras justo odio</a>
-        </ul>
-      </div>
-      <div class="col-4">
-        <h5>Web Programming & Visual Design</h5>
-        <ul class="list-group">
-          <a class="list-group-item" href="#use-chrome-devtools">use Chrome DevTools to debug HTML, CSS, and JS</a>
-          <a class="list-group-item" href="#find-inspiration">find inspiration</a>
-          <a class="list-group-item" href="#take-a-screenshot">take a screenshot</a>
-        </ul>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="card mb-5" id="write-a-good-commit-message">
-      <div class="card-header">
-        <h4>write a good commit message</h4>
-
-      </div>
-      <div class="card-block">
-        <p>The following guidelines lead to readable messages that are easy for you and other people to follow when looking through a project's history. A good commit message shows that you're a good collaborator.</p>
-        <ul>
-          <li>describe the change you made in as few words as possible</li>
-          <li>try to use no more than 50 characters, but absolutely no more than 72 characters (spaces and punctuation <i>are</i> characters)</li>
-          <li>use a verb as the first word, and use it in the imperative, present tense: "change" not "changed" nor "changes"</li>
-          <li>do not capitalize the first letter</li>
-          <li>do not use a dot/period (.) at the end</li>
-        </ul>
-        <p>It's helpful to think of your commit message as <i>silently</i> starting with "This commit will...".</p>
-        <div class="row">
-          <div class="col-5">
-            <strong>Examples</strong>
-            <ul class="list-unstyled">
-              <li>add a second player</li>
-              <li>accelerate the car to 88 miles per hour</li>
-              <li>fix choppy animation</li>
-              <li>open the pod bay doors</li>
-              <li>fasten the seatbelts</li>
-              <li>fix typo</li>
-            </ul>
-
-          </div>
-          <div class="col-7">
-            <strong>Counter-examples</strong>
-            <ul class="list-unstyled">
-              <li>trying to add a second player</li>
-              <li>accelerate the car to 88 miles per hour.</li>
-              <li>fix the part of the animation where it flashes a lot</li>
-              <li>Open the pod bay doors</li>
-              <li>fastened the seatbelts</li>
-              <li>when is this class over</li>
-            </ul>
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card card-outline-success mb-5">
+            <div class="card-header">
+              <h3 class="card-title">Resources</h3>
+            </div>
+            <div class="card-block">
+              <h5 class="card-title">How To...</h5>
+              <ul class="list-unstyled small">
+                <li><a href="#create-github-account" class="card-link">create an account in github</a></li>
+                <li><a href="#fork-repo" class="card-link">fork a repo</a></li>
+                <li><a href="#publish-scheme-program" class="card-link">publish a Scheme program</a></li>
+                <li><a href="#submit-lab" class="card-link">submit a lab in github</a></li>
+                <li><a href="#follow-up-lab" class="card-link">follow up on a lab in github</a></li>
+                <li><a href="#write-a-good-commit-message" class="card-link">write a good commit message</a></li>
+                <li><a href="#set-up-dr-racket" class="card-link">set up Dr Racket</a></li>
+                <li><a href="#testbank" class="card-link">contribute to the testbank</a></li>
+              </ul>
+              <h5 class="card-title">Links</h5>
+              <ul class="list-unstyled small">
+                <li><a href="#handy-tools" class="card-link">handy tools</a></li>
+                <li><a href="#learn-online" class="card-link">learn online</a></li>
+                <li><a href="#lists" class="card-link">lists</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="text-center"><a href="https://xkcd.com/1296/"><img src="https://imgs.xkcd.com/comics/git_commit.png" /></a></div>
-      </div>
-      <div class="card-footer text-muted">
-        <small>
+        <div class="col-lg-9">
+          <h2 class="display-4">How To...</h2>
+          <div class="card mb-5" id="create-github-account">
+            <div class="card-header">
+              <h4>How to Create an Account in Github</h4>
+            </div>
+            <div class="card-block">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iA_IoroO1n8?rel=0" frameborder="0" allowfullscreen></iframe>
+              <ol>
+                <li>go to github.com</li>
+                <li>enter the requested info, and click the green button</li>
+                <ul>
+                  <li>username = whatever you like. maybe just your school username?</li>
+                  <li>email address = <strong>please use your school email address</strong></li>
+                  <li>password = whatever you like</li>
+                </ul>
+                <li>click the green 'continue' button a couple times until you reach the screen that says "Learn Git and Github without any code!"</li>
+                <li>go to your school email account, open the auto-email from github, and click the "verify this email" link in there</li>
+            </div>
+          </div>
+          <div class="card mb-5" id="fork-repo">
+            <div class="card-header">
+              <h4>How to Fork a Repo</h4>
+            </div>
+            <div class="card-block">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5Adelr5wo-g?rel=0" frameborder="0" allowfullscreen></iframe>
+              <ol>
+                <li>go to the WoodstockCS copy of the repo you want to fork</li>
+                <ul>
+                  <li>either from the list of WoodstockCS Repos (see Quick Links at the top of this page)</li>
+                  <li>or by clicking on the link to the repo at the top of the assignment instructions</li>
+                </ul>
+                <li>make sure you're looking at the WoodstockCS copy of the repo (look for woodstockcs in the upper left corner of the page)</li>
+                <li>click the "Fork" button</li>
+                <li>wait while your copy of the repo is created</li>
+                <li>now you should see your github username in the upper left corner of the page</li>
+                </ul>
+            </div>
+          </div>
+          <div class="card mb-5" id="publish-scheme-program">
+            <div class="card-header">
+              <h4>How to Publish a Scheme Program</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>share the project in WeScheme</li>
+                <ul>
+                  <li>go to the code for the program you want to publish</li>
+                  <li>click the Share button</li>
+                  <li>click Yes in the "Publish My Program" popup</li>
+                  <li>click on the custom link that WeScheme provides you</li>
+                  <li>click the Run button</li>
+                  <li>make sure everything looks ok! If not, go back and make changes, but then you have to click the Share button again</li>
+                </ul>
+                <li>put the WeScheme shared URL on the webpage source code in github</li>
+                <ul>
+                  <li>copy the URL of the page you're viewing your project on (it starts with <code>http://www.wescheme.org/run...</code>)</li>
+                  <li>go over to your copy of the relevant repo in github (remember to check for your username in the upper left corner, to be sure you're in your copy not the class copy)</li>
+                  <li>click on the file called <code>index.html</code></li>
+                  <li>click the edit button (it's a little pen icon)</li>
+                  <li>replace the two existing WeScheme URLs with the one you copied</li>
+                  <li>scroll down and click the Commit Changes button</li>
+                </ul>
+                <li>copy your WeScheme source code into the <code>.scm</code> source file in github</li>
+                <ul>
+                  <li>go back to the <em>editor</em> for your program in WeScheme</li>
+                  <li>copy all the code in the Definitions section</li>
+                  <li>go back to your repo in github</li>
+                  <li>this time click on the scheme source file (it's the file that ends with <code>.scm</code>)</li>
+                  <li>click the little pen button (same edit button as before)</li>
+                  <li>remove all the code from the editing window</li>
+                  <li>paste the code from WeScheme into the github editing window</li>
+                  <li>look closely at the start and end of the code you just pasted, to make sure you didn't miss anything</li>
+                  <li>click the Commit Changes button</li>
+                </ul>
+                <li>confirm that github is displaying your webpage correctly</li>
+                <ul>
+                  <li>from the main page of the repo (where you see the list of files in your repo), click the Settings tab</li>
+                  <li>scroll about down the page until you reach the Github Pages section</li>
+                  <li>click the link to your published webpage, which looks like this: <code><strong>https://</strong><em><span style="color:darkgrey !important">YourGithubUsername</span></em><strong>.github.io/</strong><em><span style="color:darkgrey !important">RepoName</span></em></code></li>
+                  <li>in case things don't look right, stand up and strech to give github another minute or two to update your webpage on its servers, then hold down the <code>SHIFT</code> key on your keyboard while you reload the page</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+          <div class="card mb-5" id="submit-lab">
+            <div class="card-header">
+              <h4>How to Submit a Lab in Github</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>create a pull request</li>
+                <ul>
+                  <li>in your copy of the repo, click the Code tab</li>
+                  <li>click the button that says "New pull request"</li>
+                  <li>click the green button that says "Create pull request"</li>
+                  <li>delete the text that's in the blue box where the cursor is (it probably says something like "Update ...")</li>
+                  <li>in that same box write <code>SUBMIT LAB</code> in all caps</li>
+                  <li>scroll down and click another green button that says "Create pull request"</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+          <div class="card mb-5" id="follow-up-lab">
+            <div class="card-header">
+              <h4>How to Follow Up on a Lab in Github</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>look at the list of pull requests you've created</li>
+                <ul>
+                  <li>from anywhere in github, click the link in the page header called "Pull requests"</li>
+                  <li>the list of open pull requests created by you is shown
+                    <li>if you want to see closed pull requests, click the "Closed" word at the top of the table</li>
+                </ul>
+                <li>open the pull request that you're interested in </li>
+                <ul>
+                  <li>each pull request in the list says <code>woodstockcs/<em><span style="color: darkgrey">RepoName</span></em></code>, followed by the pull request title, which should be something like <code>SUBMIT LAB</code></li>
+                  <li>to read the comments of any pull request, click the <em>title</em> (ie. <code>SUBMIT LAB</code>) of the pull request</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="write-a-good-commit-message">
+            <div class="card-header">
+              <h4>How To Write a Good Commit Message</h4>
+            </div>
+            <div class="card-block">
+              <p>The following guidelines lead to readable messages that are easy for you and other people to follow when looking through a project's history. A good commit message shows that you're a good collaborator.</p>
+              <ul>
+                <li>describe the change you made in as few words as possible</li>
+                <li>try to use no more than 50 characters, but absolutely no more than 72 characters (spaces and punctuation <i>are</i> characters)</li>
+                <li>use a verb as the first word, and use it in the imperative, present tense: "change" not "changed" nor "changes"</li>
+                <li>do not capitalize the first letter</li>
+                <li>do not use a dot/period (.) at the end</li>
+              </ul>
+              <p>It's helpful to think of your commit message as <i>silently</i> starting with "This commit will...".</p>
+              <table class="table">
+                <tr>
+                  <th>Good</th>
+                  <th>Baaaad</th>
+                </tr>
+                <tr>
+                  <td>add a second player</td>
+                  <td>trying to add a second player</td>
+                </tr>
+                <tr>
+                  <td>accelerate the car to 88 miles per hour</td>
+                  <td>accelerate the car to 88 miles per hour.</td>
+                </tr>
+                <tr>
+                  <td>fix choppy animation</td>
+                  <td>fix the part of the animation where it flashes a lot<br>because that part gives me headaches</td>
+                </tr>
+                <tr>
+                  <td>open the pod bay doors</td>
+                  <td>Open the pod bay doors</td>
+                </tr>
+                <tr>
+                  <td>fasten the seatbelts</td>
+                  <td>fastened the seatbelts</td>
+                </tr>
+                <tr>
+                  <td>fix typo</td>
+                  <td>when is this class over</td>
+                </tr>
+              </table>
+              <hr>
+              <div class="text-center"><a href="https://xkcd.com/1296/"><img src="https://imgs.xkcd.com/comics/git_commit.png" /></a></div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>
           Credits:
           &nbsp;&nbsp;&nbsp;<a href="https://learn-the-web.algonquindesign.ca/topics/commit-messages/">algonquindesign.ca</a>
           &nbsp;&nbsp;&nbsp;<a href="https://chris.beams.io/posts/git-commit/">chris.beams.io</a>
         </small>
-      </div>
-    </div>
+            </div>
+          </div>
 
-    <div class="card mb-5" id="get-started-with-git-and-github">
-      <div class="card-header">
-        <h4>get started with git and github</h4>
-      </div>
-      <div class="card-block">
-        <p class="card-text">Daniel Shiffman has a YT playlist that starts from scratch and teaches you the basics. It takes about 2 hours to watch all the videos.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV" frameborder="0" allowfullscreen></iframe>
-        <hr>
-        <p class="card-text">Github offers intro lessons on these topics:</p>
-        <a href="https://services.github.com/on-demand/intro-to-github/" class="btn btn-primary">Github 101: Introduction to Github</a>
-        <br><br>
-        <a href="https://services.github.com/on-demand/github-cli/" class="btn btn-primary">Github 103: Github Pages from the Command Line</a>
-        <br><br>
-        <a href="https://services.github.com/on-demand/git-trouble/" class="btn btn-primary">Git out of Trouble</a>
-        <hr>
-        <p class="card-text">Or if you prefer to read, check out the Github Guides:</p>
-        <a href="https://guides.github.com/" class="btn btn-primary">Github Guides</a>
-        <hr>
-        <p class="card-text">CodeSchool offers an interactive lesson about command line git. You should already be familiar with the what the command line is before doing this lesson. It takes about 15 minutes to complete.</p>
-        <a href="http://try.github.io" class="btn btn-primary">try.github.io</a>
-        <hr>
-        <p class="card-text">Atlassian offers tutorials with clear explanations and graphics, as well as a good cheatsheet.</p>
-        <a href="https://www.atlassian.com/git/tutorials" class="btn btn-primary">tutorials</a>
-        <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" class="btn btn-primary">cheatsheet</a>
-      </div>
-    </div>
+          <div class="card mb-5" id="set-up-dr-racket">
+            <div class="card-header">
+              <h4>How To Set Up DrRacket</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>Download the installation file: Go <a href="https://download.racket-lang.org/">here</a> and select the correct platform, then click the button to download.</li>
+                <li>Install DrRacket: After the large file is finished downloading, run it to install the DrRacket software.</li>
+                <li>Configure the software: Go <a href="http://picturingprograms.com/download/chap00.pdf#page=15">here</a> and follow the instructions in <i>Section 0.3.4 Installing Libraries</i>, which starts about halfway down the page.</li>
+              </ol>
+            </div>
+          </div>
 
-    <div class="card mb-5" id="use-chrome-devtools">
-      <div class="card-header">
-        <h4>use Chrome DevTools to debug HTML, CSS, and JS</h4>
-      </div>
-      <div class="card-block">
-        <p class="card-text">Take this CodeSchool course by Google:</p>
-        <a href="http://discover-devtools.codeschool.com/" class="btn btn-primary">Explore and Master Chrome DevTools</a>
-      </div>
-    </div>
+          <div class="card mb-5" id="testbank">
+            <div class="card-header">
+              <h4>How to Contribute to the Testbank</h4>
+            </div>
+            <div class="card-block">
+              <p>Each question gets two slides: one without explanation, and one with explanation. Use the first pair of question slides as a model.</p>
+              <ol>
+                <li><a href="https://docs.google.com/presentation/d/13cOp6MYbG6XuQyEZYh5gnuOQxyUATbYA9ZPZ2xjZYPk/edit#slide=id.g242f24b05b_0_7">open the testbank in edit mode</a></li>
+                <li>create one new slide at the end of the slidedeck</li>
+                <li>on that new slide, write a question with at least 4 multiple choices answers, only one of which is correct</li>
+                <li>when viewing your new slide, click "Slide" from the menu at the top, then "Duplicate slide"</li>
+                <li>on this duplicate do the following:</li>
+                <ul>
+                  <li>draw a circle around the correct answer</li>
+                  <li>for each incorrect answer, create a small textbox nearby indicating why it is incorrect</li>
+                  <li>indicate your name as the author somewhere on the page</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
 
+          <h2 class="display-4">Links</h2>
 
-    <div class="card mb-5" id="find-inspiration">
-      <div class="card-header">
-        <h4>find inspiration</h4>
-      </div>
-      <div class="card-block">
-        <p class="card-text">check out this shared doc curated by fellow designers at Woodstock</p>
-        <a href="https://docs.google.com/a/wcsu.net/spreadsheets/d/1M-3UY93X93AsZVw950UlkwQIceAjTzd1iSPOW_KlEsA/edit?usp=sharing" class="btn btn-primary">Design Inspirations</a>
-      </div>
-    </div>
+          <div class="card mb-5" id="handy-tools">
+            <div class="card-header">
+              <h4>Handy Tools</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li><a href="https://www.take-a-screenshot.org">take a screenshot on different devices</a></li>
+                <li><a href="http://caniuse.com/">check browser compatibility of various web design elements</a></li>
 
-    <div class="card mb-5" id="take-a-screenshot">
-      <div class="card-header">
-        <h4>take a screenshot</h4>
-      </div>
-      <div class="card-block">
-        <p class="card-text">instructions for every type of computer are here:</p>
-        <a href="https://www.take-a-screenshot.org" class="btn btn-primary">Take-A-Screenshot.com</a>
-      </div>
-    </div>
+              </ul>
+            </div>
+          </div>
 
-    <div class="card mb-5" id="set-up-dr-racket">
-      <div class="card-header">
-        <h4>set up DrRacket</h4>
-      </div>
-      <div class="card-block">
-        <ol>
-          <li>Download the installation file: Go <a href="https://download.racket-lang.org/">here</a> and select the correct platform, then click the button to download.</li>
-          <li>Install DrRacket: After the large file is finished downloading, run it to install the DrRacket software.</li>
-          <li>Configure the software: Go <a href="http://picturingprograms.com/download/chap00.pdf#page=15">here</a> and follow the instructions in <i>Section 0.3.4 Installing Libraries</i>, which starts about halfway down the page.</li>
-        </ol>
-      </div>
-    </div>
+          <div class="card mb-5" id="learn-online">
+            <div class="card-header">
+              <h4>Learn Online</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li><a href="http://discover-devtools.codeschool.com/">Chrome DevTools</a></li>
+              </ul>
+            </div>
+          </div>
 
-    <div class="card mb-5" id="set-up-dr-racket">
-      <div class="card-header">
-        <h4>check browser compatibility</h4>
-      </div>
-      <div class="card-block">
-        <ul>
-          <li>of specific elements: go to <a href="http://caniuse.com/">caniuse.com</a>.</li>
-        </ul>
-      </div>
-    </div>
+          <div class="card mb-5" id="lists">
+            <div class="card-header">
+              <h4>Lists</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li>WoodstockCS Inspirations (<a href="https://docs.google.com/spreadsheets/d/1t4WUtmbyrm2Naz-pATinioOQLg2KhgRYGk5QKLMOlN0/edit#gid=5783103&fvid=626081735">view</a>) (<a href="http://tiny.cc/wcs-inspire">contribute</a>)</li>
+              </ul>
+            </div>
+          </div>
 
-  </div>
-  <!-- /.container -->
-
-
-</body>
+        </div>
+        <script src="/assets/wcs-utilities.js"></script>
+  </body>
 
 </html>
