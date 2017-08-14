@@ -1,106 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Block E</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-  <script src="assets/external/processing.min.js"></script>
-  <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
 
-  <script>
-  console.log("hello?");
-  $.getJSON("assets/data/blocke.json", function(data) {
-    var classes = data.classes;
-    var items = [];
-    console.log("reading");
-    classes.reverse();
-    $.each(classes, function(num, the_class) {
-      console.log(num + ": " + the_class.date);
-      if (num == 0) {//if (the_class.date.substring(0, 5) == "READY") {
-        items.push("<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>");
-        items.push("<ul>")
-        $.each(the_class.agenda, function(num, the_item) {
-          items.push("<li class='card-text'>" + the_item + "</li>")
+  <head>
+    <title>Block E</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/external/processing.min.js"></script>
+    <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
+
+    <script>
+      console.log("hello?");
+      $.getJSON("assets/data/blocke.json", function(data) {
+        var classes = data.classes;
+        var items = [];
+        console.log("reading");
+        classes.reverse();
+        $.each(classes, function(num, the_class) {
+          console.log(num + ": " + the_class.date);
+          if (num == 0) { //if (the_class.date.substring(0, 5) == "READY") {
+            items.push("<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>");
+            items.push("<ul>")
+            $.each(the_class.agenda, function(num, the_item) {
+              items.push("<li class='card-text'>" + the_item + "</li>")
+            });
+            items.push("</ul>")
+          }
         });
-        items.push("</ul>")
-      }
-    });
-    console.log("goodbye");
-    $("#the-class").append(items.join(""));
-  });
-  </script>
-</head>
-<body>
-  <div id="navbar"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="row">
-          <div class="col-sm-12 align-middle">
-            <canvas data-processing-sources="assets/sketches/square_grapes/square_grapes.pde"></canvas>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-8">
-        <div class="alert alert-custom-1" role="alert">
-          Battlecode tournament is <strong>this Thursday</strong>.
-        </div>
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Agenda</h4>
-            <div id="the-class"></div>
-            <hr>
-            <small class="text-muted font-italic"><a href="block-e-archive.html" class="card-link">previous agendas...</a></small>
-          </div>
-        </div>
-        <br>
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Looking Ahead<img height="25" class="float-right" src="assets/c3po-dancing.gif"></h4>
-            <table class="table table-hover borderless table-sm">
-              <tr>
-                <th scope="row">Oct 12</th>
-                <td>Tue</td>
-                <td>during class</td>
-                <td>Exam: Drawing Pictures</td>
-              </tr>
-              <tr>
-                <th scope="row">Oct 12</th>
-                <td>Tue</td>
-                <td>end of class</td>
-                <td>Target date to finish Drawing Pictures project</td>
-              </tr>
-              <tr>
-                <th scope="row">Oct 15</th>
-                <td>Fri</td>
-                <td>2nd Flex</td>
-                <td>Extra Exam Session</td>
-              </tr>
-              <tr>
-                <th scope="row">Oct 18</th>
-                <td>Fri</td>
-                <td>4pm</td>
-                <td>Grades close: all tests and projects due</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-<br>
+        console.log("goodbye");
+        $("#the-class").append(items.join(""));
+      });
+    </script>
+  </head>
 
-        <div class="card">
-          <div class="card-block">
-            <h4 class="card-title">Resources</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Foundations of Game Design</h6>
-            <ul>
-              <li>Assessment Report, includes proficiencies and standards</li>
-              <li><a href="#slidesModal" data-toggle="modal" data-target="#slidesModal" data-slides-id="13cOp6MYbG6XuQyEZYh5gnuOQxyUATbYA9ZPZ2xjZYPk">Test Bank</li>
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-12 align-middle">
+              <canvas data-processing-sources="assets/sketches/square_grapes/square_grapes.pde"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="alert alert-custom-1" role="alert">
+            Battlecode tournament is <strong>this Thursday</strong>.
+          </div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Agenda</h4>
+              <div id="the-class"></div>
+              <hr>
+              <small class="text-muted font-italic"><a href="block-e-archive.html" class="card-link">previous agendas...</a></small>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Looking Ahead<img height="25" class="float-right" src="assets/c3po-dancing.gif"></h4>
+              <table class="table table-hover borderless table-sm">
+                <tr>
+                  <th scope="row">Oct 12</th>
+                  <td>Tue</td>
+                  <td>during class</td>
+                  <td>Exam: Drawing Pictures</td>
+                </tr>
+                <tr>
+                  <th scope="row">Oct 12</th>
+                  <td>Tue</td>
+                  <td>end of class</td>
+                  <td>Target date to finish Drawing Pictures project</td>
+                </tr>
+                <tr>
+                  <th scope="row">Oct 15</th>
+                  <td>Fri</td>
+                  <td>2nd Flex</td>
+                  <td>Extra Exam Session</td>
+                </tr>
+                <tr>
+                  <th scope="row">Oct 18</th>
+                  <td>Fri</td>
+                  <td>4pm</td>
+                  <td>Grades close: all tests and projects due</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br>
+
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Resources</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Foundations of Game Design</h6>
+              <ul>
+                <li>Assessment Report, includes proficiencies and standards</li>
+                <li><a href="#slidesModal" data-toggle="modal" data-target="#slidesModal" data-slides-id="13cOp6MYbG6XuQyEZYh5gnuOQxyUATbYA9ZPZ2xjZYPk">Test Bank</li>
               </ul>
 
               <div class="modal fade" id="slidesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -127,7 +129,9 @@
       </div>
       <br>
       <br>
-    </div> <!-- /.container -->
+    </div>
+    <!-- /.container -->
     <script src="assets/wcs-utilities.js"></script>
   </body>
-  </html>
+
+</html>

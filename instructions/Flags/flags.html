@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Woodstock CS</title>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="/assets/external/processing.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <div class="container">
+
+      <h4>Goals</h4>
+      <ul>
+        <li>Practice using functions and variables.</li>
+        <li>Make computations dynamic in interesting ways.</li>
+        <li>Create a personalized flag.</li>
+      </ul>
+      <hr>
+      <h4>Getting Started</h4>
+      <p>Read the lab carefully and do all the actions that are written (ie: update code, run code, research X, ...). Those actions are important for successful completion of the lab, and the files you submit for your lab should show that you took these actions.
+      </p>
+      <p>Additionally, below you'll see some Lab Questions indented and numbered like this:</p>
+      <blockquote class="blockquote question">Have you ever seen the rain?</blockquote>
+      <p>Every time you see one of these Lab Questions, write a numbered answer next in the "Lab Answers" section at the top of your code, like this:</p>
+      <img class="img-fluid" src="/assets/lab-answers.png">
+      <hr>
+      <h4>Part A</h4>
+
+      <p>Copy <a href="https://raw.githubusercontent.com/woodstockcs/Flags/master/flags.scm">this code</a> into a new program in WeScheme.</p>
+      <p>Read through the code.</p>
+
+      <blockquote class="blockquote question">There are three values being defined here. What are they?</blockquote>
+      <p>Click "Run" and evaluate each of those values in the Interactions window.</p>
+      <p>Change the size of the dot and click "Run".</p>
+      <blockquote class="blockquote question">Predict what will happen when you evaluate the variable <code>japan</code> again. Will it look different than it did before? Why or why not?</blockquote>
+      <p>Evaluate the variable <code>japan</code> and compare the result to your prediction.</p>
+      <p>To make the flag of Japan, we want to put a solid, red circle right in the middle of our flag. According to the definition for blank, a flag is 300 wide by 200 high. To put the dot at the center, we use the coordinates (150, 100). The function that lets us put one image on top of another is called <code>put-image</code>:</p>
+      <pre class="activity">
+; put-image: Image Number Number Image -> Image
+; places an image, at position (x, y), on an Image</pre>
+      <blockquote class="blockquote question">How many things are in the Domain of this function?</blockquote>
+      <blockquote class="blockquote question">What is the Range of this function?</blockquote>
+      <blockquote class="blockquote question">In the definition for <code>japan</code>, what image is being used as the first argument?</blockquote>
+      <blockquote class="blockquote question">What is being used as the second?</blockquote>
+      <p>Remember about indenting. Notice that all of the inputs to <code>put-image</code> line up with one another! Reformat the <code>dot</code> and <code>blank</code> definitions so they are also indented with the inputs lined up with one another.</p>
+      <hr>
+      <h4>Part B</h4>
+      <p>You’ve seen arithmetic functions nested before, such as <code>(+ 4 (+ 99 12))</code> and</p>
+      <img class="img-fluid" src="img01.png">
+      <p>The second input to <code>+</code> is a <i>number-producing expression</i>. In this case notice that <code>(+ 99 12)</code> produces the number <code>111</code>, which then becomes the second input to outer expression <code>(+ 4 ____)</code>.</p>
+      <p>You'll find that <code>put-image</code> can be nested the same way. Take a look at how the following Circle of Evaluation will draw a star on top of another image, which itself is a circle drawn on top of a square.</p>
+      <div class="circleevalsexp">
+        <div class="expression">
+          <span class="lParen">(</span>
+          <span class="operator">put-image</span>
+          <div class="expression">
+            <span class="lParen">(</span>
+            <span class="operator">star</span>
+            <span class="value wescheme-number">50</span><span class="value wescheme-string">"solid"</span><span class="value wescheme-string">"black"</span>
+            <span class="rParen">)</span>
+          </div>
+          <span class="value wescheme-number">75</span><span class="value wescheme-number">75</span>
+          <div class="expression">
+            <span class="lParen">(</span>
+            <span class="operator">put-image</span>
+            <div class="expression">
+              <span class="lParen">(</span>
+              <span class="operator">circle</span>
+              <span class="value wescheme-number">50</span><span class="value wescheme-string">"solid"</span><span class="value wescheme-string">"red"</span>
+              <span class="rParen">)</span>
+            </div>
+            <span class="value wescheme-number">75</span><span class="value wescheme-number">75</span>
+            <div class="expression">
+              <span class="lParen">(</span>
+              <span class="operator">square</span>
+              <span class="value wescheme-number">150</span><span class="value wescheme-string">"solid"</span><span class="value wescheme-string">"black"</span>
+              <span class="rParen">)</span>
+            </div>
+            <span class="rParen">)</span>
+          </div>
+          <span class="rParen">)</span>
+        </div>
+      </div>
+      <p>Convert this Circle of Evaluation into code, and evaluate it in WeScheme.</p>
+      <blockquote class="blockquote question">What image do you get back?</blockquote>
+      <p>Now modify the code so that another image is added on top.</p>
+      <hr>
+      <h4>Part C</h4>
+      <p>By combining simple shapes together, you can make more sophisticated images. Look at this picture of the flag of Somalia:</p>
+      <img class="img-fluid" src="somalia.png">
+      <blockquote class="blockquote question">What shapes will you need to make this flag?</blockquote>
+      <blockquote class="blockquote question">Which colors will you need?</blockquote>
+      <p>Write code to define a new value called <code>somalia</code>, which evaluates to the flag of Somalia.</p>
+      <p>Do the same thing for at least three of the following country flags.</p>
+      <table class="table table-bordered needs-margin-bottom">
+        <tr>
+          <th>Nigeria</th>
+          <th>France</th>
+          <th>Switzerland</th>
+          <th>United Arab Emirates</th>
+          <th>Panama</th>
+        </tr>
+        <tr>
+          <td><img src="nigeria.png"></td>
+          <td><img src="france.png"></td>
+          <td><img src="switzerland.png"></td>
+          <td><img src="uae.png"></td>
+          <td><img src="panama.png"></td>
+        </tr>
+      </table>
+      <p>Now make up your own personal flag, and define a new value <code>my-flag</code> which draws it. Your definition should have at least two <code>put-image</code> calls and at least three function calls that draw some shape (such as <code>star</code> or <code>square</code>, etc).
+      </p>
+      <hr>
+      <h4>Wrapping Up</h4>
+      <ul>
+        <li>Make sure you've answered all of the Lab Questions in the "Lab Answers" section of your code.</li>
+        <li>Make sure your code shows that you've done all the actions written above.</li>
+        <li>Make sure you've annotated your code. This means that most of your lines of code have comments so that someone else can understand it.</li>
+        <li>Submit your lab on github, using the <a href="#">instructions linked here</a>.</li>
+      </ul>
+
+    </div>
+    <script src="/assets/wcs-utilities.js"></script>
+  </body>
+
+</html>

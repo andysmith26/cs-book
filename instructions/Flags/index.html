@@ -13,29 +13,30 @@
   </head>
 
   <body>
-    <div class="header">
+    <div id="navbar"></div>
+    <!-- <div class="header">
       <div class='header-text'>
         <h1>WoodstockCS : CP Assignment : Flags</h1>
         <p>credit: <a href="http://www.bootstrapworld.org">Bootstrap Algebra Supplementary Lessons</a>
       </div>
-    </div>
+    </div> -->
 
-    <div class="content">
-
-      <h2>Goals</h2>
-      <ul>
-        <li>Practice using functions and variables.</li>
-        <li>Make computations dynamic in interesting ways.</li>
-        <li>Create a personalized flag.</li>
-      </ul>
-      <hr>
-      <h2>Instructions</h2>
-      <p>The lab questions are indented and numbered, like this:</p>
-      <blockquote class="blockquote">Do you like garlic bagels?</blockquote>
-      <p>Every time you see one of these, you should answer the question in the "Lab Answers" section in the comments at the top of your code, like this:</p>
-
-      Every time there is a numbered question below, answer the question next to the same number in the comments at the top of the code.</p>
-      <p>
+    <div class="container">
+      <div class="row">
+        <h2>Goals</h2>
+        <ul>
+          <li>Practice using functions and variables.</li>
+          <li>Make computations dynamic in interesting ways.</li>
+          <li>Create a personalized flag.</li>
+        </ul>
+        <hr>
+        <h2>Instructions</h2>
+        <p>Read the lab carefully and do all the actions that are written (ie: update code, run code, research X, ...). Those actions are important for successful completion of the lab, and the files you submit for your lab should show that you took these actions.
+        </p>
+        <p>Additionally, below you'll see some Lab Questions indented and numbered like this:</p>
+        <blockquote class="blockquote">Have you ever seen the rain?</blockquote>
+        <p>Every time you see one of these Lab Questions, write a numbered answer next in the "Lab Answers" section at the top of your code, like this:</p>
+        <img src="/assets/lab-answers.png">
         <hr>
         <h2>Part 1</h2>
 
@@ -49,11 +50,10 @@
         <p>To make the flag of Japan, we want to put a solid, red circle right in the middle of our flag. According to the definition for blank, a flag is 300 wide by 200 high. To put the dot at the center, we use the coordinates (150, 100). The function that lets us put one image on top of another is called put-image:</p>
         <pre>
 ; put-image: Image Number Number Image -> Image
-; places an image, at position (x, y), on an Image
-</pre>
+; places an image, at position (x, y), on an Image</pre>
         <blockquote class="blockquote">How many things are in the Domain of this function?</blockquote>
         <blockquote class="blockquote">What is the Range of this function?</blockquote>
-        <blockquote class="blockquote">In the definition for japan, what image is being used as the first argument?</blockquote>
+        <blockquote class="blockquote">In the definition for <code>japan</code>, what image is being used as the first argument?</blockquote>
         <blockquote class="blockquote">What is being used as the second?</blockquote>
         <p>Remember about indenting. Notice that all of the inputs to put-image line up with one another! Reformat the <code>dot</code> and <code>blank</code> definitions so they are also indented with the inputs lined up with one another.</p>
         <hr>
@@ -65,44 +65,44 @@
         <p>The second input to <code>+</code> is a <i>number-producing expression</i>. In this case notice that <code>(+ 99 12)</code> produces the number <code>111</code>, which then becomes the second input to outer expression <code>(+ 4 ____)</code>.</p>
         <p>You'll find that <code>put-image</code> can be nested the same way. Take a look at how the following Circle of Evaluation will draw a star on top of another image, which itself is a circle drawn on top of a square.</p>
         <div class="circleevalsexp">
-          <span class="expression">
-                    <span class="lParen">(</span>
-          <span class="operator">put-image </span>
-          <span class="expression">
-                      <span class="lParen">(</span>
-          <span class="operator">star</span>
-          <span class="value wescheme-number">50</span>
-          <span class="value wescheme-string">"solid"</span>
-          <span class="value wescheme-string">"black"</span>
-          <span class="rParen">)</span>
-          </span>
-          <span class="value wescheme-number">75</span>
-          <span class="value wescheme-number">75</span>
-          <span class="expression">
-                      <span class="lParen">(</span>
-          <span class="operator">put-image</span>
-          <span class="expression">
-                        <span class="lParen">(</span>
-          <span class="operator">circle</span>
-          <span class="value wescheme-number">50</span>
-          <span class="value wescheme-string">"solid"</span>
-          <span class="value wescheme-string">"red"</span>
-          <span class="rParen">)</span>
-          </span>
-          <span class="value wescheme-number">75</span>
-          <span class="value wescheme-number">75</span>
-          <span class="expression">
-                        <span class="lParen">(</span>
-          <span class="operator">square</span>
-          <span class="value wescheme-number">150</span>
-          <span class="value wescheme-string">"solid"</span>
-          <span class="value wescheme-string">"black"</span>
-          <span class="rParen">)</span>
-          </span>
-          <span class="rParen">)</span>
-          </span>
-          <span class="rParen">)</span>
-          </span>
+          <div class="expression">
+            <span class="lParen">(</span>
+            <span class="operator">put-image</span>
+            <div class="expression">
+              <span class="lParen">(</span>
+              <span class="operator">star</span>
+              <span class="value wescheme-number">50</span>
+              <span class="value wescheme-string">"solid"</span>
+              <span class="value wescheme-string">"black"</span>
+              <span class="rParen">)</span>
+            </div>
+            <span class="value wescheme-number">75</span>
+            <span class="value wescheme-number">75</span>
+            <div class="expression">
+              <span class="lParen">(</span>
+              <span class="operator">put-image</span>
+              <div class="expression">
+                <span class="lParen">(</span>
+                <span class="operator">circle</span>
+                <span class="value wescheme-number">50</span>
+                <span class="value wescheme-string">"solid"</span>
+                <span class="value wescheme-string">"red"</span>
+                <span class="rParen">)</span>
+              </div>
+              <span class="value wescheme-number">75</span>
+              <span class="value wescheme-number">75</span>
+              <div class="expression">
+                <span class="lParen">(</span>
+                <span class="operator">square</span>
+                <span class="value wescheme-number">150</span>
+                <span class="value wescheme-string">"solid"</span>
+                <span class="value wescheme-string">"black"</span>
+                <span class="rParen">)</span>
+              </div>
+              <span class="rParen">)</span>
+            </div>
+            <span class="rParen">)</span>
+          </div>
         </div>
         <p>Convert this Circle of Evaluation into code, and evaluate it in WeScheme.</p>
         <blockquote class="blockquote">What image do you get back?</blockquote>
@@ -133,23 +133,24 @@
         </table>
         <p>Now make up your own personal flag, and define a new value which draws it. Your definition should have at least two <code>put-image</code> calls and at least three function calls that draw some shape (such as <code>star</code> or <code>square</code>, etc).
         </p>
+      </div>
+
+      <div class='checkoff'>
+        <h4>Submit Checklist</h4>
+        <ul>
+          <li>Make sure you've answered all of the Lab Questions in the "Lab Answers" section of your code.</li>
+          <li>Make sure your code shows that you've done all the actions written in the lab.</li>
+          <li>Make sure you've annotated your code. This means that most of your lines of code have comments so that someone else can understand it.</li>
+          <li>Submit your lab on github, using the <a href="#">instructions linked here</a>.</li>
+        </ul>
+      </div>
+
+      <script src="/assets/wcs-utilities.js"></script>
+      <script>
+        autoNumberBlockquotes();
+      </script>
     </div>
 
-    <div class='checkoff'>
-      <h4>Submit Checklist</h4>
-      <ul>
-        <li>Make sure you've answered all of the lab questions (indented and numbered above) in the "Lab Answers" section of the comments at the top of your code.</li>
-        <li>Make sure you've done all the code actions (indented and lettered above) in your code.</li>
-        <li>Make sure your code is annotated. This means that most of your lines of code have comments so that someone else can understand it.</li>
-        <li>Submit your lab on github, using the <a href="#">instructions linked here</a>.</li>
-      </ul>
-    </div>
-
-
-    <script src="/assets/wcs-utilities.js"></script>
-    <script>
-      autoNumberBlockquotes();
-    </script>
   </body>
 
 </html>

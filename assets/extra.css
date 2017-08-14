@@ -14,9 +14,31 @@ canvas {
     width: 300px;
 }
 
+.img-fluid {
+  margin-left:  20px;
+}
+
 .alert-custom-1 {
   background-color: #e6e6e6 !important;
   color: #666 !important;
+}
+
+.question {
+  font-size: 1rem;
+  color: #257021;
+  font-style: italic;
+}
+
+pre {
+  background-color: #efe;
+  color: #888;
+  border-top: 1px dashed #888;
+  border-bottom: 1px dashed #888;
+  display: block;
+  padding: 10px;
+}
+.needs-margin-bottom {
+    margin-bottom: 1rem !important;
 }
 
 /* https://stackoverflow.com/questions/42896820/bootstrap-4-modal-width-increase */
@@ -70,8 +92,16 @@ nav[data-toggle='toc'] {
  */
 
 
-div.student div.circleevalsexp, div.codesexp{display: inline-block;}
-/*div.circleevalsexp{float: right;}*/
+.circleevalsexp {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-family: "Courier", Monaco, monospace;
+    margin-left:  20px;
+}
+
+img {
+  margin-bottom: 1rem;
+}
 
 div.circleevalsexp .expression{
 	display:        inline-block;
@@ -82,6 +112,7 @@ div.circleevalsexp .expression{
   background:     white;
   border-radius:  20px;
   text-align:     center;
+  vertical-align: top;
 	-moz-border-radius: 20px;
 	-webkit-border-radius:20px;
 }
@@ -97,10 +128,15 @@ div.circleevalsexp .operator{
   height:         20px;
   text-align:     center;
   width:          100%;
+  line-height:    10px;
+  font-weight:    bold;
   border-bottom:  solid 2px black;
   border-radius:  15px 15px 0px 0px; /* top left, top right, bottom right, bottom left */
 }
 
-div.circleevalsexp .lParen, div.circleevalsexp .rParen{display: none;}*/
+div.circleevalsexp .lParen, div.circleevalsexp .rParen{
+  display: none;
+}
+
 
 /* end bootstrap */
