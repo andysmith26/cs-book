@@ -14,6 +14,21 @@ canvas {
     width: 300px;
 }
 
+.fixed-width-card {
+  width: 300px;
+}
+
+/*https://v4-alpha.getbootstrap.com/layout/grid/*/
+.small-gutters {
+  margin-right: 5;
+  margin-left: 5;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 5;
+    padding-left: 5;
+  }
+}
 .img-fluid {
   margin-left:  20px;
 }

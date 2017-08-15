@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Woodstock CS</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-  <script src="assets/external/processing.min.js"></script>
-  <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
-  <script src="assets/wcs-utilities.js"></script>
-  <script>
-  console.log("hello?");
-  $.getJSON( "assets/data/test.json", function( data ) {
-    var items = [];
-    console.log("reading");
-    $.each( data, function( key, val ) {
-      items.push( "<li id='" + key + "'>" + val + "</li>" );
-      console.log(val);
-    });
-    console.log("goodbye");
-    $( "<ul/>", {
-      "class": "my-new-list",
-      html: items.join( "" )
-    }).appendTo( "body" );
-  });
-  </script>
-</head>
 
-<body>
-<div id="navbar"></div>
+  <head>
+    <title>Woodstock CS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/external/processing.min.js"></script>
+    <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
+    <script src="assets/wcs-utilities.js"></script>
+  </head>
 
-<div class="container">
-  <div class="alert alert-success" role="alert">
-  <strong>Looking for 2016-17 course pages?</strong> Click one of these: <a href="http://woodstockcs.github.io/cp">B Block CP2</a>, <a href="http://woodstockcs.github.io/cp2">H Block CP</a>
-</div>
-  <div class="card-deck">
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="assets/placeholder-235x200.jpg" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">Programming</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+  <body>
+    <div id="navbar"></div>
+
+    <div class="container">
+      <!-- <div class="alert alert-success" role="alert">
+        <strong>Looking for 2016-17 course pages?</strong> Click one of these: <a href="http://woodstockcs.github.io/cp">B Block CP2</a>, <a href="http://woodstockcs.github.io/cp2">H Block CP</a>
+      </div> -->
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card fixed-width-card mb-3">
+            <canvas data-processing-sources="assets/sketches/MovingSquares_Smith/MovingSquares_Smith.pde"></canvas>
+            <div class="card-block">
+              <h4 class="card-title">Programming</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="block-h.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block G</strong></a>
+              <a href="block-g.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block H</strong></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card fixed-width-card mb-3">
+            <canvas data-processing-sources="assets/sketches/ShapeOfFractions/ShapeOfFractions.pde"></canvas>
+            <div class="card-block">
+              <h4 class="card-title">Computer Science</h4>
+              <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <a href="block-e.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block E</strong></a></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card fixed-width-card mb-3">
+            <canvas data-processing-sources="assets/sketches/WoodstockWave_JD/WoodstockWave_JD.pde"></canvas>
+            <div class="card-block">
+              <h4 class="card-title">Principles</h4>
+              <h6 class="card-subtitle mb-2 text-muted">AP Computer Science Principles</h6>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <a href="block-x.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block X</strong></a></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="assets/placeholder-235x200.jpg" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">Principles</h4>
-        <h6 class="card-subtitle mb-2 text-muted">AP Computer Science Principles</h6>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="assets/placeholder-235x200.jpg" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">AP Comp Sci</h4>
-        <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <a href="apcs.html" class="btn btn-primary">Class Page</a>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
+    <!-- /.container -->
 
-</div><!-- /.container -->
+  </body>
 
-
-</body>
 </html>
