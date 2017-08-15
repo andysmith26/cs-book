@@ -1,96 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Block E ARCHIVE</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-  <script src="assets/external/processing.min.js"></script>
-  <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
-  <script src="assets/wcs-utilities.js"></script>
-  <script>
-  console.log("hello?");
-  $.getJSON("assets/data/blocke.json", function(data) {
-    var classes = data.classes;
-    var items = [];
-    console.log("reading");
-    classes.reverse();
-    $.each(classes, function(num, the_class) {
-      if (the_class.date.substring(0, 5) == "READY") {
-        console.log("color one");
-      } else {
-        console.log("color differently");
-      }
-      items.push("<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>");
-      items.push("<ul>")
-      $.each(the_class.agenda, function(num, the_item) {
-        items.push("<li>" + the_item + "</li>")
-      });
-      items.push("</ul>")
-      items.push("<hr>")
-      });
 
-    console.log("goodbye");
-    $("#agenda-list").append(items.join(""));
-  });
-  </script>
+  <head>
+    <title>Block E ARCHIVE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/external/processing.min.js"></script>
+    <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
-  <div id="navbar"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <h4 class="card-header">Previous Resources</h4>
-          <div class="card-block">
-            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
-            <ul>
-              <li>Standards Cover Sheet</li>
-              <li>Practice Assignments</li>
-              <li>Quiz</li>
-            </ul>
-            <hr>
-            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
-            <ul>
-              <li>Standards Cover Sheet</li>
-              <li>Practice Assignments</li>
-              <li>Quiz</li>
-            </ul>
-            <hr>
-            <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
-            <ul>
-              <li>Standards Cover Sheet</li>
-              <li>Practice Assignments</li>
-              <li>Quiz</li>
-            </ul>
-            <hr>
-            <small class="text-muted font-italic"><a href="resources.html" class="card-link">more resources ...</a></small>
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <h4 class="card-header">Previous Resources</h4>
+            <div class="card-block">
+              <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+              <ul>
+                <li>Standards Cover Sheet</li>
+                <li>Practice Assignments</li>
+                <li>Quiz</li>
+              </ul>
+              <hr>
+              <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+              <ul>
+                <li>Standards Cover Sheet</li>
+                <li>Practice Assignments</li>
+                <li>Quiz</li>
+              </ul>
+              <hr>
+              <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
+              <ul>
+                <li>Standards Cover Sheet</li>
+                <li>Practice Assignments</li>
+                <li>Quiz</li>
+              </ul>
+              <hr>
+              <small class="text-muted font-italic"><a href="resources.html" class="card-link">more resources ...</a></small>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <h4 class="card-header">Previous Agendas</h4>
-          <div class="card-block">
-            <div id="agenda-list"></div>
-            <div class='w-100 text-center'><img height='50' src='assets/spidey-dancing.gif'></div>
+        <div class="col-sm-6">
+          <div class="card">
+            <h4 class="card-header">Previous Agendas</h4>
+            <div class="card-block">
+              <div id="agenda-list"></div>
+              <div class='w-100 text-center'><img height='50' src='assets/spidey-dancing.gif'></div>
+            </div>
+          </div>
+          <br>
+          <br>
         </div>
       </div>
-      <br>
-      <br>
-    </div>
-  </div>
-  <!-- /.container -->
-
-
-</body>
+      <!-- /.container -->
+      <script src="assets/wcs-utilities.js"></script>
+      <script>
+        populateArchiveData();
+      </script>
+  </body>
 
 </html>

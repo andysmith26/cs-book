@@ -14,29 +14,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/external/processing.min.js"></script>
     <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
-
-    <script>
-      console.log("hello?");
-      $.getJSON("assets/data/blocke.json", function(data) {
-        var classes = data.classes;
-        var items = [];
-        console.log("reading");
-        classes.reverse();
-        $.each(classes, function(num, the_class) {
-          console.log(num + ": " + the_class.date);
-          if (num == 0) { //if (the_class.date.substring(0, 5) == "READY") {
-            items.push("<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>");
-            items.push("<ul>")
-            $.each(the_class.agenda, function(num, the_item) {
-              items.push("<li class='card-text'>" + the_item + "</li>")
-            });
-            items.push("</ul>")
-          }
-        });
-        console.log("goodbye");
-        $("#the-class").append(items.join(""));
-      });
-    </script>
   </head>
 
   <body>
@@ -132,6 +109,9 @@
     </div>
     <!-- /.container -->
     <script src="assets/wcs-utilities.js"></script>
+    <script>
+      populateAgendaData();
+    </script>
   </body>
 
 </html>

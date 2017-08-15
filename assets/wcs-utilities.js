@@ -1,20 +1,71 @@
 $.get( "/navbar.html", function( data ) {
   $( "#navbar" ).replaceWith( data );
 } );
-autoNumberQuestions();
-$.getJSON( "/assets/data/test.json", function( data ) {
-  var items = [];
-  console.log( "reading" );
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
-    console.log( val );
+
+function populateOtherData() {
+  $.getJSON( "/assets/data/test.json", function( data ) {
+    var items = [];
+    console.log( "reading" );
+    $.each( data, function( key, val ) {
+      items.push( "<li id='" + key + "'>" + val + "</li>" );
+      console.log( val );
+    } );
+    console.log( "goodbye" );
+    $( "<ul/>", {
+      "class": "my-new-list",
+      html: items.join( "" )
+    } ).appendTo( "body" );
   } );
-  console.log( "goodbye" );
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  } ).appendTo( "body" );
-} );
+}
+
+function populateAgendaData() {
+  console.log( "hello?" );
+  $.getJSON( "assets/data/blocke.json", function( data ) {
+    var classes = data.classes;
+    var items = [];
+    console.log( "reading" );
+    classes.reverse();
+    $.each( classes, function( num, the_class ) {
+      console.log( num + ": " + the_class.date );
+      if ( num == 0 ) { //if (the_class.date.substring(0, 5) == "READY") {
+        items.push( "<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>" );
+        items.push( "<ul>" )
+        $.each( the_class.agenda, function( num, the_item ) {
+          items.push( "<li class='card-text'>" + the_item + "</li>" )
+        } );
+        items.push( "</ul>" )
+      }
+    } );
+    console.log( "goodbye" );
+    $( "#the-class" ).append( items.join( "" ) );
+  } );
+}
+
+function populateArchiveData() {
+  console.log( "hello?" );
+  $.getJSON( "assets/data/blocke.json", function( data ) {
+    var classes = data.classes;
+    var items = [];
+    console.log( "reading" );
+    classes.reverse();
+    $.each( classes, function( num, the_class ) {
+      if ( the_class.date.substring( 0, 5 ) == "READY" ) {
+        console.log( "color one" );
+      } else {
+        console.log( "color differently" );
+      }
+      items.push( "<h6 class='card-subtitle mb-2 text-muted'>" + the_class.date + "</h6>" );
+      items.push( "<ul>" )
+      $.each( the_class.agenda, function( num, the_item ) {
+        items.push( "<li>" + the_item + "</li>" )
+      } );
+      items.push( "</ul>" )
+      items.push( "<hr>" )
+    } );
+    console.log( "goodbye" );
+    $( "#agenda-list" ).append( items.join( "" ) );
+  } );
+}
 $( '#slidesModal' ).on( 'show.bs.modal', function( event ) {
   var button = $( event.relatedTarget ) // Button that triggered the modal
   var displayUrl = "https://docs.google.com/a/wcsu.net/presentation/d/" + button.data( 'slides-id' ) + "/embed?start=false&loop=true&delayms=10000"; // Extract info from data-* attributes
