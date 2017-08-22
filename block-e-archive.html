@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Block E ARCHIVE</title>
+    <title>Archive: Block E</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -26,18 +26,20 @@
         </div>
       </div>
       <br>
-      <div id="agendas" cclass="row">
+      <div id="agendas" class="row">
         <div class="col-sm-12">
           <div class="card">
-            <h4 class="card-header">Previous Agendas</h4>
             <div class="card-block">
+              <h4 class="card-title">Previous Agendas</h4>
               <div id="archive-agenda"></div>
-              <!-- <div class='w-100 text-center'><img height='50' src='/assets/spidey-dancing.gif'></div> -->
             </div>
           </div>
         </div>
       </div>
       <br>
+      <br>
+      <br>
+
       <div class="row">
         <div class="col-sm-12">
           <a href="block-e.html" role="button" class="btn btn-warning btn-lg btn-block">click here to return to current class page</a>
@@ -47,19 +49,22 @@
       <div id="homework" class="row">
         <div class="col-sm-12">
           <div class="card">
-            <h4 class="card-header">Previous Homework</h4>
-            <div class="card-block">
-              <div id="archive-agenda"></div>
-              <!-- <div class='w-100 text-center'><img height='50' src='/assets/spidey-dancing.gif'></div> -->
+
+            <div class='card-block'>
+              <h4 class="card-title">Previous Homework</h4>
+              <div id="archive-homework"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.container -->
+    <br>
+    <br>
+    <br>
     <script src="/assets/wcs-utilities.js"></script>
     <script>
-      populateArchiveData();
+      populateArchiveAgendaData();
+      populateArchiveHomeworkData();
     </script>
   </body>
 

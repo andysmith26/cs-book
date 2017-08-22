@@ -2,14 +2,14 @@
     "homeworks": [
         {
             "displayEndDate": "Wed Sept 06", 
-            "displayStartDate": "Fri Sept 01", 
+            "displayStartDate": "Wed Aug 30", 
             "lines": [
                 "Set up your computer. (<a href='/instructions/computer-setup-csa'>instructions</a>)", 
                 "Submit the First Day Survey. (<a href='https://docs.google.com/forms/d/e/1FAIpQLSfsKhDzhB7vfdPhBgdkMGppj1y5A5JO00PUJnRbzdC2xEtmkQ/viewform?usp=sf_link'>link</a>)", 
                 "Bring your computer to class!"
             ], 
             "sortableEndDate": "2017-09-06 Wed", 
-            "sortableStartDate": "2017-09-01 Fri"
+            "sortableStartDate": "2017-08-30 Wed"
         }, 
         {
             "displayEndDate": "Fri Sept 08", 
@@ -35,7 +35,7 @@
             "displayEndDate": "Wed Sept 13", 
             "displayStartDate": "Wed Sept 06", 
             "lines": [
-                "<b>Submit LegoAd</b>."
+                "<mark>Submit LegoAd.</mark>"
             ], 
             "sortableEndDate": "2017-09-13 Wed", 
             "sortableStartDate": "2017-09-06 Wed"

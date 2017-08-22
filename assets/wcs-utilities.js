@@ -1,6 +1,21 @@
+// var dateOverride = '2017-08-30 EDT';
+var dateOverride = '';
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
+$("#alert").hide();
+
+function getTodaysDate() {
+  var theDate;
+  if (dateOverride.length > 0) {
+    theDate = new Date(dateOverride);
+    $("body").css("background-color", "Red");
+  } else {
+    theDate = new Date();
+  }
+  console.log("The date is", theDate);
+  return theDate;
+}
 
 function populateOtherData() {
   $.getJSON("/assets/data/test.json", function (data) {
@@ -36,31 +51,30 @@ function populateAgendaData() {
     // find the earliest date not before today
     var displayClass;
     $.each(classes, function (num, the_class) {
-      var todaysDate = new Date();
+      var todaysDate = getTodaysDate();
       var foundDate = parseDate(the_class.sortableDate.substring(0, 10));
       console.log("today:    " + todaysDate.toDateString())
       console.log("the date: " + foundDate.toDateString());
-      if (todaysDate.setHours(0, 0, 0, 0) <= foundDate.setHours(0, 0, 0, 0)) {
-        console.log("  ==> future or today");
+      if (todaysDate.setHours(0, 0, 0, 0) == foundDate.setHours(0, 0, 0, 0)) {
+        console.log("  ==> today");
         displayClass = the_class;
       } else {
-        console.log("  ==> past");
-        return false;
+        console.log("  ==> future or past");
       }
     });
     // convert the agenda info into html
+    var items = [];
     if (displayClass) {
-      var items = [];
       items.push("<h6 class='card-subtitle mb-2 text-muted'>" + displayClass.displayDate + "</h6>");
       items.push("<ul>")
       $.each(displayClass.agenda, function (num, the_item) {
         items.push("<li class='card-text'>" + the_item + "</li>")
       });
       items.push("</ul>")
-      $("#the-class").append(items.join(""));
     } else {
-      $("#agenda-card").hide();
+      items.push("<em>no class today</em>")
     }
+    $("#the-class").append(items.join(""));
   });
 }
 
@@ -75,7 +89,7 @@ function populateHomeworkData() {
     // find the active homeworks
     var items = [];
     $.each(homeworks, function (num, the_homework) {
-      var todaysDate = new Date('2017-09-03');
+      var todaysDate = getTodaysDate();
       var foundStartDate = parseDate(the_homework.sortableStartDate.substring(0, 10));
       var foundEndDate = parseDate(the_homework.sortableEndDate.substring(0, 10));
       console.log("today:    " + todaysDate.toDateString())
@@ -83,12 +97,21 @@ function populateHomeworkData() {
       if (todaysDate.setHours(0, 0, 0, 0) >= foundStartDate.setHours(0, 0, 0, 0) &&
         todaysDate.setHours(0, 0, 0, 0) <= foundEndDate.setHours(0, 0, 0, 0)) {
         console.log("  ==> active homework");
-        items.push("<h6 class='card-subtitle mb-2 text-muted'>due " + the_homework.displayEndDate + "</h6>");
-        items.push("<ul>")
-        $.each(the_homework.lines, function (num, the_line) {
-          items.push("<li class='card-text'>" + the_line + "</li>")
-        });
-        items.push("</ul>")
+        if (todaysDate.setHours(0, 0, 0, 0) == foundEndDate.setHours(0, 0, 0, 0)) {
+          items.push("<h6 class='card-subtitle mb-2 text-danger'>due today</h6>");
+          items.push("<ul>")
+          $.each(the_homework.lines, function (num, the_line) {
+            items.push("<li class='card-text'>" + the_line + "</li>")
+          });
+          items.push("</ul>")
+        } else {
+          items.push("<h6 class='card-subtitle mb-2 text-muted'>due " + the_homework.displayEndDate + "</h6>");
+          items.push("<ul>")
+          $.each(the_homework.lines, function (num, the_line) {
+            items.push("<li class='card-text'>" + the_line + "</li>")
+          });
+          items.push("</ul>")
+        }
       } else {
         console.log("  ==> inactive homework");
       }
@@ -101,7 +124,7 @@ function populateHomeworkData() {
   });
 }
 
-function populateArchiveData() {
+function populateArchiveAgendaData() {
   console.log("populating archive agenda");
   $.getJSON("/scripts/planning-csa-agenda.json", function (data) {
     // sort the classes by date *descending*
@@ -112,7 +135,7 @@ function populateArchiveData() {
     // collect all the classes before today
     var items = [];
     $.each(classes, function (num, the_class) {
-      var todaysDate = new Date();
+      var todaysDate = getTodaysDate();
       var foundDate = parseDate(the_class.sortableDate.substring(0, 10));
       console.log("today:    " + todaysDate.toDateString())
       console.log("the date: " + foundDate.toDateString());
@@ -124,13 +147,47 @@ function populateArchiveData() {
           items.push("<li>" + the_item + "</li>")
         });
         items.push("</ul>")
-        items.push("<hr>")
       }
     });
     if (items.length == 0) {
-      items.push("<center><em>no previous agendas</em></center><br>");
+      items.push("<em>no previous agendas</em>");
     }
     $("#archive-agenda").append(items.join(""));
+  });
+}
+
+function populateArchiveHomeworkData() {
+  console.log("populating archive homework");
+  $.getJSON("/scripts/planning-csa-homeworks.json", function (data) {
+    // sort the homeworks by due date ascending
+    var homeworks = data.homeworks;
+    homeworks.sort(function (a, b) {
+      return b.sortableEndDate.localeCompare(a.sortableEndDate)
+    })
+    // find the active homeworks
+    var items = [];
+    $.each(homeworks, function (num, the_homework) {
+      var todaysDate = getTodaysDate();
+      var foundStartDate = parseDate(the_homework.sortableStartDate.substring(0, 10));
+      var foundEndDate = parseDate(the_homework.sortableEndDate.substring(0, 10));
+      console.log("today:    " + todaysDate.toDateString())
+      console.log("the end date: " + foundEndDate.toDateString());
+      if (todaysDate.setHours(0, 0, 0, 0) > foundEndDate.setHours(0, 0, 0, 0)) {
+        console.log("  ==> past homework");
+        items.push("<h6 class='card-subtitle mb-2 text-muted'>due " + the_homework.displayEndDate + "</h6>");
+        items.push("<ul>");
+        $.each(the_homework.lines, function (num, the_line) {
+          items.push("<li class='card-text'>" + the_line + "</li>")
+        });
+        items.push("</ul>");
+      } else {
+        console.log("  ==> current or future homework");
+      }
+    });
+    if (items.length < 1) {
+      items.push("<em>no previous homework</em>")
+    }
+    $("#archive-homework").append(items.join(""));
   });
 }
 
@@ -145,13 +202,13 @@ function populateAheadData() {
     // display all items after today
     var items = [];
     $.each(aheads, function (num, the_ahead) {
-      var todaysDate = new Date();
+      var todaysDate = getTodaysDate();
       var foundDate = parseDate(the_ahead.sortableDate.substring(0, 10));
       console.log("today:    " + todaysDate.toDateString())
       console.log("the date: " + foundDate.toDateString());
-      if (todaysDate.setHours(0, 0, 0, 0) < foundDate.setHours(0, 0, 0, 0)) {
+      if (todaysDate.setHours(0, 0, 0, 0) <= foundDate.setHours(0, 0, 0, 0)) {
         console.log("found an item looking ahead. adding it");
-        items.push("<tr><td class='col-ahead-date'><strong>" + the_ahead.displayDate + "</strong>, " + the_ahead.lines[0] + "</td>");
+        items.push("<tr><td class='col-ahead-date'>" + the_ahead.displayDate + ", " + the_ahead.lines[0] + "</td>");
         items.push("<td><em>" + the_ahead.lines[1] + "</em></td>")
         items.push("</tr>")
       }
