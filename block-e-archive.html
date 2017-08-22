@@ -12,8 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="assets/external/processing.min.js"></script>
-    <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
+    <script src="/assets/external/processing.min.js"></script>
+    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
 
   </head>
 
@@ -21,52 +21,46 @@
     <div id="navbar"></div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <h4 class="card-header">Previous Resources</h4>
-            <div class="card-block">
-              <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
-              <ul>
-                <li>Standards Cover Sheet</li>
-                <li>Practice Assignments</li>
-                <li>Quiz</li>
-              </ul>
-              <hr>
-              <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
-              <ul>
-                <li>Standards Cover Sheet</li>
-                <li>Practice Assignments</li>
-                <li>Quiz</li>
-              </ul>
-              <hr>
-              <h6 class="card-subtitle mb-2 text-muted">Drawing Pictures</h6>
-              <ul>
-                <li>Standards Cover Sheet</li>
-                <li>Practice Assignments</li>
-                <li>Quiz</li>
-              </ul>
-              <hr>
-              <small class="text-muted font-italic"><a href="resources.html" class="card-link">more resources ...</a></small>
-            </div>
-          </div>
+        <div class="col-sm-12">
+          <a href="block-e.html" role="button" class="btn btn-warning btn-lg btn-block">click here to return to current class page</a>
         </div>
-        <div class="col-sm-6">
+      </div>
+      <br>
+      <div id="agendas" cclass="row">
+        <div class="col-sm-12">
           <div class="card">
             <h4 class="card-header">Previous Agendas</h4>
             <div class="card-block">
-              <div id="agenda-list"></div>
-              <div class='w-100 text-center'><img height='50' src='assets/spidey-dancing.gif'></div>
+              <div id="archive-agenda"></div>
+              <!-- <div class='w-100 text-center'><img height='50' src='/assets/spidey-dancing.gif'></div> -->
             </div>
           </div>
-          <br>
-          <br>
         </div>
       </div>
-      <!-- /.container -->
-      <script src="assets/wcs-utilities.js"></script>
-      <script>
-        populateArchiveData();
-      </script>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <a href="block-e.html" role="button" class="btn btn-warning btn-lg btn-block">click here to return to current class page</a>
+        </div>
+      </div>
+      <br>
+      <div id="homework" class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <h4 class="card-header">Previous Homework</h4>
+            <div class="card-block">
+              <div id="archive-agenda"></div>
+              <!-- <div class='w-100 text-center'><img height='50' src='/assets/spidey-dancing.gif'></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+    <script src="/assets/wcs-utilities.js"></script>
+    <script>
+      populateArchiveData();
+    </script>
   </body>
 
 </html>

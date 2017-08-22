@@ -1,0 +1,44 @@
+{
+    "homeworks": [
+        {
+            "displayEndDate": "Wed Sept 06", 
+            "displayStartDate": "Fri Sept 01", 
+            "lines": [
+                "Set up your computer. (<a href='/instructions/computer-setup-csa'>instructions</a>)", 
+                "Submit the First Day Survey. (<a href='https://docs.google.com/forms/d/e/1FAIpQLSfsKhDzhB7vfdPhBgdkMGppj1y5A5JO00PUJnRbzdC2xEtmkQ/viewform?usp=sf_link'>link</a>)", 
+                "Bring your computer to class!"
+            ], 
+            "sortableEndDate": "2017-09-06 Wed", 
+            "sortableStartDate": "2017-09-01 Fri"
+        }, 
+        {
+            "displayEndDate": "Fri Sept 08", 
+            "displayStartDate": "Wed Sept 06", 
+            "lines": [
+                "Work for 30 minutes on LegoAd.", 
+                "Be prepared to report one stuck point (solved or not) with your group."
+            ], 
+            "sortableEndDate": "2017-09-08 Fri", 
+            "sortableStartDate": "2017-09-06 Wed"
+        }, 
+        {
+            "displayEndDate": "Mon Sept 11", 
+            "displayStartDate": "Fri Sept 08", 
+            "lines": [
+                "Work for 30 minutes on LegoAd.", 
+                "Post one question or answer or tip about Lego on Piazza."
+            ], 
+            "sortableEndDate": "2017-09-11 Mon", 
+            "sortableStartDate": "2017-09-08 Fri"
+        }, 
+        {
+            "displayEndDate": "Wed Sept 13", 
+            "displayStartDate": "Wed Sept 06", 
+            "lines": [
+                "<b>Submit LegoAd</b>."
+            ], 
+            "sortableEndDate": "2017-09-13 Wed", 
+            "sortableStartDate": "2017-09-06 Wed"
+        }
+    ]
+}

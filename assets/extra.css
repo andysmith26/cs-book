@@ -7,6 +7,21 @@ body {
   text-align: center;
 }
 
+.table-condensed{
+  font-size: 10px;
+}
+
+.col-ahead-date {
+  width: 250px;
+}
+.card-borderless {
+  border: 0;
+  box-shadow: none;
+}
+
+.card {
+  margin-bottom: 1rem !important;
+}
 canvas {
     padding: 0;
     margin: auto;

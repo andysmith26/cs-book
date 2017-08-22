@@ -20,7 +20,7 @@
     <div id="navbar"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <div class="card card-outline-success mb-3">
             <div class="card-header">
               <h3 class="card-title">Flags</h3>
@@ -41,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-10">
 
           <h2 class="display-4">Goals</h2>
           <ul>
@@ -67,11 +67,32 @@
               </div>
             </div>
 
-            <p>Start a new program in <a href="http://www.wescheme.org/console" target="_blank">WeScheme</a> and paste the code you just copied into the definitions section.</p>
+            <pre>
+  In this assignment we'll practice using OOP (Object Oriented Programming) techniques. We'll create a class to model what a single die has and does, and then we will create at least 9 instances of that class arranged in a grid shape. Note that for full credit your program must display the total of all the dice and draw the dice with dots or similar marks. Also, you must customize the title, header and footer of index.html. You may find the PowerPoint sides 177 to 223 of the apjava1.pptx presentation helpful, as well as the Nested Loops, Practice with classes and the Math.random worksheets.
+
+Start by forking this repository. Open the pde file and you should see the following code:
+
+Complete the draw() function first. For now it should:
+- clear the screen
+- declare and initialize one instance of the Die class
+- call the show() function for that Die (even though we won't see anything yet)
+
+Now we'll work on the Die class. Let's do this incrementally. First let's display the outline of the die to the screen. Notice that the constructor takes arguments. We'll use those arguments to position the individual die cubes. Don't worry about the dots at first, just get the shape of the dice on the screen for now. Look up the five-parameter version of the rect function.
+[note: this would be a good team exercise -- public record, how would you do this?]
+
+Once you like the shape of your die, go back to show() and add some ifs to check how many dots you need to put on the die. Start by "forcing" the die to always roll a one. Check to see that you can get one dot where it is supposed to be, and move on to two, and so on. If you are feeling clever, you can combine some of the ifs and avoid duplicate code.
+Now, use nested loops to display at least nine instances of the Die class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice. Your show() function will need to position the dots by adding some small amount to the x and y coordinates of the rect() of the Die. TODO: OR ... translate function handles it. (but don't forget to untranslate!)
+Finally, add code to the draw() function so that your program displays the total for the roll to the screen.
+Have fun and be creative. Your dice program doesn't have to look or work like any other.
+
+for 4-distinguished:
+For a challenge, you might see how many legible dice you can fit on the screen. You can also keep track of the rolls. You could display the average roll, or maybe a graph that shows how often each of the numbers from 2 to 12 have come up. This is useful in some dice games like Settlers of Catan. Check the links below for examples of other students work
+</pre>
+            <p>Start a new program in <a href="http://www.wescheme.org/console" target="_blank">WeScheme</a> and paste the code you just copied into the definitions area.</p>
             <p>Follow the instructions below, making sure to do all the actions that are written (ie: update code, run code, research X, ...). These actions are important for successful completion of the lab, and the files you submit for your lab should show that you did these things.</p>
             <p>Additionally, below you'll see some Lab Questions indented and numbered like this:</p>
             <blockquote class="blockquote question">Have you ever seen the rain?</blockquote>
-            <p>Every time you see one of these Lab Questions, write a numbered answer next in the "Lab Answers" section at the top of your code, like this:</p>
+            <p>Every time you see one of these Lab Questions, write a numbered answer next in the "LAB ANSWERS" section at the top of your code, like this:</p>
             <pre class="code">
 #|
 ...
@@ -115,8 +136,8 @@ LAB ANSWERS
             <blockquote class="blockquote question">What shapes will you need to make this flag?</blockquote>
             <blockquote class="blockquote question">Which colors will you need?</blockquote>
             <p>Write code to define a new value called <code>somalia</code>, which evaluates to the flag of Somalia.</p>
-            <p>Right now if you click the Run button, the definitions are loaded but you still need to type the variable name in the Interactions section to actually see the value of the variable.</p>
-            <p>Let's make it a little easier by evaluating the variable in the program code itself. Add the following code block at the bottom of your code in the Definitions section.</p>
+            <p>Right now if you click the Run button, the definitions are loaded but you still need to type the variable name in the Interactions Area to actually see the value of the variable.</p>
+            <p>Let's make it a little easier by evaluating the variable in the program code itself. Add the following code block at the bottom of your code in the Definitions Area.</p>
             <pre class="activity">
 ; print a nice arrangement of flags
 ; replace the blanks with flag names as you create them
@@ -161,6 +182,8 @@ LAB ANSWERS
 
         </div>
       </div>
+      <br>
+      <br>
     </div>
     <script src="/assets/wcs-utilities.js"></script>
     <script>

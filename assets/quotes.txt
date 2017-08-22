@@ -1,0 +1,5 @@
+"Programs must be written for people to read, and only incidentally for machines to execute.","from the Preface of <a href='https://mitpress.mit.edu/sicp/'>Structure and Interpretation of Computer Programs</a>, by Hal Abelson, Jerry Sussman, and Julie Sussman"
+"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.","Martin Golding"
+"In theory, theory and practice are the same. In practice, they’re not.","Yoggi Berra"
+"Talk is cheap. Show me the code.","<a href='https://www.ted.com/talks/linus_torvalds_the_mind_behind_linux'>Linus Torvalds</a>, creator of Git and Linux"
+"Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the universe trying to build bigger and better idiots. So far, the universe is winning.","<a href='https://en.wikiquote.org/wiki/Rick_Cook'>Rick Cook</a>, author"
