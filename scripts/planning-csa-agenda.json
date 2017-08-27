@@ -2,16 +2,16 @@
     "classes": [
         {
             "agenda": [
-                "what this class is, in an elevator pitch", 
-                "make name cards"
+                "quick overview of the class"
             ], 
             "displayDate": "Wed Aug 30", 
             "sortableDate": "2017-08-30 Wed", 
-            "status": "TIMED"
+            "status": "PREPPED"
         }, 
         {
             "agenda": [
-                "warmup: Would-You-Rather, Blackjack edition", 
+                "warmup: WYR Blackjack 1", 
+                "make name cards", 
                 "group: 100 Numbers, and discuss class norms", 
                 "group: Polar Bears Around an Ice Hole, and practice class norms", 
                 "discuss grading and outline of the year"

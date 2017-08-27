@@ -1,9 +1,17 @@
-// var dateOverride = '2017-08-30 EDT';
-var dateOverride = '';
+var dateOverride = '2017-08-30 EDT';
+// var dateOverride = '';
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
 $("#alert").hide();
+
+function addMarvinButton(type) {
+  if (type == "e") {
+    $("#navbar-placeholder").replaceWith("<button class = 'btn btn-outline-success my-2 my-sm-0' type = 'submit' onClick = 'location.href=\'https://github.com/woodstockcs/marvin/issues/new\'' > Ask Marvin < /button>");
+  } else {
+    $("#navbar-placeholder").replaceWith("<button class = 'btn btn-outline-success my-2 my-sm-0 disabled' type = 'submit' onClick = 'location.href=\'#\'' > Ask Marvin < /button>");
+  }
+}
 
 function getTodaysDate() {
   var theDate;
@@ -247,7 +255,7 @@ function autoNumberQuestions() {
   var HISTORY_SUPPORT = !!(history && history.pushState);
   var anchorScrolls = {
     ANCHOR_REGEX: /^#[^ ]+$/,
-    OFFSET_HEIGHT_PX: 100,
+    OFFSET_HEIGHT_PX: 60,
     /**
      * Establish events, and fix initial scroll position if a hash is provided.
      */

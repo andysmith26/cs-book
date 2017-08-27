@@ -12,7 +12,7 @@
             "displayDate": "Wed Sept 20", 
             "lines": [
                 "by appt", 
-                "retakes available (see <a href='/resources.html#retake'>here</a>)"
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
             ], 
             "sortableDate": "2017-09-20 Wed"
         }, 
@@ -20,7 +20,7 @@
             "displayDate": "Wed Sept 27", 
             "lines": [
                 "by appt", 
-                "retakes available (see <a href='/resources.html#retake'>here</a>)"
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
             ], 
             "sortableDate": "2017-09-27 Wed"
         }, 
@@ -44,7 +44,7 @@
             "displayDate": "Tue Oct 03", 
             "lines": [
                 "by appt", 
-                "retakes available (see <a href='/resources.html#retake'>here</a>)"
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
             ], 
             "sortableDate": "2017-10-03 Tue"
         }
