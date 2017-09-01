@@ -1,5 +1,5 @@
-var dateOverride = '2017-08-30 EDT';
-// var dateOverride = '';
+// var dateOverride = '2017-08-30 EDT';
+var dateOverride = '';
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
