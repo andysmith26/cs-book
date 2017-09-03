@@ -6,22 +6,21 @@
             ], 
             "displayDate": "Wed Aug 30", 
             "sortableDate": "2017-08-30 Wed", 
-            "status": "PREPPED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
                 "warmup: WYR Routes 1", 
-                "group: 100 Numbers",
+                "group: 100 Numbers", 
                 "discuss grading and outline of the year"
             ], 
             "displayDate": "Fri Sept 01", 
             "sortableDate": "2017-09-01 Fri", 
-            "status": "TIMED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
-                "introduce LegoAd", 
-                "introduce group-work rubric, based on your inputs from last class", 
+                "introduce class norms", 
                 "start LegoAd"
             ], 
             "displayDate": "Wed Sept 06", 
@@ -30,9 +29,8 @@
         }, 
         {
             "agenda": [
-                "discuss LegoAd: what do you need?", 
-                "introduce Piazza", 
-                "work on LegoAd"
+                "LegoAd discussion and activity", 
+                "lab time to work on LegoAd"
             ], 
             "displayDate": "Fri Sept 08", 
             "sortableDate": "2017-09-08 Fri", 

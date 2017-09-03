@@ -7,7 +7,7 @@ CLASSES_FILE = 'current-class-files.txt'
 targetAgendaDateString = "*** "
 targetAgendaStartString = "**** agenda"
 targetAgendaEndString = "*"
-readyStatuses = ["TIMED", "PREPPED", "FINALIZED", "CLOSED"]
+readyStatuses = ["TIMED", "DONE"]
 
 targetAheadHeadline = "* looking ahead"
 targetAheadDateString = "** "

@@ -1,0 +1,17 @@
+{
+    "homeworks": [
+        {
+            "displayEndDate": "Tue Sept 05", 
+            "displayStartDate": "Thu Aug 31", 
+            "lines": [
+                "Take the survey, <a href=\"https://goo.gl/forms/1bDF4IRCYfJIu7uD2\">linked here</a>. ", 
+                "Find a laptop. Figure out which laptop you're going to bring with you to class with you every day, starting on the day this assignment is due. If this is a hardship, see Mr. Smith immediately; we will find a good solution.", 
+                "Install Atom.io on your laptop using the installation instructions are <a href=\"https://flight-manual.atom.io/getting-started/sections/installing-atom/\">linked here</a>.", 
+                "Then in Atom *change your theme* and *turn on Soft Wrap* using the info in the middle of the page <a href=\"http://flight-manual.atom.io/getting-started/sections/atom-basics/\">linked here</a>", 
+                "<strong>Your classmates and I will expect that you have successfully installed Atom and that you are ready to use it before the class when this assignment is due. Thanks!</strong>"
+            ], 
+            "sortableEndDate": "2017-09-05 Tue", 
+            "sortableStartDate": "2017-08-31 Thu"
+        }
+    ]
+}

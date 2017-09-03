@@ -1,4 +1,4 @@
-// var dateOverride = '2017-08-30 EDT';
+// var dateOverride = '2017-09-06 EDT';
 var dateOverride = '';
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
@@ -86,9 +86,18 @@ function populateAgendaData() {
   });
 }
 
-function populateHomeworkData() {
-  console.log("populating homework");
-  $.getJSON("/data/planning-csa-homeworks.json", function (data) {
+function populateHomeworkData(classId) {
+  console.log("populating homework for " + classId);
+  var classFile;
+  switch (classId) {
+  case "c":
+    classFile = "/data/planning-csp-homeworks.json";
+    break;
+  case "e":
+    classFile = "/data/planning-csa-homeworks.json";
+    break;
+  }
+  $.getJSON(classFile, function (data) {
     // sort the homeworks by due date ascending
     var homeworks = data.homeworks;
     homeworks.sort(function (a, b) {
