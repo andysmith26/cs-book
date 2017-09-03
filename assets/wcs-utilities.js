@@ -50,7 +50,7 @@ function parseDate(input) {
 
 function populateAgendaData() {
   console.log("populating current agenda");
-  $.getJSON("/scripts/planning-csa-agenda.json", function (data) {
+  $.getJSON("/data/planning-csa-agenda.json", function (data) {
     // sort the classes by date *descending*
     var classes = data.classes;
     classes.sort(function (a, b) {
@@ -88,7 +88,7 @@ function populateAgendaData() {
 
 function populateHomeworkData() {
   console.log("populating homework");
-  $.getJSON("/scripts/planning-csa-homeworks.json", function (data) {
+  $.getJSON("/data/planning-csa-homeworks.json", function (data) {
     // sort the homeworks by due date ascending
     var homeworks = data.homeworks;
     homeworks.sort(function (a, b) {
@@ -134,7 +134,7 @@ function populateHomeworkData() {
 
 function populateArchiveAgendaData() {
   console.log("populating archive agenda");
-  $.getJSON("/scripts/planning-csa-agenda.json", function (data) {
+  $.getJSON("/data/planning-csa-agenda.json", function (data) {
     // sort the classes by date *descending*
     var classes = data.classes;
     classes.sort(function (a, b) {
@@ -166,7 +166,7 @@ function populateArchiveAgendaData() {
 
 function populateArchiveHomeworkData() {
   console.log("populating archive homework");
-  $.getJSON("/scripts/planning-csa-homeworks.json", function (data) {
+  $.getJSON("/data/planning-csa-homeworks.json", function (data) {
     // sort the homeworks by due date ascending
     var homeworks = data.homeworks;
     homeworks.sort(function (a, b) {
@@ -201,7 +201,7 @@ function populateArchiveHomeworkData() {
 
 function populateAheadData() {
   console.log("populating looking ahead");
-  $.getJSON("/scripts/planning-csa-aheads.json", function (data) {
+  $.getJSON("/data/planning-csa-aheads.json", function (data) {
     // sort the items by date ascending
     var aheads = data.aheads;
     aheads.sort(function (a, b) {
