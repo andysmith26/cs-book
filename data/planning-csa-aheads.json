@@ -36,17 +36,25 @@
             "displayDate": "Fri Sept 29", 
             "lines": [
                 "3:15pm", 
-                "Reporting Period 1 closes"
+                "Check Point 1"
             ], 
             "sortableDate": "2017-09-29 Fri"
         }, 
         {
-            "displayDate": "Tue Oct 03", 
+            "displayDate": "Wed Oct 04", 
             "lines": [
                 "by appt", 
                 "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
             ], 
-            "sortableDate": "2017-10-03 Tue"
+            "sortableDate": "2017-10-04 Wed"
+        }, 
+        {
+            "displayDate": "Fri Oct 06", 
+            "lines": [
+                "all day", 
+                "field trip to Harvard"
+            ], 
+            "sortableDate": "2017-10-06 Fri"
         }
     ]
 }
