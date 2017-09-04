@@ -2,6 +2,24 @@
     "classes": [
         {
             "agenda": [
+                "quick overview of the class"
+            ], 
+            "displayDate": "Wed Aug 30", 
+            "sortableDate": "2017-08-30 Wed", 
+            "status": "DONE"
+        }, 
+        {
+            "agenda": [
+                "100 Numbers", 
+                "discuss group norms", 
+                "discuss grading and outline of the year"
+            ], 
+            "displayDate": "Thu Aug 31", 
+            "sortableDate": "2017-08-31 Thu", 
+            "status": "DONE"
+        }, 
+        {
+            "agenda": [
                 "publish first blog post", 
                 "get started in piazza"
             ], 

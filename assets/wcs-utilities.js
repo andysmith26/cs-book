@@ -22,7 +22,6 @@ function getTodaysDate() {
   } else {
     theDate = new Date();
   }
-  console.log("The date is", theDate);
   return theDate.setHours(0, 0, 0, 0);
 }
 
@@ -170,9 +169,8 @@ function populateAheadData(classId) {
     var items = [];
     $.each(aheads, function (num, the_ahead) {
       var todaysDate = getTodaysDate();
-      var foundDate = parseDate(the_ahead.sortableDate.substring(0, 10));
-      if (getTodaysDate() <= foundDate.setHours(0, 0, 0, 0)) {
-        console.log("found an item looking ahead. adding it");
+      var theDate = truncateSortableDate(the_ahead.sortableDate);
+      if (getTodaysDate() <= theDate) {
         items.push("<tr><td class='col-ahead-date'>" + the_ahead.displayDate + ", " + the_ahead.lines[0] + "</td>");
         items.push("<td><em>" + the_ahead.lines[1] + "</em></td>")
         items.push("</tr>")
@@ -186,9 +184,9 @@ function populateAheadData(classId) {
   });
 }
 
-function populateArchiveAgendaData() {
+function populateArchiveAgendaData(classId) {
   console.log("populating archive agenda");
-  $.getJSON("/data/planning-csa-agenda.json", function (data) {
+  $.getJSON(getFileNameForClassIdAndType(classId, "agenda"), function (data) {
     // sort the classes by date *descending*
     var classes = data.classes;
     classes.sort(function (a, b) {
@@ -197,11 +195,8 @@ function populateArchiveAgendaData() {
     // collect all the classes before today
     var items = [];
     $.each(classes, function (num, the_class) {
-      var todaysDate = getTodaysDate();
-      var foundDate = parseDate(the_class.sortableDate.substring(0, 10));
-      console.log("today:    " + todaysDate.toDateString())
-      console.log("the date: " + foundDate.toDateString());
-      if (todaysDate.setHours(0, 0, 0, 0) > foundDate.setHours(0, 0, 0, 0)) {
+      var theDate = truncateSortableDate(the_class.sortableDate);
+      if (getTodaysDate() > theDate) {
         console.log("found an old one. adding it");
         items.push("<h6 class='card-subtitle mb-2 text-muted'>" + the_class.displayDate + "</h6>");
         items.push("<ul>")
@@ -218,9 +213,9 @@ function populateArchiveAgendaData() {
   });
 }
 
-function populateArchiveHomeworkData() {
+function populateArchiveHomeworkData(classId) {
   console.log("populating archive homework");
-  $.getJSON("/data/planning-csa-homeworks.json", function (data) {
+  $.getJSON(getFileNameForClassIdAndType(classId, "homeworks"), function (data) {
     // sort the homeworks by due date ascending
     var homeworks = data.homeworks;
     homeworks.sort(function (a, b) {
@@ -229,21 +224,14 @@ function populateArchiveHomeworkData() {
     // find the active homeworks
     var items = [];
     $.each(homeworks, function (num, the_homework) {
-      var todaysDate = getTodaysDate();
-      var foundStartDate = parseDate(the_homework.sortableStartDate.substring(0, 10));
-      var foundEndDate = parseDate(the_homework.sortableEndDate.substring(0, 10));
-      console.log("today:    " + todaysDate.toDateString())
-      console.log("the end date: " + foundEndDate.toDateString());
-      if (todaysDate.setHours(0, 0, 0, 0) > foundEndDate.setHours(0, 0, 0, 0)) {
-        console.log("  ==> past homework");
+      var theEndDate = truncateSortableDate(the_homework.sortableEndDate);
+      if (getTodaysDate() > theEndDate) {
         items.push("<h6 class='card-subtitle mb-2 text-muted'>due " + the_homework.displayEndDate + "</h6>");
         items.push("<ul>");
         $.each(the_homework.lines, function (num, the_line) {
           items.push("<li class='card-text'>" + the_line + "</li>")
         });
         items.push("</ul>");
-      } else {
-        console.log("  ==> current or future homework");
       }
     });
     if (items.length < 1) {
