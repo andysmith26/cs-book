@@ -10,8 +10,9 @@
         }, 
         {
             "agenda": [
-                "publish first blog post", 
-                "get started in piazza"
+                "get started in Piazza", 
+                "do FirstBlog", 
+                "play Polar Bears Around The Ice Hole"
             ], 
             "displayDate": "Tue Sept 05", 
             "sortableDate": "2017-09-05 Tue", 

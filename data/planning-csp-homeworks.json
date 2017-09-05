@@ -12,6 +12,17 @@
             ], 
             "sortableEndDate": "2017-09-05 Tue", 
             "sortableStartDate": "2017-08-31 Thu"
+        }, 
+        {
+            "displayEndDate": "Thu Sept 07", 
+            "displayStartDate": "Tue Sept 05", 
+            "lines": [
+                "Read Blown To Bits Chapter 1 (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6c01EQVNONWlfLVk\">linked here</a>).", 
+                "In Piazza create a new \"Note\" (folder \"0-intro\") and write 100-200 words about how one part of the reading is relevant to you as a student at WUHS.", 
+                "Be prepared to discuss the entire reading next class."
+            ], 
+            "sortableEndDate": "2017-09-07 Thu", 
+            "sortableStartDate": "2017-09-05 Tue"
         }
     ]
 }
