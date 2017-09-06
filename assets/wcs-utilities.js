@@ -1,5 +1,5 @@
-// var dateOverride = '2017-09-13 EDT';
-var dateOverride = '';
+var dateOverride = '2017-09-06 EDT';
+// var dateOverride = '';
 var nextClassDate;
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
