@@ -30,7 +30,7 @@ function truncateSortableDate(the_date) {
 }
 
 function getFileNameForClassIdAndType(classId, type) {
-  var classFile = "/data/planning-";
+  var classFile = "/data/1718-";
   switch (classId) {
   case "c":
     classFile += "csp";
