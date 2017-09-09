@@ -1,10 +1,9 @@
-// var dateOverride = '2017-09-06 EDT';
+// var dateOverride = '2017-09-11 EDT';
 var dateOverride = '';
 var nextClassDate;
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
-$("#alert").hide();
 
 function addMarvinButton(type) {
   if (type == "e") {
@@ -18,7 +17,7 @@ function getTodaysDate() {
   var theDate;
   if (dateOverride.length > 0) {
     theDate = new Date(dateOverride);
-    $("body").css("background-color", "Red");
+    $("#title").css("background-color", "Red");
   } else {
     theDate = new Date();
   }
