@@ -25,6 +25,14 @@
             "displayDate": "Thu Sept 07", 
             "sortableDate": "2017-09-07 Thu", 
             "status": "DONE"
+        }, 
+        {
+            "agenda": [
+                "do humanitarian mapping"
+            ], 
+            "displayDate": "Mon Sept 11", 
+            "sortableDate": "2017-09-11 Mon", 
+            "status": "TIMED"
         }
     ]
 }
