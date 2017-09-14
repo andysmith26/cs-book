@@ -34,6 +34,17 @@
             ], 
             "sortableEndDate": "2017-09-11 Mon", 
             "sortableStartDate": "2017-09-07 Thu"
+        }, 
+        {
+            "displayEndDate": "Mon Sept 18", 
+            "displayStartDate": "Thu Sept 14", 
+            "lines": [
+                "return signed research consent form (regardless of your decision to participate)", 
+                "collect iphone survey data from 5 people not in this class", 
+                "Blog Post #3: click one of the 'full article' buttons linked on <a href=\"http://technews.acm.org/\">ACM TechNews</a>, read the full article, and publish a post on your blog summarizing the article in 200-300 words "
+            ], 
+            "sortableEndDate": "2017-09-18 Mon", 
+            "sortableStartDate": "2017-09-14 Thu"
         }
     ]
 }
