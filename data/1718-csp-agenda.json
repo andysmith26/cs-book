@@ -44,9 +44,7 @@
         }, 
         {
             "agenda": [
-                "compare HTML representations", 
-                "do second blog post", 
-                "take research survey"
+                "compare HTML representations"
             ], 
             "displayDate": "Thu Sept 14", 
             "sortableDate": "2017-09-14 Thu", 
