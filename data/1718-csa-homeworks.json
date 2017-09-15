@@ -48,6 +48,17 @@
             ], 
             "sortableEndDate": "2017-09-15 Fri", 
             "sortableStartDate": "2017-09-08 Fri"
+        }, 
+        {
+            "displayEndDate": "Mon Sept 18", 
+            "displayStartDate": "Fri Sept 15", 
+            "lines": [
+                "do Loops worksheet", 
+                "do Math.random worksheet", 
+                "watch Shiffman's introduction to OOP (<a href=\"https://www.youtube.com/watch?v=YcbcfkLzgvs\">link</a>)"
+            ], 
+            "sortableEndDate": "2017-09-18 Mon", 
+            "sortableStartDate": "2017-09-15 Fri"
         }
     ]
 }

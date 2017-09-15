@@ -44,6 +44,27 @@
             "displayDate": "Mon Sept 11", 
             "sortableDate": "2017-09-11 Mon", 
             "status": "READY"
+        }, 
+        {
+            "agenda": [
+                "publish LegoAd", 
+                "gallery walk", 
+                "preview Test 01", 
+                "take MSU research survey"
+            ], 
+            "displayDate": "Wed Sept 13", 
+            "sortableDate": "2017-09-13 Wed", 
+            "status": "TIMED"
+        }, 
+        {
+            "agenda": [
+                "show off LegoAd", 
+                "loops around the room", 
+                "math.random lecture"
+            ], 
+            "displayDate": "Fri Sept 15", 
+            "sortableDate": "2017-09-15 Fri", 
+            "status": "TIMED"
         }
     ]
 }
