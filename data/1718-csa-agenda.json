@@ -3,67 +3,75 @@
         {
             "agenda": [
                 "quick overview of the class"
-            ], 
-            "displayDate": "Wed Aug 30", 
-            "sortableDate": "2017-08-30 Wed", 
+            ],
+            "displayDate": "Wed Aug 30",
+            "sortableDate": "2017-08-30 Wed",
             "status": "READY"
-        }, 
+        },
         {
             "agenda": [
-                "warmup: WYR Routes 1", 
-                "100 Numbers & discuss group norms", 
+                "warmup: WYR Routes 1",
+                "100 Numbers & discuss group norms",
                 "discuss grading and outline of the year"
-            ], 
-            "displayDate": "Fri Sept 01", 
-            "sortableDate": "2017-09-01 Fri", 
+            ],
+            "displayDate": "Fri Sept 01",
+            "sortableDate": "2017-09-01 Fri",
             "status": "READY"
-        }, 
+        },
         {
             "agenda": [
-                "match code vs image: lego edition", 
-                "discuss lab norms", 
+                "match code vs image: lego edition",
+                "discuss lab norms",
                 "start LegoAd"
-            ], 
-            "displayDate": "Wed Sept 06", 
-            "sortableDate": "2017-09-06 Wed", 
+            ],
+            "displayDate": "Wed Sept 06",
+            "sortableDate": "2017-09-06 Wed",
             "status": "READY"
-        }, 
+        },
         {
             "agenda": [
-                "LegoAd discussion and activity", 
+                "LegoAd discussion and activity",
                 "lab time to work on LegoAd"
-            ], 
-            "displayDate": "Fri Sept 08", 
-            "sortableDate": "2017-09-08 Fri", 
+            ],
+            "displayDate": "Fri Sept 08",
+            "sortableDate": "2017-09-08 Fri",
             "status": "READY"
-        }, 
+        },
         {
             "agenda": [
                 "work on LegoAd"
-            ], 
-            "displayDate": "Mon Sept 11", 
-            "sortableDate": "2017-09-11 Mon", 
-            "status": "READY"
-        }, 
+            ],
+            "displayDate": "Mon Sept 11",
+            "sortableDate": "2017-09-11 Mon",
+            "status": "DONE"
+        },
         {
             "agenda": [
-                "publish LegoAd", 
-                "gallery walk", 
-                "preview Test 01", 
+                "publish LegoAd",
+                "gallery walk",
+                "preview Test 01",
                 "take MSU research survey"
-            ], 
-            "displayDate": "Wed Sept 13", 
-            "sortableDate": "2017-09-13 Wed", 
-            "status": "TIMED"
-        }, 
+            ],
+            "displayDate": "Wed Sept 13",
+            "sortableDate": "2017-09-13 Wed",
+            "status": "DONE"
+        },
         {
             "agenda": [
-                "show off LegoAd", 
-                "loops around the room", 
+                "show off LegoAd",
+                "loops around the room",
                 "math.random lecture"
-            ], 
-            "displayDate": "Fri Sept 15", 
-            "sortableDate": "2017-09-15 Fri", 
+            ],
+            "displayDate": "Fri Sept 15",
+            "sortableDate": "2017-09-15 Fri",
+            "status": "DONE"
+        },
+        {
+            "agenda": [
+                "start Lightning lab"
+            ],
+            "displayDate": "Mon Sept 18",
+            "sortableDate": "2017-09-18 Mon",
             "status": "TIMED"
         }
     ]
