@@ -55,6 +55,16 @@
             ], 
             "sortableEndDate": "2017-09-19 Tue", 
             "sortableStartDate": "2017-09-18 Mon"
+        }, 
+        {
+            "displayEndDate": "Thu Sept 21", 
+            "displayStartDate": "Tue Sept 19", 
+            "lines": [
+                "read/do Images 1 and 1.5 and 2 (links in resources)", 
+                "post a Piazza note <strong>to instructor only</strong> with screenshot of Image 2 exercises (code+image)"
+            ], 
+            "sortableEndDate": "2017-09-21 Thu", 
+            "sortableStartDate": "2017-09-19 Tue"
         }
     ]
 }

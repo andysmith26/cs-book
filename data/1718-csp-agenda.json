@@ -57,6 +57,16 @@
             ], 
             "displayDate": "Mon Sept 18", 
             "sortableDate": "2017-09-18 Mon", 
+            "status": "READY"
+        }, 
+        {
+            "agenda": [
+                "share a couple news stories", 
+                "js (Code 1 + Code 2) / Vora", 
+                "lobby / word-count / VoRa"
+            ], 
+            "displayDate": "Tue Sept 19", 
+            "sortableDate": "2017-09-19 Tue", 
             "status": "TIMED"
         }
     ]
