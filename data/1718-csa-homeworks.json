@@ -53,8 +53,8 @@
             "displayEndDate": "Mon Sept 18", 
             "displayStartDate": "Fri Sept 15", 
             "lines": [
-                "do 'Loops' worksheet (<a href='https://drive.google.com/open?id=1QvEDcepoIwtOXK_QdLXL5yBoGyPX_bS6jaqv40zblz8'>printable</a>) <!--(<a href='https://drive.google.com/open?id=1jsIhs_8vPWM-ftNxUqBh41Fm3WDswkpQcQyEIY6sWYY'>solutions</a>)-->", 
-                "do 'Math.random' worksheet (<a href=\"https://drive.google.com/open?id=1svw3O6yBTRyhJSPphTVJwYF36dbNXRBKp6G3zWzwc0I\">printable</a>) <!--(<a href=\"https://drive.google.com/open?id=1YyjMckOmj-K9aMRN6iqVegC9RMFbGqNnr8SYVoukDD4\">solutions</a>)-->", 
+                "do 'Loops' worksheet (<a href='https://drive.google.com/open?id=1QvEDcepoIwtOXK_QdLXL5yBoGyPX_bS6jaqv40zblz8'>printable</a>)", 
+                "do 'Math.random' worksheet (<a href=\"https://drive.google.com/open?id=1svw3O6yBTRyhJSPphTVJwYF36dbNXRBKp6G3zWzwc0I\">printable</a>)", 
                 "watch Shiffman's 8.1 \"What is OOP\" (<a href=\"https://www.youtube.com/watch?v=YcbcfkLzgvs\">link</a>)"
             ], 
             "sortableEndDate": "2017-09-18 Mon", 
@@ -78,6 +78,15 @@
             ], 
             "sortableEndDate": "2017-09-22 Fri", 
             "sortableStartDate": "2017-09-18 Mon"
+        }, 
+        {
+            "displayEndDate": "Mon Sept 25", 
+            "displayStartDate": "Fri Sept 22", 
+            "lines": [
+                "prepare for test Monday (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6WE1VamZrQTdodVU\">review slides</a>)"
+            ], 
+            "sortableEndDate": "2017-09-25 Mon", 
+            "sortableStartDate": "2017-09-22 Fri"
         }
     ]
 }

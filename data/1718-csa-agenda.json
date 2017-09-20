@@ -73,6 +73,16 @@
             "displayDate": "Mon Sept 18", 
             "sortableDate": "2017-09-18 Mon", 
             "status": "DONE"
+        }, 
+        {
+            "agenda": [
+                "review slides", 
+                "new slides on OOP", 
+                "OOP practice"
+            ], 
+            "displayDate": "Wed Sept 20", 
+            "sortableDate": "2017-09-20 Wed", 
+            "status": "READY"
         }
     ]
 }
