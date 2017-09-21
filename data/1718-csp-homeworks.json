@@ -65,6 +65,16 @@
             ], 
             "sortableEndDate": "2017-09-21 Thu", 
             "sortableStartDate": "2017-09-19 Tue"
+        }, 
+        {
+            "displayEndDate": "Mon Sept 25", 
+            "displayStartDate": "Thu Sept 21", 
+            "lines": [
+                "do IntroComputing exercises for Image 3, Image 4, and Image 5 (including the \"optional\" one)", 
+                "post a Piazza note <strong>to instructor only</strong> with screenshots of the code+images from the Image 5 exercises"
+            ], 
+            "sortableEndDate": "2017-09-25 Mon", 
+            "sortableStartDate": "2017-09-21 Thu"
         }
     ]
 }
