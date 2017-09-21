@@ -83,6 +83,15 @@
             "displayDate": "Wed Sept 20", 
             "sortableDate": "2017-09-20 Wed", 
             "status": "READY"
+        }, 
+        {
+            "agenda": [
+                "Lightning gallery", 
+                "practice OOP"
+            ], 
+            "displayDate": "Fri Sept 22", 
+            "sortableDate": "2017-09-22 Fri", 
+            "status": "READY"
         }
     ]
 }
