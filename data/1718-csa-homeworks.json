@@ -87,6 +87,15 @@
             ], 
             "sortableEndDate": "2017-09-27 Wed", 
             "sortableStartDate": "2017-09-22 Fri"
+        }, 
+        {
+            "displayEndDate": "Wed Sept 27", 
+            "displayStartDate": "Mon Sept 25", 
+            "lines": [
+                "do Practice with Classes sheet, then check solutions on Piazza"
+            ], 
+            "sortableEndDate": "2017-09-27 Wed", 
+            "sortableStartDate": "2017-09-25 Mon"
         }
     ]
 }
