@@ -75,6 +75,34 @@
             ], 
             "sortableEndDate": "2017-09-25 Mon", 
             "sortableStartDate": "2017-09-21 Thu"
+        }, 
+        {
+            "displayEndDate": "Thu Sept 28", 
+            "displayStartDate": "Tue Sept 26", 
+            "lines": [
+                "do IntroComputing exercises for Image 6, Image 7, and Image 8", 
+                "post a Piazza note <strong>to instructor only</strong> with screenshots of the code+images from the Image 8 exercises"
+            ], 
+            "sortableEndDate": "2017-09-28 Thu", 
+            "sortableStartDate": "2017-09-26 Tue"
+        }, 
+        {
+            "displayEndDate": "Mon Oct 02", 
+            "displayStartDate": "Tue Sept 26", 
+            "lines": [
+                "return field trip form"
+            ], 
+            "sortableEndDate": "2017-10-02 Mon", 
+            "sortableStartDate": "2017-09-26 Tue"
+        }, 
+        {
+            "displayEndDate": "Mon Oct 02", 
+            "displayStartDate": "Tue Sept 26", 
+            "lines": [
+                "after Thursday's class, start a follow up discussion with two classmates (load balance!) on Piazza, for each ask one specific question to help you better understand the thinking used by the OP when creating the posted image  (during the next class you will answer the questions people asked you) "
+            ], 
+            "sortableEndDate": "2017-10-02 Mon", 
+            "sortableStartDate": "2017-09-26 Tue"
         }
     ]
 }
