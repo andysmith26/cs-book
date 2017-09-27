@@ -32,22 +32,27 @@
                 <li>Goals</li>
                 <li>Setting It Up</li>
                 <li>Instructions</li>
-                <li>Handing It In</li>
+                <li>Definition of Done</li>
+                <li>Credit</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-10">
-
+        <div class="section">
           <h2 class="display-4">Goals</h2>
           <ul>
             <li>Practice using Object-Oriented Programming (OOP) techniques.</li>
             <li>Make computations dynamic in interesting ways.</li>
             <li>Create a personalized dice roller.</li>
           </ul>
+        </div>
+        <div class="section">
           <h2 class="display-4">Setting It Up</h2>
           <p>In this assignment you'll create a class to model what a single die has and does, and then you will create at least 9 instances of that class arranged in a grid shape. Note that for full credit your program must display the total of all the dice and draw the dice with dots or similar marks.Also, you must customize the title and text in the <code>index.html</code> file.</p>
-          <p>Start by forking the <a href="https://www.github.com/woodstockcs/dice" target="_blank">lab repo</a> and copying the code from the <code>.pde</code> file into a new sketch in Processing. Save early and save often!</p>
+          <p>Start by forking the <a href="https://www.github.com/woodstockcs/Dice" target="_blank">lab repo</a> and copying the code from the <code>.pde</code> file into a new sketch in Processing. Save early and save often!</p>
+          </div>
+          <div class="section">
           <h2 class="display-4">Instructions</h2>
           <p>
             Complete the draw() function first. For now it should:
@@ -55,29 +60,58 @@
               <li>clear the screen</li>
               <li>declare and initialize one instance of the Die class</li>
               <li>call the show() function for that Die (even though we won't see anything yet)</li>
+	    </ul>
           </p>
           <p>
-            Now we'll work on the Die class. Let's do this incrementally. First let's display the outline of the die to the screen. Notice that the constructor takes arguments. We'll use those arguments to position the individual die cubes. Don't worry about the dots at first, just get the shape of the dice on the screen for now. Look up the five-parameter version of the rect function.
+            Now we'll work on the </code>Die<code> class. Let's do this incrementally. First let's display the outline of the die to the screen. Notice that the constructor takes arguments. We'll use those arguments to position the individual die cubes. Don't worry about the dots at first, just get the shape of the dice on the screen for now. Look up the five-parameter version of the <code>rect</code> function.
           </p>
-          <p>Once you like the shape of your die, go back to show() and add some ifs to check how many dots you need to put on the die. Start by "forcing" the die to always roll a one. Check to see that you can get one dot where it is supposed to be, and move on to two, and so on.</p>
-          <p>If you are feeling clever, you can combine some of the ifs and avoid duplicate code.</p>
-          <p>Now, use nested loops to display at least nine instances of the Die class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice. Your show() function will need to position the dots by adding some small amount to the x and y coordinates of the rect() of the Die.</p>
-          <p>Finally, add code to the draw() function so that your program displays the total for the roll to the screen.</p>
+          <p>Once you like the shape of your die, go back to <code>show()</code> and add some <code>if</code>s to check how many dots you need to put on the die. Start by "forcing" the die to always roll a one. Check to see that you can get one dot where it is supposed to be, and move on to two, and so on.</p>
+          <p>If you are feeling clever, you can combine some of the <code>if</code>s and avoid duplicate code.</p>
+          <p>Now, use nested loops to display at least nine instances of the <code>Die</code> class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice. Your <code>show()</code> function will need to position the dots by adding some small amount to the <code>x</code> and <code>y</code> coordinates of the <code>rect()</code> of the <code>Die</code>.</p>
+          <p>Finally, add code to the <code>draw()</code> function so that your program displays the total for the roll to the screen.</p>
           <p>Have fun and be creative. Your dice program should not look or work like any other!</p>
 
-          <p>For a challenge, you might see how many legible dice you can fit on the screen. You can also keep track of the rolls. You could display the average roll, or maybe a graph that shows how often each of the numbers from 2 to 12 have come up. This is useful in some dice games like Settlers of Catan. Check the links below for examples of other students work
-
-            <h2 class="display-4">Handing It In</h2> ...coming soon...
+          <p>For a challenge, you might see how many legible dice you can fit on the screen. You can also keep track of the rolls. You could display the average roll, or maybe a graph that shows how often certain numbers come up. This is useful in some dice games like Yahtzee or Settlers of Catan.</p>
         </div>
-      </div>
-      <br>
-      <br>
-    </div>
-    <script src="/assets/wcs-utilities.js"></script>
-    <script>
-      autoNumberQuestions();
-    </script>
+          <div class="section">
+            <h2 class="display-4">Definition of Done</h2>
+            <ul>
+              <li>
+                You have a runnable sketch on github, which is viewable at <code><strong>http://<em>your-username</em>.github.io/Dice</strong></code>.
+              </li>
+	      <li>
+          You define a <code>Die</code> class as described above.
+		</li>
+              <li>
+                You create at least nine instances of <code>Die</code> objects, each with its own dots or similar marks which represent of the value after a roll.
+              </li>
+              <li>
+                Your sketch displays the sum of all the dice which are displayed.
+              </li>
+              <li>
+                The design is original and interesting!
+              </li>
+              <li>
+                Each part of your code has comments so that someone else can understand it.
+              </li>
+            </ul>
+            <p>After this you must fill out a 'Submit a Coding Project' form and put it in my IN box in Room 7.</p>
+            <p><em>Note that this time the Definition of Done <strong>does</strong> include posting online.</em></p>
 
+        </div>
+
+          <div class="section">
+            <h2 class="display-4">Credit</h2>
+            <p>
+              assignment adapted from Art Simon, Lowell High School</a>
+            </p>
+          </div>
+          <br />
+          <br />
+        </div>
+
+        <script src="/assets/wcs-utilities.js"></script>
   </body>
+
 
 </html>
