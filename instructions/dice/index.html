@@ -23,8 +23,8 @@
         <div class="col-lg-2">
           <div class="card card-outline-success mb-3">
             <div class="card-header">
-              <h3 class="card-title">Flags</h3>
-              <h6 class="card-subtitle text-muted">CP Lab</h6>
+              <h3 class="card-title">Dice</h3>
+              <h6 class="card-subtitle text-muted">CSA Lab</h6>
             </div>
             <div class="card-block">
               <h5 class="card-title">Contents</h5>
@@ -34,10 +34,6 @@
                 <li>Instructions</li>
                 <li>Handing It In</li>
               </ul>
-              <h5 class="card-title">Examples</h5>
-              <ul class="list-unstyled small">
-                <li><a href="http://andytilia.github.io/flags" class="card-link">andytilia</a></li>
-              </ul>
             </div>
           </div>
         </div>
@@ -45,141 +41,34 @@
 
           <h2 class="display-4">Goals</h2>
           <ul>
-            <li>Practice using functions and variables.</li>
+            <li>Practice using Object-Oriented Programming (OOP) techniques.</li>
             <li>Make computations dynamic in interesting ways.</li>
-            <li>Create a personalized flag.</li>
+            <li>Create a personalized dice roller.</li>
           </ul>
           <h2 class="display-4">Setting It Up</h2>
-          <p>Go to the <a href="https://www.github.com/woodstockcs/flags" target="_blank">lab repo</a>, and click on the file called <code>flags.scm</code>. Copy all the code from that file (<a href="#imgModal" data-toggle="modal" data-target="#imgModal" data-img-id="code-highlight.png">hint</a>).
-
-            <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header float-right">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  </div>
-                  <div class="modal-body">
-                    <img id="imgPlaceholder" class="mx-auto d-block" src="">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <pre>
-  In this assignment we'll practice using OOP (Object Oriented Programming) techniques. We'll create a class to model what a single die has and does, and then we will create at least 9 instances of that class arranged in a grid shape. Note that for full credit your program must display the total of all the dice and draw the dice with dots or similar marks. Also, you must customize the title, header and footer of index.html. You may find the PowerPoint sides 177 to 223 of the apjava1.pptx presentation helpful, as well as the Nested Loops, Practice with classes and the Math.random worksheets.
-
-Start by forking this repository. Open the pde file and you should see the following code:
-
-Complete the draw() function first. For now it should:
-- clear the screen
-- declare and initialize one instance of the Die class
-- call the show() function for that Die (even though we won't see anything yet)
-
-Now we'll work on the Die class. Let's do this incrementally. First let's display the outline of the die to the screen. Notice that the constructor takes arguments. We'll use those arguments to position the individual die cubes. Don't worry about the dots at first, just get the shape of the dice on the screen for now. Look up the five-parameter version of the rect function.
-[note: this would be a good team exercise -- public record, how would you do this?]
-
-Once you like the shape of your die, go back to show() and add some ifs to check how many dots you need to put on the die. Start by "forcing" the die to always roll a one. Check to see that you can get one dot where it is supposed to be, and move on to two, and so on. If you are feeling clever, you can combine some of the ifs and avoid duplicate code.
-Now, use nested loops to display at least nine instances of the Die class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice. Your show() function will need to position the dots by adding some small amount to the x and y coordinates of the rect() of the Die. TODO: OR ... translate function handles it. (but don't forget to untranslate!)
-Finally, add code to the draw() function so that your program displays the total for the roll to the screen.
-Have fun and be creative. Your dice program doesn't have to look or work like any other.
-
-for 4-distinguished:
-For a challenge, you might see how many legible dice you can fit on the screen. You can also keep track of the rolls. You could display the average roll, or maybe a graph that shows how often each of the numbers from 2 to 12 have come up. This is useful in some dice games like Settlers of Catan. Check the links below for examples of other students work
-</pre>
-            <p>Start a new program in <a href="http://www.wescheme.org/console" target="_blank">WeScheme</a> and paste the code you just copied into the definitions area.</p>
-            <p>Follow the instructions below, making sure to do all the actions that are written (ie: update code, run code, research X, ...). These actions are important for successful completion of the lab, and the files you submit for your lab should show that you did these things.</p>
-            <p>Additionally, below you'll see some Lab Questions indented and numbered like this:</p>
-            <blockquote class="blockquote question">Have you ever seen the rain?</blockquote>
-            <p>Every time you see one of these Lab Questions, write a numbered answer next in the "LAB ANSWERS" section at the top of your code, like this:</p>
-            <pre class="code">
-#|
-...
-LAB ANSWERS
-1. yes, I saw it just this morning.
-2.
-3.
-...
-|#</pre>
-
-            <h2 class="display-4">Instructions</h2>
-            <h4>Part A: Variables</h4>
-
-            <p>Read through the code.</p>
-            <blockquote class="blockquote question">There are three values being defined here. What are they?</blockquote>
-            <p>Click "Run" and evaluate each of those values in the Interactions window.</p>
-            <p>Change the size of the dot and click "Run".</p>
-            <blockquote class="blockquote question">Predict what will happen when you evaluate the variable <code>japan</code> again. Will it look different than it did before? Why or why not?</blockquote>
-            <p>Evaluate the variable <code>japan</code> and compare the result to your prediction.</p>
-            <p>To make the flag of Japan, we want to put a solid, red circle right in the middle of our flag. According to the definition for blank, a flag is 300 wide by 200 high. To put the dot at the center, we use the coordinates (150, 100). The function that lets us put one image on top of another is called <code>put-image</code>:</p>
-            <pre class="activity">
-; put-image: Image Number Number Image -> Image
-; places an image, at position (x, y), on an Image</pre>
-            <blockquote class="blockquote question">How many things are in the Domain of this function?</blockquote>
-            <blockquote class="blockquote question">What is the Range of this function?</blockquote>
-            <blockquote class="blockquote question">In the definition for <code>japan</code>, what image is being used as the first argument?</blockquote>
-            <blockquote class="blockquote question">What is being used as the second?</blockquote>
-            <p>Remember about indenting. Notice that all of the inputs to <code>put-image</code> line up with one another! In your code, reformat the definitions of <code>dot</code> and <code>blank</code> so their inputs are also on different lines, indented and lined up with one another.</p>
-            <h4>Part B: Nesting</h4>
-            <p>You’ve seen arithmetic functions nested before, such as <code>(+ 4 (+ 99 12))</code> and</p>
-            <img class="img-fluid" src="nested-plus.png">
-            <p>The second input to <code>+</code> is a <i>number-producing expression</i>. In this case notice that <code>(+ 99 12)</code> produces the number <code>111</code>, which then becomes the second input to outer expression <code>(+ 4 ____)</code>.</p>
-            <p>You'll find that <code>put-image</code> can be nested the same way. Take a look at how the following Circle of Evaluation will draw a star on top of another image, which itself is a circle drawn on top of a square.</p>
-            <img class="img-fluid" src="nested-putimage.png">
-            <p>Convert this Circle of Evaluation into code, and evaluate it in WeScheme.</p>
-            <blockquote class="blockquote question">What image do you get back?</blockquote>
-            <p>Now modify the code so that another image is added on top.</p>
-            <h4>Part C: Designs</h4>
-            <p>By combining simple shapes together, you can make more sophisticated images. Look at this picture of the flag of Somalia:</p>
-            <img class="img-fluid" src="somalia.png">
-            <blockquote class="blockquote question">What shapes will you need to make this flag?</blockquote>
-            <blockquote class="blockquote question">Which colors will you need?</blockquote>
-            <p>Write code to define a new value called <code>somalia</code>, which evaluates to the flag of Somalia.</p>
-            <p>Right now if you click the Run button, the definitions are loaded but you still need to type the variable name in the Interactions Area to actually see the value of the variable.</p>
-            <p>Let's make it a little easier by evaluating the variable in the program code itself. Add the following code block at the bottom of your code in the Definitions Area.</p>
-            <pre class="activity">
-; print a nice arrangement of flags
-; replace the blanks with flag names as you create them
-(above (beside japan somalia)
-       (beside blank blank)
-       (beside blank blank))</pre>
-            <p>Now when you click the Run button, the variables are defined <strong>and</strong> evaluated.</p>
-            <p>Let's make more flags. Choose at least three of the following countries, and define variables which evaluate to a drawing of the corresponding flag. After you define each variable, edit the code you just pasted (which prints the nice arrangment of flags) so that it draws all the flags you create, not just blanks.</p>
-            <blockquote class="blockquote question">Why did the previous sentence start with "After you define each variable...", instead of "Before you define each variable..."?</blockquote>
-            <table class="table table-bordered needs-margin-bottom">
-              <tr>
-                <th>Nigeria</th>
-                <th>France</th>
-                <th>Switzerland</th>
-                <th>United Arab Emirates</th>
-                <th>Panama</th>
-              </tr>
-              <tr>
-                <td><img src="nigeria.png"></td>
-                <td><img src="france.png"></td>
-                <td><img src="switzerland.png"></td>
-                <td><img src="uae.png"></td>
-                <td><img src="panama.png"></td>
-              </tr>
-            </table>
-            <p>Now make up your own personal flag, and define a new value <code>my-flag</code> which draws it. Your definition should have at least two <code>put-image</code> calls and at least three function calls that draw some shape (such as <code>star</code> or <code>square</code>, etc).</p>
-            <p>Again edit the flag arrangement code so your program draws your flag when you run it</p>
-
-            <h2 class="display-4">Handing It In</h2>
+          <p>In this assignment you'll create a class to model what a single die has and does, and then you will create at least 9 instances of that class arranged in a grid shape. Note that for full credit your program must display the total of all the dice and draw the dice with dots or similar marks.Also, you must customize the title and text in the <code>index.html</code> file.</p>
+          <p>Start by forking the <a href="https://www.github.com/woodstockcs/Dice" target="_blank">lab repo</a> and copying the code from the <code>.pde</code> file into a new sketch in Processing. Save early and save often!</p>
+          <h2 class="display-4">Instructions</h2>
+          <p>
+            Complete the draw() function first. For now it should:
             <ul>
-              <li>Make sure you've answered all of the Lab Questions in the "LAB ANSWERS" section of your code.</li>
-              <li>Make sure your code shows that you've done all the actions written above.</li>
-              <li>Make sure you've annotated your code. This means that most of your lines of code have comments so that someone else can understand it.</li>
-              <li>Click the "Share" button, then click "Yes" in the "Publish My Program" popup.</li>
-              <li>Click on the custom link that WeScheme provides you, and click the "Edit" button.</li>
-              <li>Copy the URL, which will look like this:
-                <blockquote class="blockquote mb-0"><code><small><strong>http://www.wescheme.org/openEditor?publicId=</strong><em><span style="color:darkgrey !important">SomeRandomId</span></em></small></code>
-                </blockquote> and paste it into an email to me at <code>AndrewSmith@wcsu.net</code>.
-              </li>
-              <li>Watch for an email reply within a day or two. This is important because often I'll request some update to the code. If so, the assignment will remain ungraded until the update is done.</li>
-            </ul>
+              <li>clear the screen</li>
+              <li>declare and initialize one instance of the Die class</li>
+              <li>call the show() function for that Die (even though we won't see anything yet)</li>
+	    </ul>
+          </p>
+          <p>
+            Now we'll work on the Die class. Let's do this incrementally. First let's display the outline of the die to the screen. Notice that the constructor takes arguments. We'll use those arguments to position the individual die cubes. Don't worry about the dots at first, just get the shape of the dice on the screen for now. Look up the five-parameter version of the rect function.
+          </p>
+          <p>Once you like the shape of your die, go back to show() and add some ifs to check how many dots you need to put on the die. Start by "forcing" the die to always roll a one. Check to see that you can get one dot where it is supposed to be, and move on to two, and so on.</p>
+          <p>If you are feeling clever, you can combine some of the ifs and avoid duplicate code.</p>
+          <p>Now, use nested loops to display at least nine instances of the Die class. This is the power of OOP. It's not that much more work to make 1000 dice as it is to make one. Make sure the dots are on the dice. Your show() function will need to position the dots by adding some small amount to the x and y coordinates of the rect() of the Die.</p>
+          <p>Finally, add code to the draw() function so that your program displays the total for the roll to the screen.</p>
+          <p>Have fun and be creative. Your dice program should not look or work like any other!</p>
 
+          <p>For a challenge, you might see how many legible dice you can fit on the screen. You can also keep track of the rolls. You could display the average roll, or maybe a graph that shows how often each of the numbers from 2 to 12 have come up. This is useful in some dice games like Settlers of Catan. Check the links below for examples of other students work
+
+            <h2 class="display-4">Handing It In</h2> ...coming soon...
         </div>
       </div>
       <br>
