@@ -3,118 +3,118 @@
         {
             "agenda": [
                 "quick overview of the class"
-            ],
-            "displayDate": "Wed Aug 30",
-            "sortableDate": "2017-08-30 Wed",
+            ], 
+            "displayDate": "Wed Aug 30", 
+            "sortableDate": "2017-08-30 Wed", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "get started in Piazza",
+                "get started in Piazza", 
                 "do FirstBlog"
-            ],
-            "displayDate": "Tue Sept 05",
-            "sortableDate": "2017-09-05 Tue",
+            ], 
+            "displayDate": "Tue Sept 05", 
+            "sortableDate": "2017-09-05 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "discuss b2b reading offline and online",
+                "discuss b2b reading offline and online", 
                 "learn html"
-            ],
-            "displayDate": "Thu Sept 07",
-            "sortableDate": "2017-09-07 Thu",
+            ], 
+            "displayDate": "Thu Sept 07", 
+            "sortableDate": "2017-09-07 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "learn humanitarian mapping"
-            ],
-            "displayDate": "Mon Sept 11",
-            "sortableDate": "2017-09-11 Mon",
+            ], 
+            "displayDate": "Mon Sept 11", 
+            "sortableDate": "2017-09-11 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "do humanitarian mapping"
-            ],
-            "displayDate": "Tue Sept 12",
-            "sortableDate": "2017-09-12 Tue",
+            ], 
+            "displayDate": "Tue Sept 12", 
+            "sortableDate": "2017-09-12 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "compare HTML representations"
-            ],
-            "displayDate": "Thu Sept 14",
-            "sortableDate": "2017-09-14 Thu",
+            ], 
+            "displayDate": "Thu Sept 14", 
+            "sortableDate": "2017-09-14 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "take MSU research survey",
+                "take MSU research survey", 
                 "(intro coders: start js) and (expert coders: work on VoRa)"
-            ],
-            "displayDate": "Mon Sept 18",
-            "sortableDate": "2017-09-18 Mon",
+            ], 
+            "displayDate": "Mon Sept 18", 
+            "sortableDate": "2017-09-18 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "share a couple news stories",
-                "js (Code 1 + Code 2) / Vora",
+                "share a couple news stories", 
+                "js (Code 1 + Code 2) / Vora", 
                 "lobby / word-count / VoRa"
-            ],
-            "displayDate": "Tue Sept 19",
-            "sortableDate": "2017-09-19 Tue",
+            ], 
+            "displayDate": "Tue Sept 19", 
+            "sortableDate": "2017-09-19 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "image puzzles",
+                "image puzzles", 
                 "work on products"
-            ],
-            "displayDate": "Thu Sept 21",
-            "sortableDate": "2017-09-21 Thu",
+            ], 
+            "displayDate": "Thu Sept 21", 
+            "sortableDate": "2017-09-21 Thu", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "quick discussion about grading",
+                "quick discussion about grading", 
                 "test 01"
-            ],
-            "displayDate": "Mon Sept 25",
-            "sortableDate": "2017-09-25 Mon",
+            ], 
+            "displayDate": "Mon Sept 25", 
+            "sortableDate": "2017-09-25 Mon", 
             "status": "TIMED"
-        },
+        }, 
         {
             "agenda": [
-                "work on WCS products",
-                "coding exercises",
+                "work on WCS products", 
+                "coding exercises", 
                 "review assessment report"
-            ],
-            "displayDate": "Tue Sept 26",
-            "sortableDate": "2017-09-26 Tue",
+            ], 
+            "displayDate": "Tue Sept 26", 
+            "sortableDate": "2017-09-26 Tue", 
             "status": "TIMED"
-        },
+        }, 
         {
             "agenda": [
                 "make your own custom bluescreen photo"
-            ],
-            "displayDate": "Thu Sept 28",
-            "sortableDate": "2017-09-28 Thu",
+            ], 
+            "displayDate": "Thu Sept 28", 
+            "sortableDate": "2017-09-28 Thu", 
             "status": "TIMED"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Tue Oct 03",
-            "sortableDate": "2017-10-03 Tue",
+            "agenda": [], 
+            "displayDate": "Tue Oct 03", 
+            "sortableDate": "2017-10-03 Tue", 
             "status": "TIMED"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Thu Oct 05",
-            "sortableDate": "2017-10-05 Thu",
+            "agenda": [], 
+            "displayDate": "Thu Oct 05", 
+            "sortableDate": "2017-10-05 Thu", 
             "status": "TIMED"
         }
     ]

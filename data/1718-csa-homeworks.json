@@ -1,119 +1,128 @@
 {
     "homeworks": [
         {
-            "displayEndDate": "Wed Sept 06",
-            "displayStartDate": "Fri Sept 01",
+            "displayEndDate": "Wed Sept 06", 
+            "displayStartDate": "Fri Sept 01", 
             "lines": [
-                "Set up your computer. (<a href='/instructions/computer-setup-csa'>instructions</a>)",
-                "Take some time to tell me about you. (<a href='https://docs.google.com/forms/d/e/1FAIpQLSfyklYeNzFI-B0OErIXJ_Dd_mcZeYponTI9uOwhRU_vm7UbIw/viewform?usp=sf_link'>link</a>)",
+                "Set up your computer. (<a href='/instructions/computer-setup-csa'>instructions</a>)", 
+                "Take some time to tell me about you. (<a href='https://docs.google.com/forms/d/e/1FAIpQLSfyklYeNzFI-B0OErIXJ_Dd_mcZeYponTI9uOwhRU_vm7UbIw/viewform?usp=sf_link'>link</a>)", 
                 "Bring your computer to class with you every day starting Wed."
-            ],
-            "sortableEndDate": "2017-09-06 Wed",
+            ], 
+            "sortableEndDate": "2017-09-06 Wed", 
             "sortableStartDate": "2017-09-01 Fri"
-        },
+        }, 
         {
-            "displayEndDate": "Fri Sept 08",
-            "displayStartDate": "Wed Sept 06",
+            "displayEndDate": "Fri Sept 08", 
+            "displayStartDate": "Wed Sept 06", 
             "lines": [
-                "Work for 30 minutes on LegoAd. (instructions linked below)",
+                "Work for 30 minutes on LegoAd. (instructions linked below)", 
                 "Be prepared to report one stuck point (solved or not) with your group."
-            ],
-            "sortableEndDate": "2017-09-08 Fri",
+            ], 
+            "sortableEndDate": "2017-09-08 Fri", 
             "sortableStartDate": "2017-09-06 Wed"
-        },
+        }, 
         {
-            "displayEndDate": "Wed Sept 13",
-            "displayStartDate": "Wed Sept 06",
+            "displayEndDate": "Wed Sept 13", 
+            "displayStartDate": "Wed Sept 06", 
             "lines": [
                 "<strong>Finish LegoAd.</strong> (see Definition of Done at the instructions linked below)"
-            ],
-            "sortableEndDate": "2017-09-13 Wed",
+            ], 
+            "sortableEndDate": "2017-09-13 Wed", 
             "sortableStartDate": "2017-09-06 Wed"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 11",
-            "displayStartDate": "Fri Sept 08",
+            "displayEndDate": "Mon Sept 11", 
+            "displayStartDate": "Fri Sept 08", 
             "lines": [
-                "Work for 30 minutes on LegoAd. (instructions linked below)",
+                "Work for 30 minutes on LegoAd. (instructions linked below)", 
                 "Post one question or answer or tip about Lego on Piazza."
-            ],
-            "sortableEndDate": "2017-09-11 Mon",
+            ], 
+            "sortableEndDate": "2017-09-11 Mon", 
             "sortableStartDate": "2017-09-08 Fri"
-        },
+        }, 
         {
-            "displayEndDate": "Fri Sept 15",
-            "displayStartDate": "Fri Sept 08",
+            "displayEndDate": "Fri Sept 15", 
+            "displayStartDate": "Fri Sept 08", 
             "lines": [
                 "return signed research form (even if you are declining to participate)"
-            ],
-            "sortableEndDate": "2017-09-15 Fri",
+            ], 
+            "sortableEndDate": "2017-09-15 Fri", 
             "sortableStartDate": "2017-09-08 Fri"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 18",
-            "displayStartDate": "Fri Sept 15",
+            "displayEndDate": "Mon Sept 18", 
+            "displayStartDate": "Fri Sept 15", 
             "lines": [
-                "do 'Loops' worksheet (<a href='https://drive.google.com/open?id=1QvEDcepoIwtOXK_QdLXL5yBoGyPX_bS6jaqv40zblz8'>printable</a>)",
-                "do 'Math.random' worksheet (<a href=\"https://drive.google.com/open?id=1svw3O6yBTRyhJSPphTVJwYF36dbNXRBKp6G3zWzwc0I\">printable</a>)",
+                "do 'Loops' worksheet (<a href='https://drive.google.com/open?id=1QvEDcepoIwtOXK_QdLXL5yBoGyPX_bS6jaqv40zblz8'>printable</a>)", 
+                "do 'Math.random' worksheet (<a href=\"https://drive.google.com/open?id=1svw3O6yBTRyhJSPphTVJwYF36dbNXRBKp6G3zWzwc0I\">printable</a>)", 
                 "watch Shiffman's 8.1 \"What is OOP\" (<a href=\"https://www.youtube.com/watch?v=YcbcfkLzgvs\">link</a>)"
-            ],
-            "sortableEndDate": "2017-09-18 Mon",
+            ], 
+            "sortableEndDate": "2017-09-18 Mon", 
             "sortableStartDate": "2017-09-15 Fri"
-        },
+        }, 
         {
-            "displayEndDate": "Wed Sept 20",
-            "displayStartDate": "Mon Sept 18",
+            "displayEndDate": "Wed Sept 20", 
+            "displayStartDate": "Mon Sept 18", 
             "lines": [
-                "watch Shiffman's 8.2 \"Defining a Class, Part 1\" (<a href=\"https://www.youtube.com/watch?v=lmgcMPRa1qw\">link</a>) and take notes in your notebook.",
+                "watch Shiffman's 8.2 \"Defining a Class, Part 1\" (<a href=\"https://www.youtube.com/watch?v=lmgcMPRa1qw\">link</a>) and take notes in your notebook.", 
                 "watch Shiffman's 8.3 \"Defining a Class, Part 2\" (<a href=\"https://www.youtube.com/watch?v=XwfOVFelLoo\">link</a>) and take notes in your notebook."
-            ],
-            "sortableEndDate": "2017-09-20 Wed",
+            ], 
+            "sortableEndDate": "2017-09-20 Wed", 
             "sortableStartDate": "2017-09-18 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Fri Sept 22",
-            "displayStartDate": "Mon Sept 18",
+            "displayEndDate": "Fri Sept 22", 
+            "displayStartDate": "Mon Sept 18", 
             "lines": [
                 "<strong>Finish Lightning.</strong> (<a href=\"https://woodstockcs.github.io/instructions/lightning\">instructions</a>)"
-            ],
-            "sortableEndDate": "2017-09-22 Fri",
+            ], 
+            "sortableEndDate": "2017-09-22 Fri", 
             "sortableStartDate": "2017-09-18 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Wed Sept 27",
-            "displayStartDate": "Fri Sept 22",
+            "displayEndDate": "Wed Sept 27", 
+            "displayStartDate": "Fri Sept 22", 
             "lines": [
                 "prepare for test Wednesday (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6WE1VamZrQTdodVU\">review slides</a>) (check homework solutions on Piazza)"
-            ],
-            "sortableEndDate": "2017-09-27 Wed",
+            ], 
+            "sortableEndDate": "2017-09-27 Wed", 
             "sortableStartDate": "2017-09-22 Fri"
-        },
+        }, 
         {
-            "displayEndDate": "Wed Sept 27",
-            "displayStartDate": "Mon Sept 25",
+            "displayEndDate": "Wed Sept 27", 
+            "displayStartDate": "Mon Sept 25", 
             "lines": [
                 "do Practice with Classes sheet, then check solutions on Piazza"
-            ],
-            "sortableEndDate": "2017-09-27 Wed",
+            ], 
+            "sortableEndDate": "2017-09-27 Wed", 
             "sortableStartDate": "2017-09-25 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Fri Sept 29",
-            "displayStartDate": "Wed Sept 27",
+            "displayEndDate": "Fri Sept 29", 
+            "displayStartDate": "Wed Sept 27", 
             "lines": [
                 "do 30 minutes on the Dice project (instructions linked below) -- use Piazza if needed!"
-            ],
-            "sortableEndDate": "2017-09-29 Fri",
+            ], 
+            "sortableEndDate": "2017-09-29 Fri", 
             "sortableStartDate": "2017-09-27 Wed"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 02",
-            "displayStartDate": "Wed Sept 27",
+            "displayEndDate": "Mon Oct 02", 
+            "displayStartDate": "Wed Sept 27", 
             "lines": [
                 "return signed field trip form"
-            ],
-            "sortableEndDate": "2017-10-02 Mon",
+            ], 
+            "sortableEndDate": "2017-10-02 Mon", 
             "sortableStartDate": "2017-09-27 Wed"
+        }, 
+        {
+            "displayEndDate": "Mon Oct 02", 
+            "displayStartDate": "Fri Sept 29", 
+            "lines": [
+                "do 'Practice with Nested Loops' (<a href=\"https://docs.google.com/document/d/1-Dq8TJsrhODYg4_rZAtYttZ7MZOpCR0QWnM4Ai-kc04/edit\">printable</a>)"
+            ], 
+            "sortableEndDate": "2017-10-02 Mon", 
+            "sortableStartDate": "2017-09-29 Fri"
         }
     ]
 }
