@@ -100,7 +100,7 @@
             ], 
             "displayDate": "Mon Sept 25", 
             "sortableDate": "2017-09-25 Mon", 
-            "status": "TIMED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
@@ -110,7 +110,7 @@
             ], 
             "displayDate": "Wed Sept 27", 
             "sortableDate": "2017-09-27 Wed", 
-            "status": "TIMED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
@@ -120,24 +120,14 @@
             ], 
             "displayDate": "Fri Sept 29", 
             "sortableDate": "2017-09-29 Fri", 
-            "status": "TIMED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
-                "growth mindset activities"
+                "work on Dice"
             ], 
             "displayDate": "Mon Oct 02", 
             "sortableDate": "2017-10-02 Mon", 
-            "status": "TIMED"
-        }, 
-        {
-            "agenda": [
-                "Dice gallery", 
-                "lecture", 
-                "compare representations"
-            ], 
-            "displayDate": "Wed Oct 04", 
-            "sortableDate": "2017-10-04 Wed", 
             "status": "TIMED"
         }
     ]

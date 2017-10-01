@@ -85,7 +85,7 @@
             ], 
             "displayDate": "Mon Sept 25", 
             "sortableDate": "2017-09-25 Mon", 
-            "status": "TIMED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
@@ -95,27 +95,15 @@
             ], 
             "displayDate": "Tue Sept 26", 
             "sortableDate": "2017-09-26 Tue", 
-            "status": "TIMED"
+            "status": "DONE"
         }, 
         {
             "agenda": [
-                "make your own custom bluescreen photo"
+                "codecombat.com<del>make your own custom bluescreen photo</del>"
             ], 
             "displayDate": "Thu Sept 28", 
             "sortableDate": "2017-09-28 Thu", 
-            "status": "TIMED"
-        }, 
-        {
-            "agenda": [], 
-            "displayDate": "Tue Oct 03", 
-            "sortableDate": "2017-10-03 Tue", 
-            "status": "TIMED"
-        }, 
-        {
-            "agenda": [], 
-            "displayDate": "Thu Oct 05", 
-            "sortableDate": "2017-10-05 Thu", 
-            "status": "TIMED"
+            "status": "DONE"
         }
     ]
 }
