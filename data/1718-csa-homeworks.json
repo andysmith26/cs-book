@@ -123,6 +123,15 @@
             ], 
             "sortableEndDate": "2017-10-02 Mon", 
             "sortableStartDate": "2017-09-29 Fri"
+        }, 
+        {
+            "displayEndDate": "Thu Oct 05", 
+            "displayStartDate": "Mon Oct 02", 
+            "lines": [
+                "finish Dice (due 3:15pm on Thursday)"
+            ], 
+            "sortableEndDate": "2017-10-05 Thu", 
+            "sortableStartDate": "2017-10-02 Mon"
         }
     ]
 }
