@@ -39,6 +39,22 @@
                 "field trip to Harvard"
             ], 
             "sortableDate": "2017-10-06 Fri"
+        }, 
+        {
+            "displayDate": "Wed Oct 11", 
+            "lines": [
+                "by appt", 
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
+            ], 
+            "sortableDate": "2017-10-11 Wed"
+        }, 
+        {
+            "displayDate": "Wed Oct 18", 
+            "lines": [
+                "by appt", 
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
+            ], 
+            "sortableDate": "2017-10-18 Wed"
         }
     ]
 }
