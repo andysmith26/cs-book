@@ -103,6 +103,24 @@
             ],
             "sortableEndDate": "2017-10-05 Thu",
             "sortableStartDate": "2017-10-03 Tue"
+        },
+          {
+            "displayEndDate": "Mon Oct 16",
+            "displayStartDate": "Tue Oct 10",
+            "lines": [
+                "Do Image 7 exercises and Image 8 exercises"
+            ],
+            "sortableEndDate": "2017-10-16 Mon",
+            "sortableStartDate": "2017-10-10 Tue"
+        },
+         {
+            "displayEndDate": "Thu Oct 12",
+            "displayStartDate": "Tue Oct 10",
+            "lines": [
+                "Create Flipgrid video (<a href="">link 1</a> for) (<a href="">link 2</a> for) (<a href="">link 3</a> for)"
+            ],
+            "sortableEndDate": "2017-10-12 Thu",
+            "sortableStartDate": "2017-10-10 Tue"
         }
     ]
 }
