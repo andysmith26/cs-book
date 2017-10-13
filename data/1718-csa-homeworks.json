@@ -137,7 +137,7 @@
             "displayEndDate": "Mon Oct 16", 
             "displayStartDate": "Fri Oct 13", 
             "lines": [
-                "write a short sketch that creates one Bacteria object which moves in a random walk around the screen",
+                "write a short sketch that creates one Bacteria object which moves in a random walk around the screen (you might find it helpful to reference the Chemotaxis slides #1-30, see link in Materials section of the class apge)",
                 "optional challenge: write an additional class for an object that randomly jumps around the screen, and display it"
             ], 
             "sortableEndDate": "2017-10-16 Mon", 
