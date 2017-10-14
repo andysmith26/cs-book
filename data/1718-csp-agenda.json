@@ -104,6 +104,34 @@
             "displayDate": "Thu Sept 28",
             "sortableDate": "2017-09-28 Thu",
             "status": "DONE"
+        },
+        {
+            "agenda": [
+                "Image bluescreens"
+            ],
+            "displayDate": "Mon Oct 02",
+            "sortableDate": "2017-10-02 Mon",
+            "status": "DONE"
+        },
+        {
+            "agenda": [
+                "Work with your partner on Levels 1-9 in the Turtle Blockly Game. Alternate who types and who navigates each level. (Level 1 = the less experienced programmer is typist. Level 2 = the more experienced programmer is typist. and so on)"
+            ],
+            "displayDate": "Tue Oct 03",
+            "sortableDate": "2017-10-03 Tue",
+            "status": "DONE"
+        },
+        {
+            "agenda": [],
+            "displayDate": "Thu Oct 05",
+            "sortableDate": "2017-10-05 Thu",
+            "status": "DONE"
+        },
+        {
+            "agenda": [],
+            "displayDate": "Tue Oct 10",
+            "sortableDate": "2017-10-10 Tue",
+            "status": "TIMED"
         }
     ]
 }

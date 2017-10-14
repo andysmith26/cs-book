@@ -104,7 +104,7 @@
             "sortableEndDate": "2017-10-05 Thu",
             "sortableStartDate": "2017-10-03 Tue"
         },
-          {
+        {
             "displayEndDate": "Thu Oct 12",
             "displayStartDate": "Tue Oct 10",
             "lines": [
@@ -113,11 +113,11 @@
             "sortableEndDate": "2017-10-12 Thu",
             "sortableStartDate": "2017-10-10 Tue"
         },
-         {
+        {
             "displayEndDate": "Mon Oct 16",
             "displayStartDate": "Tue Oct 10",
             "lines": [
-                "Study vocab <a href='https://quizlet.com/232263611/internet-part-1-flash-cards'>here</a> and create Flipgrid video (<a href='https://flipgrid.com/2a7b91'>link 1</a> for Lobby Screen) (<a href='https://flipgrid.com/78a1c0'>link 2</a> for Word Count Viz) (<a href='https://flipgrid.com/6e3301'>link 3</a> for Randomizer)"
+                "Study vocab <a href='https://quizlet.com/232263611/internet-part-1-flash-cards'>here</a> then create Flipgrid video (<a href='https://flipgrid.com/2a7b91'>link 1</a> for students working on the Lobby Screen team) (<a href='https://flipgrid.com/78a1c0'>link 2</a> for students working on the Word Count Viz team) (<a href='https://flipgrid.com/6e3301'>link 3</a> for students working on the Randomizer team)"
             ],
             "sortableEndDate": "2017-10-16 Mon",
             "sortableStartDate": "2017-10-10 Tue"

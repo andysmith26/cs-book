@@ -1,51 +1,51 @@
 {
     "aheads": [
         {
-            "displayDate": "Wed Sept 27", 
+            "displayDate": "Wed Sept 27",
             "lines": [
-                "start of class", 
+                "start of class",
                 "Test 01"
-            ], 
+            ],
             "sortableDate": "2017-09-27 Wed"
-        }, 
+        },
         {
-            "displayDate": "Fri Sept 29", 
+            "displayDate": "Fri Sept 29",
             "lines": [
-                "3:15pm", 
+                "3:15pm",
                 "Check Point 1"
-            ], 
+            ],
             "sortableDate": "2017-09-29 Fri"
-        }, 
+        },
         {
-            "displayDate": "Wed Oct 04", 
+            "displayDate": "Wed Oct 04",
             "lines": [
-                "by appt", 
+                "by appt",
                 "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
-            ], 
+            ],
             "sortableDate": "2017-10-04 Wed"
-        }, 
+        },
         {
-            "displayDate": "Fri Oct 06", 
+            "displayDate": "Fri Oct 06",
             "lines": [
-                "all day", 
+                "all day",
                 "field trip to Harvard"
-            ], 
+            ],
             "sortableDate": "2017-10-06 Fri"
-        }, 
+        },
         {
-            "displayDate": "Wed Oct 11", 
+            "displayDate": "Wed Oct 11",
             "lines": [
-                "by appt", 
+                "by appt",
                 "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
-            ], 
+            ],
             "sortableDate": "2017-10-11 Wed"
-        }, 
+        },
         {
-            "displayDate": "Wed Oct 18", 
+            "displayDate": "Wed Oct 18",
             "lines": [
-                "by appt", 
+                "by appt",
                 "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
-            ], 
+            ],
             "sortableDate": "2017-10-18 Wed"
         }
     ]

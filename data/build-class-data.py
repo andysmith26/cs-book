@@ -4,6 +4,7 @@ import re
 import subprocess
 
 CLASSES_FILE = 'current-class-files.txt'
+FILE_PREFIX = '~/g/org/'
 targetAgendaDateString = "*** "
 targetAgendaStartString = "**** agenda"
 targetAgendaEndString = "*"
@@ -62,7 +63,7 @@ with open(CLASSES_FILE, "r") as file:
 for f in files:
     print("starting: " + f)
 
-    with open(os.path.join(os.path.dirname(__file__), "..", "..", "org", f), "r") as file:
+    with open(os.path.join(os.environ['HOME'], "g", "org", f), "r") as file:
         lines = [line.rstrip('\n') for line in file]
         print("found %s lines in file" % (len(lines)))
 
