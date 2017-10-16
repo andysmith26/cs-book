@@ -142,6 +142,24 @@
             ],
             "sortableEndDate": "2017-10-16 Mon",
             "sortableStartDate": "2017-10-13 Fri"
+        },
+        {
+            "displayEndDate": "Fri Oct 20",
+            "displayStartDate": "Mon Oct 16",
+            "lines": [
+                "do Chemotaxis parts 2 and 3"
+            ],
+            "sortableEndDate": "2017-10-20 Fri",
+            "sortableStartDate": "2017-10-16 Mon"
+        },
+         {
+            "displayEndDate": "Fri Oct 20",
+            "displayStartDate": "Mon Oct 16",
+            "lines": [
+                "finish Chemotaxis"
+            ],
+            "sortableEndDate": "2017-10-20 Fri",
+            "sortableStartDate": "2017-10-16 Mon"
         }
     ]
 }
