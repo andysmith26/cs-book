@@ -155,7 +155,10 @@
             "status": "TIMED"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "- Dice gallery", 
+                "- slides about objects and arrays"
+            ], 
             "displayDate": "Mon Oct 16", 
             "sortableDate": "2017-10-16 Mon", 
             "status": "DONE"
@@ -173,7 +176,9 @@
             "status": "DONE"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "review for test"
+            ], 
             "displayDate": "Mon Oct 23", 
             "sortableDate": "2017-10-23 Mon", 
             "status": "TIMED"

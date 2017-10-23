@@ -75,10 +75,8 @@ for f in files:
     agendaLines = []
     classList = []
     for line in lines:
-        if gotDate:
-            if line[:len(targetAgendaStartString)] == targetAgendaStartString:
-                gotAgenda = True
-            elif line[:len(targetAgendaEndString)] == targetAgendaEndString:
+        if gotAgenda == True:
+            if line[:len(targetAgendaEndString)] == targetAgendaEndString:
                 classSession["agenda"] = agendaLines
                 classList.append(classSession)
                 classSession = {}
@@ -87,6 +85,10 @@ for f in files:
                 gotAgenda = False
             else:
                 agendaLines.append(line)
+        elif gotDate:
+            if line[:len(targetAgendaStartString)] == targetAgendaStartString:
+                gotAgenda = True
+
         else:
             # print(line[0:4])
             if line[:len(targetAgendaDateString)] == targetAgendaDateString:

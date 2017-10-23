@@ -127,49 +127,68 @@
             "status": "DONE"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "summarize learning from harvard", 
+                "do Image 7"
+            ], 
             "displayDate": "Tue Oct 10", 
             "sortableDate": "2017-10-10 Tue", 
             "status": "DONE"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "visit Supreme Court session"
+            ], 
             "displayDate": "Thu Oct 12", 
             "sortableDate": "2017-10-12 Thu", 
             "status": "DONE"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "make a poster about bluescreen image manipulation"
+            ], 
             "displayDate": "Mon Oct 16", 
             "sortableDate": "2017-10-16 Mon", 
             "status": "READY"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "get scrum boards set up", 
+                "study hall (no internet)"
+            ], 
             "displayDate": "Tue Oct 17", 
             "sortableDate": "2017-10-17 Tue", 
             "status": "DONE"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "finish posters: annotate them with (1) iteration, (2) abstraction, (3) parameters", 
+                "start HW"
+            ], 
             "displayDate": "Thu Oct 19", 
             "sortableDate": "2017-10-19 Thu", 
             "status": "DONE"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "Students will make progress on the current WCS Product sprint by working on your assigned tasks in order to improve your understanding of teamwork and troubleshooting in software engineering."
+            ], 
             "displayDate": "Mon Oct 23", 
             "sortableDate": "2017-10-23 Mon", 
             "status": "READY"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "You will review concepts by commenting on your classmates 'fake news' images, consolidating info from your videos, looking at another example of abstraction, and playing a game in order to prepare yourself to show evidence of understand the standards."
+            ], 
             "displayDate": "Tue Oct 24", 
             "sortableDate": "2017-10-24 Tue", 
             "status": "READY"
         }, 
         {
-            "agenda": [], 
+            "agenda": [
+                "You will show evidence of your understanding by taking a test and live coding together in order to make connections between your various programming experiences."
+            ], 
             "displayDate": "Thu Oct 26", 
             "sortableDate": "2017-10-26 Thu", 
             "status": "TIMED"
