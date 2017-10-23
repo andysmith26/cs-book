@@ -1,152 +1,161 @@
 {
     "homeworks": [
         {
-            "displayEndDate": "Tue Sept 05",
-            "displayStartDate": "Thu Aug 31",
+            "displayEndDate": "Tue Sept 05", 
+            "displayStartDate": "Thu Aug 31", 
             "lines": [
-                "Take the survey, <a href=\"https://goo.gl/forms/1bDF4IRCYfJIu7uD2\">linked here</a>. ",
-                "Find a laptop. Figure out which laptop you're going to bring with you to class with you every day, starting on the day this assignment is due. If this is a hardship, see Mr. Smith immediately; we will find a good solution.",
-                "Install Atom on your laptop. Installation instructions are <a href=\"https://flight-manual.atom.io/getting-started/sections/installing-atom/\">linked here</a>.",
-                "Then in Atom *change your theme* and *turn on Soft Wrap* using the info in the middle of the page <a href=\"http://flight-manual.atom.io/getting-started/sections/atom-basics/\">linked here</a>",
+                "Take the survey, <a href=\"https://goo.gl/forms/1bDF4IRCYfJIu7uD2\">linked here</a>. ", 
+                "Find a laptop. Figure out which laptop you're going to bring with you to class with you every day, starting on the day this assignment is due. If this is a hardship, see Mr. Smith immediately; we will find a good solution.", 
+                "Install Atom on your laptop. Installation instructions are <a href=\"https://flight-manual.atom.io/getting-started/sections/installing-atom/\">linked here</a>.", 
+                "Then in Atom *change your theme* and *turn on Soft Wrap* using the info in the middle of the page <a href=\"http://flight-manual.atom.io/getting-started/sections/atom-basics/\">linked here</a>", 
                 "<strong>Your classmates and I will expect that you have successfully installed Atom and that you are ready to use it before the class when this assignment is due. Thanks!</strong>"
-            ],
-            "sortableEndDate": "2017-09-05 Tue",
+            ], 
+            "sortableEndDate": "2017-09-05 Tue", 
             "sortableStartDate": "2017-08-31 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Sept 07",
-            "displayStartDate": "Tue Sept 05",
+            "displayEndDate": "Thu Sept 07", 
+            "displayStartDate": "Tue Sept 05", 
             "lines": [
-                "Read Blown To Bits Chapter 1 (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6c01EQVNONWlfLVk\">linked here</a>).",
-                "In Piazza create a new \"Note\" (folder \"0-intro\") and write 100-200 words about how one part of the reading is relevant to you as a student at WUHS.",
+                "Read Blown To Bits Chapter 1 (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6c01EQVNONWlfLVk\">linked here</a>).", 
+                "In Piazza create a new \"Note\" (folder \"0-intro\") and write 100-200 words about how one part of the reading is relevant to you as a student at WUHS.", 
                 "Be prepared to discuss the entire reading next class."
-            ],
-            "sortableEndDate": "2017-09-07 Thu",
+            ], 
+            "sortableEndDate": "2017-09-07 Thu", 
             "sortableStartDate": "2017-09-05 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 11",
-            "displayStartDate": "Thu Sept 07",
+            "displayEndDate": "Mon Sept 11", 
+            "displayStartDate": "Thu Sept 07", 
             "lines": [
-                "Finish FirstBlog",
-                "Finish Codecademy Lesson \"Intro to HTML\"",
+                "Finish FirstBlog", 
+                "Finish Codecademy Lesson \"Intro to HTML\"", 
                 "<del>Compile your \"two morals\" notes into a second blog post.</del> (cancelled at the end of class 09/07)"
-            ],
-            "sortableEndDate": "2017-09-11 Mon",
+            ], 
+            "sortableEndDate": "2017-09-11 Mon", 
             "sortableStartDate": "2017-09-07 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 18",
-            "displayStartDate": "Thu Sept 14",
+            "displayEndDate": "Mon Sept 18", 
+            "displayStartDate": "Thu Sept 14", 
             "lines": [
-                "create a second blog post on your blog, in which you answer (in 100-200 words) the question you took notes on in class last week: \"What does a good citizen look like in a world where the Bits authors 'two basic morals' exist?\" (book pg 14, pdf pg 17)",
-                "return signed research consent form (regardless of your decision to participate)",
-                "collect survey data from 5 people not in this class",
+                "create a second blog post on your blog, in which you answer (in 100-200 words) the question you took notes on in class last week: \"What does a good citizen look like in a world where the Bits authors 'two basic morals' exist?\" (book pg 14, pdf pg 17)", 
+                "return signed research consent form (regardless of your decision to participate)", 
+                "collect survey data from 5 people not in this class", 
                 "click one of the 'full article' buttons linked on <a href=\"http://technews.acm.org/\">ACM TechNews</a>, read the full article, and be ready to verbally summarize and discuss it next class"
-            ],
-            "sortableEndDate": "2017-09-18 Mon",
+            ], 
+            "sortableEndDate": "2017-09-18 Mon", 
             "sortableStartDate": "2017-09-14 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Tue Sept 19",
-            "displayStartDate": "Mon Sept 18",
+            "displayEndDate": "Tue Sept 19", 
+            "displayStartDate": "Mon Sept 18", 
             "lines": [
                 "write 200-300 word summary of your ACM TechNews article (which you read over the weekend) and add it to your blog as a new blog post"
-            ],
-            "sortableEndDate": "2017-09-19 Tue",
+            ], 
+            "sortableEndDate": "2017-09-19 Tue", 
             "sortableStartDate": "2017-09-18 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Sept 21",
-            "displayStartDate": "Tue Sept 19",
+            "displayEndDate": "Thu Sept 21", 
+            "displayStartDate": "Tue Sept 19", 
             "lines": [
-                "read/do Images 1 and 1.5 and 2 (links in resources)",
+                "read/do Images 1 and 1.5 and 2 (links in resources)", 
                 "post a Piazza note <strong>to instructor only</strong> with screenshot of Image 2 exercises (code+image)"
-            ],
-            "sortableEndDate": "2017-09-21 Thu",
+            ], 
+            "sortableEndDate": "2017-09-21 Thu", 
             "sortableStartDate": "2017-09-19 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 25",
-            "displayStartDate": "Thu Sept 21",
+            "displayEndDate": "Mon Sept 25", 
+            "displayStartDate": "Thu Sept 21", 
             "lines": [
-                "do IntroComputing exercises for Image 3, Image 4, and Image 5 (including the \"optional\" one)",
+                "do IntroComputing exercises for Image 3, Image 4, and Image 5 (including the \"optional\" one)", 
                 "post a Piazza note <strong>to instructor only</strong> with screenshots of the code+images from the Image 5 exercises"
-            ],
-            "sortableEndDate": "2017-09-25 Mon",
+            ], 
+            "sortableEndDate": "2017-09-25 Mon", 
             "sortableStartDate": "2017-09-21 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Sept 28",
-            "displayStartDate": "Tue Sept 26",
+            "displayEndDate": "Thu Sept 28", 
+            "displayStartDate": "Tue Sept 26", 
             "lines": [
-                "do IntroComputing exercises for Image 6",
+                "do IntroComputing exercises for Image 6", 
                 "post a Piazza note <strong>to instructor only</strong> with screenshots of the code+images from the Image 6 exercises"
-            ],
-            "sortableEndDate": "2017-09-28 Thu",
+            ], 
+            "sortableEndDate": "2017-09-28 Thu", 
             "sortableStartDate": "2017-09-26 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 02",
-            "displayStartDate": "Tue Sept 26",
+            "displayEndDate": "Mon Oct 02", 
+            "displayStartDate": "Tue Sept 26", 
             "lines": [
                 "return field trip form"
-            ],
-            "sortableEndDate": "2017-10-02 Mon",
+            ], 
+            "sortableEndDate": "2017-10-02 Mon", 
             "sortableStartDate": "2017-09-26 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 05",
-            "displayStartDate": "Tue Oct 03",
+            "displayEndDate": "Thu Oct 05", 
+            "displayStartDate": "Tue Oct 03", 
             "lines": [
                 "Do Level 10 of the Turtle Blockly Game on your own. Take a screenshot of your Level 10 image and your code, and post it as a public note to Piazza. (start this in class on Tuesday, and work with the partner assigned Monday this week)"
-            ],
-            "sortableEndDate": "2017-10-05 Thu",
+            ], 
+            "sortableEndDate": "2017-10-05 Thu", 
             "sortableStartDate": "2017-10-03 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 12",
-            "displayStartDate": "Tue Oct 10",
+            "displayEndDate": "Thu Oct 12", 
+            "displayStartDate": "Tue Oct 10", 
             "lines": [
                 "Do Image 7 exercises"
-            ],
-            "sortableEndDate": "2017-10-12 Thu",
+            ], 
+            "sortableEndDate": "2017-10-12 Thu", 
             "sortableStartDate": "2017-10-10 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 16",
-            "displayStartDate": "Tue Oct 10",
+            "displayEndDate": "Mon Oct 16", 
+            "displayStartDate": "Tue Oct 10", 
             "lines": [
                 "Study vocab <a href='https://quizlet.com/232263611/internet-part-1-flash-cards'>here</a> then create Flipgrid video (<a href='https://flipgrid.com/2a7b91'>link 1</a> for students working on the Lobby Screen team) (<a href='https://flipgrid.com/78a1c0'>link 2</a> for students working on the Word Count Viz team) (<a href='https://flipgrid.com/6e3301'>link 3</a> for students working on the Randomizer team)"
-            ],
-            "sortableEndDate": "2017-10-16 Mon",
+            ], 
+            "sortableEndDate": "2017-10-16 Mon", 
             "sortableStartDate": "2017-10-10 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 19",
-            "displayStartDate": "Mon Oct 16",
+            "displayEndDate": "Thu Oct 19", 
+            "displayStartDate": "Mon Oct 16", 
             "lines": [
                 "optional: do Image 8 exercises. post screenshots of your code + images on Piazza as a private note to instructor"
-            ],
-            "sortableEndDate": "2017-10-19 Thu",
+            ], 
+            "sortableEndDate": "2017-10-19 Thu", 
             "sortableStartDate": "2017-10-16 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 23",
-            "displayStartDate": "Thu Oct 19",
+            "displayEndDate": "Mon Oct 23", 
+            "displayStartDate": "Thu Oct 19", 
             "lines": [
                 "Finish or make visible progress on your WCS sprint task (see notecards on your scrum board)"
-            ],
-            "sortableEndDate": "2017-10-23 Mon",
+            ], 
+            "sortableEndDate": "2017-10-23 Mon", 
             "sortableStartDate": "2017-10-19 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 23",
-            "displayStartDate": "Thu Oct 19",
+            "displayEndDate": "Mon Oct 23", 
+            "displayStartDate": "Thu Oct 19", 
             "lines": [
                 "Create your own 'fake news' image using the Custom Bluescreen link at IntroComputing.com. On Piazza, post all of the following in one public note: (1) all three of your images (image, back, and result), and (2) a copy/paste of the text of your code (not a screenshot like before), and (3) a short 'fake news' headline to accompany your image, and (4) a short (max 200 words) description of the incremental development process of your program, focusing on one difficulty you encountered and how you resolved it."
-            ],
-            "sortableEndDate": "2017-10-23 Mon",
+            ], 
+            "sortableEndDate": "2017-10-23 Mon", 
+            "sortableStartDate": "2017-10-19 Thu"
+        }, 
+        {
+            "displayEndDate": "Mon Oct 23", 
+            "displayStartDate": "Thu Oct 19", 
+            "lines": [
+                "Edit shared slide deck <a href='https://docs.google.com/a/wcsu.net/presentation/d/1tHlWwEvFCn-zWV3ji4xxCSZuSZDWVg-NGQoiY4AMteM/edit?usp=sharing'>linked here</a>. Create two new slides: one has your final image and your headline (in large font). The second has your revised description (taking into account your colleagues' suggestions on Piazza) of difficulty and resolution."
+            ], 
+            "sortableEndDate": "2017-10-23 Mon", 
             "sortableStartDate": "2017-10-19 Thu"
         }
     ]
