@@ -126,11 +126,28 @@
             "displayEndDate": "Thu Oct 19",
             "displayStartDate": "Mon Oct 16",
             "lines": [
-                "Create your own 'fake news' image using the Custom Bluescreen link at IntroComputing.com. On Piazza, post all of the following in one public note: (1) all three of your images (image, back, and result), and (2) a copy/paste of the text of your code (not a screenshot like before), and (3) a short 'fake news' headline to accompany your image, and (4) a short (max 200 words) description of the incremental development process of your program, focusing on one difficulty you encountered and how you resolved it.",
                 "optional: do Image 8 exercises. post screenshots of your code + images on Piazza as a private note to instructor"
             ],
             "sortableEndDate": "2017-10-19 Thu",
             "sortableStartDate": "2017-10-16 Mon"
+        },
+        {
+            "displayEndDate": "Mon Oct 23",
+            "displayStartDate": "Thu Oct 19",
+            "lines": [
+                "Finish or make visible progress on your WCS sprint task (see notecards on your scrum board)"
+            ],
+            "sortableEndDate": "2017-10-23 Mon",
+            "sortableStartDate": "2017-10-19 Thu"
+        },
+        {
+            "displayEndDate": "Mon Oct 23",
+            "displayStartDate": "Thu Oct 19",
+            "lines": [
+                "Create your own 'fake news' image using the Custom Bluescreen link at IntroComputing.com. On Piazza, post all of the following in one public note: (1) all three of your images (image, back, and result), and (2) a copy/paste of the text of your code (not a screenshot like before), and (3) a short 'fake news' headline to accompany your image, and (4) a short (max 200 words) description of the incremental development process of your program, focusing on one difficulty you encountered and how you resolved it."
+            ],
+            "sortableEndDate": "2017-10-23 Mon",
+            "sortableStartDate": "2017-10-19 Thu"
         }
     ]
 }

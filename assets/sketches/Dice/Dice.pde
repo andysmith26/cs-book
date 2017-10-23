@@ -1,3 +1,5 @@
+
+// Noah Anderson
 // Declare Variables
 Die player, opponent;
 int playerSum, opponentSum;

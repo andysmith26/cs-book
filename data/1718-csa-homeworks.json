@@ -160,6 +160,16 @@
             ],
             "sortableEndDate": "2017-10-20 Fri",
             "sortableStartDate": "2017-10-16 Mon"
+        },
+                 {
+            "displayEndDate": "Mon Oct 23",
+            "displayStartDate": "Fri Oct 20",
+            "lines": [
+                "read and do Java Arithmetic packet Part 1 (optional but recommended: also do Part 2)",
+                "read and do Compound Conditionals packet"
+            ],
+            "sortableEndDate": "2017-10-23 Mon",
+            "sortableStartDate": "2017-10-20 Fri"
         }
     ]
 }
