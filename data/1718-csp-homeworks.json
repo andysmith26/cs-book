@@ -150,13 +150,22 @@
             "sortableStartDate": "2017-10-19 Thu"
         }, 
         {
-            "displayEndDate": "Mon Oct 23", 
-            "displayStartDate": "Thu Oct 19", 
+            "displayEndDate": "Thu Oct 26", 
+            "displayStartDate": "Tue Oct 24", 
             "lines": [
                 "Edit shared slide deck <a href='https://docs.google.com/a/wcsu.net/presentation/d/1tHlWwEvFCn-zWV3ji4xxCSZuSZDWVg-NGQoiY4AMteM/edit?usp=sharing'>linked here</a>. Create two new slides: one has your final image and your headline (in large font). The second has your revised description (taking into account your colleagues' suggestions on Piazza) of difficulty and resolution."
             ], 
-            "sortableEndDate": "2017-10-23 Mon", 
-            "sortableStartDate": "2017-10-19 Thu"
+            "sortableEndDate": "2017-10-26 Thu", 
+            "sortableStartDate": "2017-10-24 Tue"
+        }, 
+        {
+            "displayEndDate": "Thu Oct 26", 
+            "displayStartDate": "Mon Oct 23", 
+            "lines": [
+                "study for test: abstraction, your WCS product (what is its purpose), where have you been creative, flipgrid questions, internet vocab (see links below)"
+            ], 
+            "sortableEndDate": "2017-10-26 Thu", 
+            "sortableStartDate": "2017-10-23 Mon"
         }
     ]
 }
