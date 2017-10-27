@@ -182,6 +182,15 @@
             ],
             "sortableEndDate": "2017-10-25 Wed",
             "sortableStartDate": "2017-10-23 Mon"
+        },
+        {
+            "displayEndDate": "Mon Oct 30",
+            "displayStartDate": "Fri Oct 27",
+            "lines": [
+                "recreate one of <a href='illusions.html'>these optical illusions</a> in Processings"
+            ],
+            "sortableEndDate": "2017-10-30 Mon",
+            "sortableStartDate": "2017-10-27 Fri"
         }
     ]
 }
