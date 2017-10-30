@@ -191,6 +191,15 @@
             ],
             "sortableEndDate": "2017-10-30 Mon",
             "sortableStartDate": "2017-10-27 Fri"
+        },
+        {
+            "displayEndDate": "Mon Oct 30",
+            "displayStartDate": "Fri Oct 27",
+            "lines": [
+                "test corrections per <a href='https://woodstockcs.github.io/resources.html#test-corrections'>instructions here</a>"
+            ],
+            "sortableEndDate": "2017-10-30 Mon",
+            "sortableStartDate": "2017-10-27 Fri"
         }
     ]
 }
