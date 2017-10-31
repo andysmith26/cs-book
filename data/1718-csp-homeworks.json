@@ -166,6 +166,15 @@
             ],
             "sortableEndDate": "2017-10-26 Thu",
             "sortableStartDate": "2017-10-23 Mon"
+        },
+        {
+            "displayEndDate": "Thu Nov 02",
+            "displayStartDate": "Mon Oct 31",
+            "lines": [
+                "read <a href='http://forum.code.org/t/is-a-loop-an-example-of-abstraction/6133'>this</a> and summarize it in a new blog post on github (means, update your FirstBlog page so that it contains a new post)"
+            ],
+            "sortableEndDate": "2017-11-02 Thu",
+            "sortableStartDate": "2017-10-31 Tue"
         }
     ]
 }
