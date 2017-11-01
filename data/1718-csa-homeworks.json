@@ -200,6 +200,15 @@
             ],
             "sortableEndDate": "2017-11-01 Wed",
             "sortableStartDate": "2017-10-30 Mon"
+        },
+        {
+            "displayEndDate": "Fri Nov 03",
+            "displayStartDate": "Wed Nov 01",
+            "lines": [
+                "in your programmer's notebook, take notes on all the slides <a href=''>here</a>"
+            ],
+            "sortableEndDate": "2017-11-03 Fri",
+            "sortableStartDate": "2017-11-01 Wed"
         }
     ]
 }
