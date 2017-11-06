@@ -209,6 +209,15 @@
             ],
             "sortableEndDate": "2017-11-03 Fri",
             "sortableStartDate": "2017-11-01 Wed"
+        },
+                {
+            "displayEndDate": "Wed Nov 08",
+            "displayStartDate": "Mon Nov 06",
+            "lines": [
+                "<b>finish Starfield</b>"
+            ],
+            "sortableEndDate": "2017-11-08 Wed",
+            "sortableStartDate": "2017-11-06 Mon"
         }
     ]
 }
