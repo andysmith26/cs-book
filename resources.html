@@ -411,10 +411,18 @@
               <h4>How to Troubleshoot the Display of Processing Sketches Online</h4>
             </div>
             <div class="card-block">
+              <p>Open the javascript console, where you might find an error message that gives you a clue about what the problem is. Or you can look through your code carefully to:</p>
               <ul>
-                <li>find and remove any unsupported functions, like <code>clear();</code></li>
-                <li>find any rename any variables that have the same name as functions, like <code>size</code></li>
-                <li>find and comment-out any java "print" lines, like <code>System.out.println(...)</code> or <code>println</code><li>
+                <li>rename any variables that have the same name as functions, like <code>size</code></li>
+                <li>remove or comment out these functions which are not supported when you run processing online:
+                  <ul>
+                    <li><code>clear();</code></li>
+                    <li>System.out.println(...)</li>
+                                        <li>println(...)</li>
+                                        <li>System.out.print(...)</li>
+                                        <li>print(...)</li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
