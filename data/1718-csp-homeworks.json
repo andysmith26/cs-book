@@ -184,6 +184,15 @@
             ],
             "sortableEndDate": "2017-11-06 Mon",
             "sortableStartDate": "2017-11-02 Thu"
+        },
+        {
+            "displayEndDate": "Thu Nov 09",
+            "displayStartDate": "Tue Nov 07",
+            "lines": [
+                "do <a href='https://studio.code.org/s/csp3/stage/6/puzzle/1'>Puzzles 1-3 from Lesson 6</a>. work solo or with pair programming"
+            ],
+            "sortableEndDate": "2017-11-09 Thu",
+            "sortableStartDate": "2017-11-07 Tue"
         }
     ]
 }
