@@ -223,6 +223,7 @@
             "displayEndDate": "Mon Nov 13",
             "displayStartDate": "Wed Nov 08",
             "lines": [
+                "read the array slides linked below",
                 "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-2</b> > arrayCount9, arrayFront9 ... <b>Array-2</b> > countEvens, bigDiff ... (optional extras = Array-2 > centeredAverage, lucky13, sum28)"
             ],
             "sortableEndDate": "2017-11-13 Mon",
