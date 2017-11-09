@@ -233,10 +233,11 @@
             "displayEndDate": "Wed Nov 15",
             "displayStartDate": "Mon Nov 13",
             "lines": [
-                "prepare for test Friday on arrays, objects, interfaces, and basic inheritance.",
-                "use the resources below to help you prepare. there are lots of slides. use your classmates as resources! be a resource for your classmates!"
+
                 "read and take notes on 'interface-2' slides linked below. these are meant to solidify concepts you used in Starfield",
-                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-1</b> > nearHundred, posNeg, or35, icyHot, in1020, makes10, intMax, close10, in3050 ... <b>Array-1</b> > firstLast6, sameFirstLast, makePi"
+                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-1</b> > nearHundred, posNeg, or35, icyHot, in1020, makes10, intMax, close10, in3050 ... <b>Array-1</b> > firstLast6, sameFirstLast, makePi",
+                "prepare for test Friday on arrays, objects, interfaces, and basic inheritance. use the 'Checkpoint 3' resources linked below",
+                "still feeling rusty on the last test? use the 'extra resources' linked under 'Checkpoint 2' below"
             ],
             "sortableEndDate": "2017-11-15 Wed",
             "sortableStartDate": "2017-11-13 Mon"
