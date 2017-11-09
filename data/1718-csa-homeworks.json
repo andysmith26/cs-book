@@ -223,11 +223,21 @@
             "displayEndDate": "Mon Nov 13",
             "displayStartDate": "Wed Nov 08",
             "lines": [
-                "read the array slides linked below",
+                "read the array-2 slides linked below",
                 "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-2</b> > arrayCount9, arrayFront9 ... <b>Array-2</b> > countEvens, bigDiff ... (optional extras = Array-2 > centeredAverage, lucky13, sum28)"
             ],
             "sortableEndDate": "2017-11-13 Mon",
             "sortableStartDate": "2017-11-08 Wed"
+        },
+        {
+            "displayEndDate": "Wed Nov 15",
+            "displayStartDate": "Mon Nov 13",
+            "lines": [
+                "read and take notes on 'interface-2' slides linked below. these are meant to solidify concepts you used in Starfield",
+                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-1</b> > nearHundred, posNeg, or35, icyHot, in1020, makes10, intMax, close10, in3050 ... <b>Array-1</b> > firstLast6, sameFirstLast, makePi"
+            ],
+            "sortableEndDate": "2017-11-15 Wed",
+            "sortableStartDate": "2017-11-13 Mon"
         }
     ]
 }
