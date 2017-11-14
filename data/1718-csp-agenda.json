@@ -195,13 +195,14 @@
         },
         {
             "agenda": [
+                "for 1/2 a test grade: complete the following by end of class today",
                 "get in groups like this: Group1 = TD, BS, CM ... Group2 = LF, AF, ME ... Group3 = AT, AL, GG",
-                "read the Practice PT guide together",
+                "read the Practice PT guide together. discuss any questions. you will write the 'written response' part on your own for homework tonight",
                 "read and complete the Group Planning Guide together",
-                "individually write your code in <a href='https://studio.code.org/s/csp3/stage/10/puzzle/2'>Lesson 10 #2</a>",
+                "individually write your code for the project in <a href='https://studio.code.org/s/csp3/stage/10/puzzle/2'>Lesson 10 #2</a>",
                 "read how to combine your code in <a href='https://studio.code.org/s/csp3/stage/10/puzzle/3'>Lesson 10 #3</a>",
                 "combine your code into one account (the one mentioned at the bottom of the Group Planning Guide) on this page: <a href='https://studio.code.org/s/csp3/stage/10/puzzle/4'>Lesson 10 #4</a>",
-                "hand in your completed Group Planning Guide by the end of class"
+                "by the end of class: hand in your completed Group Planning Guide, including written at the bottom the name of the group member having the completed code on Lesson 10 #4"
             ],
             "displayDate": "Tue Nov 14",
             "sortableDate": "2017-11-14 Tue",
