@@ -195,7 +195,7 @@
             "sortableStartDate": "2017-11-07 Tue"
         },
         {
-            "displayEndDate": "Tue Nov 16",
+            "displayEndDate": "Thu Nov 16",
             "displayStartDate": "Thu Nov 09",
             "lines": [
                 "do <a href='https://studio.code.org/s/csp3/stage/7/puzzle/1'>Puzzles 12-15 from Lesson 7</a>",
@@ -203,8 +203,17 @@
                 "do <a href='https://studio.code.org/s/csp3/stage/9/puzzle/1'>Puzzles 2-15 from Lesson 9</a>",
                 "(Gardner, Tierney, Matt: Lesson 7 #12-15, Lesson 9 #2-15)"
             ],
-            "sortableEndDate": "2017-11-16 Tue",
+            "sortableEndDate": "2017-11-16 Thu",
             "sortableStartDate": "2017-11-09 Thu"
+        },
+        {
+            "displayEndDate": "Thu Nov 16",
+            "displayStartDate": "Tue Nov 14",
+            "lines": [
+                "send Mr. Smith an email (andrewsmith@wcsu.net) with answers to the questions (#2b and #2d) in the 'Written Responses Submission Guidelines' section (back page) of the Practice PT Submission Guide"
+            ],
+            "sortableEndDate": "2017-11-16 Thu",
+            "sortableStartDate": "2017-11-14 Tue"
         }
     ]
 }
