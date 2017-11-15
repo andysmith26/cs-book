@@ -241,6 +241,16 @@
             ],
             "sortableEndDate": "2017-11-15 Wed",
             "sortableStartDate": "2017-11-13 Mon"
+        },
+        {
+            "displayEndDate": "Fri Nov 17",
+            "displayStartDate": "Wed Nov 15",
+            "lines": [
+                "do Practice FRQ: Sound trimSilenceFromBeginning",
+                "review for test (see materials under 'Checkpoint 3' below)"
+            ],
+            "sortableEndDate": "2017-11-17 Fri",
+            "sortableStartDate": "2017-11-15 Wed"
         }
     ]
 }
