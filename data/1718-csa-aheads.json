@@ -71,6 +71,22 @@
                 "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
             ],
             "sortableDate": "2017-11-01 Wed"
+        },
+        {
+            "displayDate": "Fri Dec 01",
+            "lines": [
+                "by appt",
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
+            ],
+            "sortableDate": "2017-12-01 Fri"
+        },
+                {
+            "displayDate": "Wed Dec 06",
+            "lines": [
+                "by appt",
+                "retakes available (see <a href='/resources.html#retake-test'>here</a>)"
+            ],
+            "sortableDate": "2017-12-06 Wed"
         }
     ]
 }
