@@ -182,6 +182,15 @@
             "displayDate": "Mon Oct 23",
             "sortableDate": "2017-10-23 Mon",
             "status": "TIMED"
+        },
+        {
+            "agenda": [
+                "finish TimeClassWithTesting pair programming",
+                "quizlet review"
+            ],
+            "displayDate": "Mon Nov 20",
+            "sortableDate": "2017-11-20 Mon",
+            "status": "TIMED"
         }
     ]
 }
