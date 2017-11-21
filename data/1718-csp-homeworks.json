@@ -219,6 +219,7 @@
             "displayEndDate": "Mon Nov 27",
             "displayStartDate": "Tue Nov 21",
             "lines": [
+                "required: email Mr. Smith your answers to 2b and 2d if you haven't already",
                 "optional: study the solutions to the four practice problems we did in class, and write good alternative test questions based on the 'For Teachers Only' sections (and email them to Mr. Smith if you want!)"
             ],
             "sortableEndDate": "2017-11-27 Mon",
