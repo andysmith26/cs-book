@@ -214,6 +214,15 @@
             ],
             "sortableEndDate": "2017-11-16 Thu",
             "sortableStartDate": "2017-11-14 Tue"
+        },
+        {
+            "displayEndDate": "Mon Nov 27",
+            "displayStartDate": "Tue Nov 21",
+            "lines": [
+                "optional: study the solutions to the four practice problems we did in class, and write good alternative test questions based on the 'For Teachers Only' sections (and email them to Mr. Smith if you want!)"
+            ],
+            "sortableEndDate": "2017-11-27 Mon",
+            "sortableStartDate": "2017-11-21 Tue"
         }
     ]
 }
