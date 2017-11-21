@@ -224,6 +224,15 @@
             ],
             "sortableEndDate": "2017-11-27 Mon",
             "sortableStartDate": "2017-11-21 Tue"
+        },
+        {
+            "displayEndDate": "Fri Dec 01",
+            "displayStartDate": "Tue Nov 21",
+            "lines": [
+                "due 8am Friday morning: finish the WCS Products task you defined for yourself, and move the card to 'Done'"
+            ],
+            "sortableEndDate": "2017-12-01 Fri",
+            "sortableStartDate": "2017-11-21 Tue"
         }
     ]
 }
