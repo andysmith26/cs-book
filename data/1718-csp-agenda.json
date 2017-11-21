@@ -207,6 +207,18 @@
             "displayDate": "Tue Nov 14",
             "sortableDate": "2017-11-14 Tue",
             "status": "READY"
+        },
+                {
+            "agenda": [
+                "WCS Products: DIY-HW make a task card for what you will accomplish outside of class by next Friday 8AM",
+                "Design a Digital Scene: show results",
+                "write a paragraph in which you make connections between the four main concepts from the 'Design a Digital Scene' project (Abstractions, Functions, Top-Down Design, and Collaboration)",
+                "quizlet live review game",
+                "code.org assessment lesson 3 #1-4: do and review"
+                ],
+            "displayDate": "Tue Nov 21",
+            "sortableDate": "2017-11-21 Tue",
+            "status": "READY"
         }
     ]
 }
