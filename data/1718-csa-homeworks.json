@@ -261,6 +261,17 @@
             ],
             "sortableEndDate": "2017-11-27 Mon",
             "sortableStartDate": "2017-11-20 Mon"
-        }      
+        },
+        {
+            "displayEndDate": "Fri Dec 01",
+            "displayStartDate": "Mon Nov 27",
+            "lines": [
+                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Logic-1</b> > fizzString, fizzString2 and <b>Array-1</b> > commonEnd, rotateLeft3",
+                "do the full assignment at <a href='http://www.github.com/WoodstockCS/ParticleSystem'>ParticleSystem</a> and be ready to share the result at the start of class on Friday",
+                "NOTE: incomplete homework will result in at least ARE Block summons"
+            ],
+            "sortableEndDate": "2017-12-01 Fri",
+            "sortableStartDate": "2017-11-27 Mon"
+        }        
     ]
 }
