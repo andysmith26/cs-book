@@ -191,6 +191,22 @@
             "displayDate": "Mon Nov 20",
             "sortableDate": "2017-11-20 Mon",
             "status": "TIMED"
+        },
+        {
+            "agenda": [
+                "work on homework due Friday",
+            ],
+            "displayDate": "Mon Nov 27",
+            "sortableDate": "2017-11-27 Mon",
+            "status": "TIMED"
+        },
+        {
+            "agenda": [
+                "work on homework due Friday"
+            ],
+            "displayDate": "Wed Nov 29",
+            "sortableDate": "2017-11-29 Wed",
+            "status": "TIMED"
         }
     ]
 }
