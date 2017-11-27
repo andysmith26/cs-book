@@ -233,6 +233,33 @@
             ],
             "sortableEndDate": "2017-12-01 Fri",
             "sortableStartDate": "2017-11-21 Tue"
+        },
+        {
+            "displayEndDate": "Fri Dec 01",
+            "displayStartDate": "Mon Nov 27",
+            "lines": [
+                "finish anything from today's agenda that you didn't get done in class today"
+            ],
+            "sortableEndDate": "2017-12-01 Fri",
+            "sortableStartDate": "2017-11-27 Mon"
+        },
+        {
+            "displayEndDate": "Fri Dec 01",
+            "displayStartDate": "Tue Nov 28",
+            "lines": [
+                "finish anything from today's agenda that you didn't get done in class today"
+            ],
+            "sortableEndDate": "2017-12-01 Fri",
+            "sortableStartDate": "2017-11-28 Tue"
+        },
+        {
+            "displayEndDate": "Fri Dec 01",
+            "displayStartDate": "Thu Nov 30",
+            "lines": [
+                "finish anything from today's agenda that you didn't get done in class today"
+            ],
+            "sortableEndDate": "2017-12-01 Fri",
+            "sortableStartDate": "2017-11-30 Thu"
         }
     ]
 }
