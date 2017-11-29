@@ -241,6 +241,17 @@
             "displayDate": "Tue Nov 28",
             "sortableDate": "2017-11-28 Tue",
             "status": "READY"
+        },
+        {
+            "agenda": [
+                "Today you'll learn more about hexadecimal, and you'll look for some patterns in number systems. This is a skill you will need for the AP exam.",
+                "watch and answer the questions in these videos (in this order): (<a href='https://edpuzzle.com/assignments/5a1e1a72d78a89417365853a/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b0be8bd184175d71862/watchh'>2</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b7f8891f4413a69dd84/watch'>3</a>)",
+                "do the two practice sheets that are on my desk (<a href='https://docs.google.com/document/d/1Rblox0p_yQjekZSJQ7huLwHp2ixm5-mRE0Oqc4thB30/edit'>Practice with Number Systems 2</a> and <a href='https://docs.google.com/document/d/19e0i5tuTB2uDFIN96K1of2LxWgqvwbUX_v7Cxcaga2Y/edit#'>Practice with Number Systems 3</a>)"
+                ],
+            "displayDate": "Thu Nov 30",
+            "sortableDate": "2017-11-30 Tue",
+            "status": "READY"
         }
+        
     ]
 }
