@@ -207,6 +207,17 @@
             "displayDate": "Wed Nov 29",
             "sortableDate": "2017-11-29 Wed",
             "status": "TIMED"
+        },
+        {
+            "agenda": [
+                "Today you'll learn why computers use binary and how to convert our 'normal' numbers into binary. This is a skill you will need for the AP exam.",
+                "watch and answer the questions in these EdPuzzle videos (in this order): (<a href='https://edpuzzle.com/assignments/5a20b8cbd6f7ca411d718357/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb21b2c94114399c11/watch'>2</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb2a8e184120e22c22/watch'>3</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb1c509a410b7ad5b8/watch'>4</a>)",
+                "find a volunteer amongst yourselves to print a copy of <a href='https://docs.google.com/document/d/1ZvFt3f3tRfOAG51Htac_rfh_Cs_gb_prpK6tHCS6MVQ/edit#'>this practice sheet</a> for everyone",
+                "do the practice sheet that your dear classmate printed for you (or if nobody printed it, do it on your own paper)"
+                ],
+            "displayDate": "Fri Dec 01",
+            "sortableDate": "2017-12-01 Fri",
+            "status": "READY"
         }
     ]
 }
