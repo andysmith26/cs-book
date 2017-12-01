@@ -272,6 +272,16 @@
             ],
             "sortableEndDate": "2017-12-01 Fri",
             "sortableStartDate": "2017-11-27 Mon"
-        }        
+        },
+        {
+            "displayEndDate": "Mon Dec 04",
+            "displayStartDate": "Fri Dec 01",
+            "lines": [
+                "finish the classwork mentioned in today's agenda on the class website (involves watching 4 EdpUzzle videos about binary number systems, and doing a practice sheet)",
+                "NOTE: incomplete homework will result in at least ARE Block summons"
+            ],
+            "sortableEndDate": "2017-12-04 Mon",
+            "sortableStartDate": "2017-12-01 Fri"
+        }          
     ]
 }
