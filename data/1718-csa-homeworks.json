@@ -282,6 +282,16 @@
             ],
             "sortableEndDate": "2017-12-04 Mon",
             "sortableStartDate": "2017-12-01 Fri"
-        }          
+        },
+        {
+            "displayEndDate": "Wed Dec 06",
+            "displayStartDate": "Mon Dec 04",
+            "lines": [
+                "watch <a href='https://www.youtube.com/watch?v=2PH_SNXzfio'>this video about arrays</a> and complete the printable notes (linked in the video description and paper copy passed out in class)",
+                "read all the pages in <a href='http://ice-web.cc.gatech.edu/ce21/1/static/Java-Review/#list-and-arraylist'>the List and ArrayList section of the JavaReview website</a> and solve all the embedded problems (except those on the 'More Practice' page). Be sure you at least *attempt* to solve all the problems. For each, use a pencil to sketch on paper how you solve the problem, then write your best guess answer, then check the website for the correct answer. If you get it wrong, read the explainations of the wrong and right answers."
+            ],
+            "sortableEndDate": "2017-12-06 Wed",
+            "sortableStartDate": "2017-12-04 Mon"
+        }            
     ]
 }
