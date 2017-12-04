@@ -242,6 +242,18 @@
             ],
             "sortableEndDate": "2017-12-01 Fri",
             "sortableStartDate": "2017-11-27 Mon"
+        },
+        {
+            "displayEndDate": "Thu Dec 07",
+            "displayStartDate": "Mon Dec 04",
+            "lines": [
+                "prepare for test Thursday about number systems (convert among bin <-> dec <-> hex)",
+                "make a poster showing how to convert from hex or bin (you pick one) to dec ... (we'll start this assignment in class Tuesday, then it's due Thursday)",
+                "read Ghosts in the Machine pgs 80-99 and email Mr. Smith two questions you think would make for interesting discussion (we'll have a discussion about the reading in class Thursday, and there will probably be a couple questions about the reading on the test)",
+                "watch <a href='https://www.youtube.com/watch?v=1GSjbWt0c9M'>this final video about binary</a>. basic questions about it will be on the test Thursday."
+            ],
+            "sortableEndDate": "2017-12-07 Thu",
+            "sortableStartDate": "2017-12-04 Mon"
         }
     ]
 }
