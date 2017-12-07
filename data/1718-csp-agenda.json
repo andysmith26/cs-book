@@ -249,9 +249,18 @@
                 "do the two practice sheets that are on my desk (<a href='https://docs.google.com/document/d/1Rblox0p_yQjekZSJQ7huLwHp2ixm5-mRE0Oqc4thB30/edit'>Practice with Number Systems 2</a> and <a href='https://docs.google.com/document/d/19e0i5tuTB2uDFIN96K1of2LxWgqvwbUX_v7Cxcaga2Y/edit#'>Practice with Number Systems 3</a>)"
                 ],
             "displayDate": "Thu Nov 30",
-            "sortableDate": "2017-11-30 Tue",
+            "sortableDate": "2017-11-30 Thu",
+            "status": "READY"
+        },
+        {
+            "agenda": [
+                "discussion, output = two posters listing points you all agree on and points where there is some disagrement. With these jobs: Annabelle = write on the posters, Brendan = make sure talk time is equitable, Caiohme = make sure the discussion stays on topic, Matt = make sure the discussion moves forward (ie start the discussion, restart if it dies, dont spent too long on one topic), Tierney = timekeeper, note the start time, announce every 5 min, stop the group at 20 min",
+                "test",
+                "start homework"
+                ],
+            "displayDate": "Thu Dec 06",
+            "sortableDate": "2017-12-06 Thu",
             "status": "READY"
         }
-        
     ]
 }
