@@ -303,6 +303,15 @@
             ],
             "sortableEndDate": "2017-12-08 Fri",
             "sortableStartDate": "2017-12-06 Wed"
-        }               
+        },
+        {
+            "displayEndDate": "Mon Dec 11",
+            "displayStartDate": "Fri Dec 08",
+            "lines": [
+                "watch <a href='https://www.youtube.com/watch?v=n1PqaV_PFIc'>this video about state</a> and complete the guided notes (distributed in class or linked in the video description)"
+            ],
+            "sortableEndDate": "2017-12-11 Mon",
+            "sortableStartDate": "2017-12-08 Fri"
+        }                
     ]
 }
