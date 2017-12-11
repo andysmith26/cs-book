@@ -312,6 +312,15 @@
             ],
             "sortableEndDate": "2017-12-11 Mon",
             "sortableStartDate": "2017-12-08 Fri"
-        }                
+        },
+        {
+            "displayEndDate": "Wed Dec 13",
+            "displayStartDate": "Mon Dec 11",
+            "lines": [
+                "watch <a href='https://www.youtube.com/watch?v=Sb5R6mbCU3c'>this video about constructors</a> and complete the guided notes (distributed in class or linked in the video description)"
+            ],
+            "sortableEndDate": "2017-12-13 Wed",
+            "sortableStartDate": "2017-12-11 Mon"
+        }                 
     ]
 }
