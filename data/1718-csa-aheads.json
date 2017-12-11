@@ -97,12 +97,12 @@
             "sortableDate": "2017-12-13 Wed"
         },
                 {
-            "displayDate": "Fri Dec 15",
+            "displayDate": "Mon Dec 18",
             "lines": [
                 "start of class",
-                "test on inheritance and state"
+                "test on inheritance and state and constructors (there will be no retake opportunities for this test)"
             ],
-            "sortableDate": "2017-12-15 Fri"
+            "sortableDate": "2017-12-18 Mon"
         },
                 {
             "displayDate": "Wed Dec 20",
