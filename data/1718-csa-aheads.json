@@ -97,6 +97,14 @@
             "sortableDate": "2017-12-13 Wed"
         },
                 {
+            "displayDate": "Fri Dec 15",
+            "lines": [
+                "start of class",
+                "test on inheritance and state"
+            ],
+            "sortableDate": "2017-12-15 Fri"
+        },
+                {
             "displayDate": "Wed Dec 20",
             "lines": [
                 "by appt",
