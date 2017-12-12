@@ -263,6 +263,15 @@
             ],
             "sortableEndDate": "2017-12-11 Mon",
             "sortableStartDate": "2017-12-07 Thu"
+        },
+        {
+            "displayEndDate": "Thu Dec 14",
+            "displayStartDate": "Tue Dec 12",
+            "lines": [
+                "do code.org Unit *5* Lesson 2, pages 1-15. Please do not use the 'pair programming' mode offered by code.org, but I do encourage you to work alongside with someone and talk through what you're doing, but both of you should be typing on your own machines."
+            ],
+            "sortableEndDate": "2017-12-14 Thu",
+            "sortableStartDate": "2017-12-12 Tue"
         }
     ]
 }
