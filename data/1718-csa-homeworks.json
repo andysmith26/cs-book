@@ -321,6 +321,15 @@
             ],
             "sortableEndDate": "2017-12-13 Wed",
             "sortableStartDate": "2017-12-11 Mon"
-        }                 
+        },
+        {
+            "displayEndDate": "Fri Dec 15",
+            "displayStartDate": "Wed Dec 13",
+            "lines": [
+                "complete review packet (pick up a paper copy in the classroom)"
+            ],
+            "sortableEndDate": "2017-12-15 Fri",
+            "sortableStartDate": "2017-12-13 Wed"
+        }                    
     ]
 }
