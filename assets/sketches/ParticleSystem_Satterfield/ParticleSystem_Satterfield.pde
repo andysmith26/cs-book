@@ -1,7 +1,7 @@
 ArrayList<Particle> ps = new ArrayList<Particle>();
 PImage img;
 void setup() {
-  img = loadImage("./face.png");
+  img = loadImage("face.png");
   size(640, 360);
 }
 
