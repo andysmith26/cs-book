@@ -272,6 +272,16 @@
             ],
             "sortableEndDate": "2017-12-14 Thu",
             "sortableStartDate": "2017-12-12 Tue"
+        },
+        {
+            "displayEndDate": "Tue Dec 19",
+            "displayStartDate": "Thu Dec 14",
+            "lines": [
+                "Create a multi-screen app <a href='https://studio.code.org/s/csp5/stage/3/puzzle/4'>here</a>, meeting the six requirements listed in the Activity Guide (paper you got in class)",
+                "(except TD, ME, GG: start with your game code, and repurpose it into an AI for 1-player Tic-Tac-Toe. Allow multiple games and include some text or visual which explains to the user what the computer is doing to learn how to play better)"
+            ],
+            "sortableEndDate": "2017-12-19 Tue",
+            "sortableStartDate": "2017-12-14 Thu"
         }
     ]
 }
