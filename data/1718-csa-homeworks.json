@@ -332,19 +332,19 @@
             "sortableStartDate": "2017-12-13 Wed"
         },
         {
-            "displayEndDate": "Mon Dec 18",
+            "displayEndDate": "Wed Dec 20",
             "displayStartDate": "Wed Dec 13",
             "lines": [
                 "be finished with Asteroids project packet #1 and packet #2 (nothing to turn in - just have it done on your computer)"
             ],
-            "sortableEndDate": "2017-12-18 Mon",
+            "sortableEndDate": "2017-12-20 Wed",
             "sortableStartDate": "2017-12-13 Wed"
         },
         {
             "displayEndDate": "Mon Dec 18",
             "displayStartDate": "Fri Dec 15",
             "lines": [
-                "study review packet for test Monday on inheritance, state, and constructors"
+                "study review packet for test Monday on inheritance, state, and constructors. remember there are no retakes available for this test."
             ],
             "sortableEndDate": "2017-12-18 Mon",
             "sortableStartDate": "2017-12-15 Fri"
