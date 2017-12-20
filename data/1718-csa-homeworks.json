@@ -348,6 +348,15 @@
             ],
             "sortableEndDate": "2017-12-18 Mon",
             "sortableStartDate": "2017-12-15 Fri"
-        }                       
+        },
+        {
+            "displayEndDate": "Fri Dec 22",
+            "displayStartDate": "Wed Dec 20",
+            "lines": [
+                "finish packet 3 of Asteroids (which we started in class Wed). the last part (adding two-player functionality) is optional."
+            ],
+            "sortableEndDate": "2017-12-22 Fri",
+            "sortableStartDate": "2017-12-20 Wed"
+        }                           
     ]
 }
