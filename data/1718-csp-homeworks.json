@@ -282,6 +282,16 @@
             ],
             "sortableEndDate": "2017-12-19 Tue",
             "sortableStartDate": "2017-12-14 Thu"
+        },
+        {
+            "displayEndDate": "Thu Dec 21",
+            "displayStartDate": "Tue Dec 19",
+            "lines": [
+                "code.org Unit 5 finish Lessons 4 and 5",
+                "TD, ME, GG ... do this instead: add functionality for AI vs AI in Game of Sticks OR in Tic Tac Toe"
+            ],
+            "sortableEndDate": "2017-12-21 Thu",
+            "sortableStartDate": "2017-12-19 Tue"
         }
     ]
 }
