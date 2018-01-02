@@ -3,263 +3,212 @@
         {
             "agenda": [
                 "quick overview of the class"
-            ],
-            "displayDate": "Wed Aug 30",
-            "sortableDate": "2017-08-30 Wed",
+            ], 
+            "displayDate": "Wed Aug 30", 
+            "sortableDate": "2017-08-30 Wed", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "get started in Piazza",
+                "get started in Piazza", 
                 "do FirstBlog"
-            ],
-            "displayDate": "Tue Sept 05",
-            "sortableDate": "2017-09-05 Tue",
+            ], 
+            "displayDate": "Tue Sept 05", 
+            "sortableDate": "2017-09-05 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "discuss b2b reading offline and online",
+                "discuss b2b reading offline and online", 
                 "learn html"
-            ],
-            "displayDate": "Thu Sept 07",
-            "sortableDate": "2017-09-07 Thu",
+            ], 
+            "displayDate": "Thu Sept 07", 
+            "sortableDate": "2017-09-07 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "learn humanitarian mapping"
-            ],
-            "displayDate": "Mon Sept 11",
-            "sortableDate": "2017-09-11 Mon",
+            ], 
+            "displayDate": "Mon Sept 11", 
+            "sortableDate": "2017-09-11 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "do humanitarian mapping"
-            ],
-            "displayDate": "Tue Sept 12",
-            "sortableDate": "2017-09-12 Tue",
+            ], 
+            "displayDate": "Tue Sept 12", 
+            "sortableDate": "2017-09-12 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "compare HTML representations"
-            ],
-            "displayDate": "Thu Sept 14",
-            "sortableDate": "2017-09-14 Thu",
+            ], 
+            "displayDate": "Thu Sept 14", 
+            "sortableDate": "2017-09-14 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "take MSU research survey",
+                "take MSU research survey", 
                 "(intro coders: start js) and (expert coders: work on VoRa)"
-            ],
-            "displayDate": "Mon Sept 18",
-            "sortableDate": "2017-09-18 Mon",
+            ], 
+            "displayDate": "Mon Sept 18", 
+            "sortableDate": "2017-09-18 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "share a couple news stories",
-                "js (Code 1 + Code 2) / Vora",
+                "share a couple news stories", 
+                "js (Code 1 + Code 2) / Vora", 
                 "lobby / word-count / VoRa"
-            ],
-            "displayDate": "Tue Sept 19",
-            "sortableDate": "2017-09-19 Tue",
+            ], 
+            "displayDate": "Tue Sept 19", 
+            "sortableDate": "2017-09-19 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "Image 3, 4, 5 exercises",
+                "Image 3, 4, 5 exercises", 
                 "work on products"
-            ],
-            "displayDate": "Thu Sept 21",
-            "sortableDate": "2017-09-21 Thu",
+            ], 
+            "displayDate": "Thu Sept 21", 
+            "sortableDate": "2017-09-21 Thu", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "quick discussion about grading",
+                "quick discussion about grading", 
                 "test 01"
-            ],
-            "displayDate": "Mon Sept 25",
-            "sortableDate": "2017-09-25 Mon",
+            ], 
+            "displayDate": "Mon Sept 25", 
+            "sortableDate": "2017-09-25 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "work on WCS products",
+                "work on WCS products", 
                 "coding exercises: Image 6"
-            ],
-            "displayDate": "Tue Sept 26",
-            "sortableDate": "2017-09-26 Tue",
+            ], 
+            "displayDate": "Tue Sept 26", 
+            "sortableDate": "2017-09-26 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "codecombat.com"
-            ],
-            "displayDate": "Thu Sept 28",
-            "sortableDate": "2017-09-28 Thu",
+            ], 
+            "displayDate": "Thu Sept 28", 
+            "sortableDate": "2017-09-28 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "Image bluescreens"
-            ],
-            "displayDate": "Mon Oct 02",
-            "sortableDate": "2017-10-02 Mon",
+            ], 
+            "displayDate": "Mon Oct 02", 
+            "sortableDate": "2017-10-02 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "Work with your partner on Levels 1-9 in the Turtle Blockly Game. Alternate who types and who navigates each level. (Level 1 = the less experienced programmer is typist. Level 2 = the more experienced programmer is typist. and so on)"
-            ],
-            "displayDate": "Tue Oct 03",
-            "sortableDate": "2017-10-03 Tue",
+            ], 
+            "displayDate": "Tue Oct 03", 
+            "sortableDate": "2017-10-03 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Thu Oct 05",
-            "sortableDate": "2017-10-05 Thu",
+            "agenda": [], 
+            "displayDate": "Thu Oct 05", 
+            "sortableDate": "2017-10-05 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "summarize learning from harvard",
+                "summarize learning from harvard", 
                 "do Image 7"
-            ],
-            "displayDate": "Tue Oct 10",
-            "sortableDate": "2017-10-10 Tue",
+            ], 
+            "displayDate": "Tue Oct 10", 
+            "sortableDate": "2017-10-10 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "visit Supreme Court session"
-            ],
-            "displayDate": "Thu Oct 12",
-            "sortableDate": "2017-10-12 Thu",
+            ], 
+            "displayDate": "Thu Oct 12", 
+            "sortableDate": "2017-10-12 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "make a poster about bluescreen image manipulation"
-            ],
-            "displayDate": "Mon Oct 16",
-            "sortableDate": "2017-10-16 Mon",
+            ], 
+            "displayDate": "Mon Oct 16", 
+            "sortableDate": "2017-10-16 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "get scrum boards set up",
+                "get scrum boards set up", 
                 "study hall (no internet)"
-            ],
-            "displayDate": "Tue Oct 17",
-            "sortableDate": "2017-10-17 Tue",
+            ], 
+            "displayDate": "Tue Oct 17", 
+            "sortableDate": "2017-10-17 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "finish posters: annotate them with (1) iteration, (2) abstraction, (3) parameters",
+                "finish posters: annotate them with (1) iteration, (2) abstraction, (3) parameters", 
                 "start HW"
-            ],
-            "displayDate": "Thu Oct 19",
-            "sortableDate": "2017-10-19 Thu",
+            ], 
+            "displayDate": "Thu Oct 19", 
+            "sortableDate": "2017-10-19 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "You will make progress on the current WCS Product sprint by working on your assigned tasks in order to improve your understanding of teamwork and troubleshooting in software engineering."
-            ],
-            "displayDate": "Mon Oct 23",
-            "sortableDate": "2017-10-23 Mon",
+            ], 
+            "displayDate": "Mon Oct 23", 
+            "sortableDate": "2017-10-23 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
                 "You will review concepts by commenting on your classmates 'fake news' images, consolidating info from your videos, looking at another example of abstraction, and playing a game in order to prepare yourself to show evidence of understand the standards."
-            ],
-            "displayDate": "Tue Oct 24",
-            "sortableDate": "2017-10-24 Tue",
+            ], 
+            "displayDate": "Tue Oct 24", 
+            "sortableDate": "2017-10-24 Tue", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
                 "You will show evidence of your understanding by taking a test and live coding together in order to make connections between your various programming experiences."
-            ],
-            "displayDate": "Thu Oct 26",
-            "sortableDate": "2017-10-26 Thu",
-            "status": "TIMED"
-        },
-        {
-            "agenda": [
-                "for 1/2 a test grade: complete the following by end of class today",
-                "get in groups like this: Group1 = TD, BS, CM ... Group2 = LF, AF, ME ... Group3 = AT, AL, GG",
-                "read the Practice PT guide together. discuss any questions. you will write the 'written response' part on your own for homework tonight",
-                "read and complete the Group Planning Guide together",
-                "individually write your code for the project in <a href='https://studio.code.org/s/csp3/stage/10/puzzle/2'>Lesson 10 #2</a>",
-                "read how to combine your code in <a href='https://studio.code.org/s/csp3/stage/10/puzzle/3'>Lesson 10 #3</a>",
-                "combine your code into one account (the one mentioned at the bottom of the Group Planning Guide) on this page: <a href='https://studio.code.org/s/csp3/stage/10/puzzle/4'>Lesson 10 #4</a>",
-                "by the end of class: hand in your completed Group Planning Guide, including written at the bottom the name of the group member having the completed code on Lesson 10 #4"
-            ],
-            "displayDate": "Tue Nov 14",
-            "sortableDate": "2017-11-14 Tue",
+            ], 
+            "displayDate": "Thu Oct 26", 
+            "sortableDate": "2017-10-26 Thu", 
             "status": "READY"
-        },
-                {
-            "agenda": [
-                "WCS Products: DIY-HW make a task card for what you will accomplish outside of class by next Friday 8AM",
-                "Design a Digital Scene: show results",
-                "write a paragraph in which you make connections between the four main concepts from the 'Design a Digital Scene' project (Abstractions, Functions, Top-Down Design, and Collaboration)",
-                "quizlet live review game",
-                "code.org assessment lesson 3 #1-4: do and review"
-                ],
-            "displayDate": "Tue Nov 21",
-            "sortableDate": "2017-11-21 Tue",
-            "status": "READY"
-        },
+        }, 
         {
-            "agenda": [
-                "ask the sub for a copy of CSP Unit 3 Assessment Solutions #1-4, which is on Mr. Smith's desk. Read #3 and 4 (and #1 and 2 if you weren't in class last time). Try to understand why the given answer is correct. In the 'For Teachers Only' part of each question, underline the most important parts. Put a question mark next to anything you don't understand. Put your name on the packet and put it in Mr. Smith's inbox",
-                "ask the sub for the Ghosts in the Machine reading. Read Pgs #73 - 80. As you're reading, on a blank sheet of paper, write down at least one main point from each page. After you're done reading pgs 73-80, write two or three questions about the article which you think could lead to interesting discussion.",
-                "return the Ghosts in the Machine reading booklet to my desk before you leave the room at the end of the block. Thanks!"
-                ],
-            "displayDate": "Mon Nov 27",
-            "sortableDate": "2017-11-27 Mon",
+            "agenda": [], 
+            "displayDate": "Mon Oct 30", 
+            "sortableDate": "2017-10-30 Mon", 
             "status": "READY"
-        },
+        }, 
         {
-            "agenda": [
-                "Today you'll learn why computers use binary and how to convert our 'normal' numbers into binary. This is a skill you will need for the AP exam.",
-                "log in to our class on the EdPuzzle website by clicking <a href='https://edpuzzle.com/join/ticmias'>this link</a>",
-                "watch and answer the questions in these videos (in this order): (<a href='https://edpuzzle.com/assignments/5a1cd1fd87127b411768dc66/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a1cd2d4c3435b412a1feca5/watch'>2</a>) (<a href='https://edpuzzle.com/assignments/5a1cd343678838411ecc090b/watch'>3</a>) (<a href='https://edpuzzle.com/assignments/5a1cd397db900a411819ba6e/watch'>4</a>)",
-                "find a volunteer amongst yourselves to print a copy of <a href='https://docs.google.com/document/d/1ZvFt3f3tRfOAG51Htac_rfh_Cs_gb_prpK6tHCS6MVQ/edit#'>this practice sheet</a> for everyone",
-                "do the practice sheet that your dear classmate printed for you (or if nobody printed it, do it on your own paper)"
-                ],
-            "displayDate": "Tue Nov 28",
-            "sortableDate": "2017-11-28 Tue",
+            "agenda": [], 
+            "displayDate": "Tue Oct 31", 
+            "sortableDate": "2017-10-31 Tue", 
             "status": "READY"
-        },
+        }, 
         {
-            "agenda": [
-                "Today you'll learn more about hexadecimal, and you'll look for some patterns in number systems. This is a skill you will need for the AP exam.",
-                "watch and answer the questions in these videos (in this order): (<a href='https://edpuzzle.com/assignments/5a1e1a72d78a89417365853a/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b0be8bd184175d71862/watchh'>2</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b7f8891f4413a69dd84/watch'>3</a>)",
-                "do the two practice sheets that are on my desk (<a href='https://docs.google.com/document/d/1Rblox0p_yQjekZSJQ7huLwHp2ixm5-mRE0Oqc4thB30/edit'>Practice with Number Systems 2</a> and <a href='https://docs.google.com/document/d/19e0i5tuTB2uDFIN96K1of2LxWgqvwbUX_v7Cxcaga2Y/edit#'>Practice with Number Systems 3</a>)"
-                ],
-            "displayDate": "Thu Nov 30",
-            "sortableDate": "2017-11-30 Thu",
-            "status": "READY"
-        },
-        {
-            "agenda": [
-                "discussion, output = two posters listing points you all agree on and points where there is some disagrement. With these jobs: Annabelle = write on the posters, Brendan = make sure talk time is equitable, Caiohme = make sure the discussion stays on topic, Matt = make sure the discussion moves forward (ie start the discussion, restart if it dies, dont spent too long on one topic), Tierney = timekeeper, note the start time, announce every 5 min, make sure the group goes at least 15 min, at most 30 min",
-                "test",
-                "start homework"
-                ],
-            "displayDate": "Thu Dec 07",
-            "sortableDate": "2017-12-07 Thu",
+            "agenda": [], 
+            "displayDate": "Thu Nov 02", 
+            "sortableDate": "2017-11-02 Thu", 
             "status": "READY"
         }
     ]

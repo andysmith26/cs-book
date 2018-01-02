@@ -87,6 +87,13 @@ table {
   margin-bottom: 0 !important;
 }
 
+/* tiered number lists
+   from https://stackoverflow.com/a/4098296/789446
+   and https://practicaltypography.com/hierarchical-headings.html
+*/
+.tiered-list ol { counter-reset: item }
+.tiered-list li { display: block }
+.tiered-list li:before { content: counters(item, ".") " "; counter-increment: item; font-weight: bold }
 
 
 /************************************************************************************
