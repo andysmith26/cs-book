@@ -1,419 +1,419 @@
 {
     "homeworks": [
         {
-            "displayEndDate": "Wed Sept 06", 
-            "displayStartDate": "Fri Sept 01", 
+            "displayEndDate": "Wed Sept 06",
+            "displayStartDate": "Fri Sept 01",
             "lines": [
-                "Set up your computer. (<a href='/instructions/computer-setup-csa'>instructions</a>)", 
-                "Take some time to tell me about you. (<a href='https://docs.google.com/forms/d/e/1FAIpQLSfyklYeNzFI-B0OErIXJ_Dd_mcZeYponTI9uOwhRU_vm7UbIw/viewform?usp=sf_link'>link</a>)", 
+                "Set up your computer. (<a href='/instructions/computer-setup-csa'>instructions</a>)",
+                "Take some time to tell me about you. (<a href='https://docs.google.com/forms/d/e/1FAIpQLSfyklYeNzFI-B0OErIXJ_Dd_mcZeYponTI9uOwhRU_vm7UbIw/viewform?usp=sf_link'>link</a>)",
                 "Bring your computer to class with you every day starting Wed."
-            ], 
-            "sortableEndDate": "2017-09-06 Wed", 
+            ],
+            "sortableEndDate": "2017-09-06 Wed",
             "sortableStartDate": "2017-09-01 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Sept 08", 
-            "displayStartDate": "Wed Sept 06", 
+            "displayEndDate": "Fri Sept 08",
+            "displayStartDate": "Wed Sept 06",
             "lines": [
-                "Work for 30 minutes on LegoAd. (instructions linked below)", 
+                "Work for 30 minutes on LegoAd. (instructions linked below)",
                 "Be prepared to report one stuck point (solved or not) with your group."
-            ], 
-            "sortableEndDate": "2017-09-08 Fri", 
+            ],
+            "sortableEndDate": "2017-09-08 Fri",
             "sortableStartDate": "2017-09-06 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Sept 13", 
-            "displayStartDate": "Wed Sept 06", 
+            "displayEndDate": "Wed Sept 13",
+            "displayStartDate": "Wed Sept 06",
             "lines": [
                 "<strong>Finish LegoAd.</strong> (see Definition of Done at the instructions linked below)"
-            ], 
-            "sortableEndDate": "2017-09-13 Wed", 
+            ],
+            "sortableEndDate": "2017-09-13 Wed",
             "sortableStartDate": "2017-09-06 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Sept 11", 
-            "displayStartDate": "Fri Sept 08", 
+            "displayEndDate": "Mon Sept 11",
+            "displayStartDate": "Fri Sept 08",
             "lines": [
-                "Work for 30 minutes on LegoAd. (instructions linked below)", 
+                "Work for 30 minutes on LegoAd. (instructions linked below)",
                 "Post one question or answer or tip about Lego on Piazza."
-            ], 
-            "sortableEndDate": "2017-09-11 Mon", 
+            ],
+            "sortableEndDate": "2017-09-11 Mon",
             "sortableStartDate": "2017-09-08 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Sept 15", 
-            "displayStartDate": "Fri Sept 08", 
+            "displayEndDate": "Fri Sept 15",
+            "displayStartDate": "Fri Sept 08",
             "lines": [
                 "return signed research form (even if you are declining to participate)"
-            ], 
-            "sortableEndDate": "2017-09-15 Fri", 
+            ],
+            "sortableEndDate": "2017-09-15 Fri",
             "sortableStartDate": "2017-09-08 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Sept 18", 
-            "displayStartDate": "Fri Sept 15", 
+            "displayEndDate": "Mon Sept 18",
+            "displayStartDate": "Fri Sept 15",
             "lines": [
-                "do 'Loops' worksheet (<a href='https://drive.google.com/open?id=1QvEDcepoIwtOXK_QdLXL5yBoGyPX_bS6jaqv40zblz8'>printable</a>)", 
-                "do 'Math.random' worksheet (<a href=\"https://drive.google.com/open?id=1svw3O6yBTRyhJSPphTVJwYF36dbNXRBKp6G3zWzwc0I\">printable</a>)", 
+                "do 'Loops' worksheet (<a href='https://drive.google.com/open?id=1QvEDcepoIwtOXK_QdLXL5yBoGyPX_bS6jaqv40zblz8'>printable</a>)",
+                "do 'Math.random' worksheet (<a href=\"https://drive.google.com/open?id=1svw3O6yBTRyhJSPphTVJwYF36dbNXRBKp6G3zWzwc0I\">printable</a>)",
                 "watch Shiffman's 8.1 \"What is OOP\" (<a href=\"https://www.youtube.com/watch?v=YcbcfkLzgvs\">link</a>)"
-            ], 
-            "sortableEndDate": "2017-09-18 Mon", 
+            ],
+            "sortableEndDate": "2017-09-18 Mon",
             "sortableStartDate": "2017-09-15 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Sept 20", 
-            "displayStartDate": "Mon Sept 18", 
+            "displayEndDate": "Wed Sept 20",
+            "displayStartDate": "Mon Sept 18",
             "lines": [
-                "watch Shiffman's 8.2 \"Defining a Class, Part 1\" (<a href=\"https://www.youtube.com/watch?v=lmgcMPRa1qw\">link</a>) and take notes in your notebook.", 
+                "watch Shiffman's 8.2 \"Defining a Class, Part 1\" (<a href=\"https://www.youtube.com/watch?v=lmgcMPRa1qw\">link</a>) and take notes in your notebook.",
                 "watch Shiffman's 8.3 \"Defining a Class, Part 2\" (<a href=\"https://www.youtube.com/watch?v=XwfOVFelLoo\">link</a>) and take notes in your notebook."
-            ], 
-            "sortableEndDate": "2017-09-20 Wed", 
+            ],
+            "sortableEndDate": "2017-09-20 Wed",
             "sortableStartDate": "2017-09-18 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Sept 22", 
-            "displayStartDate": "Mon Sept 18", 
+            "displayEndDate": "Fri Sept 22",
+            "displayStartDate": "Mon Sept 18",
             "lines": [
                 "<strong>Finish Lightning.</strong> (<a href=\"https://woodstockcs.github.io/instructions/lightning\">instructions</a>)"
-            ], 
-            "sortableEndDate": "2017-09-22 Fri", 
+            ],
+            "sortableEndDate": "2017-09-22 Fri",
             "sortableStartDate": "2017-09-18 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Sept 27", 
-            "displayStartDate": "Fri Sept 22", 
+            "displayEndDate": "Wed Sept 27",
+            "displayStartDate": "Fri Sept 22",
             "lines": [
                 "prepare for test Wednesday (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6WE1VamZrQTdodVU\">review slides</a>) (check homework solutions on Piazza)"
-            ], 
-            "sortableEndDate": "2017-09-27 Wed", 
+            ],
+            "sortableEndDate": "2017-09-27 Wed",
             "sortableStartDate": "2017-09-22 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Sept 27", 
-            "displayStartDate": "Mon Sept 25", 
+            "displayEndDate": "Wed Sept 27",
+            "displayStartDate": "Mon Sept 25",
             "lines": [
                 "do Practice with Classes sheet, then check solutions on Piazza"
-            ], 
-            "sortableEndDate": "2017-09-27 Wed", 
+            ],
+            "sortableEndDate": "2017-09-27 Wed",
             "sortableStartDate": "2017-09-25 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Sept 29", 
-            "displayStartDate": "Wed Sept 27", 
+            "displayEndDate": "Fri Sept 29",
+            "displayStartDate": "Wed Sept 27",
             "lines": [
                 "do 30 minutes on the Dice project (instructions linked below) -- use Piazza if needed!"
-            ], 
-            "sortableEndDate": "2017-09-29 Fri", 
+            ],
+            "sortableEndDate": "2017-09-29 Fri",
             "sortableStartDate": "2017-09-27 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Oct 02", 
-            "displayStartDate": "Wed Sept 27", 
+            "displayEndDate": "Mon Oct 02",
+            "displayStartDate": "Wed Sept 27",
             "lines": [
                 "return signed field trip form"
-            ], 
-            "sortableEndDate": "2017-10-02 Mon", 
+            ],
+            "sortableEndDate": "2017-10-02 Mon",
             "sortableStartDate": "2017-09-27 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Oct 02", 
-            "displayStartDate": "Fri Sept 29", 
+            "displayEndDate": "Mon Oct 02",
+            "displayStartDate": "Fri Sept 29",
             "lines": [
                 "do 'Practice with Nested Loops' (<a href=\"https://docs.google.com/document/d/1-Dq8TJsrhODYg4_rZAtYttZ7MZOpCR0QWnM4Ai-kc04/edit\">printable</a>)"
-            ], 
-            "sortableEndDate": "2017-10-02 Mon", 
+            ],
+            "sortableEndDate": "2017-10-02 Mon",
             "sortableStartDate": "2017-09-29 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Thu Oct 05", 
-            "displayStartDate": "Mon Oct 02", 
+            "displayEndDate": "Thu Oct 05",
+            "displayStartDate": "Mon Oct 02",
             "lines": [
                 "finish Dice (due 3:15pm on Thursday)"
-            ], 
-            "sortableEndDate": "2017-10-05 Thu", 
+            ],
+            "sortableEndDate": "2017-10-05 Thu",
             "sortableStartDate": "2017-10-02 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Oct 16", 
-            "displayStartDate": "Fri Oct 13", 
+            "displayEndDate": "Mon Oct 16",
+            "displayStartDate": "Fri Oct 13",
             "lines": [
-                "write a short sketch that creates one Bacteria object which moves in a random walk around the screen (you might find it helpful to reference the Chemotaxis slides #1-28, see link in Materials section of the class page)", 
+                "write a short sketch that creates one Bacteria object which moves in a random walk around the screen (you might find it helpful to reference the Chemotaxis slides #1-28, see link in Materials section of the class page)",
                 "optional challenge: write an additional class for an object that randomly jumps around the screen, and display it"
-            ], 
-            "sortableEndDate": "2017-10-16 Mon", 
+            ],
+            "sortableEndDate": "2017-10-16 Mon",
             "sortableStartDate": "2017-10-13 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Oct 18", 
-            "displayStartDate": "Mon Oct 16", 
+            "displayEndDate": "Wed Oct 18",
+            "displayStartDate": "Mon Oct 16",
             "lines": [
                 "do Part 2 and Part 3 of Chemotaxis"
-            ], 
-            "sortableEndDate": "2017-10-18 Wed", 
+            ],
+            "sortableEndDate": "2017-10-18 Wed",
             "sortableStartDate": "2017-10-16 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Oct 20", 
-            "displayStartDate": "Mon Oct 16", 
+            "displayEndDate": "Fri Oct 20",
+            "displayStartDate": "Mon Oct 16",
             "lines": [
                 "finish Chemotaxis."
-            ], 
-            "sortableEndDate": "2017-10-20 Fri", 
+            ],
+            "sortableEndDate": "2017-10-20 Fri",
             "sortableStartDate": "2017-10-16 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Oct 23", 
-            "displayStartDate": "Fri Oct 20", 
+            "displayEndDate": "Mon Oct 23",
+            "displayStartDate": "Fri Oct 20",
             "lines": [
-                "read and do Java Arithmetic packet Part 1 (optional but recommended: also do Part 2)", 
+                "read and do Java Arithmetic packet Part 1 (optional but recommended: also do Part 2)",
                 "read and do Compound Conditionals packet"
-            ], 
-            "sortableEndDate": "2017-10-23 Mon", 
+            ],
+            "sortableEndDate": "2017-10-23 Mon",
             "sortableStartDate": "2017-10-20 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Oct 25", 
-            "displayStartDate": "Mon Oct 23", 
+            "displayEndDate": "Wed Oct 25",
+            "displayStartDate": "Mon Oct 23",
             "lines": [
-                "finish Practice with Arrays of Objects, and check solutions (<a href='https://docs.google.com/document/d/10QGyP2MWDl_nGMf7YB2IYde061kW43Aipjre6Pf-RAQ/edit?usp=sharing'>solutions linked here</a>)", 
-                "check solutions to Java Arithmetic Part 1 (<a href='https://raw.githubusercontent.com/woodstockcs/woodstockcs.github.io/master/assets/JavaArithmeticSolutions.png?token=AHXoemxUw8aZKmA2Yh6Q-JUP-DUCl_0Lks5Z9za7wA%3D%3D'>solutions linked here</a>)", 
-                "check solutions to Compound Conditionals (<a href='https://docs.google.com/a/wcsu.net/document/d/1zp-Jlz3MOdkVhLc1Eg5kFzMwcO7V51bKjTPxTCB2NGA/edit?usp=sharing'>solutions linked here</a>)", 
+                "finish Practice with Arrays of Objects, and check solutions (<a href='https://docs.google.com/document/d/10QGyP2MWDl_nGMf7YB2IYde061kW43Aipjre6Pf-RAQ/edit?usp=sharing'>solutions linked here</a>)",
+                "check solutions to Java Arithmetic Part 1 (<a href='https://raw.githubusercontent.com/woodstockcs/woodstockcs.github.io/master/assets/JavaArithmeticSolutions.png?token=AHXoemxUw8aZKmA2Yh6Q-JUP-DUCl_0Lks5Z9za7wA%3D%3D'>solutions linked here</a>)",
+                "check solutions to Compound Conditionals (<a href='https://docs.google.com/a/wcsu.net/document/d/1zp-Jlz3MOdkVhLc1Eg5kFzMwcO7V51bKjTPxTCB2NGA/edit?usp=sharing'>solutions linked here</a>)",
                 "if (you did the optional Java Arithmetic Part 2) {email me a screenshot of your code and output};"
-            ], 
-            "sortableEndDate": "2017-10-25 Wed", 
+            ],
+            "sortableEndDate": "2017-10-25 Wed",
             "sortableStartDate": "2017-10-23 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Oct 30", 
-            "displayStartDate": "Fri Oct 27", 
+            "displayEndDate": "Mon Oct 30",
+            "displayStartDate": "Fri Oct 27",
             "lines": [
                 "recreate one of <a href='illusions.html'>these optical illusions</a> in Processings"
-            ], 
-            "sortableEndDate": "2017-10-30 Mon", 
+            ],
+            "sortableEndDate": "2017-10-30 Mon",
             "sortableStartDate": "2017-10-27 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Nov 01", 
-            "displayStartDate": "Mon Oct 30", 
+            "displayEndDate": "Wed Nov 01",
+            "displayStartDate": "Mon Oct 30",
             "lines": [
                 "test corrections per <a href='https://woodstockcs.github.io/resources.html#test-corrections'>instructions here</a>"
-            ], 
-            "sortableEndDate": "2017-11-01 Wed", 
+            ],
+            "sortableEndDate": "2017-11-01 Wed",
             "sortableStartDate": "2017-10-30 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Nov 03", 
-            "displayStartDate": "Wed Nov 01", 
+            "displayEndDate": "Fri Nov 03",
+            "displayStartDate": "Wed Nov 01",
             "lines": [
                 "in your programmer's notebook, take notes on all the slides <a href='https://docs.google.com/presentation/d/1vOCgtcNxi8s7yHhDNkRKhCWtrxcccRFSP7vneOHBnFg/edit?usp=sharing'>here</a>"
-            ], 
-            "sortableEndDate": "2017-11-03 Fri", 
+            ],
+            "sortableEndDate": "2017-11-03 Fri",
             "sortableStartDate": "2017-11-01 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Nov 08", 
-            "displayStartDate": "Mon Nov 06", 
+            "displayEndDate": "Wed Nov 08",
+            "displayStartDate": "Mon Nov 06",
             "lines": [
                 "<b>finish Starfield</b>"
-            ], 
-            "sortableEndDate": "2017-11-08 Wed", 
+            ],
+            "sortableEndDate": "2017-11-08 Wed",
             "sortableStartDate": "2017-11-06 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Nov 13", 
-            "displayStartDate": "Wed Nov 08", 
+            "displayEndDate": "Mon Nov 13",
+            "displayStartDate": "Wed Nov 08",
             "lines": [
-                "read the 'array' slides linked below as Starfield follow-up slides", 
+                "read the 'array' slides linked below as Starfield follow-up slides",
                 "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-2</b> > arrayCount9, arrayFront9 ... <b>Array-2</b> > countEvens, bigDiff ... (optional extras = Array-2 > centeredAverage, lucky13, sum28)"
-            ], 
-            "sortableEndDate": "2017-11-13 Mon", 
+            ],
+            "sortableEndDate": "2017-11-13 Mon",
             "sortableStartDate": "2017-11-08 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Nov 15", 
-            "displayStartDate": "Mon Nov 13", 
+            "displayEndDate": "Wed Nov 15",
+            "displayStartDate": "Mon Nov 13",
             "lines": [
-                "read and take notes on the 'interface' slides linked below as Starfield follow-up slides", 
-                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-1</b> > nearHundred, posNeg, or35, icyHot, in1020, makes10, intMax, close10, in3050 ... <b>Array-1</b> > firstLast6, sameFirstLast, makePi", 
-                "prepare for test Friday on arrays, objects, interfaces, and basic inheritance. use the 'Checkpoint 3' resources linked below", 
+                "read and take notes on the 'interface' slides linked below as Starfield follow-up slides",
+                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Warmup-1</b> > nearHundred, posNeg, or35, icyHot, in1020, makes10, intMax, close10, in3050 ... <b>Array-1</b> > firstLast6, sameFirstLast, makePi",
+                "prepare for test Friday on arrays, objects, interfaces, and basic inheritance. use the 'Checkpoint 3' resources linked below",
                 "still feeling rusty on the last test? use the 'extra resources' linked under 'Checkpoint 2' below"
-            ], 
-            "sortableEndDate": "2017-11-15 Wed", 
+            ],
+            "sortableEndDate": "2017-11-15 Wed",
             "sortableStartDate": "2017-11-13 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Nov 17", 
-            "displayStartDate": "Wed Nov 15", 
+            "displayEndDate": "Fri Nov 17",
+            "displayStartDate": "Wed Nov 15",
             "lines": [
-                "do Practice FRQ: Sound trimSilenceFromBeginning", 
+                "do Practice FRQ: Sound trimSilenceFromBeginning",
                 "review for test (see materials under 'Checkpoint 3' below)"
-            ], 
-            "sortableEndDate": "2017-11-17 Fri", 
+            ],
+            "sortableEndDate": "2017-11-17 Fri",
             "sortableStartDate": "2017-11-15 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Nov 27", 
-            "displayStartDate": "Mon Nov 20", 
+            "displayEndDate": "Mon Nov 27",
+            "displayStartDate": "Mon Nov 20",
             "lines": [
-                "if needed: practice with our <a href='https://quizlet.com/join/sZFuPZavN'>quizlet class</a>. catch up! finish projects! study for retakes! hooray!", 
+                "if needed: practice with our <a href='https://quizlet.com/join/sZFuPZavN'>quizlet class</a>. catch up! finish projects! study for retakes! hooray!",
                 "optional: watch <a href='https://www.youtube.com/watch?v=nnlAH1zDBDE'>this tutorial about making a photo mosaic with Obama-era White House social media photos</a> and bring an interesting design to show us after Thanksgiving"
-            ], 
-            "sortableEndDate": "2017-11-27 Mon", 
+            ],
+            "sortableEndDate": "2017-11-27 Mon",
             "sortableStartDate": "2017-11-20 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Dec 01", 
-            "displayStartDate": "Mon Nov 27", 
+            "displayEndDate": "Fri Dec 01",
+            "displayStartDate": "Mon Nov 27",
             "lines": [
-                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Logic-1</b> > fizzString, fizzString2 and <b>Array-1</b> > commonEnd, rotateLeft3", 
+                "finish these codingbat problems (REMEMBER TO LOG IN) --> <b>Logic-1</b> > fizzString, fizzString2 and <b>Array-1</b> > commonEnd, rotateLeft3",
                 "do the full assignment at <a href='http://www.github.com/WoodstockCS/ParticleSystem'>ParticleSystem</a> and be ready to share the result at the start of class on Friday"
-            ], 
-            "sortableEndDate": "2017-12-01 Fri", 
+            ],
+            "sortableEndDate": "2017-12-01 Fri",
             "sortableStartDate": "2017-11-27 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Dec 04", 
-            "displayStartDate": "Fri Dec 01", 
+            "displayEndDate": "Mon Dec 04",
+            "displayStartDate": "Fri Dec 01",
             "lines": [
-                "finish today's classwork (listed in the following bullet points) 'Today you'll learn why computers use binary and how to convert our 'normal' numbers into binary. This is a skill you will need for the AP exam.'", 
-                "watch and answer the questions in these EdPuzzle videos (in this order): (<a href='https://edpuzzle.com/assignments/5a20b8cbd6f7ca411d718357/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb21b2c94114399c11/watch'>2</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb2a8e184120e22c22/watch'>3</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb1c509a410b7ad5b8/watch'>4</a>)", 
-                "find a volunteer amongst yourselves to print a copy of <a href='https://docs.google.com/document/d/1ZvFt3f3tRfOAG51Htac_rfh_Cs_gb_prpK6tHCS6MVQ/edit#'>this practice sheet</a> for everyone", 
+                "finish today's classwork (listed in the following bullet points) 'Today you'll learn why computers use binary and how to convert our 'normal' numbers into binary. This is a skill you will need for the AP exam.'",
+                "watch and answer the questions in these EdPuzzle videos (in this order): (<a href='https://edpuzzle.com/assignments/5a20b8cbd6f7ca411d718357/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb21b2c94114399c11/watch'>2</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb2a8e184120e22c22/watch'>3</a>) (<a href='https://edpuzzle.com/assignments/5a20b8cb1c509a410b7ad5b8/watch'>4</a>)",
+                "find a volunteer amongst yourselves to print a copy of <a href='https://docs.google.com/document/d/1ZvFt3f3tRfOAG51Htac_rfh_Cs_gb_prpK6tHCS6MVQ/edit#'>this practice sheet</a> for everyone",
                 "do the practice sheet that your dear classmate printed for you (or if nobody printed it, do it on your own paper)"
-            ], 
-            "sortableEndDate": "2017-12-04 Mon", 
+            ],
+            "sortableEndDate": "2017-12-04 Mon",
             "sortableStartDate": "2017-12-01 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Dec 06", 
-            "displayStartDate": "Mon Dec 04", 
+            "displayEndDate": "Wed Dec 06",
+            "displayStartDate": "Mon Dec 04",
             "lines": [
-                "watch <a href='https://www.youtube.com/watch?v=2PH_SNXzfio'>this video about arrays</a> and complete the printable notes (linked in the video description, or pick up a paper copy from your folder in Mr. Smith's room)", 
+                "watch <a href='https://www.youtube.com/watch?v=2PH_SNXzfio'>this video about arrays</a> and complete the printable notes (linked in the video description, or pick up a paper copy from your folder in Mr. Smith's room)",
                 "read all the pages in <a href='http://ice-web.cc.gatech.edu/ce21/1/static/Java-Review/#list-and-arraylist'>the List and ArrayList section of the JavaReview website</a> and solve all the embedded problems (except those on the 'More Practice' page). Be sure you at least *attempt* to solve all the problems. For each, use a pencil to sketch on paper how you solve the problem, then write your best guess answer, then check the website for the correct answer. If you get it wrong, read the explainations of the wrong and right answers."
-            ], 
-            "sortableEndDate": "2017-12-06 Wed", 
+            ],
+            "sortableEndDate": "2017-12-06 Wed",
             "sortableStartDate": "2017-12-04 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Dec 08", 
-            "displayStartDate": "Wed Dec 06", 
+            "displayEndDate": "Fri Dec 08",
+            "displayStartDate": "Wed Dec 06",
             "lines": [
-                "watch <a href='https://www.youtube.com/watch?v=uvD04X1hlXs'>this video about inheritance</a> and complete the guided notes (distributed in class Wed or linked in the video description)", 
-                "install Greenfoot at <a href='https://www.greenfoot.org/download'>this link</a>. heads-up: it's a large download so plan ahead if you're on a slow connection", 
+                "watch <a href='https://www.youtube.com/watch?v=uvD04X1hlXs'>this video about inheritance</a> and complete the guided notes (distributed in class Wed or linked in the video description)",
+                "install Greenfoot at <a href='https://www.greenfoot.org/download'>this link</a>. heads-up: it's a large download so plan ahead if you're on a slow connection",
                 "do Greenfoot <a href='https://www.greenfoot.org/doc/tut-1'>Tutorial 1 linked here</a> and <a href='https://www.greenfoot.org/doc/tut-2'>Tutorial 2 linked here</a>"
-            ], 
-            "sortableEndDate": "2017-12-08 Fri", 
+            ],
+            "sortableEndDate": "2017-12-08 Fri",
             "sortableStartDate": "2017-12-06 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Dec 11", 
-            "displayStartDate": "Fri Dec 08", 
+            "displayEndDate": "Mon Dec 11",
+            "displayStartDate": "Fri Dec 08",
             "lines": [
                 "watch <a href='https://www.youtube.com/watch?v=n1PqaV_PFIc'>this video about state</a> and complete the guided notes (distributed in class or linked in the video description)"
-            ], 
-            "sortableEndDate": "2017-12-11 Mon", 
+            ],
+            "sortableEndDate": "2017-12-11 Mon",
             "sortableStartDate": "2017-12-08 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Dec 13", 
-            "displayStartDate": "Mon Dec 11", 
+            "displayEndDate": "Wed Dec 13",
+            "displayStartDate": "Mon Dec 11",
             "lines": [
                 "watch <a href='https://www.youtube.com/watch?v=Sb5R6mbCU3c'>this video about constructors</a> and complete the guided notes (distributed in class or linked in the video description)"
-            ], 
-            "sortableEndDate": "2017-12-13 Wed", 
+            ],
+            "sortableEndDate": "2017-12-13 Wed",
             "sortableStartDate": "2017-12-11 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Dec 15", 
-            "displayStartDate": "Wed Dec 13", 
+            "displayEndDate": "Fri Dec 15",
+            "displayStartDate": "Wed Dec 13",
             "lines": [
                 "complete review packet (pick up a paper copy in the classroom)"
-            ], 
-            "sortableEndDate": "2017-12-15 Fri", 
+            ],
+            "sortableEndDate": "2017-12-15 Fri",
             "sortableStartDate": "2017-12-13 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Dec 20", 
-            "displayStartDate": "Wed Dec 13", 
+            "displayEndDate": "Wed Dec 20",
+            "displayStartDate": "Wed Dec 13",
             "lines": [
                 "be finished with Asteroids project packet #1 and packet #2 (nothing to turn in - just have it done on your computer)"
-            ], 
-            "sortableEndDate": "2017-12-20 Wed", 
+            ],
+            "sortableEndDate": "2017-12-20 Wed",
             "sortableStartDate": "2017-12-13 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Dec 18", 
-            "displayStartDate": "Fri Dec 15", 
+            "displayEndDate": "Mon Dec 18",
+            "displayStartDate": "Fri Dec 15",
             "lines": [
                 "use the materials listed under 'Checkpoint 4' below to study for test Monday on inheritance, state, and constructors. remember there are no retakes available for this test."
-            ], 
-            "sortableEndDate": "2017-12-18 Mon", 
+            ],
+            "sortableEndDate": "2017-12-18 Mon",
             "sortableStartDate": "2017-12-15 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Dec 22", 
-            "displayStartDate": "Wed Dec 20", 
+            "displayEndDate": "Fri Dec 22",
+            "displayStartDate": "Wed Dec 20",
             "lines": [
                 "finish packet 3 of Asteroids (which we started in class Wed). the last part (adding two-player functionality) is optional."
-            ], 
-            "sortableEndDate": "2017-12-22 Fri", 
+            ],
+            "sortableEndDate": "2017-12-22 Fri",
             "sortableStartDate": "2017-12-20 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Jan 05", 
-            "displayStartDate": "Wed Jan 03", 
+            "displayEndDate": "Fri Jan 05",
+            "displayStartDate": "Wed Jan 03",
             "lines": [
-                "(links for the following assignments are under Midterm Prep)", 
-                "(paper copies of the guided notes are available in class)", 
-                "watch the Paths video and complete the guided notes", 
-                "watch the Boolean video and complete the guided notes", 
-                "watch the Comparing video and complete the guided notes", 
+                "(links for the following assignments are under Midterm Prep)",
+                "(paper copies of the guided notes are available in class)",
+                "watch the Paths video and complete the guided notes",
+                "watch the Boolean video and complete the guided notes",
+                "watch the Comparing video and complete the guided notes",
                 "there will be a short 'preparedness' quiz on these at the start of next class"
-            ], 
-            "sortableEndDate": "2018-01-05 Fri", 
+            ],
+            "sortableEndDate": "2018-01-05 Fri",
             "sortableStartDate": "2018-01-03 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Jan 19", 
-            "displayStartDate": "Wed Jan 03", 
+            "displayEndDate": "Fri Jan 19",
+            "displayStartDate": "Wed Jan 03",
             "lines": [
                 "finish Asteroids project (see link under Checkpoint 4)"
-            ], 
-            "sortableEndDate": "2018-01-19 Fri", 
+            ],
+            "sortableEndDate": "2018-01-19 Fri",
             "sortableStartDate": "2018-01-03 Wed"
-        }, 
+        },
         {
-            "displayEndDate": "Mon Jan 08", 
-            "displayStartDate": "Fri Jan 05", 
+            "displayEndDate": "Mon Jan 08",
+            "displayStartDate": "Fri Jan 05",
             "lines": [
-                "(links for the following assignments are under Midterm Prep)", 
-                "(paper copies of the guided notes are available in class)", 
-                "watch the String video and complete the guided notes", 
-                "watch the String Methods video and complete the guided note", 
+                "(links for the following assignments are under Midterm Prep)",
+                "(paper copies of the guided notes are available in class)",
+                "watch the String video and complete the guided notes",
+                "watch the String Methods video and complete the guided note",
                 "there will be a short 'preparedness' quiz on these at the start of next class"
-            ], 
-            "sortableEndDate": "2018-01-08 Mon", 
+            ],
+            "sortableEndDate": "2018-01-08 Mon",
             "sortableStartDate": "2018-01-05 Fri"
-        }, 
+        },
         {
-            "displayEndDate": "Wed Jan 10", 
-            "displayStartDate": "Mon Jan 08", 
+            "displayEndDate": "Wed Jan 10",
+            "displayStartDate": "Mon Jan 08",
             "lines": [
-                "(links for the following assignments are under Midterm Prep)", 
-                "(paper copies of the guided notes are available in class)", 
-                "watch the Numbers video and complete the guided notes", 
-                "watch the Math video and complete the guided notes", 
+                "(links for the following assignments are under Midterm Prep)",
+                "(paper copies of the guided notes are available in class)",
+                "watch the Numbers video and complete the guided notes",
+                "watch the Math video and complete the guided notes",
                 "there will be a short 'preparedness' quiz on these at the start of next class"
-            ], 
-            "sortableEndDate": "2018-01-10 Wed", 
+            ],
+            "sortableEndDate": "2018-01-10 Wed",
             "sortableStartDate": "2018-01-08 Mon"
-        }, 
+        },
         {
-            "displayEndDate": "Fri Jan 12", 
-            "displayStartDate": "Wed Jan 10", 
+            "displayEndDate": "Fri Jan 12",
+            "displayStartDate": "Wed Jan 10",
             "lines": [
                 "review the topics you feel weakest on, and ask for help where you feel stuck"
-            ], 
-            "sortableEndDate": "2018-01-12 Fri", 
+            ],
+            "sortableEndDate": "2018-01-12 Fri",
             "sortableStartDate": "2018-01-10 Wed"
         }
     ]

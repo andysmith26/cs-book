@@ -1,10 +1,11 @@
 {
     "aheads": [
         {
-            "displayDate": "Fri Jan 19", 
+            "displayDate": "Fri Jan 19",
             "lines": [
+                "8:00-9:20",
                 "midterm exam"
-            ], 
+            ],
             "sortableDate": "2018-01-19 Fri"
         }
     ]
