@@ -1,11 +1,11 @@
 {
     "aheads": [
         {
-            "displayDate": "Thu Jan 18",
+            "displayDate": "Thu Jan 18", 
             "lines": [
-                "regular class time",
-                "midterm exam"
-            ],
+                "regular class time", 
+                "midterm project presentations (live or recorded)"
+            ], 
             "sortableDate": "2018-01-18 Thu"
         }
     ]

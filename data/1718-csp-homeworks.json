@@ -1,304 +1,313 @@
 {
     "homeworks": [
         {
-            "displayEndDate": "Tue Sept 05",
-            "displayStartDate": "Thu Aug 31",
+            "displayEndDate": "Tue Sept 05", 
+            "displayStartDate": "Thu Aug 31", 
             "lines": [
-                "Take the survey, <a href=\"https://goo.gl/forms/1bDF4IRCYfJIu7uD2\">linked here</a>. ",
-                "Find a laptop. Figure out which laptop you're going to bring with you to class with you every day, starting on the day this assignment is due. If this is a hardship, see Mr. Smith immediately; we will find a good solution.",
-                "Install Atom on your laptop. Installation instructions are <a href=\"https://flight-manual.atom.io/getting-started/sections/installing-atom/\">linked here</a>.",
-                "Then in Atom *change your theme* and *turn on Soft Wrap* using the info in the middle of the page <a href=\"http://flight-manual.atom.io/getting-started/sections/atom-basics/\">linked here</a>",
+                "Take the survey, <a href=\"https://goo.gl/forms/1bDF4IRCYfJIu7uD2\">linked here</a>. ", 
+                "Find a laptop. Figure out which laptop you're going to bring with you to class with you every day, starting on the day this assignment is due. If this is a hardship, see Mr. Smith immediately; we will find a good solution.", 
+                "Install Atom on your laptop. Installation instructions are <a href=\"https://flight-manual.atom.io/getting-started/sections/installing-atom/\">linked here</a>.", 
+                "Then in Atom *change your theme* and *turn on Soft Wrap* using the info in the middle of the page <a href=\"http://flight-manual.atom.io/getting-started/sections/atom-basics/\">linked here</a>", 
                 "<strong>Your classmates and I will expect that you have successfully installed Atom and that you are ready to use it before the class when this assignment is due. Thanks!</strong>"
-            ],
-            "sortableEndDate": "2017-09-05 Tue",
+            ], 
+            "sortableEndDate": "2017-09-05 Tue", 
             "sortableStartDate": "2017-08-31 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Sept 07",
-            "displayStartDate": "Tue Sept 05",
+            "displayEndDate": "Thu Sept 07", 
+            "displayStartDate": "Tue Sept 05", 
             "lines": [
-                "Read Blown To Bits Chapter 1 (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6c01EQVNONWlfLVk\">linked here</a>).",
-                "In Piazza create a new \"Note\" (folder \"0-intro\") and write 100-200 words about how one part of the reading is relevant to you as a student at WUHS.",
+                "Read Blown To Bits Chapter 1 (<a href=\"https://drive.google.com/open?id=0B6wBwD0pwox6c01EQVNONWlfLVk\">linked here</a>).", 
+                "In Piazza create a new \"Note\" (folder \"0-intro\") and write 100-200 words about how one part of the reading is relevant to you as a student at WUHS.", 
                 "Be prepared to discuss the entire reading next class."
-            ],
-            "sortableEndDate": "2017-09-07 Thu",
+            ], 
+            "sortableEndDate": "2017-09-07 Thu", 
             "sortableStartDate": "2017-09-05 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 11",
-            "displayStartDate": "Thu Sept 07",
+            "displayEndDate": "Mon Sept 11", 
+            "displayStartDate": "Thu Sept 07", 
             "lines": [
-                "Finish FirstBlog",
-                "Finish Codecademy Lesson \"Intro to HTML\"",
+                "Finish FirstBlog", 
+                "Finish Codecademy Lesson \"Intro to HTML\"", 
                 "<del>Compile your \"two morals\" notes into a second blog post.</del> (cancelled at the end of class 09/07)"
-            ],
-            "sortableEndDate": "2017-09-11 Mon",
+            ], 
+            "sortableEndDate": "2017-09-11 Mon", 
             "sortableStartDate": "2017-09-07 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 18",
-            "displayStartDate": "Thu Sept 14",
+            "displayEndDate": "Mon Sept 18", 
+            "displayStartDate": "Thu Sept 14", 
             "lines": [
-                "create a second blog post on your blog, in which you answer (in 100-200 words) the question you took notes on in class last week: \"What does a good citizen look like in a world where the Bits authors 'two basic morals' exist?\" (book pg 14, pdf pg 17)",
-                "return signed research consent form (regardless of your decision to participate)",
-                "collect survey data from 5 people not in this class",
+                "create a second blog post on your blog, in which you answer (in 100-200 words) the question you took notes on in class last week: \"What does a good citizen look like in a world where the Bits authors 'two basic morals' exist?\" (book pg 14, pdf pg 17)", 
+                "return signed research consent form (regardless of your decision to participate)", 
+                "collect survey data from 5 people not in this class", 
                 "click one of the 'full article' buttons linked on <a href=\"http://technews.acm.org/\">ACM TechNews</a>, read the full article, and be ready to verbally summarize and discuss it next class"
-            ],
-            "sortableEndDate": "2017-09-18 Mon",
+            ], 
+            "sortableEndDate": "2017-09-18 Mon", 
             "sortableStartDate": "2017-09-14 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Tue Sept 19",
-            "displayStartDate": "Mon Sept 18",
+            "displayEndDate": "Tue Sept 19", 
+            "displayStartDate": "Mon Sept 18", 
             "lines": [
                 "write 200-300 word summary of your ACM TechNews article (which you read over the weekend) and add it to your blog as a new blog post"
-            ],
-            "sortableEndDate": "2017-09-19 Tue",
+            ], 
+            "sortableEndDate": "2017-09-19 Tue", 
             "sortableStartDate": "2017-09-18 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Sept 21",
-            "displayStartDate": "Tue Sept 19",
+            "displayEndDate": "Thu Sept 21", 
+            "displayStartDate": "Tue Sept 19", 
             "lines": [
-                "read/do Images 1 and 1.5 and 2 (links in resources)",
+                "read/do Images 1 and 1.5 and 2 (links in resources)", 
                 "post a Piazza note <strong>to instructor only</strong> with screenshot of Image 2 exercises (code+image)"
-            ],
-            "sortableEndDate": "2017-09-21 Thu",
+            ], 
+            "sortableEndDate": "2017-09-21 Thu", 
             "sortableStartDate": "2017-09-19 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Sept 25",
-            "displayStartDate": "Thu Sept 21",
+            "displayEndDate": "Mon Sept 25", 
+            "displayStartDate": "Thu Sept 21", 
             "lines": [
-                "do IntroComputing exercises for Image 3, Image 4, and Image 5 (including the \"optional\" one)",
+                "do IntroComputing exercises for Image 3, Image 4, and Image 5 (including the \"optional\" one)", 
                 "post a Piazza note <strong>to instructor only</strong> with screenshots of the code+images from the Image 5 exercises"
-            ],
-            "sortableEndDate": "2017-09-25 Mon",
+            ], 
+            "sortableEndDate": "2017-09-25 Mon", 
             "sortableStartDate": "2017-09-21 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Sept 28",
-            "displayStartDate": "Tue Sept 26",
+            "displayEndDate": "Thu Sept 28", 
+            "displayStartDate": "Tue Sept 26", 
             "lines": [
-                "do IntroComputing exercises for Image 6",
+                "do IntroComputing exercises for Image 6", 
                 "post a Piazza note <strong>to instructor only</strong> with screenshots of the code+images from the Image 6 exercises"
-            ],
-            "sortableEndDate": "2017-09-28 Thu",
+            ], 
+            "sortableEndDate": "2017-09-28 Thu", 
             "sortableStartDate": "2017-09-26 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 02",
-            "displayStartDate": "Tue Sept 26",
+            "displayEndDate": "Mon Oct 02", 
+            "displayStartDate": "Tue Sept 26", 
             "lines": [
                 "return field trip form"
-            ],
-            "sortableEndDate": "2017-10-02 Mon",
+            ], 
+            "sortableEndDate": "2017-10-02 Mon", 
             "sortableStartDate": "2017-09-26 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 05",
-            "displayStartDate": "Tue Oct 03",
+            "displayEndDate": "Thu Oct 05", 
+            "displayStartDate": "Tue Oct 03", 
             "lines": [
                 "Do Level 10 of the Turtle Blockly Game on your own. Take a screenshot of your Level 10 image and your code, and post it as a public note to Piazza. (start this in class on Tuesday, and work with the partner assigned Monday this week)"
-            ],
-            "sortableEndDate": "2017-10-05 Thu",
+            ], 
+            "sortableEndDate": "2017-10-05 Thu", 
             "sortableStartDate": "2017-10-03 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 12",
-            "displayStartDate": "Tue Oct 10",
+            "displayEndDate": "Thu Oct 12", 
+            "displayStartDate": "Tue Oct 10", 
             "lines": [
                 "Do Image 7 exercises"
-            ],
-            "sortableEndDate": "2017-10-12 Thu",
+            ], 
+            "sortableEndDate": "2017-10-12 Thu", 
             "sortableStartDate": "2017-10-10 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 16",
-            "displayStartDate": "Tue Oct 10",
+            "displayEndDate": "Mon Oct 16", 
+            "displayStartDate": "Tue Oct 10", 
             "lines": [
                 "Study vocab <a href='https://quizlet.com/232263611/internet-part-1-flash-cards'>here</a> then create Flipgrid video (<a href='https://flipgrid.com/2a7b91'>link 1</a> for students working on the Lobby Screen team) (<a href='https://flipgrid.com/78a1c0'>link 2</a> for students working on the Word Count Viz team) (<a href='https://flipgrid.com/6e3301'>link 3</a> for students working on the Randomizer team)"
-            ],
-            "sortableEndDate": "2017-10-16 Mon",
+            ], 
+            "sortableEndDate": "2017-10-16 Mon", 
             "sortableStartDate": "2017-10-10 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 19",
-            "displayStartDate": "Mon Oct 16",
+            "displayEndDate": "Thu Oct 19", 
+            "displayStartDate": "Mon Oct 16", 
             "lines": [
                 "optional: do Image 8 exercises. post screenshots of your code + images on Piazza as a private note to instructor"
-            ],
-            "sortableEndDate": "2017-10-19 Thu",
+            ], 
+            "sortableEndDate": "2017-10-19 Thu", 
             "sortableStartDate": "2017-10-16 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 23",
-            "displayStartDate": "Thu Oct 19",
+            "displayEndDate": "Mon Oct 23", 
+            "displayStartDate": "Thu Oct 19", 
             "lines": [
                 "Finish or make visible progress on your WCS sprint task (see notecards on your scrum board)"
-            ],
-            "sortableEndDate": "2017-10-23 Mon",
+            ], 
+            "sortableEndDate": "2017-10-23 Mon", 
             "sortableStartDate": "2017-10-19 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Oct 23",
-            "displayStartDate": "Thu Oct 19",
+            "displayEndDate": "Mon Oct 23", 
+            "displayStartDate": "Thu Oct 19", 
             "lines": [
                 "Create your own 'fake news' image using the Custom Bluescreen link at IntroComputing.com. On Piazza, post all of the following in one public note: (1) all three of your images (image, back, and result), and (2) a copy/paste of the text of your code (not a screenshot like before), and (3) a short 'fake news' headline to accompany your image, and (4) a short (max 200 words) description of the incremental development process of your program, focusing on one difficulty you encountered and how you resolved it."
-            ],
-            "sortableEndDate": "2017-10-23 Mon",
+            ], 
+            "sortableEndDate": "2017-10-23 Mon", 
             "sortableStartDate": "2017-10-19 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 26",
-            "displayStartDate": "Tue Oct 24",
+            "displayEndDate": "Thu Oct 26", 
+            "displayStartDate": "Tue Oct 24", 
             "lines": [
                 "Edit shared slide deck <a href='https://docs.google.com/a/wcsu.net/presentation/d/1tHlWwEvFCn-zWV3ji4xxCSZuSZDWVg-NGQoiY4AMteM/edit?usp=sharing'>linked here</a>. Create two new slides: one has your final image and your headline (in large font). The second has your revised description (taking into account your colleagues' suggestions on Piazza) of difficulty and resolution."
-            ],
-            "sortableEndDate": "2017-10-26 Thu",
+            ], 
+            "sortableEndDate": "2017-10-26 Thu", 
             "sortableStartDate": "2017-10-24 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Oct 26",
-            "displayStartDate": "Mon Oct 23",
+            "displayEndDate": "Thu Oct 26", 
+            "displayStartDate": "Mon Oct 23", 
             "lines": [
                 "study for test: abstraction, your WCS product (what is its purpose), where have you been creative, flipgrid questions, internet vocab (see links below)"
-            ],
-            "sortableEndDate": "2017-10-26 Thu",
+            ], 
+            "sortableEndDate": "2017-10-26 Thu", 
             "sortableStartDate": "2017-10-23 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Nov 02",
-            "displayStartDate": "Tue Oct 31",
+            "displayEndDate": "Thu Nov 02", 
+            "displayStartDate": "Tue Oct 31", 
             "lines": [
                 "read <a href='http://forum.code.org/t/is-a-loop-an-example-of-abstraction/6133'>this</a> and summarize it in a new blog post on github (means, update your FirstBlog page so that it contains a new post)"
-            ],
-            "sortableEndDate": "2017-11-02 Thu",
+            ], 
+            "sortableEndDate": "2017-11-02 Thu", 
             "sortableStartDate": "2017-10-31 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Nov 06",
-            "displayStartDate": "Thu Nov 02",
+            "displayEndDate": "Mon Nov 06", 
+            "displayStartDate": "Thu Nov 02", 
             "lines": [
                 "do <a href='https://studio.code.org/s/csp3/stage/6/puzzle/1'>Puzzles 1-3 from Lesson 6</a>. work solo or with pair programming"
-            ],
-            "sortableEndDate": "2017-11-06 Mon",
+            ], 
+            "sortableEndDate": "2017-11-06 Mon", 
             "sortableStartDate": "2017-11-02 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Nov 09",
-            "displayStartDate": "Tue Nov 07",
+            "displayEndDate": "Thu Nov 09", 
+            "displayStartDate": "Tue Nov 07", 
             "lines": [
                 "do <a href='https://studio.code.org/s/csp3/stage/7/puzzle/1'>Puzzles 1-10 from Lesson 7</a>. work solo or with pair programming"
-            ],
-            "sortableEndDate": "2017-11-09 Thu",
+            ], 
+            "sortableEndDate": "2017-11-09 Thu", 
             "sortableStartDate": "2017-11-07 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Tue Nov 14",
-            "displayStartDate": "Thu Nov 09",
+            "displayEndDate": "Tue Nov 14", 
+            "displayStartDate": "Thu Nov 09", 
             "lines": [
-                "do <a href='https://studio.code.org/s/csp3/stage/7/puzzle/1'>Puzzles 12-15 from Lesson 7</a>",
-                "do <a href='https://studio.code.org/s/csp3/stage/8/puzzle/1'>Puzzles 1-7 and 10-16 from Lesson 8</a>. work solo or with pair programming",
-                "do <a href='https://studio.code.org/s/csp3/stage/9/puzzle/1'>Puzzles 2-15 from Lesson 9</a>",
+                "do <a href='https://studio.code.org/s/csp3/stage/7/puzzle/1'>Puzzles 12-15 from Lesson 7</a>", 
+                "do <a href='https://studio.code.org/s/csp3/stage/8/puzzle/1'>Puzzles 1-7 and 10-16 from Lesson 8</a>. work solo or with pair programming", 
+                "do <a href='https://studio.code.org/s/csp3/stage/9/puzzle/1'>Puzzles 2-15 from Lesson 9</a>", 
                 "(Gardner, Tierney, Matt: Lesson 7 #12-15, Lesson 9 #2-15)"
-            ],
-            "sortableEndDate": "2017-11-14 Tue",
+            ], 
+            "sortableEndDate": "2017-11-14 Tue", 
             "sortableStartDate": "2017-11-09 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Nov 16",
-            "displayStartDate": "Tue Nov 14",
+            "displayEndDate": "Thu Nov 16", 
+            "displayStartDate": "Tue Nov 14", 
             "lines": [
                 "do these practice AP questions: Lesson 6 #4, Lesson 7 #11, Lesson 8 #18-20, Lesson 9 #16-19"
-            ],
-            "sortableEndDate": "2017-11-16 Thu",
+            ], 
+            "sortableEndDate": "2017-11-16 Thu", 
             "sortableStartDate": "2017-11-14 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Nov 27",
-            "displayStartDate": "Tue Nov 21",
+            "displayEndDate": "Mon Nov 27", 
+            "displayStartDate": "Tue Nov 21", 
             "lines": [
-                "classwork: WCS Products: DIY-HW make a task card for what you will accomplish outside of class by next Friday 8AM",
-                "classwork: write a paragraph in which you make connections between the four main concepts from the 'Design a Digital Scene' project (Abstractions, Functions, Top-Down Design, and Collaboration)",
-                "classwork: code.org assessment lesson 3 #1-4: do and review",
-                "required homework: finish your Design a Digital Scene project, if you haven't already",
+                "classwork: WCS Products: DIY-HW make a task card for what you will accomplish outside of class by next Friday 8AM", 
+                "classwork: write a paragraph in which you make connections between the four main concepts from the 'Design a Digital Scene' project (Abstractions, Functions, Top-Down Design, and Collaboration)", 
+                "classwork: code.org assessment lesson 3 #1-4: do and review", 
+                "required homework: finish your Design a Digital Scene project, if you haven't already", 
                 "optional homework: write some multiple-choice turtle problems like the one we did in class. make one that's very tricky"
-            ],
-            "sortableEndDate": "2017-11-27 Mon",
+            ], 
+            "sortableEndDate": "2017-11-27 Mon", 
             "sortableStartDate": "2017-11-21 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Fri Dec 01",
-            "displayStartDate": "Tue Nov 21",
+            "displayEndDate": "Fri Dec 01", 
+            "displayStartDate": "Tue Nov 21", 
             "lines": [
                 "due 8am Friday morning: finish the WCS Products task you defined for yourself, and move the card to 'Done'"
-            ],
-            "sortableEndDate": "2017-12-01 Fri",
+            ], 
+            "sortableEndDate": "2017-12-01 Fri", 
             "sortableStartDate": "2017-11-21 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Fri Dec 01",
-            "displayStartDate": "Mon Nov 27",
+            "displayEndDate": "Fri Dec 01", 
+            "displayStartDate": "Mon Nov 27", 
             "lines": [
-                "finish anything from this week's classtime agendas that you didn't get done in class (listed in the following bullets)",
-                "ask the sub for a copy of CSP Unit 3 Assessment Solutions #1-4, which is on Mr. Smith's desk. Read #3 and 4 (and #1 and 2 if you weren't in class last time). Try to understand why the given answer is correct. In the 'For Teachers Only' part of each question, underline the most important parts. Put a question mark next to anything you don't understand. Put your name on the packet and put it in Mr. Smith's inbox",
-                "ask the sub for the Ghosts in the Machine reading. Read Pgs #73 - 80. As you're reading, on a blank sheet of paper, write down at least one main point from each page. After you're done reading pgs 73-80, write two or three questions about the article which you think could lead to interesting discussion.",
-                "watch and answer the questions in these videos (in this order): (<a href='https://edpuzzle.com/assignments/5a1e1a72d78a89417365853a/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b0be8bd184175d71862/watchh'>2</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b7f8891f4413a69dd84/watch'>3</a>)",
+                "finish anything from this week's classtime agendas that you didn't get done in class (listed in the following bullets)", 
+                "ask the sub for a copy of CSP Unit 3 Assessment Solutions #1-4, which is on Mr. Smith's desk. Read #3 and 4 (and #1 and 2 if you weren't in class last time). Try to understand why the given answer is correct. In the 'For Teachers Only' part of each question, underline the most important parts. Put a question mark next to anything you don't understand. Put your name on the packet and put it in Mr. Smith's inbox", 
+                "ask the sub for the Ghosts in the Machine reading. Read Pgs #73 - 80. As you're reading, on a blank sheet of paper, write down at least one main point from each page. After you're done reading pgs 73-80, write two or three questions about the article which you think could lead to interesting discussion.", 
+                "watch and answer the questions in these videos (in this order): (<a href='https://edpuzzle.com/assignments/5a1e1a72d78a89417365853a/watch'>1</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b0be8bd184175d71862/watchh'>2</a>) (<a href='https://edpuzzle.com/assignments/5a1e1b7f8891f4413a69dd84/watch'>3</a>)", 
                 "do the two practice sheets that are on my desk (<a href='https://docs.google.com/document/d/1Rblox0p_yQjekZSJQ7huLwHp2ixm5-mRE0Oqc4thB30/edit'>Practice with Number Systems 2</a> and <a href='https://docs.google.com/document/d/19e0i5tuTB2uDFIN96K1of2LxWgqvwbUX_v7Cxcaga2Y/edit#'>Practice with Number Systems 3</a>)"
-            ],
-            "sortableEndDate": "2017-12-01 Fri",
+            ], 
+            "sortableEndDate": "2017-12-01 Fri", 
             "sortableStartDate": "2017-11-27 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Dec 07",
-            "displayStartDate": "Mon Dec 04",
+            "displayEndDate": "Thu Dec 07", 
+            "displayStartDate": "Mon Dec 04", 
             "lines": [
-                "prepare for test Thursday about number systems (convert among bin <-> dec <-> hex)",
-                "make a poster showing how to convert from hex or bin (you pick one) to dec ... (we'll start this assignment in class Tuesday, then it's due Thursday)",
-                "read Ghosts in the Machine pgs 80-99 (get a paper copy in classroom or read it online <a href='http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf'>here</a>) and email Mr. Smith two questions you think would make for interesting discussion (we'll have a discussion about the reading in class Thursday, and there will probably be a couple questions about the reading on the test)",
+                "prepare for test Thursday about number systems (convert among bin <-> dec <-> hex)", 
+                "make a poster showing how to convert from hex or bin (you pick one) to dec ... (we'll start this assignment in class Tuesday, then it's due Thursday)", 
+                "read Ghosts in the Machine pgs 80-99 (get a paper copy in classroom or read it online <a href='http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf'>here</a>) and email Mr. Smith two questions you think would make for interesting discussion (we'll have a discussion about the reading in class Thursday, and there will probably be a couple questions about the reading on the test)", 
                 "watch <a href='https://www.youtube.com/watch?v=1GSjbWt0c9M'>this final video about binary</a>. basic questions about it will be on the test Thursday."
-            ],
-            "sortableEndDate": "2017-12-07 Thu",
+            ], 
+            "sortableEndDate": "2017-12-07 Thu", 
             "sortableStartDate": "2017-12-04 Mon"
-        },
+        }, 
         {
-            "displayEndDate": "Mon Dec 11",
-            "displayStartDate": "Thu Dec 07",
+            "displayEndDate": "Mon Dec 11", 
+            "displayStartDate": "Thu Dec 07", 
             "lines": [
                 "do code.org Unit *5* Lesson 1, pages 1-22 (page 23 is optional). this might take a while, so plan ahead and use your Thursday class time well. Please do not use the 'pair programming' mode offered by code.org, but I do encourage you to work alongside with someone and talk through what you're doing, just both of you should be typing on your own machines."
-            ],
-            "sortableEndDate": "2017-12-11 Mon",
+            ], 
+            "sortableEndDate": "2017-12-11 Mon", 
             "sortableStartDate": "2017-12-07 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Dec 14",
-            "displayStartDate": "Tue Dec 12",
+            "displayEndDate": "Thu Dec 14", 
+            "displayStartDate": "Tue Dec 12", 
             "lines": [
                 "do code.org Unit *5* Lesson 2, pages 1-15. Please do not use the 'pair programming' mode offered by code.org, but I do encourage you to work alongside with someone and talk through what you're doing, but both of you should be typing on your own machines."
-            ],
-            "sortableEndDate": "2017-12-14 Thu",
+            ], 
+            "sortableEndDate": "2017-12-14 Thu", 
             "sortableStartDate": "2017-12-12 Tue"
-        },
+        }, 
         {
-            "displayEndDate": "Tue Dec 19",
-            "displayStartDate": "Thu Dec 14",
+            "displayEndDate": "Tue Dec 19", 
+            "displayStartDate": "Thu Dec 14", 
             "lines": [
-                "Create a multi-screen app <a href='https://studio.code.org/s/csp5/stage/3/puzzle/4'>here</a>, meeting the six requirements listed in the Activity Guide (paper you got in class)",
+                "Create a multi-screen app <a href='https://studio.code.org/s/csp5/stage/3/puzzle/4'>here</a>, meeting the six requirements listed in the Activity Guide (paper you got in class)", 
                 "TD, ME, GG ... do this instead: start with your game code, and repurpose it into an AI for 1-player Tic-Tac-Toe. Allow multiple games and include some text or visual which explains to the user what the computer is doing to learn how to play better)"
-            ],
-            "sortableEndDate": "2017-12-19 Tue",
+            ], 
+            "sortableEndDate": "2017-12-19 Tue", 
             "sortableStartDate": "2017-12-14 Thu"
-        },
+        }, 
         {
-            "displayEndDate": "Thu Dec 21",
-            "displayStartDate": "Tue Dec 19",
+            "displayEndDate": "Thu Dec 21", 
+            "displayStartDate": "Tue Dec 19", 
             "lines": [
-                "code.org Unit 5 finish Lessons 4 and 5",
+                "code.org Unit 5 finish Lessons 4 and 5", 
                 "TD, ME, GG ... do this instead: add functionality for AI vs AI in Game of Sticks OR in Tic Tac Toe"
-            ],
-            "sortableEndDate": "2017-12-21 Thu",
+            ], 
+            "sortableEndDate": "2017-12-21 Thu", 
             "sortableStartDate": "2017-12-19 Tue"
+        }, 
+        {
+            "displayEndDate": "Thu Jan 18", 
+            "displayStartDate": "Thu Jan 04", 
+            "lines": [
+                "finish midterm project (see handout given in class)"
+            ], 
+            "sortableEndDate": "2018-01-18 Thu", 
+            "sortableStartDate": "2018-01-04 Thu"
         }
     ]
 }

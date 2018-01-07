@@ -3,212 +3,212 @@
         {
             "agenda": [
                 "quick overview of the class"
-            ],
-            "displayDate": "Wed Aug 30",
-            "sortableDate": "2017-08-30 Wed",
+            ], 
+            "displayDate": "Wed Aug 30", 
+            "sortableDate": "2017-08-30 Wed", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "get started in Piazza",
+                "get started in Piazza", 
                 "do FirstBlog"
-            ],
-            "displayDate": "Tue Sept 05",
-            "sortableDate": "2017-09-05 Tue",
+            ], 
+            "displayDate": "Tue Sept 05", 
+            "sortableDate": "2017-09-05 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "discuss b2b reading offline and online",
+                "discuss b2b reading offline and online", 
                 "learn html"
-            ],
-            "displayDate": "Thu Sept 07",
-            "sortableDate": "2017-09-07 Thu",
+            ], 
+            "displayDate": "Thu Sept 07", 
+            "sortableDate": "2017-09-07 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "learn humanitarian mapping"
-            ],
-            "displayDate": "Mon Sept 11",
-            "sortableDate": "2017-09-11 Mon",
+            ], 
+            "displayDate": "Mon Sept 11", 
+            "sortableDate": "2017-09-11 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "do humanitarian mapping"
-            ],
-            "displayDate": "Tue Sept 12",
-            "sortableDate": "2017-09-12 Tue",
+            ], 
+            "displayDate": "Tue Sept 12", 
+            "sortableDate": "2017-09-12 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "compare HTML representations"
-            ],
-            "displayDate": "Thu Sept 14",
-            "sortableDate": "2017-09-14 Thu",
+            ], 
+            "displayDate": "Thu Sept 14", 
+            "sortableDate": "2017-09-14 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "take MSU research survey",
+                "take MSU research survey", 
                 "(intro coders: start js) and (expert coders: work on VoRa)"
-            ],
-            "displayDate": "Mon Sept 18",
-            "sortableDate": "2017-09-18 Mon",
+            ], 
+            "displayDate": "Mon Sept 18", 
+            "sortableDate": "2017-09-18 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "share a couple news stories",
-                "js (Code 1 + Code 2) / Vora",
+                "share a couple news stories", 
+                "js (Code 1 + Code 2) / Vora", 
                 "lobby / word-count / VoRa"
-            ],
-            "displayDate": "Tue Sept 19",
-            "sortableDate": "2017-09-19 Tue",
+            ], 
+            "displayDate": "Tue Sept 19", 
+            "sortableDate": "2017-09-19 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "Image 3, 4, 5 exercises",
+                "Image 3, 4, 5 exercises", 
                 "work on products"
-            ],
-            "displayDate": "Thu Sept 21",
-            "sortableDate": "2017-09-21 Thu",
+            ], 
+            "displayDate": "Thu Sept 21", 
+            "sortableDate": "2017-09-21 Thu", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "quick discussion about grading",
+                "quick discussion about grading", 
                 "test 01"
-            ],
-            "displayDate": "Mon Sept 25",
-            "sortableDate": "2017-09-25 Mon",
+            ], 
+            "displayDate": "Mon Sept 25", 
+            "sortableDate": "2017-09-25 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "work on WCS products",
+                "work on WCS products", 
                 "coding exercises: Image 6"
-            ],
-            "displayDate": "Tue Sept 26",
-            "sortableDate": "2017-09-26 Tue",
+            ], 
+            "displayDate": "Tue Sept 26", 
+            "sortableDate": "2017-09-26 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "codecombat.com"
-            ],
-            "displayDate": "Thu Sept 28",
-            "sortableDate": "2017-09-28 Thu",
+            ], 
+            "displayDate": "Thu Sept 28", 
+            "sortableDate": "2017-09-28 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "Image bluescreens"
-            ],
-            "displayDate": "Mon Oct 02",
-            "sortableDate": "2017-10-02 Mon",
+            ], 
+            "displayDate": "Mon Oct 02", 
+            "sortableDate": "2017-10-02 Mon", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "Work with your partner on Levels 1-9 in the Turtle Blockly Game. Alternate who types and who navigates each level. (Level 1 = the less experienced programmer is typist. Level 2 = the more experienced programmer is typist. and so on)"
-            ],
-            "displayDate": "Tue Oct 03",
-            "sortableDate": "2017-10-03 Tue",
+            ], 
+            "displayDate": "Tue Oct 03", 
+            "sortableDate": "2017-10-03 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Thu Oct 05",
-            "sortableDate": "2017-10-05 Thu",
+            "agenda": [], 
+            "displayDate": "Thu Oct 05", 
+            "sortableDate": "2017-10-05 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "summarize learning from harvard",
+                "summarize learning from harvard", 
                 "do Image 7"
-            ],
-            "displayDate": "Tue Oct 10",
-            "sortableDate": "2017-10-10 Tue",
+            ], 
+            "displayDate": "Tue Oct 10", 
+            "sortableDate": "2017-10-10 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "visit Supreme Court session"
-            ],
-            "displayDate": "Thu Oct 12",
-            "sortableDate": "2017-10-12 Thu",
+            ], 
+            "displayDate": "Thu Oct 12", 
+            "sortableDate": "2017-10-12 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "make a poster about bluescreen image manipulation"
-            ],
-            "displayDate": "Mon Oct 16",
-            "sortableDate": "2017-10-16 Mon",
+            ], 
+            "displayDate": "Mon Oct 16", 
+            "sortableDate": "2017-10-16 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
-                "get scrum boards set up",
+                "get scrum boards set up", 
                 "study hall (no internet)"
-            ],
-            "displayDate": "Tue Oct 17",
-            "sortableDate": "2017-10-17 Tue",
+            ], 
+            "displayDate": "Tue Oct 17", 
+            "sortableDate": "2017-10-17 Tue", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
-                "finish posters: annotate them with (1) iteration, (2) abstraction, (3) parameters",
+                "finish posters: annotate them with (1) iteration, (2) abstraction, (3) parameters", 
                 "start HW"
-            ],
-            "displayDate": "Thu Oct 19",
-            "sortableDate": "2017-10-19 Thu",
+            ], 
+            "displayDate": "Thu Oct 19", 
+            "sortableDate": "2017-10-19 Thu", 
             "status": "DONE"
-        },
+        }, 
         {
             "agenda": [
                 "You will make progress on the current WCS Product sprint by working on your assigned tasks in order to improve your understanding of teamwork and troubleshooting in software engineering."
-            ],
-            "displayDate": "Mon Oct 23",
-            "sortableDate": "2017-10-23 Mon",
+            ], 
+            "displayDate": "Mon Oct 23", 
+            "sortableDate": "2017-10-23 Mon", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
                 "You will review concepts by commenting on your classmates 'fake news' images, consolidating info from your videos, looking at another example of abstraction, and playing a game in order to prepare yourself to show evidence of understand the standards."
-            ],
-            "displayDate": "Tue Oct 24",
-            "sortableDate": "2017-10-24 Tue",
+            ], 
+            "displayDate": "Tue Oct 24", 
+            "sortableDate": "2017-10-24 Tue", 
             "status": "READY"
-        },
+        }, 
         {
             "agenda": [
                 "You will show evidence of your understanding by taking a test and live coding together in order to make connections between your various programming experiences."
-            ],
-            "displayDate": "Thu Oct 26",
-            "sortableDate": "2017-10-26 Thu",
+            ], 
+            "displayDate": "Thu Oct 26", 
+            "sortableDate": "2017-10-26 Thu", 
             "status": "READY"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Mon Oct 30",
-            "sortableDate": "2017-10-30 Mon",
+            "agenda": [], 
+            "displayDate": "Mon Oct 30", 
+            "sortableDate": "2017-10-30 Mon", 
             "status": "READY"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Tue Oct 31",
-            "sortableDate": "2017-10-31 Tue",
+            "agenda": [], 
+            "displayDate": "Tue Oct 31", 
+            "sortableDate": "2017-10-31 Tue", 
             "status": "READY"
-        },
+        }, 
         {
-            "agenda": [],
-            "displayDate": "Thu Nov 02",
-            "sortableDate": "2017-11-02 Thu",
+            "agenda": [], 
+            "displayDate": "Thu Nov 02", 
+            "sortableDate": "2017-11-02 Thu", 
             "status": "READY"
         }
     ]
