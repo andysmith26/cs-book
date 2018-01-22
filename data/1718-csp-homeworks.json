@@ -308,6 +308,15 @@
             ], 
             "sortableEndDate": "2018-01-18 Thu", 
             "sortableStartDate": "2018-01-04 Thu"
+        }, 
+        {
+            "displayEndDate": "Tue Jan 23", 
+            "displayStartDate": "Mon Jan 22", 
+            "lines": [
+                "finish Code.org Unit 5 Lesson 6 'User Input and Strings'"
+            ], 
+            "sortableEndDate": "2018-01-23 Tue", 
+            "sortableStartDate": "2018-01-22 Mon"
         }
     ]
 }
