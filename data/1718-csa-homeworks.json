@@ -415,6 +415,15 @@
             ], 
             "sortableEndDate": "2018-01-12 Fri", 
             "sortableStartDate": "2018-01-10 Wed"
+        }, 
+        {
+            "displayEndDate": "Wed Jan 24", 
+            "displayStartDate": "Mon Jan 22", 
+            "lines": [
+                "read the 'Reading: 2-D Arrays', and answer the questions at the end. PREPAREDNESS QUIZ NEXT CLASS."
+            ], 
+            "sortableEndDate": "2018-01-24 Wed", 
+            "sortableStartDate": "2018-01-22 Mon"
         }
     ]
 }
