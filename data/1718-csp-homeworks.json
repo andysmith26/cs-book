@@ -323,7 +323,8 @@
             "displayStartDate": "Tue Jan 23", 
             "lines": [
                 "finish 'Will It Crash' packet pages 1-4",
-                "finish Code.org Unit 5 Lesson 8 'Boolean Expressions and If Statements'"
+                "finish Code.org Unit 5 Lesson 8 'Boolean Expressions and If Statements'",
+                "TG, ME, GG: instead of that, your job is to each take a copy of your current bot and enhance it somehow. put your enhanced bot on github and email me a link to the repo. at the start of next class we'll play them against each other"
             ], 
             "sortableEndDate": "2018-01-25 Thu", 
             "sortableStartDate": "2018-01-23 Tue"
