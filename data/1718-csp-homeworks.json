@@ -317,6 +317,16 @@
             ], 
             "sortableEndDate": "2018-01-23 Tue", 
             "sortableStartDate": "2018-01-22 Mon"
+        }, 
+        {
+            "displayEndDate": "Thu Jan 25", 
+            "displayStartDate": "Tue Jan 23", 
+            "lines": [
+                "finish 'Will It Crash' packet pages 1-4",
+                "finish Code.org Unit 5 Lesson 8 'Boolean Expressions and If Statements'"
+            ], 
+            "sortableEndDate": "2018-01-25 Thu", 
+            "sortableStartDate": "2018-01-23 Tue"
         }
     ]
 }
