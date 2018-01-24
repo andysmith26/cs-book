@@ -424,6 +424,15 @@
             ], 
             "sortableEndDate": "2018-01-24 Wed", 
             "sortableStartDate": "2018-01-22 Mon"
+        }, 
+        {
+            "displayEndDate": "Fri Jan 26", 
+            "displayStartDate": "Wed Jan 24", 
+            "lines": [
+                "do 2d Array worksheet #1"
+            ], 
+            "sortableEndDate": "2018-01-26 Fri", 
+            "sortableStartDate": "2018-01-24 Wed"
         }
     ]
 }
