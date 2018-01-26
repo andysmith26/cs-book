@@ -433,6 +433,15 @@
             ], 
             "sortableEndDate": "2018-01-26 Fri", 
             "sortableStartDate": "2018-01-24 Wed"
+        }, 
+        {
+            "displayEndDate": "Mon Jan 29", 
+            "displayStartDate": "Fri Jan 26", 
+            "lines": [
+                "watch these two videos on EdPuzzle (total < 30 min): <a href='https://edpuzzle.com/assignments/5a6b36d92dba5940cf6c0f77/watch'>7.1</a> and <a href='https://edpuzzle.com/assignments/5a6b37282dba5940cf6c141f/watch'>7.2</a>, and be ready for a short preparedness quiz"
+            ], 
+            "sortableEndDate": "2018-01-29 Mon", 
+            "sortableStartDate": "2018-01-26 Fri"
         }
     ]
 }
