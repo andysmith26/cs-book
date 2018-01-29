@@ -442,6 +442,15 @@
             ], 
             "sortableEndDate": "2018-01-29 Mon", 
             "sortableStartDate": "2018-01-26 Fri"
+        },
+        {
+            "displayEndDate": "Wed Jan 31", 
+            "displayStartDate": "Mon Jan 29", 
+            "lines": [
+                "finish Background and Coding Phase 1 of <a href='https://github.com/woodstockcs/MyFavoriteCellularAutomata'>MyFavoriteCellularAutomata</a>"
+            ], 
+            "sortableEndDate": "2018-01-31 Wed", 
+            "sortableStartDate": "2018-01-29 Mon"
         }
     ]
 }
