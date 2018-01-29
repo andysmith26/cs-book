@@ -328,6 +328,16 @@
             ], 
             "sortableEndDate": "2018-01-25 Thu", 
             "sortableStartDate": "2018-01-23 Tue"
+        }, 
+        {
+            "displayEndDate": "Tue Jan 30", 
+            "displayStartDate": "Mon Jan 29", 
+            "lines": [
+                "do Code.org Unit 5 Lesson 9, not the whole lesson only Pages 1-7",
+                "<strike>TG</strike>, ME, GG: instead of that, work on your robot. only 48 hours left til final submission. this means you gotta have something workable at the start of next class."
+            ], 
+            "sortableEndDate": "2018-01-30 Tue", 
+            "sortableStartDate": "2018-01-29 Mon"
         }
     ]
 }
