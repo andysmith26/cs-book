@@ -338,6 +338,16 @@
             ], 
             "sortableEndDate": "2018-01-30 Tue", 
             "sortableStartDate": "2018-01-29 Mon"
+        }, 
+        {
+            "displayEndDate": "Thu Feb 01", 
+            "displayStartDate": "Tue Jan 30", 
+            "lines": [
+                "do Code.org Unit 5 Lesson 10, pages 1-24",
+                "<strike>TD</strike>, ME, GG: instead of that, submit your robot to the high school tournament by <b>3pm Wednesday</b>, then visit me to report completion!"
+            ], 
+            "sortableEndDate": "2018-02-01 Thu", 
+            "sortableStartDate": "2018-01-30 Tue"
         }
     ]
 }
