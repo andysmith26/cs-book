@@ -456,8 +456,8 @@
             "displayEndDate": "Fri Feb 02", 
             "displayStartDate": "Wed Jan 31", 
             "lines": [
-                "finish Phase 2 of <a href='https://github.com/woodstockcs/MyFavoriteCellularAutomata'>MyFavoriteCellularAutomata</a> -- <b>note that Phase 2 includes forking the repo and pasting the code into your copy of the repo</b>"
-            ], 
+                "finish Phase 2 of <a href='https://github.com/woodstockcs/MyFavoriteCellularAutomata'>MyFavoriteCellularAutomata</a>"
+                ],
             "sortableEndDate": "2018-02-02 Fri", 
             "sortableStartDate": "2018-01-31 Wed"
         }
