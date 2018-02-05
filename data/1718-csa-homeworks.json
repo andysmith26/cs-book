@@ -469,6 +469,16 @@
                 ],
             "sortableEndDate": "2018-02-05 Mon", 
             "sortableStartDate": "2018-02-02 Fri"
+        },
+        {
+            "displayEndDate": "Wed Feb 07", 
+            "displayStartDate": "Mon Feb 05", 
+            "lines": [
+                "familiarize yourself with the rules of the game of Uno (by playing it with cards or online, or by watching youtube, or by reading Wikipedia)",
+                "write the callColor method (paper handed out in class and linked <a href='https://docs.google.com/document/d/1RZJgOM0OzA5K9dj3UilDMFa6dJpeQp9CX_2POFAUDm4/edit?usp=sharing'>here</a>)"
+                ],
+            "sortableEndDate": "2018-02-07 Wed", 
+            "sortableStartDate": "2018-02-05 Mon"
         }
     ]
 }
