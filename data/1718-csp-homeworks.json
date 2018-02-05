@@ -362,7 +362,9 @@
             "displayEndDate": "Tue Feb 06", 
             "displayStartDate": "Mon Feb 05", 
             "lines": [
-                "set up your development environment and write 5 lines of code"
+                "decide on your project",
+                "set up your development environment",
+                "write 5 lines of code"
             ], 
             "sortableEndDate": "2018-02-06 Tue", 
             "sortableStartDate": "2018-02-05 Mon"
