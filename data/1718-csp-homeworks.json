@@ -377,6 +377,15 @@
             ], 
             "sortableEndDate": "2018-02-08 Thu", 
             "sortableStartDate": "2018-02-06 Tue"
+        }, 
+        {
+            "displayEndDate": "Mon Feb 12", 
+            "displayStartDate": "Tue Feb 06", 
+            "lines": [
+                "Tierney, Gardner, Matt: complete your Battlecode Retrospective, shared with you in gdrive, and email me when you're done"
+            ], 
+            "sortableEndDate": "2018-02-12 Mon", 
+            "sortableStartDate": "2018-02-06 Tue"
         }
     ]
 }
