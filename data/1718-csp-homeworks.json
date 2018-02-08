@@ -386,6 +386,15 @@
             ], 
             "sortableEndDate": "2018-02-12 Mon", 
             "sortableStartDate": "2018-02-06 Tue"
-        }
+        }, 
+        {
+            "displayEndDate": "Mon Feb 12", 
+            "displayStartDate": "Thu Feb 08", 
+            "lines": [
+                "spend 60 minutes coding your Create PT project"
+            ], 
+            "sortableEndDate": "2018-02-12 Mon", 
+            "sortableStartDate": "2018-02-08 Thu"
+        
     ]
 }
