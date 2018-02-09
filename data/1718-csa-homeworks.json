@@ -484,7 +484,8 @@
             "displayEndDate": "Mon Feb 12", 
             "displayStartDate": "Fri Feb 09", 
             "lines": [
-                "follow steps 1 through 16.i of the <a href='https://github.com/woodstockcs/Uno'>set up your dev environment</a> steps for Uno"
+                "follow steps 1 through 16.i of the <a href='https://github.com/woodstockcs/Uno'>set up your dev environment</a> steps for Uno",
+                "OPTIONAL: try step 16.ii if you like, to watch one game be played"
                 ],
             "sortableEndDate": "2018-02-12 Mon", 
             "sortableStartDate": "2018-02-09 Fri"
