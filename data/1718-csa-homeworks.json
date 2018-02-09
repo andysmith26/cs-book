@@ -479,6 +479,15 @@
                 ],
             "sortableEndDate": "2018-02-07 Wed", 
             "sortableStartDate": "2018-02-05 Mon"
+        },
+        {
+            "displayEndDate": "Mon Feb 12", 
+            "displayStartDate": "Fri Feb 09", 
+            "lines": [
+                "follow steps 1 through 16.i of the <a href='https://github.com/woodstockcs/Uno'>set up your dev environment</a> steps for Uno"
+                ],
+            "sortableEndDate": "2018-02-12 Mon", 
+            "sortableStartDate": "2018-02-09 Fri"
         }
     ]
 }
