@@ -489,6 +489,15 @@
                 ],
             "sortableEndDate": "2018-02-12 Mon", 
             "sortableStartDate": "2018-02-09 Fri"
+        },
+        {
+            "displayEndDate": "Wed Feb 14", 
+            "displayStartDate": "Mon Feb 12", 
+            "lines": [
+                "finish first draft of your Uno player -- EMAIL to Smith by 6am Wed -- for a qualifying tourney at the start of class Wed. top bot from each class competes on the big screen at Best Wed"
+                ],
+            "sortableEndDate": "2018-02-14 Wed", 
+            "sortableStartDate": "2018-02-12 Mon"
         }
     ]
 }
