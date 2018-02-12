@@ -495,8 +495,10 @@
             "displayStartDate": "Mon Feb 12", 
             "lines": [
                 "REMEMBER TO LOG IN TO CODINGBAT",
-                "then solve any two new problems from section <a href='http://codingbat.com/java/Array-2'>Array-2</a>", 
+                "then solve any two new problems from section <a href='http://codingbat.com/java/Array-2'>Array-2</a>",
+                "GOOD THING YOU REMEMBERED TO LOG IN TO CODINGBAT",
                 "then solve any two new problems from section <a href='http://codingbat.com/java/Logic-2'>Logic-2</a>"
+                "I HOPE YOU REMEMBERED TO LOG IN TO CODINGBAT"
             ],
             "sortableEndDate": "2018-02-14 Wed", 
             "sortableStartDate": "2018-02-12 Mon"
