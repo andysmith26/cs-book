@@ -502,6 +502,17 @@
             ],
             "sortableEndDate": "2018-02-14 Wed", 
             "sortableStartDate": "2018-02-12 Mon"
+        },
+        {
+            "displayEndDate": "Fri Feb 16", 
+            "displayStartDate": "Wed Feb 14", 
+            "lines": [
+                "Please take a few minutes to think about and fill out this <a href='https://docs.google.com/document/d/1aMSO7VV_d0TBunXq1Hla0IEGNtQvHb5r6sfdQjIYkTI/edit'>WCS Product Pitch and Interest Form</a> which is the first step in deciding what your final project will be"
+            ],
+            "sortableEndDate": "2018-02-16 Fri", 
+            "sortableStartDate": "2018-02-14 Wed"
         }
     ]
 }
+
+
