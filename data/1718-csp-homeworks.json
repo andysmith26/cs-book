@@ -395,6 +395,15 @@
             ], 
             "sortableEndDate": "2018-02-12 Mon", 
             "sortableStartDate": "2018-02-08 Thu"
-        
+        }, 
+        {
+            "displayEndDate": "Thu Mar 01", 
+            "displayStartDate": "Mon Feb 26", 
+            "lines": [
+                "Tuesday will be your last classday to work on the CreatePT. The final project with all requirements is due Thursday at 8am. We will go over 'how to submit' in class Tuesday."
+            ], 
+            "sortableEndDate": "2018-03-01 Thu", 
+            "sortableStartDate": "2018-02-26 Mon"
+        }
     ]
 }
