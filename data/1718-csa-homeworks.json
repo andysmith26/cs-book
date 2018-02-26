@@ -524,6 +524,16 @@
             "sortableEndDate": "2018-02-26 Mon", 
             "sortableStartDate": "2018-02-16 Fri"
         }
+                ,
+        {
+            "displayEndDate": "Wed Feb 28", 
+            "displayStartDate": "Mon Feb 26", 
+            "lines": [
+                "finish what you started in class today: the first row of codingbat problems in the AP-1 section (scoresIncreasing, scores100, scoresClump)"
+            ],
+            "sortableEndDate": "2018-02-28 Wed", 
+            "sortableStartDate": "2018-02-26 Mon"
+        }
     ]
 }
 
