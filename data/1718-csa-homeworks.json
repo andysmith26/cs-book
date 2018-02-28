@@ -534,6 +534,16 @@
             "sortableEndDate": "2018-02-28 Wed", 
             "sortableStartDate": "2018-02-26 Mon"
         }
+        ,
+        {
+            "displayEndDate": "Fri Mar 02", 
+            "displayStartDate": "Wed Feb 28", 
+            "lines": [
+                "implement all the code included in the class video on youtube (LINK TO BE POSTED AFTER SMITH CLEANS IT UP A LITTLE BIT)"
+            ],
+            "sortableEndDate": "2018-03-02 Fri", 
+            "sortableStartDate": "2018-02-28 Wed"
+        }
     ]
 }
 
