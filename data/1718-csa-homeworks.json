@@ -539,7 +539,7 @@
             "displayEndDate": "Fri Mar 02", 
             "displayStartDate": "Wed Feb 28", 
             "lines": [
-                "implement all the code included in the class video on youtube (LINK TO BE POSTED AFTER SMITH CLEANS IT UP A LITTLE BIT)"
+                "implement all the code that we did in <a href='https://youtu.be/ua4fT4Oiyow'>this video of our work in class</a>, which is (1) updating the predicate at the beginning of the show function, (2) updating the for loop in the updateCellArray() function, and (3) complete the getNewCellState() method. You do NOT have to work on the getRulePatternAsArray() method which we were working on when the bell rang. If you want to use the same code I started with during class, there's a link to it in the video description."
             ],
             "sortableEndDate": "2018-03-02 Fri", 
             "sortableStartDate": "2018-02-28 Wed"
