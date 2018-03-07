@@ -544,7 +544,7 @@
             "sortableEndDate": "2018-03-02 Fri", 
             "sortableStartDate": "2018-02-28 Wed"
         }
-                ,
+        ,
         {
             "displayEndDate": "Wed Mar 07", 
             "displayStartDate": "Fri Mar 02", 
@@ -553,6 +553,16 @@
             ],
             "sortableEndDate": "2018-03-07 Wed", 
             "sortableStartDate": "2018-03-02 Fri"
+        }
+        ,
+        {
+            "displayEndDate": "Fri Mar 07", 
+            "displayStartDate": "Wed Mar 07", 
+            "lines": [
+                "<a href='https://runestone.academy/runestone/static/WCS-CSA/index.html'>Runestone</a> > Assignments > Exam Prep: Lists"
+            ],
+            "sortableEndDate": "2018-03-09 Fri", 
+            "sortableStartDate": "2018-03-07 Wed"
         }
     ]
 }
