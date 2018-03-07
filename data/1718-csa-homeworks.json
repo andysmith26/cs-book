@@ -556,12 +556,22 @@
         }
         ,
         {
-            "displayEndDate": "Fri Mar 07", 
+            "displayEndDate": "Fri Mar 09", 
             "displayStartDate": "Wed Mar 07", 
             "lines": [
                 "<a href='https://runestone.academy/runestone/static/WCS-CSA/index.html'>Runestone</a> > Assignments > Exam Prep: Lists"
             ],
             "sortableEndDate": "2018-03-09 Fri", 
+            "sortableStartDate": "2018-03-07 Wed"
+        }
+        ,
+        {
+            "displayEndDate": "Wed Mar 14", 
+            "displayStartDate": "Wed Mar 07", 
+            "lines": [
+                "<a href='https://docs.google.com/document/d/1Qy9i1Lg22K9j55eFxt_hhLz5KORjvfYfNE0Y--G0daE/edit?usp=sharing'>Project Proposal</a> due at the start of class. 1 per team"
+            ],
+            "sortableEndDate": "2018-03-14 Wed", 
             "sortableStartDate": "2018-03-07 Wed"
         }
     ]
