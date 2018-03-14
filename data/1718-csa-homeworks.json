@@ -575,6 +575,17 @@
             "sortableEndDate": "2018-03-14 Wed", 
             "sortableStartDate": "2018-03-07 Wed"
         }
+        ,
+        {
+            "displayEndDate": "Fri Mar 16", 
+            "displayStartDate": "Wed Mar 14", 
+            "lines": [
+                "<a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2074'>Practice: Lists</a> (10 MC questions in Runestone)"
+            ],
+            "sortableEndDate": "2018-03-16 Fri", 
+            "sortableStartDate": "2018-03-14 Wed"
+        }        
+        
     ]
 }
 
