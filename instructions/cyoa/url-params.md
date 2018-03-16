@@ -26,4 +26,4 @@ function getUrlParams( prop ) {
 }
 ```
 
-Then go [here](sample1.html), and click around to see what happens. View the page source to see the code, and figure out what it's doing. Update your code accordingly. (Be sure to include `<script src="main.js"></script>` inside the `head` tags of each file that uses javascript.)
+Then go [here](http://woodstockcs.github.io/instructions/cyoa/sample1.html), and click around to see what happens. View the page source to see the code, and figure out what it's doing. Update your code accordingly. (Be sure to include `<script src="main.js"></script>` inside the `head` tags of each file that uses javascript.)
