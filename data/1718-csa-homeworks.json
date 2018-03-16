@@ -595,7 +595,17 @@
             "sortableEndDate": "2018-03-19 Mon", 
             "sortableStartDate": "2018-03-16 Fri"
         }       
-                ,
+         ,
+        {
+            "displayEndDate": "Mon Mar 19", 
+            "displayStartDate": "Fri Mar 16", 
+            "lines": [
+                "Finish MyFavoriteCellularAutomata Phase 4"
+            ],
+            "sortableEndDate": "2018-03-19 Mon", 
+            "sortableStartDate": "2018-03-16 Fri"
+        }
+        ,
         {
             "displayEndDate": "Fri Mar 23", 
             "displayStartDate": "Fri Mar 16", 
@@ -604,7 +614,7 @@
             ],
             "sortableEndDate": "2018-03-23 Fri", 
             "sortableStartDate": "2018-03-16 Fri"
-        }        
+        }    
     ]
 }
 
