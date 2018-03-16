@@ -9,13 +9,13 @@ body, html {
 }
 
 body {
-    /* The image used */
-    background-image: url("https://t3.ftcdn.net/jpg/01/71/33/06/240_F_171330636_OhFaSF6d3KQyDFmajetqJrtvTieUuAF9.jpg");
+    /* background image from https://tiled-bg.blogspot.com/*/
+    background-image: url("pattern-with-deformed-shapes.svg");
 
     /* Full height */
     height: 100%; 
 
-    /* Center and scale the image nicely */
+    /* repeat the image all over the page */
     background-repeat: repeat;
     }
 
@@ -23,11 +23,23 @@ p, a {
   color: white;
 }
     
+.box {
+	padding: 10px;
+    background: rgba(100, 100, 100, 0.8);
+    border-color: rgb(100, 255, 100);
+    border-radius: 20px;
+}
+
 </style>
 </head>
 <body>
-  <p>Hello. Here's a background, which is tiled. <a href="https://t3.ftcdn.net/jpg/01/71/33/06/240_F_171330636_OhFaSF6d3KQyDFmajetqJrtvTieUuAF9.jpg">Here's the original.</a>
-  </p>
-  </body>
+  <div class="box">
+    <p>
+    	Hello. Here's a tiled background and a semi-transparent box so we can see this text better. <a href="pattern-with-deformed-shapes.svg">Here's the untiled background image.</a>
+    </p>
+  </div>
+</body>
 
 </html>
+
+
