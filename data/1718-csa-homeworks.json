@@ -607,12 +607,12 @@
         }
         ,
         {
-            "displayEndDate": "Fri Mar 23", 
+            "displayEndDate": "Mon Mar 26", 
             "displayStartDate": "Fri Mar 16", 
             "lines": [
-                "Take your Lists Test during the first 20 minutes of any E block before March 24. The test is based on Runestone PRACTICE 1-10 except 2, 8 and MORE PRACTICE 1, 2. <b>important note:</b> before you take the test you must earn 100% on the 'Practice: Lists' and 'More Practice: Lists' assignments in Runestone."
+                "Take or optionally retake your Lists Test during the first 20 minutes of E block on Friday or Monday. <b>important note:</b> before you take the test you must earn 100% on the 'Practice: Lists' and 'More Practice: Lists' assignments in Runestone."
             ],
-            "sortableEndDate": "2018-03-23 Fri", 
+            "sortableEndDate": "2018-03-26 Mon", 
             "sortableStartDate": "2018-03-16 Fri"
         }  
                 ,
