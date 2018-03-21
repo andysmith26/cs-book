@@ -625,6 +625,16 @@
             "sortableEndDate": "2018-03-21 Wed", 
             "sortableStartDate": "2018-03-19 Mon"
         } 
+                        ,
+        {
+            "displayEndDate": "Fri Mar 23", 
+            "displayStartDate": "Wed Mar 21", 
+            "lines": [
+                "<a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2121'>Practice MC: Advanced OOP Concepts</a>"
+            ],
+            "sortableEndDate": "2018-03-23 Fri", 
+            "sortableStartDate": "2018-03-21 Wed"
+        } 
     ]
 }
 
