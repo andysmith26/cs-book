@@ -635,6 +635,16 @@
             "sortableEndDate": "2018-03-23 Fri", 
             "sortableStartDate": "2018-03-21 Wed"
         } 
+                                ,
+        {
+            "displayEndDate": "Fri Mar 30", 
+            "displayStartDate": "Fri Mar 23", 
+            "lines": [
+                "study for 'Advanced OOP Concepts' test on Mon and/or Wed and/or Fri - you choose. the HW due Fri 3/23 must be done before you take the test."
+            ],
+            "sortableEndDate": "2018-03-30 Fri", 
+            "sortableStartDate": "2018-03-23 Fri"
+        } 
     ]
 }
 
