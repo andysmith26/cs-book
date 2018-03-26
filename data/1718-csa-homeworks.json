@@ -640,7 +640,7 @@
             "displayEndDate": "Wed Mar 28", 
             "displayStartDate": "Mon Mar 26", 
             "lines": [
-                "<img width='100px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mandel_zoom_00_mandelbrot_set.jpg/483px-Mandel_zoom_00_mandelbrot_set.jpg'><br>watch <a href='https://voicethread.com/myvoice/thread/2634003/13953540/58391651'>this video about the Mandelbrot Set by Mr. Brennan</a>"      ],
+                "watch <a href='https://voicethread.com/myvoice/thread/2634003/13953540/58391651'>this video about the Mandelbrot Set by Mr. Brennan<br><img width='50px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mandel_zoom_00_mandelbrot_set.jpg/483px-Mandel_zoom_00_mandelbrot_set.jpg'></a>"      ],
             "sortableEndDate": "2018-03-28 Wed", 
             "sortableStartDate": "2018-03-26 Mon"
         } 
