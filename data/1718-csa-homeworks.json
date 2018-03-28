@@ -644,7 +644,17 @@
             "sortableEndDate": "2018-03-28 Wed", 
             "sortableStartDate": "2018-03-26 Mon"
         } 
-                                        ,
+        ,
+        {
+            "displayEndDate": "Fri Mar 30", 
+            "displayStartDate": "Wed Mar 28", 
+            "lines": [
+                "go <a href='https://docs.google.com/forms/d/e/1FAIpQLSdgGCoOBpRGXWCJRwj-b_MRnzGUbFuR4DAjJdbxH-2BtPnfvQ/viewform?usp=sf_link'>here</a> to watch and annotate the video"
+            ],
+            "sortableEndDate": "2018-03-30 Fri", 
+            "sortableStartDate": "2018-03-28 Wed"
+        } 
+,
         {
             "displayEndDate": "Fri Mar 30", 
             "displayStartDate": "Fri Mar 23", 
