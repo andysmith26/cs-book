@@ -675,6 +675,16 @@
             "sortableEndDate": "2018-04-06 Fri", 
             "sortableStartDate": "2018-03-30 Fri"
         } 
+                ,
+        {
+            "displayEndDate": "Fri Apr 6", 
+            "displayStartDate": "Wed Apr 4", 
+            "lines": [
+                "do problems #4, #4 (yes, there are two 'number four's), and #5 in the recursion practice packet. NOTE: THESE ARE CHALLENGING PROBLEMS. Do not aim for perfection! Try your best to apply the method we used in class to solve these. I'll ask the sub on Friday to collect your best shot."
+            ],
+            "sortableEndDate": "2018-04-06 Fri", 
+            "sortableStartDate": "2018-04-04 Wed"
+        } 
     ]
 }
 
