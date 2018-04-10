@@ -684,7 +684,7 @@
             ],
             "sortableEndDate": "2018-04-06 Fri", 
             "sortableStartDate": "2018-04-04 Wed"
-            
+        }
                  ,
         {
             "displayEndDate": "Mon Apr 9", 
@@ -694,6 +694,16 @@
             ],
             "sortableEndDate": "2018-04-09 Mon", 
             "sortableStartDate": "2018-04-06 Fri"           
+        } 
+                         ,
+        {
+            "displayEndDate": "Wed Apr 11", 
+            "displayStartDate": "Mon Apr 9", 
+            "lines": [
+                "follow these recursion walkthrough videos (--coming Tuesday AM--) and complete those problems. then write your own recursion problem with solution."
+            ],
+            "sortableEndDate": "2018-04-11 Wed", 
+            "sortableStartDate": "2018-04-09 Mon"           
         } 
     ]
 }
