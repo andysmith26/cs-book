@@ -706,6 +706,16 @@
             "sortableEndDate": "2018-04-11 Wed", 
             "sortableStartDate": "2018-04-09 Mon"           
         } 
+                                 ,
+        {
+            "displayEndDate": "Fri Apr 13", 
+            "displayStartDate": "Wed Apr 11", 
+            "lines": [
+                "be ready to give 'alpha presentation' for your WCS Product in class Friday (guideline <a href='https://docs.google.com/document/d/1xZAudEjJvT9DlNUMIWtfjLA-AfJljcx_q_2CUEKrm40/edit'>here</a>)"
+            ],
+            "sortableEndDate": "2018-04-13 Fri", 
+            "sortableStartDate": "2018-04-11 Wed"           
+        } 
     ]
 }
 
