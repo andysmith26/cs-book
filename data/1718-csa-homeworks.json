@@ -716,6 +716,21 @@
             "sortableEndDate": "2018-04-13 Fri", 
             "sortableStartDate": "2018-04-11 Wed"           
         } 
+                                 ,
+        {
+            "displayEndDate": "Mon Apr 23", 
+            "displayStartDate": "Fri Apr 13", 
+            "lines": [
+                "We will have your last series of Mon-Wed-Fri topic tests during the week of April 23-27. The topic will be a very practical computing problem for people who work with large amounts of data. It's called <i>search and sort</i>, or how to find what you're looking for in a large array.",
+                "You won't need to write code related to <i>search and sort</i>, but you will need to be able to read code and recognize what it's doing.",
+                "This is an interesting topic which <b>is</b> covered on the exam, but which we will <b>not</b> be going over in class. It's important that you give your full attention to the homework, and use your classmates, your teacher, and your internet to find answers to your questions.",
+                "<i>search and sort</i> homework part 1: watch <a href='https://www.youtube.com/watch?v=U9o49qwa6hk&t=1130s'>this harvard lecture</a> (starting at timestamp 18:50)",
+                "<i>search and sort</i> homework part 2: do <a href=''>this runestone assignment</a> which has reading and practice questions closely aligned with the AP exam"
+                
+            ],
+            "sortableEndDate": "2018-04-23 Mon", 
+            "sortableStartDate": "2018-04-13 Fri"           
+        } 
     ]
 }
 
