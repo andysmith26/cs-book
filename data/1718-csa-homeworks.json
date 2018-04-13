@@ -723,10 +723,10 @@
             "lines": [
                 "We will have your last series of Mon-Wed-Fri topic tests during the week of April 23-27. The topic will be a very practical computing problem for people who work with large amounts of data. It's called <i>search and sort</i>, or how to find what you're looking for in a large array.",
                 "You won't need to write code related to <i>search and sort</i>, but you will need to be able to read code and recognize what it's doing.",
-                "This is an interesting topic which <b>is</b> covered on the exam, but which we will <b>not</b> be going over in class. It's important that you give your full attention to the homework, and use your classmates, your teacher, and your internet to find answers to your questions.",
-                "<i>search and sort</i> homework part 1: watch <a href='https://www.youtube.com/watch?v=U9o49qwa6hk&t=1130s'>this harvard lecture</a> (starting at timestamp 18:50)",
-                "<i>search and sort</i> homework part 2: do <a href=''>this runestone assignment</a> which has reading and practice questions closely aligned with the AP exam"
-                
+                "This is an interesting topic which <b>is</b> covered on the exam, but which we will <b>not</b> be going over in class. It's important that you give your full attention to this homework, and use your classmates, your teacher, and your internet to find answers to your questions.",
+                "<i>search and sort</i> homework part 1: watch <a href='https://www.youtube.com/watch?v=U9o49qwa6hk&t=1130s'>this harvard lecture</a> (starting at timestamp 18:50), which is a visual overview of the topic",
+                "<i>search and sort</i> homework part 2: do <a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2317'>this runestone assignment</a> which is a reading on the same topic, but it'll zero in on the parts that are important to know for the AP exam",
+                "<i>search and sort</i> homework part 3: do <a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2318'>this runestone assignment</a> which is a set of practice questions closely aligned with the AP exam"
             ],
             "sortableEndDate": "2018-04-23 Mon", 
             "sortableStartDate": "2018-04-13 Fri"           
