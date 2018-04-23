@@ -718,7 +718,7 @@
         } 
                                  ,
         {
-            "displayEndDate": "Mon Apr 27", 
+            "displayEndDate": "Fri Apr 27", 
             "displayStartDate": "Fri Apr 13", 
             "lines": [
                 "We will have your last series of Mon-Wed-Fri topic tests during the week of April 23-27. The topic will be a very practical computing problem for people who work with large amounts of data. It's called <i>search and sort</i>, or how to find what you're looking for in a large array.",
@@ -728,7 +728,7 @@
                 "<i>search and sort</i> homework part 2: do <a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2317'>this runestone assignment</a> which is a reading on the same topic, but it'll zero in on the parts that are important to know for the AP exam",
                 "<i>search and sort</i> homework part 3: do <a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2318'>this runestone assignment</a> which is a set of practice questions closely aligned with the AP exam"
             ],
-            "sortableEndDate": "2018-04-27 Mon", 
+            "sortableEndDate": "2018-04-27 Fri", 
             "sortableStartDate": "2018-04-13 Fri"           
         } 
                                          ,
