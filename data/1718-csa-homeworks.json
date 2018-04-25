@@ -718,7 +718,7 @@
         } 
                                  ,
         {
-            "displayEndDate": "Fri Apr 27", 
+            "displayEndDate": "Mon Apr 30", 
             "displayStartDate": "Fri Apr 13", 
             "lines": [
                 "We will have your last series of Mon-Wed-Fri topic tests during the week of April 23-27. The topic will be a very practical computing problem for people who work with large amounts of data. It's called <i>search and sort</i>, or how to find what you're looking for in a large array.",
@@ -728,7 +728,7 @@
                 "<i>search and sort</i> homework part 2: do <a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2317'>this runestone assignment</a> which is a reading on the same topic, but it'll zero in on the parts that are important to know for the AP exam",
                 "<i>search and sort</i> homework part 3: do <a href='https://runestone.academy/runestone/assignments/doAssignment?assignment_id=2318'>this runestone assignment</a> which is a set of practice questions closely aligned with the AP exam"
             ],
-            "sortableEndDate": "2018-04-27 Fri", 
+            "sortableEndDate": "2018-04-30 Mon", 
             "sortableStartDate": "2018-04-13 Fri"           
         } 
                                          ,
@@ -740,6 +740,16 @@
             ],
             "sortableEndDate": "2018-04-25 Wed", 
             "sortableStartDate": "2018-04-23 Mon"           
+        }
+                                                 ,
+        {
+            "displayEndDate": "Fri Apr 27", 
+            "displayStartDate": "Wed Apr 25", 
+            "lines": [
+                "Do these two CodingBat problems: <a href='http://codingbat.com/prob/p191212'>AP-1 hasOne</a> and <a href='http://codingbat.com/prob/p139677'>AP-1 matchUp</a>"
+            ],
+            "sortableEndDate": "2018-04-27 Fri", 
+            "sortableStartDate": "2018-04-25 Wed"           
         } 
     ]
 }
