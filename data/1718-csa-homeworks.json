@@ -761,6 +761,16 @@
             "sortableEndDate": "2018-04-30 Mon", 
             "sortableStartDate": "2018-04-27 Fri"           
         } 
+                                                         ,
+        {
+            "displayEndDate": "Wed May 2", 
+            "displayStartDate": "Mon Apr 30", 
+            "lines": [
+                "Do these two CodingBat problems: <a href='http://codingbat.com/prob/p139150'>mergeTwo</a> (with <a href='https://www.youtube.com/watch?v=_TuN7pe_dBU'>walkthru here</a>) and <a href='http://codingbat.com/prob/p100369'>commonTwo</a>"
+            ],
+            "sortableEndDate": "2018-05-02 Wed", 
+            "sortableStartDate": "2018-04-30 Mon"           
+        } 
     ]
 }
 
