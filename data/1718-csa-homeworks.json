@@ -751,6 +751,16 @@
             "sortableEndDate": "2018-04-27 Fri", 
             "sortableStartDate": "2018-04-25 Wed"           
         } 
+                                                         ,
+        {
+            "displayEndDate": "Mon Apr 30", 
+            "displayStartDate": "Fri Apr 27", 
+            "lines": [
+                "[optional] do any two codingbat problems - upick"
+            ],
+            "sortableEndDate": "2018-04-30 Mon", 
+            "sortableStartDate": "2018-04-27 Fri"           
+        } 
     ]
 }
 
