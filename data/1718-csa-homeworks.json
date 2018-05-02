@@ -766,10 +766,19 @@
             "displayEndDate": "Wed May 2", 
             "displayStartDate": "Mon Apr 30", 
             "lines": [
-                "Do these two CodingBat problems: <a href='http://codingbat.com/prob/p139150'>mergeTwo</a> (with <a href='https://github.com/woodstockcs/CodingBatHints#problem-mergetwo-'>hint</a> or <a href='https://www.youtube.com/watch?v=_TuN7pe_dBU'>walkthru</a>) and <a href='http://codingbat.com/prob/p100369'>commonTwo</a> (with <a href='https://github.com/woodstockcs/CodingBatHints#problem-commontwo-'>hint</a>"
+                "Do these two CodingBat problems: <a href='http://codingbat.com/prob/p139150'>mergeTwo</a> (with <a href='https://github.com/woodstockcs/CodingBatHints#problem-mergetwo-'>hint</a> or <a href='https://www.youtube.com/watch?v=_TuN7pe_dBU'>walkthru</a>) and <a href='http://codingbat.com/prob/p100369'>commonTwo</a> (with <a href='https://github.com/woodstockcs/CodingBatHints#problem-commontwo-'>hint</a>)"
             ],
             "sortableEndDate": "2018-05-02 Wed", 
             "sortableStartDate": "2018-04-30 Mon"           
+        } 
+                                      ,
+        {
+            "displayEndDate": "Fri May 4", 
+            "displayStartDate": "Wed May 2", 
+            "lines": [
+                "Read and do 'Cram Sheet' packet up through and including '4. Inherit the Wind'. Research anything confusing. Write notes and questions on the packet. Hand it in Friday at the start of class.],
+            "sortableEndDate": "2018-05-04 Fri", 
+            "sortableStartDate": "2018-05-02 Wed"           
         } 
     ]
 }
