@@ -771,7 +771,7 @@
             "sortableEndDate": "2018-05-02 Wed", 
             "sortableStartDate": "2018-04-30 Mon"           
         } 
-                                      ,
+        ,
         {
             "displayEndDate": "Fri May 4", 
             "displayStartDate": "Wed May 2", 
@@ -780,6 +780,16 @@
             ],
             "sortableEndDate": "2018-05-04 Fri", 
             "sortableStartDate": "2018-05-02 Wed"           
+        } 
+        ,
+        {
+            "displayEndDate": "Mon May 7", 
+            "displayStartDate": "Fri May 4", 
+            "lines": [
+                "Actively read and *do* the rest of the 'Cram Sheet' packet. Research anything confusing. Write notes and questions on the packet. We'll discuss it in class on Monday."
+            ],
+            "sortableEndDate": "2018-05-07 Mon", 
+            "sortableStartDate": "2018-05-04 Fri"           
         } 
     ]
 }
