@@ -1,131 +1,94 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>WoodstockCS</title>
+  <head>
+    <title>Woodstock CS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/external/processing.min.js"></script>
+    <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
+    <script src="assets/wcs-utilities.js"></script>
+  </head>
 
+  <body>
+    <div id="navbar"></div>
 
-<!--  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <div class="container">
+      <!-- <div class="alert alert-success" role="alert">
+        <strong>Looking for 2016-17 course pages?</strong> Click one of these: <a href="http://woodstockcs.github.io/cp">B Block CP2</a>, <a href="http://woodstockcs.github.io/cp2">H Block CP</a>
+      </div> -->
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card fixed-width-card mb-3">
+            <canvas data-processing-sources="assets/sketches/MovingSquares_Smith/MovingSquares_Smith.pde"></canvas>
+            <div class="card-block">
+              <h4 class="card-title">Programming</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
+              <p class="card-text">This is an introductory course about programming, animation, and data.</p>
+              <!--
+              <a href="block-g.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block G</strong></a>
+              <a href="block-h.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block H</strong></a>
 -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-      <link href="extra.css" rel="stylesheet">
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-
-  <script>
-  console.log("hello?");
-  $.getJSON( "test.json", function( data ) {
-    var items = [];
-    console.log("reading");
-    $.each( data, function( key, val ) {
-      items.push( "<li id='" + key + "'>" + val + "</li>" );
-      console.log(val);
-    });
-    console.log("goodbye");
-    $( "<ul/>", {
-      "class": "my-new-list",
-      html: items.join( "" )
-    }).appendTo( "body" );
-  });
-  </script>
-</head>
-
-<body>
-
-  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Woodstock CS</a>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="how-to.html">How To...</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Student Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Special Projects</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course Pages</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="cp.html">Computer Programming</a>
-            <a class="dropdown-item" href="csp.html">AP Computer Science Principles</a>
-            <a class="dropdown-item" href="apcs.html">AP Computer Science A</a>
+            </div>
           </div>
-        </li>
-      </ul>
-      <!-- SEARCH, maybe to enable later
+        </div>
 
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <div class="col-lg-3">
+          <div class="card fixed-width-card mb-3">
+            <canvas data-processing-sources="assets/sketches/WoodstockWave_JD/WoodstockWave_JD.pde"></canvas>
+            <div class="card-block">
+              <h4 class="card-title">Principles</h4>
+              <h6 class="card-subtitle mb-2 text-muted">AP Computer Principles</h6>
+              <p class="card-text">This course is about the big ideas in computer science, including programming concepts, the Internet, big data, and security.</p>
+              <!--
+              <a href="block-c.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block C</strong></a>
+-->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card fixed-width-card mb-3">
+            <canvas data-processing-sources="assets/sketches/ShapeOfFractions/ShapeOfFractions.pde"></canvas>
+            <div class="card-block">
+              <h4 class="card-title">Computer Science</h4>
+              <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
+              <p class="card-text">The focus of this course is problem solving and Object Oriented Programming. It's an intensive programming course in which students write code just about every day.</p>
+              <!--
+              <a href="block-e.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block E</strong></a>
+-->
+            </div>
+          </div>
+        </div>
 
 
-    </form>
-  -->
-</div>
-</nav>
 
-<div class="container">
-  <div class="alert alert-success" role="alert">
-  <strong>Looking for 2016-17 course pages?</strong> Click one of these: <a href="http://woodstockcs.github.io/cp">B Block CP2</a>, <a href="http://woodstockcs.github.io/cp2">H Block CP</a>
-</div>
-  <div class="card-deck">
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">Programming</h4>
-        <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">Principles</h4>
-        <h6 class="card-subtitle mb-2 text-muted">AP Computer Science Principles</h6>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card" style="width: 20rem;">
-      <img class="card-img-top" src="placeholder-235x200.jpg" alt="Card image cap">
-      <div class="card-block">
-        <h4 class="card-title">AP Comp Sci</h4>
-        <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        <a href="apcs.html" class="btn btn-primary">Class Page</a>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
+        <div class="col-lg-3">
+          <div class="card fixed-width-card mb-3">
+            <img src="https://media.giphy.com/media/gLKVCVdLUXMTeIs6MD/giphy.gif" height="190" style="margin-bottom: 0">
+            <div class="card-block">
+              <h4 class="card-title">AI</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Artificial Intelligence</h6>
+              <p class="card-text">An introduction to the algorithms used by programmers for teaching computers how to make decisions in uncertain environments. </p>
+              <!--
+              <a href="block-c.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block C</strong></a>
+-->
+            </div>
+          </div>
+                </div>
+
+
       </div>
     </div>
-  </div>
+    <!-- /.container -->
 
-</div><!-- /.container -->
+  </body>
 
-
-</body>
 </html>

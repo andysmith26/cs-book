@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Woodstock CS</title>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <script src="/assets/external/processing.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card card-outline-success mb-5">
+            <div class="card-header">
+              <h3 class="card-title">How To ...</h3>
+            </div>
+            <div class="card-block">
+              <ul class="list-unstyled small">
+                <li><a href="#smith-schedule" class="card-link">Mr. Smith's Schedule</a></li>
+                <li><a href="#create-github-account" class="card-link">create an account in github</a></li>
+                <li><a href="#fork-repo" class="card-link">fork a repo</a></li>
+                <li><a href="#publish-scheme-program" class="card-link">publish a Scheme program</a></li>
+                <li><a href="#submit-lab" class="card-link">submit a lab in github</a></li>
+                <li><a href="#follow-up-lab" class="card-link">follow up on a lab in github</a></li>
+                <li><a href="#write-a-good-commit-message" class="card-link">write a good commit message</a></li>
+                <li><a href="#set-up-dr-racket" class="card-link">set up Dr Racket</a></li>
+                <li><a href="#testbank" class="card-link">contribute to the test bank</a></li>
+                <li><a href="#ap-credit" class="card-link">translate AP exam score to college credit</a></li>
+                <li><a href="#troubleshoot-processingjs" class="card-link">troubleshoot processing sketches that don't display correctly online</a></li>
+                <li><a href="#retake-test" class="card-link">retake a test</a></li>
+                <li><a href="#test-corrections" class="card-link">test corrections</a></li>
+                <li><a href="#handy-tools" class="card-link">handy tools</a></li>
+                <li><a href="#learn-online" class="card-link">learn online</a></li>
+                <li><a href="#guides-tips" class="card-link">guides and tips</a></li>
+                <li><a href="#lists" class="card-link">lists</a></li>
+                <li><a href="#books" class="card-link">book recommendations</a></li>
+                <li><a href="#classes-objects" class="card-link">classes & objects</a></li>
+                <li><a href="#arrays" class="card-link">arrays</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="card mb-5" id="smith-schedule">
+            <div class="card-header">
+              <h4>Mr. Smith's Schedule</h4>
+            </div>
+            <div class="card-block">
+              <table class="table table-borderless table-striped">
+                <thead class="thead-inverse">
+                  <tr>
+                    <th width="150"></th>
+                    <th width="250">Green</th>
+                    <th width="250">White</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <th>7:30-7:55</th>
+                  <td><em>please make an appt (Room 7)</em></td>
+                  <td><em>please make an appt (Room 7)</em></td>
+                </tr>
+                <tr>
+                  <th>Block A/E</th>
+                  <td>IDEA class (Room 7)</td>
+                  <td>AP CSA (Room 7)</td>
+                </tr>
+                <tr>
+                  <th>Block B/F</th>
+                  <td><em>feel free to drop in (Room 7)</em></td>
+                  <td><em>feel free to drop in (Room 7)</em></td>
+                </tr>
+                <tr>
+                  <th>Call Back</th>
+                  <td><em>please sign up (Room 7)</em></td>
+                  <td><em>please sign up (Room 7)</em></td>
+                </tr>
+                <tr>
+                  <th>Lunch</th>
+                  <td><em>not available</em></td>
+                  <td><em>not available</em></td>
+                </tr>
+                <tr>
+                  <th>Block C/G</th>
+                  <td>AP CSP (Room 7)</td>
+                  <td>CP (Room 8)</td>
+                </tr>
+                <tr>
+                  <th>Block D/H</th>
+                  <td>STEAM Lab prep (tbd)</td>
+                  <td>CP (Room 8)</td>
+                </tr>
+                <tr>
+                  <th>2:45-3:15</th>
+                  <td><em>feel free to drop in (Room 7)</em></td>
+                  <td><em>feel free to drop in (Room 7)</em></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card mb-5" id="create-github-account">
+            <div class="card-header">
+              <h4>How to Create an Account in Github</h4>
+            </div>
+            <div class="card-block">
+              <div class="alert alert-warning">
+                Watch the video --OR-- read the instructions below it.
+              </div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/iA_IoroO1n8?rel=0" frameborder="0" allowfullscreen></iframe>
+              <ol>
+                <li>go to github.com</li>
+                <li>enter the requested info, and click the green button</li>
+                <ul>
+                  <li>username = whatever you like. maybe just your school username?</li>
+                  <li>email address = <strong>please use your school email address</strong></li>
+                  <li>password = whatever you like</li>
+                </ul>
+                <li>click the green 'continue' button a couple times until you reach the screen that says "Learn Git and Github without any code!"</li>
+                <li>go to your school email account, open the auto-email from github, and click the "verify this email" link in there</li>
+            </div>
+          </div>
+          <div class="card mb-5" id="fork-repo">
+            <div class="card-header">
+              <h4>How to Fork a Repo</h4>
+            </div>
+            <div class="card-block">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/5Adelr5wo-g?rel=0" frameborder="0" allowfullscreen></iframe>
+              <ol>
+                <li>go to the WoodstockCS copy of the repo you want to fork</li>
+                <ul>
+                  <li>either from the list of WoodstockCS Repos (see Quick Links at the top of this page)</li>
+                  <li>or by clicking on the link to the repo at the top of the assignment instructions</li>
+                </ul>
+                <li>make sure you're looking at the WoodstockCS copy of the repo (look for woodstockcs in the upper left corner of the page)</li>
+                <li>click the "Fork" button</li>
+                <li>wait while your copy of the repo is created</li>
+                <li>now you should see your github username in the upper left corner of the page</li>
+                </ul>
+            </div>
+          </div>
+          <div class="card mb-5" id="publish-scheme-program">
+            <div class="card-header">
+              <h4>How to Publish a Scheme Program</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>share the project in WeScheme</li>
+                <ul>
+                  <li>go to the code for the program you want to publish</li>
+                  <li>click the Share button</li>
+                  <li>click Yes in the "Publish My Program" popup</li>
+                  <li>click on the custom link that WeScheme provides you</li>
+                  <li>click the Run button</li>
+                  <li>make sure everything looks ok! If not, go back and make changes, but then you have to click the Share button again</li>
+                </ul>
+                <li>put the WeScheme shared URL on the webpage source code in github</li>
+                <ul>
+                  <li>copy the URL of the page you're viewing your project on (it starts with <code>http://www.wescheme.org/run...</code>)</li>
+                  <li>go over to your copy of the relevant repo in github (remember to check for your username in the upper left corner, to be sure you're in your copy not the class copy)</li>
+                  <li>click on the file called <code>index.html</code></li>
+                  <li>click the edit button (it's a little pen icon)</li>
+                  <li>replace the two existing WeScheme URLs with the one you copied</li>
+                  <li>scroll down and click the Commit Changes button</li>
+                </ul>
+                <li>copy your WeScheme source code into the <code>.scm</code> source file in github</li>
+                <ul>
+                  <li>go back to the <em>editor</em> for your program in WeScheme</li>
+                  <li>copy all the code in the Definitions section</li>
+                  <li>go back to your repo in github</li>
+                  <li>this time click on the scheme source file (it's the file that ends with <code>.scm</code>)</li>
+                  <li>click the little pen button (same edit button as before)</li>
+                  <li>remove all the code from the editing window</li>
+                  <li>paste the code from WeScheme into the github editing window</li>
+                  <li>look closely at the start and end of the code you just pasted, to make sure you didn't miss anything</li>
+                  <li>click the Commit Changes button</li>
+                </ul>
+                <li>confirm that github is displaying your webpage correctly</li>
+                <ul>
+                  <li>from the main page of the repo (where you see the list of files in your repo), click the Settings tab</li>
+                  <li>scroll about down the page until you reach the Github Pages section</li>
+                  <li>click the link to your published webpage, which looks like this: <code><strong>https://</strong><em><span style="color:darkgrey !important">YourGithubUsername</span></em><strong>.github.io/</strong><em><span style="color:darkgrey !important">RepoName</span></em></code></li>
+                  <li>in case things don't look right, stand up and strech to give github another minute or two to update your webpage on its servers, then hold down the <code>SHIFT</code> key on your keyboard while you reload the page</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+          <div class="card mb-5" id="submit-lab">
+            <div class="card-header">
+              <h4>How to Submit a Lab in Github</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>create a pull request</li>
+                <ul>
+                  <li>in your copy of the repo, click the Code tab</li>
+                  <li>click the button that says "New pull request"</li>
+                  <li>click the green button that says "Create pull request"</li>
+                  <li>delete the text that's in the blue box where the cursor is (it probably says something like "Update ...")</li>
+                  <li>in that same box write <code>SUBMIT LAB</code> in all caps</li>
+                  <li>scroll down and click another green button that says "Create pull request"</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+          <div class="card mb-5" id="follow-up-lab">
+            <div class="card-header">
+              <h4>How to Follow Up on a Lab in Github</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>look at the list of pull requests you've created</li>
+                <ul>
+                  <li>from anywhere in github, click the link in the page header called "Pull requests"</li>
+                  <li>the list of open pull requests created by you is shown
+                    <li>if you want to see closed pull requests, click the "Closed" word at the top of the table</li>
+                </ul>
+                <li>open the pull request that you're interested in </li>
+                <ul>
+                  <li>each pull request in the list says <code>woodstockcs/<em><span style="color: darkgrey">RepoName</span></em></code>, followed by the pull request title, which should be something like <code>SUBMIT LAB</code></li>
+                  <li>to read the comments of any pull request, click the <em>title</em> (ie. <code>SUBMIT LAB</code>) of the pull request</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="write-a-good-commit-message">
+            <div class="card-header">
+              <h4>How To Write a Good Commit Message</h4>
+            </div>
+            <div class="card-block">
+              <p>The following guidelines lead to readable messages that are easy for you and other people to follow when looking through a project's history. A good commit message shows that you're a good collaborator.</p>
+              <ul>
+                <li>describe the change you made in as few words as possible</li>
+                <li>try to use no more than 50 characters, but absolutely no more than 72 characters (spaces and punctuation <i>are</i> characters)</li>
+                <li>use a verb as the first word, and use it in the imperative, present tense: "change" not "changed" nor "changes"</li>
+                <li>do not capitalize the first letter</li>
+                <li>do not use a dot/period (.) at the end</li>
+              </ul>
+              <p>It's helpful to think of your commit message as <i>silently</i> starting with "This commit will...".</p>
+              <table class="table">
+                <tr>
+                  <th>Good</th>
+                  <th>Baaaad</th>
+                </tr>
+                <tr>
+                  <td>add a second player</td>
+                  <td>trying to add a second player</td>
+                </tr>
+                <tr>
+                  <td>accelerate the car to 88 miles per hour</td>
+                  <td>accelerate the car to 88 miles per hour.</td>
+                </tr>
+                <tr>
+                  <td>fix choppy animation</td>
+                  <td>fix the part of the animation where it flashes a lot<br>because that part gives me headaches</td>
+                </tr>
+                <tr>
+                  <td>open the pod bay doors</td>
+                  <td>Open the pod bay doors</td>
+                </tr>
+                <tr>
+                  <td>fasten the seatbelts</td>
+                  <td>fastened the seatbelts</td>
+                </tr>
+                <tr>
+                  <td>fix typo</td>
+                  <td>when is this class over</td>
+                </tr>
+              </table>
+              <hr>
+              <div class="text-center"><a href="https://xkcd.com/1296/"><img src="https://imgs.xkcd.com/comics/git_commit.png" /></a></div>
+            </div>
+            <div class="card-footer text-muted">
+              <small>
+          Credits:
+          &nbsp;&nbsp;&nbsp;<a href="https://learn-the-web.algonquindesign.ca/topics/commit-messages/">algonquindesign.ca</a>
+          &nbsp;&nbsp;&nbsp;<a href="https://chris.beams.io/posts/git-commit/">chris.beams.io</a>
+        </small>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="set-up-dr-racket">
+            <div class="card-header">
+              <h4>How To Set Up DrRacket</h4>
+            </div>
+            <div class="card-block">
+              <ol>
+                <li>Download the installation file: Go <a href="https://download.racket-lang.org/">here</a> and select the correct platform, then click the button to download.</li>
+                <li>Install DrRacket: After the large file is finished downloading, run it to install the DrRacket software.</li>
+                <li>Configure the software: Go <a href="http://picturingprograms.com/download/chap00.pdf#page=15">here</a> and follow the instructions in <i>Section 0.3.4 Installing Libraries</i>, which starts about halfway down the page.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="testbank">
+            <div class="card-header">
+              <h4>How to Contribute to the Testbank</h4>
+            </div>
+            <div class="card-block">
+              <p>Each question gets two slides: one without explanation, and one with explanation. Use the first pair of question slides as a model.</p>
+              <ol>
+                <li><a href="https://docs.google.com/presentation/d/13cOp6MYbG6XuQyEZYh5gnuOQxyUATbYA9ZPZ2xjZYPk/edit#slide=id.g242f24b05b_0_7">open the testbank in edit mode</a></li>
+                <li>create one new slide at the end of the slidedeck</li>
+                <li>on that new slide, write a question with at least 4 multiple choices answers, only one of which is correct</li>
+                <li>when viewing your new slide, click "Slide" from the menu at the top, then "Duplicate slide"</li>
+                <li>on this duplicate do the following:</li>
+                <ul>
+                  <li>draw a circle around the correct answer</li>
+                  <li>for each incorrect answer, create a small textbox nearby indicating why it is incorrect</li>
+                  <li>indicate your name as the author somewhere on the page</li>
+                </ul>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="ap-credit">
+            <div class="card-header">
+              <h4>How to Translate Your AP Exam Score to College Credit</h4>
+            </div>
+            <div class="card-block">
+              <p>Each college and university handles AP exam scores differently. Check with the schools you are interested in to see what their specific policies are.</p>
+              <p>
+                In Summer 2017 I asked representatives at UVM and Castleton what their policies are. Here is what they said:
+              </p>
+              <table class="table">
+                <tr>
+                  <th>School</th>
+                  <th>AP Comp Sci A</th>
+                  <th>AP Comp Sci Principles</th>
+                </tr>
+                <tr>
+                  <td>Castleton</td>
+                  <td>3 or higher (addl credits for a 5)</td>
+                  <td>3 or higher (addl credits for a 5)</td>
+                </tr>
+                <tr>
+                  <td>UVM</td>
+                  <td>4 or higher</td>
+                  <td>3 or higher</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="ap-credit">
+            <div class="card-header">
+              <h4>How to Know What is Acceptable Collaboration on CSP Performance Tasks</h4>
+            </div>
+            <div class="card-block">
+              <p>
+                <em>This guidance is only relevant for the "Performance Tasks" which students complete as part of the AP Computer Science Principles exam.</em>
+              </p>
+              <p>
+                Here is what the College Board wrote about this question in an email to all teachers in September 2017:
+              </p>
+              <strong>Student Collaboration on the Create Task</strong>
+              <ul>
+                <li>
+                  Students are not allowed to collaborate on the video or the written responses of the Create performance task. If students submit identical or similar responses, they will be flagged for not following task directions and will get a zero on the performance task.
+                </li>
+                <li>
+                  Students may collaborate on the ideation or problem-solving of the code.
+                </li>
+                <li>
+                  See page 117 of the <a href="https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-course-and-exam-description.pdf?course=ap-computer-science-principles&ep_mid=11408083&ep_rid=278956026">Course and Exam Description</a>.
+                </li>
+              </ul>
+              <strong>No Student Collaboration on the Explore Task</strong>
+              <ul>
+                <li>
+                  Students are not allowed to collaborate on any aspect of the Explore performance task. If students submit identical or similar responses, they will be flagged for not following task directions and will get a zero on the performance task.
+                </li>
+                <li>
+                  See page 112 of the <a href="https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-course-and-exam-description.pdf?course=ap-computer-science-principles&ep_mid=11408083&ep_rid=278956026">Course and Exam Description</a>.
+                </li>
+              </ul>
+
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card mb-5" id="troubleshoot-processingjs">
+            <div class="card-header">
+              <h4>How to Troubleshoot the Display of Processing Sketches Online</h4>
+            </div>
+            <div class="card-block">
+              <p>Open the javascript console, where you might find an error message that gives you a clue about what the problem is. Or you can look through your code carefully to:</p>
+              <ul>
+                <li>rename any variables that have the same name as functions, like <code>size</code></li>
+                <li>remove or comment out these functions which are not supported when you run processing online:
+                  <ul>
+                    <li><code>clear();</code></li>
+                    <li>System.out.println(...)</li>
+                                        <li>println(...)</li>
+                                        <li>System.out.print(...)</li>
+                                        <li>print(...)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="retake-test">
+            <div class="card-header">
+              <h4>Retake a Test</h4>
+            </div>
+            <div class="card-block">
+              <p>Unlimited retakes are available to everyone on every test, but <strong>only when the following conditions are met</strong>. It takes some effort to request a retake, so don't consider a retake as a 'free pass'. Read this section carefully to see what's involved.</p>
+              <p>A retake gives you additional opportunities to show your proficiency in a standard, and it is an excellent way to increase your grade. However a retake may also reveal gaps in your understanding which were not apparent in the original test. These gaps are not ignored, so this means <strong>a retake may cause your grade to go down.</strong></p>
+              <p>
+                The following conditions are important to keep in mind when requesting a retake:
+              </p>
+              <ul>
+                <li>You must fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv_x1sBQlzU2OFOadl6vEdYKCPbSoiavP07ry9I1BaFCXyEA/viewform?usp=sf_link">retake form linked here</a>. I will not accept requests by email, paper, voice, smoke signal, telegram or any other manner of communication.</li>
+                <li>
+                  Pay attention to the deadline. <em>It is strict because I need enough time to set up your retake for you.</em></li>
+                <li>
+                  Fill out one form per test you want to retake. You do not need to retake the entire test. You are welcome to ask for questions on only one or some of the standards from that test, or all of the standards which from that test. Whatever standards you indicate on the form are the ones that will be on your retake -- there's no changing your mind once you see the test, so choose carefully.
+                </li>
+                <li>I will respond by 8am the next day to
+                  <ul>
+                    <li>
+                      confirm that you've been accepted for a retake, and
+                    </li>
+                    <li>
+                      to confirm the time and place.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Not all retake requests are granted. I will spend time creating your retake, and you will spend time taking it, and we both want to spend our time well. For this reason I only approve retake requests for students who show evidence of growth since the original test. You do this in two ways.
+                  <ol>
+                    <li>
+                      In a direct and specific question in the Retake Request Form, you indicate an honest feeling of readiness to answer new questions on the standards you are requesting.
+                    </li>
+                    <li>
+                      You do Test Corrections on your original test and you give those to me <em>before you submit the form requesting a retake.</em>
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  Be thorough with your Test Corrections and be sure to submit your form correctly! The 3pm-day-before deadline is critical, so if your Test Corrections need more work then you may need to wait until the following week.
+                </li>
+                <li>
+                  I encourage you to talk with me before you request a retake. I'm glad to give guidance in understanding the retake process. I am also glad to give support with the standards themselves, but only after you've put decent effort into doing Test Corrections (see section below).
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="card mb-5" id="test-corrections">
+            <div class="card-header">
+              <h4>Test Corrections</h4>
+            </div>
+            <div class="card-block">
+
+              <p>
+                I generally write two types of feedback on tests:
+                <ul>
+                  <li>
+                    I draw circles around or X's near stuck points (things that are just plain wrong, or things that need some improvement because are in some grey zone between right and wrong). Occasionally I annotate my circles, but often not.
+                  </li>
+                  <li>
+                    Everything else (things that are particularly well done, or other things comments about notable things that are not stuck points) gets an underline or an arrow or simply a short note, but no circle. Circles only go around stuck points.
+                  </li>
+                </ul>
+              </p>
+              <p>
+                It's your responsibility to figure out how you erred on tests. Initial work on figuring out errors must be done by students, without my help, mostly for the educational benefit. In particular, do not ask a teacher to identify your error or justify their scoring as soon as you receive your test. Instead, re-read the problem and give it another shot. If you're still stuck you should feel free to consult with your classmates and look at their tests.
+              </p>
+
+              <p>
+                Whether you plan on taking a retest or not, it is in your best interest to do Test Corrections because they are a great way to prepare for future tests.
+              </p>
+              <p>
+                Do your Test Corrections on a separate sheet of paper (not the test itself). For each stuck point I circled on your test, write the following:
+              </p>
+
+              <ul>
+                <li>problem number.</li>
+                <li>what was your thinking when you wrote it? (dont' write "I wasn't thinking")</li>
+                <li>how has your thinking changed? (don't write "it's correct now")</li>
+                <li>what is the correct answer?</li>
+              </ul>
+
+              <p>
+                After having written your Test Corrections on a separate sheet of paper, put that paper in my inbox or <em>take a picture of it and email it to me</em>.</p>
+              <p>
+                I will give feedback (but not change grades) on all test corrections regardless of when they are submitted.
+              </p>
+              <p>
+                If you are submitting the Test Corrections as part of a Test Retake Request, then the Corrections must be on my desk or in my email inbox by 3pm the day before you would like to do the retake.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="card mb-5" id="handy-tools">
+            <div class="card-header">
+              <h4>Handy Tools</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li><a href="https://www.take-a-screenshot.org">take a screenshot on different devices</a></li>
+                <li><a href="http://caniuse.com/">check browser compatibility of various web design elements</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="learn-online">
+            <div class="card-header">
+              <h4>Structured Learning</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li><a href="http://discover-devtools.codeschool.com/">Chrome DevTools</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="guides-tips">
+            <div class="card-header">
+              <h4>Guides and Tips</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li><a href="https://github.com/processing/p5.js/wiki/Processing-transition">Processing vs p5.js</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="lists">
+            <div class="card-header">
+              <h4>Lists</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li>WoodstockCS Inspirations (<a href="https://docs.google.com/spreadsheets/d/1t4WUtmbyrm2Naz-pATinioOQLg2KhgRYGk5QKLMOlN0/edit#gid=5783103&fvid=626081735">view</a>) (<a href="http://tiny.cc/wcs-inspire">contribute</a>)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="books">
+            <div class="card-header">
+              <h4>Mr. Smith's Book Recommendations</h4>
+            </div>
+            <div class="card-block">
+              <style type="text/css" media="screen">
+                .gr_grid_container {
+                  /* customize grid container div here. eg: width: 500px; */
+                }
+
+                .gr_grid_book_container {
+                  /* customize book cover container div here */
+                  float: left;
+                  width: 98px;
+                  height: 160px;
+                  margin: 4px;
+                  overflow: hidden;
+                  border-radius: 5px;
+                }
+              </style>
+              <div id="gr_grid_widget_1503759420">
+
+              </div>
+              <script src="https://www.goodreads.com/review/grid_widget/7852595.recommended?cover_size=medium&hide_link=true&hide_title=true&num_books=3&order=a&shelf=wcs-recommended&sort=random&widget_id=1503759420" type="text/javascript" charset="utf-8"></script>
+
+            </div>
+          </div>
+
+          <div class="card mb-5" id="classes-objects">
+            <div class="card-header">
+              <h4>Classes and Objects</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+                <li><a href='https://processing.org/tutorials/objects/'>DS reading</a></li>
+                <li><a href='https://processing.org/tutorials/objects/'>DS video</a></li>
+                <li><a href='https://www.youtube.com/watch?v=yg6BlGOX8Jk'>AT video</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-5" id="arrays">
+            <div class="card-header">
+              <h4>Arrays</h4>
+            </div>
+            <div class="card-block">
+              <ul>
+<li><a href='https://processing.org/tutorials/arrays/'>DS reading</a></li>
+<li><a href='https://www.youtube.com/watch?v=NptnmWvkbTw&list=PLRqwX-V7Uu6bO9RKxHObluh-aPgrrvb4a'>DS video 1</a></li>
+<li><a href='https://www.youtube.com/watch?v=47JBVxCWXJA&index=2&list=PLRqwX-V7Uu6bO9RKxHObluh-aPgrrvb4a'>DS vid 2</a></li>
+<li><a href='https://www.youtube.com/watch?v=-sSRHRfK2EU&index=3&list=PLRqwX-V7Uu6bO9RKxHObluh-aPgrrvb4a'>DS vid 3</a></li>
+<li><a href='https://www.youtube.com/watch?v=YgEJowcjRgI&list=PLwWNMyt6OyWpJZ8WgC26AH_zSSRI_-0hO'>AT video 1</a></li>
+<li><a href='https://www.youtube.com/watch?v=KJ36NT4wMfo&list=PLwWNMyt6OyWpJZ8WgC26AH_zSSRI_-0hO&index=2'>AT vid 2</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+        <script src="/assets/wcs-utilities.js"></script>
+  </body>
+
+</html>

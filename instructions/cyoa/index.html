@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CYOA instructions</title>
+  </head>
+  <body>
+    <!--
+    <h1>Inspirations</h1>
+    <p>Browse these examples:</p>
+    <ul>
+      <li><A HREF='https://people.ok.ubc.ca/ccrompt/2015/cyoa/sadlowskicyoa/blankcyoa/html/wallslow.html'>The Cave of the Golden Idol</A></li>
+      <li><a href='https://people.ok.ubc.ca/ccrompt/2015/cyoa/ravesteincyoa/Intro.html'>Atrophy over time</a></li>
+    </ul>
+    <p>Write a blog post in which you list: (1) at least two design elements you notice which you may want to implement, and (2) at least two design elements you have questions about.</p>
+     -->
+    
+    <h1>Start your thinking</h1>
+    <p>Decide whether you're going to work alone or with a partner.</p>
+    <p>#1. On paper write these initial ideas about your game:</p>
+    <ul>
+      <li>the learning goal</li>
+      <li>the setting</li>
+      <li>the things to collect</li>
+      <li>how you win</li>
+      <li>how you lose</li>
+    </ul>
+    <p>#2. Create a map of your world on paper or online (google slides or other drawing program).</p>
+    <p>#3. Write a list of questions you'll need to find answers to for this to work</p>
+    
+    <h1>Start your blog</h1>
+    <p>Instructions for setting up your blog are <a href='https://github.com/woodstockcs/YOURUSERNAME.github.io/blob/master/README.md'>here</a>.</p>
+    <p>Create a new blog post and in it type and/or post images of #1, #2, and #3 from ideation above. See <a href='https://github.com/woodstockcs/support/wiki/github#how-to-add-an-image-on-a-github-blog-page'>here</a> for simple instructions about how to add an image to your blog.</p>
+    
+    <h1>Start your welcome screen</h1>
+    <p>Create a new folder on your desktop or somewhere else on your computer that you can easily access.</p>
+    <p>In that folder create a new file called <code>index.html</code>.</p>
+    <p>In that file, paste this code:</p>
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;CYOA NAME&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+    &lt;p&gt;This adventure is about ...&lt;/p&gt;
+    &lt;p&gt;Make sure you ...&lt;/p&gt;
+    &lt;a href='forest.html'&gt;click here to enter the forest and begin&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+    <p>Save the file, and view it in a browser.</p>
+    <p>Go back to your text editor and make some changes in the file, then save it.</p>
+    <p>Go back to your browser and refresh the page. You should see the changes you just made.</p>
+    
+    <h1>Start your game pages</h1>
+    <p>Open your command line (PC) or terminal (Mac).</p>
+    <p>Use the <code>cd</code> command to get to your CYOA folder. Depending on how your computer is set up, it might look like this: <code>cd desktop</code> then press ENTER, then <code>cd my-folder-name</code> and ENTER. Don't hesitate to ask for a hand with this part.</p>
+    <p>Use the <code>dir</code> command (PC) or the <code>ls</code> command (Mac) to check if you are in the right folder. You should see your <code>index.html</code> file listed.</p>
+    <p>Make a new page by following these steps:</p>
+    <ol>
+      <li>Type <code>cp index.html forest.html</code> to make a duplicate file. (but replace <code>forest.html</code> with whatever your first location is called. Just don't forget the <code>.html</code> at the end! And don't use any spaces in your filename. If you want to use multiple words, you can put dashes between each word, like this: <code>creepy-graveyard.html</code></li>
+      <li>Type <code>dir</code> (PC) or <code>ls</code> (Mac) to see if your new file is now listed.</li>
+      <li>Open your new file in a text editor and make the necessary updates. Feel free to ask for support or inspiration here!</li>
+      <li>View that new page in your browser.</li>
+      <li>View the welcome page in your browser and test the link to your new page.</li>
+    </ol>
+    
+    <h1>Make more game pages</h1>
+    <p>Repeat the numbered steps you just did (listed above) and adapt them as needed to build more locations for your adventure.</p>
+    <p>Test your links often!</p>
+    
+    <h1>Samples</h1>
+    <p>Study the code in these samples, and take and adapt what you need. Just make sure you give credit in comments.</p>
+    <ul>
+      <li><a href="sample1.html">Sample 1</a>: in which we keep track of the player's score</li>
+      <li><a href="sample2.html">Sample 2</a>: in which we play around with different backgrounds</li>
+</ul>
+    <h1>Requirements</h1>
+    <p>Every game must include all of the Basic requirements listed below, and every game must include at least one of the Advanced requirements listed below.</p>
+    <h3>Basic</h3>
+    <ol>
+      <li>your game has at least 5 location pages</li>
+      <li>each page uses css for styling the page background and text</li>
+      <li>each page uses at least one header tag and one paragraph tag</li>
+      <li>at least one page uses list tags</li>
+      <li>at least one page has an image on it (<a href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_img_align'>try out image alignment here</a>)</li>
+    </ol>
+    <h3>Advanced (choose at least one)</h3>
+    <p>None of these are easy. They are listed roughly in order from easiest to hardest, according to your teacher's totally unscientific opinions of them.</p>
+    <ul>
+      <li>use a hand-drawn "image map" to control your navigation (scan your image then <a href='https://www.image-map.net/'>use this tool to create some code</a>)
+      <li>use css to position your elements on at least two pages (<a href='https://www.w3schools.com/cssref/tryit.asp?filename=trycss_position2'>try it out here</a>)</li>
+      <li>use bootstrap components on at least two pages (<a href='https://getbootstrap.com/docs/4.0/components/alerts/'>browse the components here</a>) (<a href='https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template'>set up your page like the starter template here</a>)</li> 
+      <li>use javascript to pass information between among all the pages of the game (<a href='https://github.com/woodstockcs/woodstockcs.github.io/blob/master/instructions/cyoa/url-params.md'>here's how</a>)</li>
+    </ul>
+    <h1>Publishing Your Game</h1>
+    <p>Fork <a href="https://github.com/woodstockcs/cyoa">this repo</a>. Then click `Upload files` and upload all the files from the `cyoa` folder on your computer. Wait a couple minutes for github to update its web servers, then see how it looks at <code>YOURUSERNAME.github.io/cyoa</code> (except replace YOURUSERNAME with, well, your username).</p>
+    <p>To make changes, update your file locally (which means on your machine) and then click `Upload files` again, and upload the new file. If you already have a file in your repo with the same name, Github will replace it with the new file.</p>
+      
+    <h1>Due Dates</h1>
+    <p>All games must be published by <strong>end of class Wed Mar 28</strong>. On the following Monday we will have a gallery and try each other's games.
+    </p>
+    </body>
+</html>

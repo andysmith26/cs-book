@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Woodstock CS</title>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
+    <script src="/assets/external/processing.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card card-outline-success mb-3">
+            <div class="card-header">
+              <h3 class="card-title">LegoAd</h3>
+              <h6 class="card-subtitle text-muted">Project</h6>
+            </div>
+            <div class="card-block">
+              <h5 class="card-title">Contents</h5>
+              <ul class="list-unstyled small">
+                <li>Goals</li>
+                <li>Intro</li>
+                <li>Specifications</li>
+                <li>Step 1: Sketch</li>
+                <li>Step 2: Program Your Ad</li>
+                <li>Step 3: Add Variables</li>
+                <li>Step 4: Move Your Ad</li>
+                <li>Step 5: Stop Your Ad</li>
+                <li>Definition of Done</li>
+                <li>credit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+
+          <div class="section">
+            <h2 class="display-4">Goals</h2>
+            <ul>
+              <li>Practice using functions, variables, declarations, and assignment statements.</li>
+              <li>Make computations dynamic in interesting ways.</li>
+              <li>Create an <em>abstracted</em> image of characters, using only simple shapes.</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Intro</h2>
+
+            <p>
+              You will program a simple advertisement in the style of a real ad campaign that used legos to represent popular TV characters. Here's an example:
+            </p>
+            <table class="table">
+              <tr>
+                <th>
+                  The Actual Ad
+                </th>
+                <th>
+                  Programmed in Processing
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <img src="real-ad-simpsons.png" height=200>
+                </td>
+                <td>
+                  <img src="ad_simpsons.png" height=200>
+                </td>
+              </tr>
+            </table>
+            <center></center>
+            <p>
+              You may choose to start from scratch or use the <a href="https://github.com/woodstockcs/LegoAd/blob/gh-pages/LegoAd.pde">starter code in the assignment repo</a> as a starting point.
+            </p>
+
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Specifications</h2>
+
+            <ul>
+              <li>Background color is not white.</li>
+              <li>The drawing canvas should be around 900x600, but adjust as needed for your project.</li>
+              <li>Each character should be made out of rectangles, but feel free to add in more details with other shapes (like Maggie's pacifier -- an ellipse).</li>
+              <li>At least three different fill colors should be used for your ad.</li>
+              <li>Your ad must consist of a minimum of three characters.</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Step 1: Sketch</h2>
+
+            <p>
+              Choose one of the ads (but not the Simpsons) from <a href="http://adsoftheworld.com/campaign/lego-jung-von-matt-03-2012">the real ad campaign linked here</a>. Sketch out your ad on paper, label the colors and the important points so it is easier to program.
+            </p>
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Step 2: Program Your Ad</h2>
+
+            <p>
+              Program your ad in the center of the screen, making sure each character lines up on the same baseline (see the Simpson ad image).
+            </p>
+
+            <h4>Helpful Reminders:</h4>
+            <ul>
+              <li>Positions on the screen are numbered from (0,0) in the upper-left corner and increase to the right and down. On a 900x600 drawing canvas, the middle position at the top of the window is (450,0).</li>
+              <li>Sizes are always given width before height. (x comes before y)</li>
+              <li>Colors are given by three numbers between 0-255 for 'red', 'green', and 'blue' (RGB. If you need help remembering the order, <a href="http://rrrgggbbb.com/">click here</a> and move your mouse over the letters).</li>
+              <li>Use [Tools -&gt; Color Selector] to help you find good RGB triplets for colors you like.</li>
+              <li>An object's color is set with the <code>fill(r,g,b)</code> function, where r, g, and b are the three color values. Once set, all following shapes are filled with that color until a new <code>fill()</code> command changes the color.</li>
+              <li><code>noStroke()</code> will remove the outlines around your shapes.</li>
+              <li>Use [Help -&gt; Reference] if you want to look up a function.</li>
+            </ul>
+
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Step 3: Add Variables</h2>
+
+            <p>At the top of your code, add an <code>x_position</code> and <code>y_position</code> variable for each ad member, then add these variables into your code (as shown in class on the second day of working on the lab). Examples for the Simpsons variables are shown below. <b>Run your code, and iteratively adapt the variable's values so that each character is in a corner.</b>
+            </p>
+
+            <table class="table" align=center>
+              <tr>
+                <th>Character</th>
+                <th>Variable Names</th>
+                <td rowspan=6 valign=middle><img src="ad_start.png" height=200></td>
+              </tr>
+              <tr>
+                <td>Homer</td>
+                <td><code>homer_x</code>, <code>homer_y</code></td>
+              </tr>
+              <tr>
+                <td>Marge</td>
+                <td><code>marge_x</code>, <code>marge_y</code></td>
+              </tr>
+              <tr>
+                <td>Bart</td>
+                <td><code>bart_x</code>, <code>bart_y</code></td>
+              </tr>
+              <tr>
+                <td>Lisa</td>
+                <td><code>lisa_x</code>, <code>lisa_y</code></td>
+              </tr>
+              <tr>
+                <td>Maggie</td>
+                <td><code>maggie_x</code>, <code>maggie_y</code></td>
+              </tr>
+            </table>
+            <br />
+            <h4>Declaring Variables:</h4>
+            <p>
+              To understand our programs Processing needs to know what variables we will use in our program, so we <em>declare</em> them. Declarations come at the start of our program (before <code>setup()</code>) by writing code such as <code>int position = 0;</code>.
+            </p>
+            <p>This line of code tells Processing several things:</p>
+            <ul>
+              <li><code>position</code> is a variable that will be used in the program.</li>
+              <li><code>position</code> will have integer values (whole numbers) because we used the abbreviation <code>int</code> for integer.</li>
+              <li><code>position</code> starts with the value 0.</li>
+            </ul>
+
+            <h4>Using Variables:</h4>
+
+            <p>
+              A variable holds a value that can change. For example, if the variable <code>position</code> holds the value 21 and then later in the program we write <code>position = 23;</code>, then the value of <code>position</code> has changed from what it was (21) to 23. Variables are important to dynamic programs, because values change all the time.
+            </p>
+
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Step 4: Move Your Ad</h2>
+
+            <p>
+              Program your ad to start in the corners and move to the center of the screen. If you have 3 characters, pick 3 different corners; if you have 4 characters, use all 4 corners; if you have more than 4 characters, you can have multiple characters start in the same corner.
+            </p>
+
+            <p>
+              You will be adding statements like <code>homer_x = homer_x + 1;</code> or <code>homer_x = homer_x - 1;</code> into your code to make this movement happen.
+            </p>
+
+            <p>
+              Here we are using the fact that the <code>draw()</code> routine refreshes the image several times per second. Each time it runs <code>draw()</code> it repeats the "change" operation (such as <code>homer_x = homer_x + 1;</code>). This alters the variable's value. By using that variable to set the position of shapes, we can make your characters move across the screen!
+            </p>
+
+            <table align=center>
+              <tr>
+                <td valign=middle><img src="ad_start.png" height=200 class="img-margin-bottom"></td>
+                <td valign=middle align=center>&nbsp; ==&gt; &nbsp;</td>
+                <td valign=middle><img src="ad_end.png" height=200 class="img-margin-bottom"></td>
+              </tr>
+            </table>
+
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Step 5: Stop Your Ad</h2>
+
+            <p>
+              Finally, you will want to program your ad to stop once it has reached the center. To do this you will want to use the <code>min()</code> and <code>max()</code> functions as shown in class.
+            </p>
+
+            <p>
+              For the Simpsons, we might use something like <code>homer_x = min(0, homer_x);</code> OR <code>homer_x = max(0, homer_x);</code>
+            </p>
+
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">Definition of Done</h2>
+            <p>
+              You are done when:
+            </p>
+            <ul>
+              <li>
+                You have a runnable sketch on your laptop.
+              </li>
+              <li>
+                That sketch includes all the characters from one of the ad images linked in "Step 1" above.
+              </li>
+              <li>
+                The characters start at different corners of the sketch and move towards the center.
+              </li>
+              <li>
+                The characters stop moving when they are arranged as shown in the original ad image.
+              </li>
+              <li>
+                Each part of your code has comments so that someone else can understand it.
+              </li>
+            </ul>
+            <p><em>Note that the Definition of Done does not include any posting online or other submission of your final product. We will do this together in class.</em></p>
+          </div>
+
+          <div class="section">
+            <h2 class="display-4">credit</h2>
+            <p>
+              adapted from <a href="https://courses.cs.washington.edu/courses/cse120/17sp/asmts/lego_family.html">UW CSE120</a>
+            </p>
+          </div>
+          <br />
+          <br />
+        </div>
+
+        <script src="/assets/wcs-utilities.js"></script>
+  </body>
+
+</html>

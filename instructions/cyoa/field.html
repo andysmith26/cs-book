@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Hello</title>
+
+<script src='main.js'></script>
+</head>
+
+<body>
+
+<h1>You Are in the Field</h1>
+<p>Your score is <span id='yourScore'>0</span>.</p>
+<p>Now what?</p>
+<a href='#' onClick='crawlLeft();'>Crawl to the left.</a>
+<br>
+<a href='#' onClick='sprintLeft();'>Sprint to the left.</a>
+
+<script>
+
+var currentScore = parseInt(getUrlParams("score"));
+document.getElementById("yourScore").innerHTML = currentScore ;
+
+function crawlLeft() {
+  currentScore = currentScore + 2;
+  console.log(currentScore);
+  window.location = "river.html?score=" + currentScore;
+}
+
+function sprintLeft() {
+  currentScore = currentScore + 87;
+  console.log(currentScore);
+  window.location = "river.html?score=" + currentScore;
+}
+
+</script>
+</body>
+</html>
