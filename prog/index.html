@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
     <script src="/assets/external/processing.min.js"></script>
     <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
   </head>
@@ -71,12 +72,17 @@
           <div class="card">
             <div class="card-block">
               <h4 class="card-title">Links</h4>
-              <ul>
-                <li>
-                  <a href="block-e-previous-resources.html" >linked here</a>
-                </li>
-              </ul>
-
+              <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Link</th>
+      <th scope="col">Note</th>
+    </tr>
+  </thead>
+  <tbody id="linksList">
+    </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -105,7 +111,13 @@
       populateAheadData("e");
       populateHomeworkData("e");
       addMarvinButton("e");
-      getLinks("prog");
+      function init() {
+          url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
+          Tabletop.init( { key: url,
+                           callback: getLinks,
+                           simpleSheet: true } );
+      }
+      window.addEventListener('DOMContentLoaded', init);
     </script>
   </body>
 

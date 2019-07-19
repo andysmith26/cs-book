@@ -1,9 +1,24 @@
 // var dateOverride = '2017-09-11 EDT';
 var dateOverride = '';
 var nextClassDate;
+var linksUrl;
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
+
+
+function getLinks(data, tabletop) {
+    // using https://github.com/jsoma/tabletop
+    console.log(data);
+    $.each(data, function () {
+        if (this.number > 0) {
+            $("#linksList").append(
+                "<tr><td>" + this.number + "</td><td><a href='"
+                    + this.url + "'>" + this.label
+                    + "</a></td><td>" + this.note + "</td></tr>");
+        }
+    });
+}
 
 function addMarvinButton(type) {
   if (type == "e") {
