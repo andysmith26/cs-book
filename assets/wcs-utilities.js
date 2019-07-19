@@ -11,7 +11,7 @@ function getLinks(data, tabletop) {
     // using https://github.com/jsoma/tabletop
     console.log(data);
     $.each(data, function () {
-        if (this.number > 0) {
+        if (this.status == "active" ) {
             $("#linksList").append(
                 "<tr><td>" + this.number + "</td><td><a href='"
                     + this.url + "'>" + this.label
