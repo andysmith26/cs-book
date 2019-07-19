@@ -5,6 +5,42 @@ $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
 
+
+function getLinks(course) {
+    var sheetId = "";
+    if (course == "prog") {
+        sheetId = "11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY";
+    }
+    var linksUrl = "https://spreadsheets.google.com/feeds/list/"
+        + sheedId
+        + "/1/public/basic?alt=json";
+    $.getJSON(linksUrl, function(data) {
+            console.log(data);
+              var rows = [];
+              var cells = data.feed.entry;
+
+              for (var i = 0; i < cells.length; i++){
+                  var rowObj = {};
+                  rowObj.timestamp = cells[i].title.$t;
+                  var rowCols = cells[i].content.$t.split(',');
+                  for (var j = 0; j < rowCols.length; j++){
+                      var keyVal = rowCols[j].split(':');
+                      if (keyVal[1]) {
+                        rowObj[keyVal[0].trim()] = keyVal[1].trim();
+                      } else {
+                        rowObj[keyVal[0].trim()] = "";
+                      }
+                  }
+                  rows.push(rowObj);
+              }
+
+              var raw = document.createElement('p');
+              raw.innerText = JSON.stringify(rows);
+              document.body.appendChild(raw);
+        });
+}
+
+
 function addMarvinButton(type) {
   if (type == "e") {
     $("#navbar-placeholder").replaceWith("<button class = 'btn btn-outline-success my-2 my-sm-0' type = 'submit' onClick = 'location.href=\'https://github.com/woodstockcs/marvin/issues/new\'' > Ask Marvin < /button>");
