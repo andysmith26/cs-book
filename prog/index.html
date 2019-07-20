@@ -57,26 +57,27 @@
 
 -->
           <div id="homework-card" class="card">
-            <div class="card-block">
-              <div class="mb-4">
-                <h4 class="card-title mb-0">Homework</h4>
-                <small class="text-muted font-italic mb-2">due at the start of class on the indicated date, unless otherwise written below</small>
+              <div class="card-header">
+                  <h4 class="card-title mb-0">Agenda</h4>
               </div>
-              <div id="the-homeworks"></div>
-              <small class="text-muted font-italic float-right"><a href="block-e-archive.html#homework" class="card-link">see previous homework...</a></small>
+            <div class="card-block m-2">
+
+              <div id="agendaList">
+              </div>
             </div>
+            <div class="card-footer">
+                              <small class="text-muted font-italic"><a href="archive.html#agendas" class="card-link">see old agendas...</a></small>
+</div>
           </div>
-          <div id="ahead-card" class="card">
-            <div class="card-block">
-              <h4 class="card-title">Looking Ahead</h4>
-              <table id="ahead-table" class="table table-hover table-sm">
-              </table>
-            </div>
-          </div>
+<br>
           <div class="card">
+            <div class="card-header">
+              <h4 class="card-title mb-0">Links</h4>
+            </div>
+
             <div class="card-block">
-              <h4 class="card-title">Links</h4>
               <table class="table">
+                <!--
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -84,9 +85,14 @@
       <th scope="col">Note</th>
     </tr>
   </thead>
+-->
   <tbody id="linksList">
     </tbody>
               </table>
+            </div>
+             <div class="card-footer">
+                              <small class="text-muted font-italic"><a href="archive.html#links" class="card-link">see old links...</a></small>
+</div>
             </div>
           </div>
         </div>
@@ -111,11 +117,12 @@
     </div>
     <script src="/assets/wcs-utilities.js"></script>
     <script>
-      populateAgendaData("e");
-      populateAheadData("e");
-      populateHomeworkData("e");
-      addMarvinButton("e");
+      // populateAgendaData("e");
+      // populateAheadData("e");
+      // populateHomeworkData("e");
+      // addMarvinButton("e");
       function init() {
+          getAgendas("prog-agendas-01.org", true);
           url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
           Tabletop.init( { key: url,
                            callback: getLinks,
