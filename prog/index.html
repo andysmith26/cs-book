@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
     <script src="/assets/external/processing.min.js"></script>
     <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
   </head>
@@ -21,14 +22,12 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="row">
-            <div class="col-sm-12 align-middle">
-
-            <canvas data-processing-sources="/assets/sketches/ParticleSystem_Bianchi/ParticleSystem_Bianchi.pde"></canvas>
+            <div id="pageHighlight" class="col-sm-12 align-middle">
             </div>
           </div>
         <!--  <div class="row">
             <div class="col-sm-12 align-middle">
-              <canvas data-processing-sources="/assets/sketches/ParticleSystem_Satterfield/ParticleSystem_Satterfield.pde"></canvas>
+
             </div>
           </div>
 <img src="https://pbs.twimg.com/media/DbA_CYQW0AAlKLM.jpg:large">
@@ -66,7 +65,7 @@
               </div>
             </div>
             <div class="card-footer">
-                              <small class="text-muted font-italic"><a href="archive.html#agendas" class="card-link">see old agendas...</a></small>
+                              <small class="text-muted font-italic"><a href="agendas.html" class="card-link">see all agendas...</a></small>
 </div>
           </div>
 <br>
@@ -76,6 +75,11 @@
             </div>
 
             <div class="card-block">
+
+              <!-- start PACMAN see credit in css -->
+            <div id="loadingLinks" class="lds-css ng-scope ml-3 mb-5" style="width: 40px; height: 40px;"><div style="width:100%;height:100%" class="lds-pacman"><div><div></div><div></div><div></div></div><div><div></div><div></div></div></div></div>
+            <!-- end PACMAN -->
+
               <table class="table">
                 <!--
   <thead>
@@ -91,7 +95,7 @@
               </table>
             </div>
              <div class="card-footer">
-                              <small class="text-muted font-italic"><a href="archive.html#links" class="card-link">see old links...</a></small>
+                              <small class="text-muted font-italic"><a href="links.html" class="card-link">see all links...</a></small>
 </div>
             </div>
           </div>
@@ -122,10 +126,11 @@
       // populateHomeworkData("e");
       // addMarvinButton("e");
       function init() {
+          getPageHighlight();
           getAgendas("prog-agendas-01.org", true);
           url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
           Tabletop.init( { key: url,
-                           callback: getLinks,
+                           callback: getLinks(true),
                            simpleSheet: true } );
       }
       window.addEventListener('DOMContentLoaded', init);
