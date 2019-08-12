@@ -1,63 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Woodstock CS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="/assets/external/processing.min.js"></script>
-    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+<head>
+  <title>Woodstock CS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-  </head>
+  <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+</head>
 
-  <body>
-    <div id="navbar"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <a href="./" role="button" class="btn btn-success btn-lg btn-block"> &lt;&lt;&lt;&nbsp;&nbsp;&nbsp;back to the class page&nbsp;&nbsp;&nbsp;&lt;&lt;&lt;</a>
-        </div>
-      </div>
-      <br>
-      <div id="agendas" class="row">
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="card-header">
-               <h4 class="card-title mb-0">All Agendas</h4>
-            </div>
-
-            <div class="card-block">
-<br>
-              <div id="agendaList"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-sm-12">
-          <a href="./" role="button" class="btn btn-success btn-lg btn-block"> &lt;&lt;&lt;&nbsp;&nbsp;&nbsp;back to the class page&nbsp;&nbsp;&nbsp;&lt;&lt;&lt;</a>
-        </div>
-      </div>
-      <br>
-    <br>
-    <br>
-    <br>
-    <script src="/assets/wcs-utilities.js"></script>
-    <script>
-      function init() {
-          getAgendas("prog-agendas-01.org", false);
-      }
-      window.addEventListener('DOMContentLoaded', init);
-    </script>
-  </body>
+<body>
+  <div id="navbar"></div>
+  <div class="container">
+    <div id="agendapage"></div>
+  </div>
+  <script src="/assets/wcs-utilities.js"></script>
+  <script>
+    function init() {
+      $.get("/agendapage.html", function(data) {
+        $("#agendapage").replaceWith(data);
+        getAgendas("prog-agendas-01.org", false);
+      });
+    }
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
 
 </html>

@@ -43,7 +43,7 @@ function showPageHighlight(h, l) {
   if (itemType === "pjs") {
       var canvasRef = document.createElement('canvas');
       var p = Processing.loadSketchFromSources(canvasRef, [itemCode]);
-      $('#pageHighlight').append("<p class='text-muted small text-center'>" + l + "<br><b>" + itemCredit + "</b></p>");
+      $('#pageHighlight').append("<p class='text-muted small text-center mt-1'>" + l + "<br><b>" + itemCredit + "</b></p>");
       $('#pageHighlight').append(canvasRef);
   }
 }
