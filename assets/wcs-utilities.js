@@ -50,13 +50,13 @@ function showPageHighlight(h, l) {
 
 
 
-function getLinks(limitedDisplay) {
+function getLinks(limitedDisplay, course) {
     return function(data, tabletop) {
         // using https://github.com/jsoma/tabletop
         console.log(data);
         console.log(limitedDisplay);
         $("#loadingLinks").hide();
-        $.each(data, function () {
+        $.each(tabletop.sheets(course).all(), function () {
             if (!limitedDisplay || this.status == "active" ) {
                 $("#linksList").append(
                     "<tr><td>" + this.number + "</td><td><a href='"

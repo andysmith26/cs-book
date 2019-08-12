@@ -127,10 +127,10 @@
       // addMarvinButton("e");
       function init() {
           getPageHighlight();
-          getAgendas("prog-agendas-01.org", true);
+          getAgendas("ai-agendas-01.org", true);
           url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
           Tabletop.init( { key: url,
-                           callback: getLinks(true, "prog"),
+                           callback: getLinks(true, "ai"),
                          } );
       }
       window.addEventListener('DOMContentLoaded', init);

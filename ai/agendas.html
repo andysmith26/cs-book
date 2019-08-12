@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>    <script src="/assets/external/processing.min.js"></script>
+    <script src="/assets/external/processing.min.js"></script>
     <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
 
   </head>
@@ -26,33 +26,17 @@
         </div>
       </div>
       <br>
-      <div id="links" class="row">
+      <div id="agendas" class="row">
         <div class="col-sm-12">
           <div class="card">
             <div class="card-header">
-               <h4 class="card-title mb-0">All Links</h4>
+               <h4 class="card-title mb-0">All Agendas</h4>
             </div>
-
-            <!-- start PACMAN see credit in css -->
-            <div id="loadingLinks" class="lds-css ng-scope m-3" style="width: 40px; height: 40px;"><div style="width:100%;height:100%" class="lds-pacman"><div><div></div><div></div><div></div></div><div><div></div><div></div></div></div></div>
-            <!-- end PACMAN -->
 
             <div class="card-block">
-              <table class="table">
-                <!--
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Link</th>
-      <th scope="col">Note</th>
-    </tr>
-  </thead>
--->
-  <tbody id="linksList">
-    </tbody>
-              </table>
+<br>
+              <div id="agendaList"></div>
             </div>
-
           </div>
         </div>
       </div>
@@ -70,10 +54,7 @@
     <script src="/assets/wcs-utilities.js"></script>
     <script>
       function init() {
-        url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
-        Tabletop.init( { key: url,
-                         callback: getLinks(true, "prog"),
-                       } );
+          getAgendas("ai-agendas-01.org", false);
       }
       window.addEventListener('DOMContentLoaded', init);
     </script>

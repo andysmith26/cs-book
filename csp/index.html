@@ -121,16 +121,12 @@
     </div>
     <script src="/assets/wcs-utilities.js"></script>
     <script>
-      // populateAgendaData("e");
-      // populateAheadData("e");
-      // populateHomeworkData("e");
-      // addMarvinButton("e");
       function init() {
           getPageHighlight();
-          getAgendas("prog-agendas-01.org", true);
+          getAgendas("csp-agendas-01.org", true);
           url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
           Tabletop.init( { key: url,
-                           callback: getLinks(true, "prog"),
+                           callback: getLinks(true, "csp"),
                          } );
       }
       window.addEventListener('DOMContentLoaded', init);
