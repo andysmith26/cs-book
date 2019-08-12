@@ -25,19 +25,27 @@ var pageHighlightList = [
 
 function getPageHighlight() {
     var weekNumber = moment().isoWeek();
-    //weekNumber = 80;
+    //weekNumber = 30;
     var highlightItem = pageHighlightList.find((o) => { return o["week"] === weekNumber });
-    if (highlightItem) {
-        var itemType = highlightItem["type"];
-        var itemCode = highlightItem["code"];
-        var itemCredit = highlightItem["credit"];
-        if (itemType === "pjs") {
-            var canvasRef = document.createElement('canvas');
-            var p = Processing.loadSketchFromSources(canvasRef, [itemCode]);
-            $('#pageHighlight').append(canvasRef);
-            $('#pageHighlight').append("<p class='text-muted small text-center'>" + itemCredit + "</p>");
-        }
+    var label = "Student Highlight for Week #" + weekNumber + ":";
+    if (!highlightItem) {
+        var randomIndex = Math.floor(Math.random() * pageHighlightList.length);
+        highlightItem = pageHighlightList[randomIndex];
+        label = "Student Highlight from the Archives:";
     }
+    showPageHighlight(highlightItem, label);
+}
+
+function showPageHighlight(h, l) {
+  var itemType = h["type"];
+  var itemCode = h["code"];
+  var itemCredit = h["credit"];
+  if (itemType === "pjs") {
+      var canvasRef = document.createElement('canvas');
+      var p = Processing.loadSketchFromSources(canvasRef, [itemCode]);
+      $('#pageHighlight').append("<p class='text-muted small text-center'>" + l + "<br><b>" + itemCredit + "</b></p>");
+      $('#pageHighlight').append(canvasRef);
+  }
 }
 
 
@@ -61,7 +69,7 @@ function getLinks(limitedDisplay) {
 
 function getAgendas(file, limitedDisplay) {
     var days;
-    var limitedDisplayCount = 0;
+    var limitedDisplayMax = 1;
     $.get(file, function(data) {
         days = data.split("* <").slice(1);
         for (var i = 0; i < days.length; i++) {
@@ -88,17 +96,26 @@ function getAgendas(file, limitedDisplay) {
             });
         }
 
+        var displayedCount = 0;
         for (var i = 0; i < days.length; i++) {
             var theDate = parseDate(days[i][0].split(" ")[0]);
             var today = getTodaysDate();
-            if (limitedDisplay && limitedDisplayCount === 1) {
-                break;
-            } else if (limitedDisplay && theDate >= today) {
+            if (limitedDisplay && theDate >= today) {
                 displayAgendaItem(days[i], "");
-                limitedDisplayCount++;
+                displayedCount++;
+                if (displayedCount >= limitedDisplayMax){
+                  break;
+                }
             } else if (!limitedDisplay) {
+                // display it all
                 displayAgendaItem(days[i], "<br>");
+                displayedCount++;
             }
+        }
+        if (displayedCount === 0) {
+          $("#agendaList").append(
+              "<p class='card-text'>" + "<i>nothing to display</i>" + "</p>"
+          );
         }
 
     }, 'text');
