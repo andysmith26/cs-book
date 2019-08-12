@@ -125,7 +125,7 @@ function getAgendas(file, limitedDisplay) {
 function displayAgendaItem(item, ending) {
     $("#agendaList").append(
         "<h6 class='card-subtitle mb-2 text-muted'>" + item[0] + "</h6>"
-            + "<p class='card-text'>" + item[1] + "</p>" + ending
+            + "<p class='card-text' style='white-space: pre-line'>" + item[1] + "</p>" + ending
     );
 }
 
