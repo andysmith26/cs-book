@@ -1,140 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Woodstock CS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
-    <script src="/assets/external/processing.min.js"></script>
-    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
-  </head>
+<head>
+  <title>Woodstock CS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+  <script src="/assets/external/processing.min.js"></script>
+  <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+</head>
 
-  <body>
-    <div id="navbar"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="row">
-            <div id="pageHighlight" class="col-sm-12 align-middle">
-            </div>
-          </div>
-        <!--  <div class="row">
-            <div class="col-sm-12 align-middle">
-
-            </div>
-          </div>
-<img src="https://pbs.twimg.com/media/DbA_CYQW0AAlKLM.jpg:large">
-
-		    <iframe src="https://www.youtube.com/embed/I-EhgAU52vs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
--->
-        </div>
-        <div class="col-sm-8">
-          <!--
-          <div id="alert" class="alert alert-danger" role="alert">
-            Test 01 moved to Wednesday.
-          </div>
-          <div id="alert" class="alert alert-success" role="alert">
-            Senior Math Team (for Jr and Sr) in Smith's room Wednesday ARE Block.
-          </div>
--->
-<!--          <div id="agenda-card" class="card">
-            <div class="card-block">
-              <h4 class="card-title">Agenda</h4>
-
-              <div id="the-class"></div>
-
-              <small class="text-muted font-italic float-right"><a href="block-e-archive.html#agendas" class="card-link">see previous agendas...</a></small>
-            </div>
-          </div>
-
--->
-          <div id="homework-card" class="card">
-              <div class="card-header">
-                  <h4 class="card-title mb-0">Agenda</h4>
-              </div>
-            <div class="card-block m-2">
-
-              <div id="agendaList">
-              </div>
-            </div>
-            <div class="card-footer">
-                              <small class="text-muted font-italic"><a href="agendas.html" class="card-link">see all agendas...</a></small>
-</div>
-          </div>
-<br>
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-title mb-0">Links</h4>
-            </div>
-
-            <div class="card-block">
-
-              <!-- start PACMAN see credit in css -->
-            <div id="loadingLinks" class="lds-css ng-scope ml-3 mb-5" style="width: 40px; height: 40px;"><div style="width:100%;height:100%" class="lds-pacman"><div><div></div><div></div><div></div></div><div><div></div><div></div></div></div></div>
-            <!-- end PACMAN -->
-
-              <table class="table">
-                <!--
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Link</th>
-      <th scope="col">Note</th>
-    </tr>
-  </thead>
--->
-  <tbody id="linksList">
-    </tbody>
-              </table>
-            </div>
-             <div class="card-footer">
-                              <small class="text-muted font-italic"><a href="links.html" class="card-link">see all links...</a></small>
-</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <br>
-    </div>
-    <div class="modal fade" id="slidesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button id="slidesEditButton" type="button" class="btn btn-primary" type="submit" onClick="">Contribute a question</button>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <iframe id="slidesIframe" src="" frameborder="0" width="755" height="472" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<body>
+  <div id="navbar"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card text-white bg-info text-center mt-3 mb-3">
+          <div class="card-body p-1">
+            <h5 class="card-title m-0">Artificial Intelligence I & II</h5>
           </div>
         </div>
       </div>
     </div>
-    <script src="/assets/wcs-utilities.js"></script>
-    <script>
-      // populateAgendaData("e");
-      // populateAheadData("e");
-      // populateHomeworkData("e");
-      // addMarvinButton("e");
-      function init() {
-          getPageHighlight();
-          getAgendas("ai-agendas-01.org", true);
-          url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
-          Tabletop.init( { key: url,
-                           callback: getLinks(true, "ai"),
-                         } );
-      }
-      window.addEventListener('DOMContentLoaded', init);
-    </script>
-  </body>
+    <div id="coursepage"></div>
+  </div>
+  <script src="/assets/wcs-utilities.js"></script>
+  <script>
+    function init() {
+      $.get("/coursepage.html", function(data) {
+        $("#coursepage").replaceWith(data);
+        getPageHighlight();
+      });
+      getAgendas("ai-agendas-01.org", true);
+      url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
+      Tabletop.init({
+        key: url,
+        callback: getLinks(true, "ai"),
+      });
+    }
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
 
 </html>

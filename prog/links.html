@@ -22,7 +22,6 @@
   <script>
     function init() {
       $.get("/linkpage.html", function(data) {
-        console.log("gotem")
         $("#linkpage").replaceWith(data);
         url = "https://docs.google.com/spreadsheets/d/11So6im3JgqODIoKR_tNWRYmKDXCoDm9jeOKQIfBbddY/edit?usp=sharing";
         Tabletop.init({
