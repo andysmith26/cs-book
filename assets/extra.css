@@ -1,10 +1,4 @@
-.nav-item {
-    padding-left: 15px;
-}
 
-body {
-  padding-top: 5rem;
-}
 
 img {
     margin-bottom: 1rem;
@@ -35,18 +29,27 @@ img {
   box-shadow: none;
 }
 
-.card {
-  margin-bottom: 1rem !important;
-}
+
 canvas {
     padding: 0;
-    margin: auto;
+    margin: 0;
     display: block;
     width: 258px;
 }
 
 .fixed-width-card {
   width: 260px;
+}
+
+
+/* Remove the top border when a table is missing the header */
+.table > tbody > tr:first-child > td {
+    border: none;
+}
+
+/* Include the border when there's a header */
+.table > thead + tbody > tr:first-child > td {
+    border-top: 1px solid #ddd;
 }
 
 /*https://v4-alpha.getbootstrap.com/layout/grid/*/
@@ -162,3 +165,147 @@ div.circleevalsexp .lParen, div.circleevalsexp .rParen{
 
 
 /* end bootstrap */
+
+
+
+/*
+PACMAN
+https://loading.io/spinner/pacman/-eat-bean-pie-loading-gif
+https://loading.io/spinner/custom/283067/
+*/
+<style type="text/css">@keyframes lds-pacman-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes lds-pacman-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes lds-pacman-2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes lds-pacman-2 {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes lds-pacman-3 {
+  0% {
+    -webkit-transform: translate(190px, 0);
+    transform: translate(190px, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(70px, 0);
+    transform: translate(70px, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes lds-pacman-3 {
+  0% {
+    -webkit-transform: translate(190px, 0);
+    transform: translate(190px, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(70px, 0);
+    transform: translate(70px, 0);
+    opacity: 1;
+  }
+}
+.lds-pacman {
+  position: relative;
+}
+.lds-pacman > div:nth-child(2) div {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 120px;
+  height: 60px;
+  border-radius: 120px 120px 0 0;
+  background: #eca611;
+  -webkit-animation: lds-pacman-1 0.7s linear infinite;
+  animation: lds-pacman-1 0.7s linear infinite;
+  -webkit-transform-origin: 60px 60px;
+  transform-origin: 60px 60px;
+}
+.lds-pacman > div:nth-child(2) div:nth-child(2) {
+  -webkit-animation: lds-pacman-2 0.7s linear infinite;
+  animation: lds-pacman-2 0.7s linear infinite;
+}
+.lds-pacman > div:nth-child(1) div {
+  position: absolute;
+  top: 92px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #089226;
+  -webkit-animation: lds-pacman-3 0.7s linear infinite;
+  animation: lds-pacman-3 0.7s linear infinite;
+}
+.lds-pacman > div:nth-child(1) div:nth-child(1) {
+  -webkit-animation-delay: -0.469s;
+  animation-delay: -0.469s;
+}
+.lds-pacman > div:nth-child(1) div:nth-child(2) {
+  -webkit-animation-delay: -0.231s;
+  animation-delay: -0.231s;
+}
+.lds-pacman > div:nth-child(1) div:nth-child(3) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.lds-pacman {
+  width: 75px !important;
+  height: 75px !important;
+  -webkit-transform: translate(-37.5px, -37.5px) scale(0.375) translate(37.5px, 37.5px);
+  transform: translate(-37.5px, -37.5px) scale(0.375) translate(37.5px, 37.5px);
+}
+</style

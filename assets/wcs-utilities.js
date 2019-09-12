@@ -1,9 +1,133 @@
 // var dateOverride = '2017-09-11 EDT';
 var dateOverride = '';
 var nextClassDate;
+var linksUrl;
 $.get("/navbar.html", function (data) {
   $("#navbar").replaceWith(data);
 });
+
+var pageHighlightList = [
+    {
+        week: 29,
+        type: "pjs",
+        code: "/assets/sketches/ParticleSystem_Bianchi/ParticleSystem_Bianchi.pde",
+        credit: "Particle System, SB"
+    },
+    {
+        week: 30,
+        type: "pjs",
+        code: "/assets/sketches/ParticleSystem_Satterfield/ParticleSystem_Satterfield.pde",
+        credit: "Particle System, ES"
+    },
+
+];
+
+
+function getPageHighlight() {
+    var weekNumber = moment().isoWeek();
+    //weekNumber = 30;
+    var highlightItem = pageHighlightList.find((o) => { return o["week"] === weekNumber });
+    var label = "Student Highlight for Week #" + weekNumber + ":";
+    if (!highlightItem) {
+        var randomIndex = Math.floor(Math.random() * pageHighlightList.length);
+        highlightItem = pageHighlightList[randomIndex];
+        label = "Student Highlight from the Archives:";
+    }
+    showPageHighlight(highlightItem, label);
+}
+
+function showPageHighlight(h, l) {
+  var itemType = h["type"];
+  var itemCode = h["code"];
+  var itemCredit = h["credit"];
+  if (itemType === "pjs") {
+      var canvasRef = document.createElement('canvas');
+      var p = Processing.loadSketchFromSources(canvasRef, [itemCode]);
+      $('#pageHighlight').append("<p class='text-muted small text-center mt-1'>" + l + "<br><b>" + itemCredit + "</b></p>");
+      $('#pageHighlight').append(canvasRef);
+  }
+}
+
+
+
+function getLinks(limitedDisplay, course) {
+    return function(data, tabletop) {
+        // using https://github.com/jsoma/tabletop
+        console.log(data);
+        console.log(limitedDisplay);
+        $("#loadingLinks").hide();
+        $.each(tabletop.sheets(course).all(), function () {
+            if (!limitedDisplay || this.status == "active" ) {
+                $("#linksList").append(
+                    "<tr><td>" + this.number + "</td><td><a href='"
+                        + this.url + "'>" + this.label
+                        + "</a></td><td>" + this.note + "</td></tr>");
+            }
+        });
+    };
+}
+
+function getAgendas(file, limitedDisplay) {
+    var days;
+    var limitedDisplayMax = 1;
+    $.get(file, function(data) {
+        days = data.split("* <").slice(1);
+        for (var i = 0; i < days.length; i++) {
+            days[i] = days[i].split(">\n");
+            days[i][1] = days[i][1].trim();
+        }
+        if (limitedDisplay) {
+            days.sort(function(a,b) {
+                if (a[0] === b[0]) {
+                    return 0;
+                }
+                else {
+                    return (a[0] < b[0]) ? -1 : 1;
+                }
+            });
+        } else {
+            days.sort(function(a,b) {
+                if (a[0] === b[0]) {
+                    return 0;
+                }
+                else {
+                    return (a[0] > b[0]) ? -1 : 1;
+                }
+            });
+        }
+
+        var displayedCount = 0;
+        for (var i = 0; i < days.length; i++) {
+            var theDate = parseDate(days[i][0].split(" ")[0]);
+            var today = getTodaysDate();
+            if (limitedDisplay && theDate >= today) {
+                displayAgendaItem(days[i], "");
+                displayedCount++;
+                if (displayedCount >= limitedDisplayMax){
+                  break;
+                }
+            } else if (!limitedDisplay) {
+                // display it all
+                displayAgendaItem(days[i], "<br>");
+                displayedCount++;
+            }
+        }
+        if (displayedCount === 0) {
+          $("#agendaList").append(
+              "<p class='card-text'>" + "<i>nothing to display</i>" + "</p>"
+          );
+        }
+
+    }, 'text');
+
+}
+
+function displayAgendaItem(item, ending) {
+    $("#agendaList").append(
+        "<h6 class='card-subtitle mb-2 text-muted'>" + item[0] + "</h6>"
+            + "<p class='card-text' style='white-space: pre-line'>" + item[1] + "</p>" + ending
+    );
+}
 
 function addMarvinButton(type) {
   if (type == "e") {
@@ -21,7 +145,8 @@ function getTodaysDate() {
   } else {
     theDate = new Date();
   }
-  return theDate.setHours(0, 0, 0, 0);
+    theDate.setHours(0,0,0,0);
+  return theDate;
 }
 
 function truncateSortableDate(the_date) {

@@ -7,86 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="assets/external/processing.min.js"></script>
-    <link rel="stylesheet" href="assets/extra.css" rel="stylesheet">
-    <script src="assets/wcs-utilities.js"></script>
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="/assets/external/processing.min.js"></script>
+    <link rel="stylesheet" href="/assets/extra.css" rel="stylesheet">
+    <script src="/assets/wcs-utilities.js"></script>
   </head>
 
   <body>
     <div id="navbar"></div>
-
-    <div class="container">
       <!-- <div class="alert alert-success" role="alert">
         <strong>Looking for 2016-17 course pages?</strong> Click one of these: <a href="http://woodstockcs.github.io/cp">B Block CP2</a>, <a href="http://woodstockcs.github.io/cp2">H Block CP</a>
       </div> -->
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="card fixed-width-card mb-3">
-            <canvas data-processing-sources="assets/sketches/MovingSquares_Smith/MovingSquares_Smith.pde"></canvas>
-            <div class="card-block">
+      <div class="row justify-content-center">
+          <div class="card fixed-width-card border-0 m-3">
+            <canvas class="card-img-top" data-processing-sources="assets/sketches/MovingSquares_Smith/MovingSquares_Smith.pde"></canvas>
+            <div class="card-body">
               <h4 class="card-title">Programming</h4>
               <h6 class="card-subtitle mb-2 text-muted">Computer Programming I & II</h6>
               <p class="card-text">This is an introductory course about programming, animation, and data.</p>
-              <!--
-              <a href="block-g.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block G</strong></a>
-              <a href="block-h.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block H</strong></a>
--->
+              <a href="/prog" class="btn btn-outline-success btn-block">Visit Class Page</a>
             </div>
-          </div>
         </div>
 
-        <div class="col-lg-3">
-          <div class="card fixed-width-card mb-3">
+          <div class="card fixed-width-card border-0 m-3">
             <canvas data-processing-sources="assets/sketches/WoodstockWave_JD/WoodstockWave_JD.pde"></canvas>
-            <div class="card-block">
+            <div class="card-body">
               <h4 class="card-title">Principles</h4>
               <h6 class="card-subtitle mb-2 text-muted">AP Computer Principles</h6>
               <p class="card-text">This course is about the big ideas in computer science, including programming concepts, the Internet, big data, and security.</p>
-              <!--
-              <a href="block-c.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block C</strong></a>
--->
-            </div>
-          </div>
+              <a href="/csp" class="btn btn-outline-success btn-block">Visit Class Page</a>
         </div>
+      </div>
 
-        <div class="col-lg-3">
-          <div class="card fixed-width-card mb-3">
+          <div class="card fixed-width-card border-0 m-3">
             <canvas data-processing-sources="assets/sketches/ShapeOfFractions/ShapeOfFractions.pde"></canvas>
-            <div class="card-block">
+            <div class="card-body">
               <h4 class="card-title">Computer Science</h4>
               <h6 class="card-subtitle mb-2 text-muted">AP Computer Science A</h6>
               <p class="card-text">The focus of this course is problem solving and Object Oriented Programming. It's an intensive programming course in which students write code just about every day.</p>
-              <!--
-              <a href="block-e.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block E</strong></a>
--->
+              <a href="/csa" class="btn btn-outline-success btn-block">Visit Class Page</a>
             </div>
           </div>
-        </div>
 
 
 
-        <div class="col-lg-3">
-          <div class="card fixed-width-card mb-3">
+          <div class="card fixed-width-card border-0 m-3">
             <img src="https://media.giphy.com/media/gLKVCVdLUXMTeIs6MD/giphy.gif" height="190" style="margin-bottom: 0">
-            <div class="card-block">
+            <div class="card-body">
               <h4 class="card-title">AI</h4>
               <h6 class="card-subtitle mb-2 text-muted">Artificial Intelligence</h6>
               <p class="card-text">An introduction to the algorithms used by programmers for teaching computers how to make decisions in uncertain environments. </p>
-              <!--
-              <a href="block-c.html" class="btn btn-outline-success btn-block">Visit Class Page: <strong>Block C</strong></a>
--->
+              <a href="/ai" class="btn btn-outline-success btn-block">Visit Class Page</a>
             </div>
           </div>
-                </div>
 
 
       </div>
-    </div>
+
     <!-- /.container -->
 
   </body>
