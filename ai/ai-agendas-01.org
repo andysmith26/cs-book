@@ -1,6 +1,2 @@
-* <2019-07-21 Sun>
-This is tomorrow.
-* <2019-07-19 Fri>
-Hello! Welcome to today.
-* <2019-07-20 Sat>
-And it's today for real.
+* <2019-09-13 Thu>
+- start building the web interface for your AI project
