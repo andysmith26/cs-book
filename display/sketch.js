@@ -11,7 +11,7 @@ function draw() {
   for (let i = 0; i <= rows; i++) {
     for (let j = 0; j <= cols; j++) {
       noStroke();
-      fill(noise(0.02 * frameCount +(j + i*cols))*100);
+      fill(noise(0.01 * frameCount +(j + i*cols))*100);
       x = j * cellSize;
       y = i * cellSize;
       rect(x, y, cellSize);
