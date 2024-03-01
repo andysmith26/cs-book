@@ -3,8 +3,7 @@ let rows, cellSize;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  cellSize = int(width/cols);
-  rows = height / cellSize;
+  initializeGridData();
 }
 
 function draw() {
@@ -18,4 +17,14 @@ function draw() {
       rect(x, y, cellSize);
     }
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  initializeGridData();
+}
+
+function initializeGridData() {
+  cellSize = int(width/cols);
+  rows = height / cellSize;
 }
