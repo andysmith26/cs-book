@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Examples</title>
+    <meta
+      http-equiv="Content-Type"
+      content="text/html; charset=utf-8"
+    />
+    <script src="https://toolness.github.io/p5.js-widget/p5-widget.js"></script>
+  </head>
+  <body>
+    <h1>Mouse Variables</h1>
+    <h2>Example 1</h2>
+    <script type="text/p5" data-preview-width="230">
+      function setup() {
+          createCanvas(200, 200);
+      }
+
+      function draw() {
+          background(220);
+          ellipse(width * 0.5, height * 0.2, 20, 20);
+      }
+    </script>
+
+    <h2>Example 2</h2>
+    <script type="text/p5" data-preview-width="230">
+      function setup() {
+          createCanvas(200, 200);
+      }
+
+      function draw() {
+          background(220);
+          ellipse(mouseX, mouseY, 20, 20);
+      }
+    </script>
+    <h2>Example 3</h2>
+    <script type="text/p5" data-preview-width="230">
+      function setup() {
+          createCanvas(200, 200);
+      }
+
+      function draw() {
+          background(220);
+          line(width*0.5, height*0.2, mouseX, mouseY);
+      }
+    </script>
+    <h2>Example 4</h2>
+    <script type="text/p5" data-preview-width="230">
+      function setup() {
+          createCanvas(200, 200);
+          background(220);
+      }
+      function draw() {
+          ellipse(mouseX, mouseY, 20, 20);
+      }
+      function mousePressed() {
+          background(220);
+      }
+    </script>
+    <h2>Example 5</h2>
+    <script type="text/p5" data-preview-width="230">
+      function setup() {
+          createCanvas(200, 200);
+      }
+
+      function draw() {
+          background(220);
+          fill(mouseX, 100, 100);
+          ellipse(mouseX, mouseY, 20, 20);
+          ellipse(width-mouseX, mouseY, 20, 20);
+      }
+    </script>
+  </body>
+</html>
