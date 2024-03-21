@@ -1,4 +1,17 @@
-.container {
-    max-width: 800px;
-    margin:auto;
-}
+.example {
+    position: relative;
+    width: 230px; /* Match the width of your iframes */
+    height: 230px; /* Adjust based on expected iframe height */
+  }
+  
+  .iframe-blocker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2; /* High enough to sit above the iframe but below other interactive elements like buttons */
+  }
+  
+  
