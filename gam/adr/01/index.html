@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h2>Predict</h2>
+    <section class="example" id="example-a">
+      <h4>#01</h4>
+
+      <div class="prediction-section">
+        <p class="prompt" id="prediction-a-prompt">
+          Read the code below. What do you think it will show?
+        </p>
+        <input
+          type="text"
+          class="input-element"
+          id="prediction-a-input-element"
+          placeholder="Your Prediction"
+        />
+        <button
+          class="submit-button"
+          id="prediction-a-button-element"
+        >
+          Submit Prediction
+        </button>
+      </div>
+
+      <div class="code-section" id="code-a">
+        <script
+          type="text/p5"
+          data-preview-width="230"
+          src="adr-01-a.js"
+        ></script>
+      </div>
+
+      <div class="actual-section">
+        <p class="prompt" id="actual-a-prompt">
+          Run the code. What did it actually show?
+        </p>
+        <input
+          type="text"
+          class="input-element"
+          id="actual-a-input-element"
+          placeholder="Actual Result"
+          disabled
+        />
+        <button class="submit-button" id="actual-a-button-element">
+          Submit Actual
+        </button>
+      </div>
+    </section>
+
+    <div class="example" id="example-b">
+      <h4>#01</h4>
+      <div id="prediction-b">
+        <div id="prediction-b-prompt">
+          Predict: Where on the canvas will the shape appear?
+        </div>
+        <div id="prediction-b-input">
+          <input
+            type="text"
+            id="prediction-b-input-element"
+            placeholder="Your Prediction"
+          />
+        </div>
+        <div id="prediction-b-button">
+          <button
+            id="prediction-b-button-element"
+            class="prediction-button"
+          >
+            Submit Prediction
+          </button>
+        </div>
+      </div>
+      <div id="code-b">
+        <script
+          type="text/p5"
+          data-preview-width="230"
+          src="220b.js"
+        ></script>
+      </div>
+      <div id="actual-b">
+        <div id="actual-b-prompt">
+          2. Run the code. Where on the canvas did the shape appear?
+        </div>
+        <div id="actual-b-input">
+          <input
+            type="text"
+            id="actual-b-input-element"
+            placeholder="Actual Result"
+            disabled
+          />
+        </div>
+        <div id="actual-b-button">
+          <button id="actual-b-button-element">Submit Actual</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
