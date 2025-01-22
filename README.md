@@ -5,7 +5,7 @@
 - [slides B](https://docs.google.com/presentation/d/1-cHZlIS0Iua-JUh34AWibNLtSjkRDYXUURJZnDCwbB4/edit#slide=id.g2af412ea21a_0_115)
 - [slides C](https://docs.google.com/presentation/d/1HS-rCGm_Q2VfZ-NR7ADJ1m3m23eK8O6xFpDacDRSpzw/edit#slide=id.g2af412ea21a_0_115)
 - [slides E](https://docs.google.com/presentation/d/1SjMHQeenRBw1qYnhq8bx5UGYgtyVoe12IEQoCDAx1-Q/edit#slide=id.g2f67ca99088_0_76)
-
+- [study hall](https://docs.google.com/presentation/d/1nZjeu8dggAEPaEierEv4sidj-802j7TGRmdDbcR-UMk/edit#slide=id.g327f32d82ac_0_49)
 
 
 # woodstockcs org website
