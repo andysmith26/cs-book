@@ -1,18 +1,13 @@
+
+# week of Jan 27 - 31
+- [slides C](https://docs.google.com/presentation/d/1Do-a_I2iQ1w2FuV6RUtTx9ad4de-Y8FG_SY-K_C_qc8/edit#slide=id.g3294a3c0d3c_1_238)
+
 # week of Jan 20 - 24
 
 - [plans](https://docs.google.com/document/d/1u0L9trhSkRT-Y6ApAN9e32_KRk9MY4I9n1aYGiV5oZY/edit?tab=t.0)
 - [slides A](https://docs.google.com/presentation/d/1Kn1s1J5e9hdvNC0p6Gxh7qoyrWw1kPkCxkucHLAEbmw/edit#slide=id.g3294a3c0d3c_1_238)
 - [slides B](https://docs.google.com/presentation/d/1wEQ2xAriRHKvgEdDRMKIgBo2HlNJ8Z7hbykC4lf7IiY/edit#slide=id.g3294a3c0d3c_1_238)
-- [slides C](https://docs.google.com/presentation/d/1HS-rCGm_Q2VfZ-NR7ADJ1m3m23eK8O6xFpDacDRSpzw/edit#slide=id.g2af412ea21a_0_115)
+
 - [slides E](https://docs.google.com/presentation/d/14unWagc1Y7Hotku5DFHtods8-Ur-QtsWG86FgTB8iII/edit#slide=id.g2d83d6f818c_0_12)
 - [study hall](https://docs.google.com/presentation/d/1nZjeu8dggAEPaEierEv4sidj-802j7TGRmdDbcR-UMk/edit#slide=id.g327f32d82ac_0_49)
 
-
-# woodstockcs org website
-
-### basic structure
-
-
-### how to update the agenda
-
-### how to update the 
