@@ -1,4 +1,7 @@
 
+# week of Feb 3 - 7
+- [slides C](https://docs.google.com/presentation/d/1qDwMSbUgt1hO0cbVxtWbKP3Vb9M4Va5TmEwE1o210oE/edit#slide=id.g3294a3c0d3c_1_238)
+
 # week of Jan 27 - 31
 - [plans](https://docs.google.com/document/d/1vhZCReljC0GpJmFkKJOQdB5dvOHc0FwFiQJ6JPh8jXI/edit?tab=t.0)
 - [slides A](https://docs.google.com/presentation/d/1Kn1s1J5e9hdvNC0p6Gxh7qoyrWw1kPkCxkucHLAEbmw/edit#slide=id.g3294a3c0d3c_1_238)
