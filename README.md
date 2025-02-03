@@ -1,5 +1,6 @@
 
 # week of Feb 3 - 7
+- [slides A](https://docs.google.com/presentation/d/1gA9SazR_jIYf7NcEIK_c4Nw520miUSTnd1XK3CLFhqY/edit#slide=id.g3294a3c0d3c_1_238)
 - [slides C](https://docs.google.com/presentation/d/1qDwMSbUgt1hO0cbVxtWbKP3Vb9M4Va5TmEwE1o210oE/edit#slide=id.g3294a3c0d3c_1_238)
 
 # week of Jan 27 - 31
