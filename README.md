@@ -1,6 +1,8 @@
 
 # week of Feb 3 - 7
+- [plans](https://docs.google.com/document/d/1hZAr-LYABAlmxLymH8Bd0QJFkPy6tBsWJJY6bMVcHVA/edit?tab=t.0)
 - [slides A](https://docs.google.com/presentation/d/1gA9SazR_jIYf7NcEIK_c4Nw520miUSTnd1XK3CLFhqY/edit#slide=id.g3294a3c0d3c_1_238)
+- [slides B](https://docs.google.com/presentation/d/1fkNkC-ubw65LkVz-oW_Pc1APlGimskEg0mx_JpZGmFE/edit#slide=id.g3294a3c0d3c_1_238)
 - [slides C](https://docs.google.com/presentation/d/1qDwMSbUgt1hO0cbVxtWbKP3Vb9M4Va5TmEwE1o210oE/edit#slide=id.g3294a3c0d3c_1_238)
 - [slides E](https://docs.google.com/presentation/d/1T6kS8VMptIM36GFJmhruKayulNvIr7FKHshlYYaWsb4/edit#slide=id.g3294a3c0d3c_1_238)
 
