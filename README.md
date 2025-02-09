@@ -1,3 +1,5 @@
+# links
+- [slides](https://drive.google.com/drive/folders/1F9__gYl5KsTkBanZyMpxCoFBB6xBhVeO?usp=sharing)
 
 # week of Feb 3 - 7
 - [plans](https://docs.google.com/document/d/1hZAr-LYABAlmxLymH8Bd0QJFkPy6tBsWJJY6bMVcHVA/edit?tab=t.0)
