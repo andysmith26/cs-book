@@ -1,3 +1,8 @@
+[https://editor.p5js.org/woodstock-cs/sketches](https://editor.p5js.org/woodstock-cs/sketches)
+https://www.youtube.com/watch?v=7A5tKW9HGoM&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=8
+
+
+
 # links
 - [slides](https://drive.google.com/drive/folders/1F9__gYl5KsTkBanZyMpxCoFBB6xBhVeO?usp=sharing)
 
