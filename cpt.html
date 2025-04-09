@@ -77,6 +77,35 @@
       font-weight: bold;
       color: #2c3e50;
     }
+
+    .deadline-block {
+  grid-area: 2 / 1 / 3 / 2;
+  position: relative;
+  z-index: 1;
+  border-radius: 15px;
+  background-color: #ff7675;
+  border: 5px solid #d63031;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  height: 90px;
+}
+
+.deadline-title {
+  font-size: 186px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.deadline-date {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
     
     /* Custom positioning for blocks */
     .hour-1 { grid-area: 1 / 1 / 2 / 2; }
@@ -163,6 +192,13 @@
       <div class="hour-number">9</div>
       <div class="hour-title">Submit!</div>
     </div>
+
+    <!-- Deadline block -->
+<div class="deadline-block" id="deadline">
+  <div class="deadline-title">DEADLINE</div>
+  <div class="deadline-date">Apr 30 11:59pm</div>
+</div>
+    
   </div>
   
   <script>
