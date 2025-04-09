@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP CSP Create Task Timeline</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f7f9fc;
+    }
+    
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin: 30px 0;
+    }
+    
+    .timeline-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background-color: #3498db;
+      z-index: 0;
+    }
+    
+    .hour-block {
+      position: relative;
+      z-index: 1;
+      width: 80px;
+      cursor: pointer;
+      text-align: center;
+    }
+    
+    .hour-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: white;
+      border: 4px solid #3498db;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .hour-block.completed .hour-circle {
+      background-color: #2ecc71;
+      border-color: #27ae60;
+    }
+    
+    .hour-title {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    
+    .progress-container {
+      background-color: #ecf0f1;
+      border-radius: 5px;
+      margin: 30px 0;
+      height: 30px;
+      position: relative;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      border-radius: 5px;
+      background-color: #2ecc71;
+      width: 0%;
+      transition: width 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .reset-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 16px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    
+    .reset-btn:hover {
+      background-color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <h1>AP CSP Create Task Timeline</h1>
+  
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar">0%</div>
+  </div>
+  
+  <div class="timeline-container">
+    <div class="timeline-line"></div>
+    
+    <div class="hour-block" data-hour="1">
+      <div class="hour-circle">1</div>
+      <div class="hour-title">Planning</div>
+    </div>
+    
+    <div class="hour-block" data-hour="2">
+      <div class="hour-circle">2</div>
+      <div class="hour-title">Structure</div>
+    </div>
+    
+    <div class="hour-block" data-hour="3">
+      <div class="hour-circle">3</div>
+      <div class="hour-title">Procedure</div>
+    </div>
+    
+    <div class="hour-block" data-hour="4">
+      <div class="hour-circle">4</div>
+      <div class="hour-title">Features</div>
+    </div>
+    
+    <div class="hour-block" data-hour="5">
+      <div class="hour-circle">5</div>
+      <div class="hour-title">Testing</div>
+    </div>
+    
+    <div class="hour-block" data-hour="6">
+      <div class="hour-circle">6</div>
+      <div class="hour-title">Video</div>
+    </div>
+    
+    <div class="hour-block" data-hour="7">
+      <div class="hour-circle">7</div>
+      <div class="hour-title">AAA! Fix stuff.</div>
+    </div>
+    
+    <div class="hour-block" data-hour="8">
+      <div class="hour-circle">8</div>
+      <div class="hour-title">Screenshots</div>
+    </div>
+    
+    <div class="hour-block" data-hour="9">
+      <div class="hour-circle">9</div>
+      <div class="hour-title">Submit</div>
+    </div>
+  </div>
+  
+  <button class="reset-btn" id="resetBtn">Reset Progress</button>
+  
+  <script>
+    // Function to toggle completion of an hour
+    function toggleHourCompletion(element) {
+      element.classList.toggle('completed');
+      updateProgress();
+    }
+    
+    // Function to calculate and update progress
+    function updateProgress() {
+      const hourBlocks = document.querySelectorAll('.hour-block');
+      const totalHours = hourBlocks.length;
+      let completedHours = 0;
+      
+      hourBlocks.forEach(block => {
+        if (block.classList.contains('completed')) {
+          completedHours++;
+        }
+      });
+      
+      const progressPercentage = Math.round((completedHours / totalHours) * 100);
+      const progressBar = document.getElementById('progressBar');
+      progressBar.style.width = progressPercentage + '%';
+      progressBar.textContent = progressPercentage + '%';
+      
+      // Save progress to localStorage
+      saveProgress();
+    }
+    
+    // Function to save progress to localStorage
+    function saveProgress() {
+      const hourBlocks = document.querySelectorAll('.hour-block');
+      const progress = {};
+      
+      hourBlocks.forEach(block => {
+        const hour = block.getAttribute('data-hour');
+        progress[hour] = block.classList.contains('completed');
+      });
+      
+      localStorage.setItem('createTaskProgress', JSON.stringify(progress));
+    }
+    
+    // Function to load progress from localStorage
+    function loadProgress() {
+      const savedProgress = localStorage.getItem('createTaskProgress');
+      if (savedProgress) {
+        const progress = JSON.parse(savedProgress);
+        const hourBlocks = document.querySelectorAll('.hour-block');
+        
+        hourBlocks.forEach(block => {
+          const hour = block.getAttribute('data-hour');
+          if (progress[hour]) {
+            block.classList.add('completed');
+          }
+        });
+        
+        updateProgress();
+      }
+    }
+    
+    // Function to reset progress
+    function resetProgress() {
+      if (confirm('Are you sure you want to reset all progress?')) {
+        const hourBlocks = document.querySelectorAll('.hour-block');
+        hourBlocks.forEach(block => {
+          block.classList.remove('completed');
+        });
+        
+        updateProgress();
+        localStorage.removeItem('createTaskProgress');
+      }
+    }
+    
+    // Add event listeners to hour blocks
+    const hourBlocks = document.querySelectorAll('.hour-block');
+    hourBlocks.forEach(block => {
+      block.addEventListener('click', function() {
+        toggleHourCompletion(this);
+      });
+    });
+    
+    // Add event listener to reset button
+    const resetBtn = document.getElementById('resetBtn');
+    resetBtn.addEventListener('click', resetProgress);
+    
+    // Load saved progress when page loads
+    document.addEventListener('DOMContentLoaded', loadProgress);
+  </script>
+</body>
+</html>
