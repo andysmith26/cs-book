@@ -1,4 +1,6 @@
 {
+  "version": "1.0",
+  "generatedAt": "2025-09-05T19:30:24.313Z",
   "projects": [
     {
       "slug": "asteroids",
@@ -148,156 +150,112 @@
   ],
   "skills": [
     {
-      "id": "oop/classes-objects",
-      "path": "skills/oop/classes-objects/index.md",
-      "title": "Classes & Objects",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "05-writing-classes"
-      },
-      "levels": {
-        "L1": "Instantiate objects and access fields/methods.",
-        "L2": "Design a class with state and behavior; enforce encapsulation.",
-        "L3": "Decompose a system into cooperating classes with clear contracts."
-      },
-      "prerequisites": [
-        "programming/variables",
-        "programming/methods"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "oop/inheritance",
-      "path": "skills/oop/inheritance/index.md",
-      "title": "Inheritance",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "09-inheritance"
-      },
-      "levels": {
-        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
-        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
-        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
-      },
-      "prerequisites": [
-        "oop/classes-objects",
-        "programming/methods"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "programming/arrays",
-      "path": "skills/programming/arrays/index.md",
-      "title": "Arrays",
+      "id": "programming/variables",
+      "title": "Variables & Types",
       "category": "programming",
       "apAlignment": {
-        "csaUnit": "06-arrays"
+        "csaUnit": "01-primitive-types"
       },
-      "levels": {
-        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
-        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
-        "L3": "Design array-based models with invariants and clear ownership of state."
-      },
-      "prerequisites": [
-        "programming/variables",
-        "programming/iteration"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "draft"
     },
     {
       "id": "programming/conditionals",
-      "path": "skills/programming/conditionals/index.md",
       "title": "Conditionals",
       "category": "programming",
       "apAlignment": {
         "csaUnit": "03-booleans-if",
         "cspBigIdea": "Algorithms & Programming"
       },
-      "levels": {
-        "L1": "Write simple if/else statements using boolean expressions.",
-        "L2": "Combine logical operators; structure nested conditionals for clarity.",
-        "L3": "Refactor complex conditionals using guard clauses or polymorphism."
-      },
-      "prerequisites": [
-        "programming/variables"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "draft"
     },
     {
       "id": "programming/iteration",
-      "path": "skills/programming/iteration/index.md",
       "title": "Iteration",
       "category": "programming",
       "apAlignment": {
         "csaUnit": "04-iteration",
         "cspBigIdea": "Algorithms & Programming"
       },
-      "levels": {
-        "L1": "Use counted and conditional loops to repeat actions a fixed/unknown number of times.",
-        "L2": "Traverse arrays/collections safely; avoid off-by-one; choose while/for/for-each appropriately.",
-        "L3": "Restructure nested loops for complexity/clarity; explain loop invariants."
-      },
-      "prerequisites": [
-        "programming/variables",
-        "programming/conditionals"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "current"
     },
     {
-      "id": "tooling/git-basics",
-      "path": "skills/tooling/git-basics/index.md",
-      "title": "Git & GitHub Basics",
-      "category": "tooling",
-      "apAlignment": {},
-      "levels": {
-        "L1": "Clone/fork, commit, push; submit via GitHub link.",
-        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
-        "L3": "Structure repos; write actionable commits and READMEs."
+      "id": "programming/arrays",
+      "title": "Arrays",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "06-arrays"
       },
-      "prerequisites": [],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "current"
+    },
+    {
+      "id": "programming/methods",
+      "title": "Methods & Parameters",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "status": "draft"
+    },
+    {
+      "id": "oop/classes-objects",
+      "title": "Classes & Objects",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "status": "current"
+    },
+    {
+      "id": "oop/inheritance",
+      "title": "Inheritance",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "status": "current"
+    },
+    {
+      "id": "oop/polymorphism",
+      "title": "Polymorphism",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "status": "draft"
     },
     {
       "id": "web/html-basics",
-      "path": "skills/web/html-basics/index.md",
       "title": "HTML Basics",
       "category": "web",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
-      "levels": {
-        "L1": "Structure a page with semantic elements and valid nesting; link assets.",
-        "L2": "Compose multi-page sites with consistent layout and accessible markup.",
-        "L3": "Author reusable fragments; reason about document outline and ARIA basics."
+      "status": "current"
+    },
+    {
+      "id": "web/css-basics",
+      "title": "CSS Basics",
+      "category": "web",
+      "apAlignment": {
+        "cspBigIdea": "Computer Systems & Networks"
       },
-      "prerequisites": [],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "draft"
     },
     {
       "id": "web/hyperlink-graphs",
-      "path": "skills/web/hyperlink-graphs/index.md",
       "title": "Hyperlink & Navigation",
       "category": "web",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
-      "levels": {
-        "L1": "Create internal/external links and a simple branching structure.",
-        "L2": "Design navigable graphs (breadcrumbs, back-links) minimizing dead ends.",
-        "L3": "Model complex flows; visualize and test link graphs for UX clarity."
-      },
-      "prerequisites": [
-        "web/html-basics"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "current"
+    },
+    {
+      "id": "tooling/git-basics",
+      "title": "Git & GitHub Basics",
+      "category": "tooling",
+      "apAlignment": {},
+      "status": "current"
     }
   ]
 }
