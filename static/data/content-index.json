@@ -89,7 +89,6 @@
           "level": 1
         }
       ],
-      "prerequisites": [],
       "status": "current",
       "tags": [
         "java",
@@ -134,7 +133,6 @@
           "level": 1
         }
       ],
-      "prerequisites": [],
       "status": "current",
       "tags": [
         "html",
@@ -144,67 +142,68 @@
       ],
       "legacySource": "instructions/cyoa/",
       "lastUpdated": "2025-09-05"
+    },
+    {
+      "slug": "game-of-sticks",
+      "path": "projects/game-of-sticks/index.md",
+      "title": "Game of Sticks: Build an AI That Learns",
+      "layout": "project",
+      "courseFit": [
+        {
+          "course": "ai",
+          "unit": "02-reinforcement-learning"
+        },
+        {
+          "course": "csp",
+          "unit": "03-algorithms-programming"
+        },
+        {
+          "course": "math",
+          "unit": "discrete-probability"
+        }
+      ],
+      "skillsRequired": [
+        {
+          "id": "programming/iteration",
+          "level": 1
+        },
+        {
+          "id": "programming/conditionals",
+          "level": 1
+        }
+      ],
+      "skillsSuggested": [
+        {
+          "id": "programming/arrays",
+          "level": 1
+        },
+        {
+          "id": "tooling/debugging",
+          "level": 1
+        }
+      ],
+      "status": "current",
+      "tags": [
+        "ai",
+        "game",
+        "interactive",
+        "learning"
+      ],
+      "lastUpdated": "2025-01-14"
     }
   ],
   "skills": [
     {
-      "id": "oop/classes-objects",
-      "path": "skills/oop/classes-objects/index.md",
-      "title": "Classes & Objects",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "05-writing-classes"
-      },
-      "levels": {
-        "L1": "Instantiate objects and access fields/methods.",
-        "L2": "Design a class with state and behavior; enforce encapsulation.",
-        "L3": "Decompose a system into cooperating classes with clear contracts."
-      },
-      "prerequisites": [
-        "programming/variables",
-        "programming/methods"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "oop/inheritance",
-      "path": "skills/oop/inheritance/index.md",
-      "title": "Inheritance",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "09-inheritance"
-      },
-      "levels": {
-        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
-        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
-        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
-      },
-      "prerequisites": [
-        "oop/classes-objects",
-        "programming/methods"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "programming/arrays",
-      "path": "skills/programming/arrays/index.md",
-      "title": "Arrays",
+      "id": "programming/variables",
+      "path": "skills/programming/variables/index.md",
+      "title": "Variables & Types",
       "category": "programming",
       "apAlignment": {
-        "csaUnit": "06-arrays"
+        "csaUnit": "01-primitive-types"
       },
-      "levels": {
-        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
-        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
-        "L3": "Design array-based models with invariants and clear ownership of state."
-      },
-      "prerequisites": [
-        "programming/variables",
-        "programming/iteration"
-      ],
-      "status": "current",
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
       "lastUpdated": "2025-09-05"
     },
     {
@@ -249,18 +248,89 @@
       "lastUpdated": "2025-09-05"
     },
     {
-      "id": "tooling/git-basics",
-      "path": "skills/tooling/git-basics/index.md",
-      "title": "Git & GitHub Basics",
-      "category": "tooling",
-      "apAlignment": {},
-      "levels": {
-        "L1": "Clone/fork, commit, push; submit via GitHub link.",
-        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
-        "L3": "Structure repos; write actionable commits and READMEs."
+      "id": "programming/arrays",
+      "path": "skills/programming/arrays/index.md",
+      "title": "Arrays",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "06-arrays"
       },
-      "prerequisites": [],
+      "levels": {
+        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
+        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
+        "L3": "Design array-based models with invariants and clear ownership of state."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/iteration"
+      ],
       "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "programming/methods",
+      "path": "skills/programming/methods/index.md",
+      "title": "Methods & Parameters",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "oop/classes-objects",
+      "path": "skills/oop/classes-objects/index.md",
+      "title": "Classes & Objects",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "levels": {
+        "L1": "Instantiate objects and access fields/methods.",
+        "L2": "Design a class with state and behavior; enforce encapsulation.",
+        "L3": "Decompose a system into cooperating classes with clear contracts."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "oop/inheritance",
+      "path": "skills/oop/inheritance/index.md",
+      "title": "Inheritance",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "levels": {
+        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
+        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
+        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
+      },
+      "prerequisites": [
+        "oop/classes-objects",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "oop/polymorphism",
+      "path": "skills/oop/polymorphism/index.md",
+      "title": "Polymorphism",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
       "lastUpdated": "2025-09-05"
     },
     {
@@ -281,6 +351,19 @@
       "lastUpdated": "2025-09-05"
     },
     {
+      "id": "web/css-basics",
+      "path": "skills/web/css-basics/index.md",
+      "title": "CSS Basics",
+      "category": "web",
+      "apAlignment": {
+        "cspBigIdea": "Computer Systems & Networks"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05"
+    },
+    {
       "id": "web/hyperlink-graphs",
       "path": "skills/web/hyperlink-graphs/index.md",
       "title": "Hyperlink & Navigation",
@@ -298,6 +381,23 @@
       ],
       "status": "current",
       "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "tooling/git-basics",
+      "path": "skills/tooling/git-basics/index.md",
+      "title": "Git & GitHub Basics",
+      "category": "tooling",
+      "apAlignment": {},
+      "levels": {
+        "L1": "Clone/fork, commit, push; submit via GitHub link.",
+        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
+        "L3": "Structure repos; write actionable commits and READMEs."
+      },
+      "prerequisites": [],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     }
-  ]
+  ],
+  "generated": "2025-09-05T19:38:43.663Z",
+  "version": "1.0"
 }
