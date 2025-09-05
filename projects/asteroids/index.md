@@ -1,5 +1,6 @@
 ---
 title: "Asteroids"
+layout: project
 courseFit:
   - { course: "csa", unit: "09-inheritance" }
 skillsRequired:

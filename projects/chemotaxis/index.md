@@ -1,5 +1,6 @@
 ---
 title: "Chemotaxis"
+layout: project
 courseFit:
   - { course: "csa", unit: "06-arrays" }
 skillsRequired:

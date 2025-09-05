@@ -4,6 +4,7 @@
       "slug": "asteroids",
       "path": "projects/asteroids/index.md",
       "title": "Asteroids",
+      "layout": "project",
       "courseFit": [
         {
           "course": "csa",
@@ -59,6 +60,7 @@
       "slug": "chemotaxis",
       "path": "projects/chemotaxis/index.md",
       "title": "Chemotaxis",
+      "layout": "project",
       "courseFit": [
         {
           "course": "csa",
@@ -103,6 +105,7 @@
       "slug": "cyoa",
       "path": "projects/cyoa/index.md",
       "title": "Choose Your Own Adventure (CYOA)",
+      "layout": "project",
       "courseFit": [
         {
           "course": "csp",
@@ -398,6 +401,6 @@
       "lastUpdated": "2025-09-05"
     }
   ],
-  "generated": "2025-09-05T19:38:43.663Z",
+  "generated": "2025-09-05T19:41:46.178Z",
   "version": "1.0"
 }
