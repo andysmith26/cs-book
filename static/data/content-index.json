@@ -197,23 +197,163 @@
   ],
   "skills": [
     {
-      "id": "programming/variables",
-      "path": "skills/programming/variables/index.md",
-      "title": "Variables & Types",
-      "category": "programming",
+      "id": "ai/reinforcement-learning",
+      "title": "Reinforcement Learning Basics",
+      "category": "ai",
+      "path": "skills/ai/reinforcement-learning/index.js",
+      "description": "Implement learning through trial, error, and reward",
       "apAlignment": {
-        "csaUnit": "01-primitive-types"
+        "cspBigIdea": "Algorithms",
+        "aiStandard": "K12-AI.3-5.DL.1"
       },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05"
+      "levels": {
+        "1": "Understand reward/punishment concept",
+        "2": "Implement basic Q-learning or probability adjustment",
+        "3": "Optimize learning rates and exploration strategies",
+        "4": "Apply RL to complex environments"
+      },
+      "prerequisites": [
+        "math/probability-basics",
+        "programming/arrays"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05",
+      "learn": {
+        "explainer": "\n      Reinforcement learning: AI learns by trying actions and \n      remembering what worked. Like training a pet - reward \n      good behavior, discourage bad behavior.\n    ",
+        "interactiveDemo": "rl-ball-and-hat-simulator"
+      },
+      "practice": {
+        "shortDrill": "reward-calculation",
+        "conceptCheck": "identify-rl-components",
+        "miniTask": "train-simple-agent"
+      },
+      "projectsUsing": [
+        "game-of-sticks",
+        "smart-rockets",
+        "maze-solver"
+      ],
+      "source": "javascript",
+      "hasContent": true
+    },
+    {
+      "id": "math/modular-arithmetic",
+      "title": "Modular Arithmetic",
+      "category": "math",
+      "path": "skills/math/modular-arithmetic/index.js",
+      "description": "Use remainder operations to identify patterns and cycles in sequences",
+      "apAlignment": {
+        "cspBigIdea": "Algorithms",
+        "mathStandard": "HSA.APR.1"
+      },
+      "levels": {
+        "1": "Calculate remainders and identify when remainder is 0",
+        "2": "Use modular arithmetic to find patterns in game positions",
+        "3": "Apply modular arithmetic to cryptography or hash functions",
+        "4": "Prove properties using modular arithmetic"
+      },
+      "prerequisites": [
+        "programming/operators",
+        "math/division"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05",
+      "learn": {
+        "explainer": "\n      Modular arithmetic finds the remainder after division.\n      17 mod 4 = 1 (because 17 = 4×4 + 1)\n      \n      In Game of Sticks, positions where (n-1) mod 4 = 0 are losing positions!\n    ",
+        "references": [
+          {
+            "title": "Khan Academy: Modular Arithmetic",
+            "url": "..."
+          },
+          {
+            "title": "Interactive Modulo Visualizer",
+            "url": "..."
+          }
+        ]
+      },
+      "practice": {
+        "shortDrill": "modulo-calculator-drill",
+        "apStyle": "pattern-finding-mcq",
+        "miniTask": "find-cycle-length"
+      },
+      "projectsUsing": [
+        "game-of-sticks",
+        "cryptography-basics",
+        "hash-tables"
+      ],
+      "source": "javascript",
+      "hasContent": true
+    },
+    {
+      "id": "oop/classes-objects",
+      "title": "Classes & Objects",
+      "category": "oop",
+      "path": "skills/oop/classes-objects/index.md",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "levels": {
+        "L1": "Instantiate objects and access fields/methods.",
+        "L2": "Design a class with state and behavior; enforce encapsulation.",
+        "L3": "Decompose a system into cooperating classes with clear contracts."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
+    },
+    {
+      "id": "oop/inheritance",
+      "title": "Inheritance",
+      "category": "oop",
+      "path": "skills/oop/inheritance/index.md",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "levels": {
+        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
+        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
+        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
+      },
+      "prerequisites": [
+        "oop/classes-objects",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
+    },
+    {
+      "id": "programming/arrays",
+      "title": "Arrays",
+      "category": "programming",
+      "path": "skills/programming/arrays/index.md",
+      "apAlignment": {
+        "csaUnit": "06-arrays"
+      },
+      "levels": {
+        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
+        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
+        "L3": "Design array-based models with invariants and clear ownership of state."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/iteration"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
     },
     {
       "id": "programming/conditionals",
-      "path": "skills/programming/conditionals/index.md",
       "title": "Conditionals",
       "category": "programming",
+      "path": "skills/programming/conditionals/index.md",
       "apAlignment": {
         "csaUnit": "03-booleans-if",
         "cspBigIdea": "Algorithms & Programming"
@@ -227,13 +367,15 @@
         "programming/variables"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
     },
     {
       "id": "programming/iteration",
-      "path": "skills/programming/iteration/index.md",
       "title": "Iteration",
       "category": "programming",
+      "path": "skills/programming/iteration/index.md",
       "apAlignment": {
         "csaUnit": "04-iteration",
         "cspBigIdea": "Algorithms & Programming"
@@ -248,99 +390,32 @@
         "programming/conditionals"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
     },
     {
-      "id": "programming/arrays",
-      "path": "skills/programming/arrays/index.md",
-      "title": "Arrays",
-      "category": "programming",
-      "apAlignment": {
-        "csaUnit": "06-arrays"
-      },
+      "id": "tooling/git-basics",
+      "title": "Git & GitHub Basics",
+      "category": "tooling",
+      "path": "skills/tooling/git-basics/index.md",
+      "apAlignment": {},
       "levels": {
-        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
-        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
-        "L3": "Design array-based models with invariants and clear ownership of state."
+        "L1": "Clone/fork, commit, push; submit via GitHub link.",
+        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
+        "L3": "Structure repos; write actionable commits and READMEs."
       },
-      "prerequisites": [
-        "programming/variables",
-        "programming/iteration"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "programming/methods",
-      "path": "skills/programming/methods/index.md",
-      "title": "Methods & Parameters",
-      "category": "programming",
-      "apAlignment": {
-        "csaUnit": "05-writing-classes"
-      },
-      "levels": {},
       "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "oop/classes-objects",
-      "path": "skills/oop/classes-objects/index.md",
-      "title": "Classes & Objects",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "05-writing-classes"
-      },
-      "levels": {
-        "L1": "Instantiate objects and access fields/methods.",
-        "L2": "Design a class with state and behavior; enforce encapsulation.",
-        "L3": "Decompose a system into cooperating classes with clear contracts."
-      },
-      "prerequisites": [
-        "programming/variables",
-        "programming/methods"
-      ],
       "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "oop/inheritance",
-      "path": "skills/oop/inheritance/index.md",
-      "title": "Inheritance",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "09-inheritance"
-      },
-      "levels": {
-        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
-        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
-        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
-      },
-      "prerequisites": [
-        "oop/classes-objects",
-        "programming/methods"
-      ],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "oop/polymorphism",
-      "path": "skills/oop/polymorphism/index.md",
-      "title": "Polymorphism",
-      "category": "oop",
-      "apAlignment": {
-        "csaUnit": "09-inheritance"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
     },
     {
       "id": "web/html-basics",
-      "path": "skills/web/html-basics/index.md",
       "title": "HTML Basics",
       "category": "web",
+      "path": "skills/web/html-basics/index.md",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
@@ -351,26 +426,15 @@
       },
       "prerequisites": [],
       "status": "current",
-      "lastUpdated": "2025-09-05"
-    },
-    {
-      "id": "web/css-basics",
-      "path": "skills/web/css-basics/index.md",
-      "title": "CSS Basics",
-      "category": "web",
-      "apAlignment": {
-        "cspBigIdea": "Computer Systems & Networks"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
     },
     {
       "id": "web/hyperlink-graphs",
-      "path": "skills/web/hyperlink-graphs/index.md",
       "title": "Hyperlink & Navigation",
       "category": "web",
+      "path": "skills/web/hyperlink-graphs/index.md",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
@@ -383,24 +447,71 @@
         "web/html-basics"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "source": "markdown",
+      "hasContent": true
     },
     {
-      "id": "tooling/git-basics",
-      "path": "skills/tooling/git-basics/index.md",
-      "title": "Git & GitHub Basics",
-      "category": "tooling",
-      "apAlignment": {},
-      "levels": {
-        "L1": "Clone/fork, commit, push; submit via GitHub link.",
-        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
-        "L3": "Structure repos; write actionable commits and READMEs."
+      "id": "programming/variables",
+      "title": "Variables & Types",
+      "category": "programming",
+      "path": "skills/programming/variables/index.md",
+      "apAlignment": {
+        "csaUnit": "01-primitive-types"
       },
+      "levels": {},
       "prerequisites": [],
-      "status": "current",
-      "lastUpdated": "2025-09-05"
+      "status": "missing",
+      "lastUpdated": "2025-09-05",
+      "source": "catalog",
+      "hasContent": false
+    },
+    {
+      "id": "programming/methods",
+      "title": "Methods & Parameters",
+      "category": "programming",
+      "path": "skills/programming/methods/index.md",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05",
+      "source": "catalog",
+      "hasContent": false
+    },
+    {
+      "id": "oop/polymorphism",
+      "title": "Polymorphism",
+      "category": "oop",
+      "path": "skills/oop/polymorphism/index.md",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05",
+      "source": "catalog",
+      "hasContent": false
+    },
+    {
+      "id": "web/css-basics",
+      "title": "CSS Basics",
+      "category": "web",
+      "path": "skills/web/css-basics/index.md",
+      "apAlignment": {
+        "cspBigIdea": "Computer Systems & Networks"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05",
+      "source": "catalog",
+      "hasContent": false
     }
   ],
-  "generated": "2025-09-05T20:05:41.049Z",
+  "generated": "2025-09-05T20:12:37.444Z",
   "version": "1.0"
 }

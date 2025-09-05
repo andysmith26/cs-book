@@ -7,7 +7,8 @@
     "build": "npm run build:index && vite build",
     "preview": "vite preview",
     "build:index": "node scripts/build-content-index.mjs",
-    "check-links": "node scripts/check-links.mjs || true"
+    "check-links": "node scripts/check-links.mjs || true",
+    "test:schema": "npm run build:index && node scripts/test-skill-schema.mjs"
   },
   "dependencies": {
     "@sveltejs/adapter-static": "^3.0.0",
