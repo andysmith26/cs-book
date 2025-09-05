@@ -62,54 +62,8 @@ function scanProjects() {
   return projects;
 }
 
-// Import skill schema helper functions (will be transpiled from TypeScript manually)
+// Simplified skill schema helpers for JavaScript-only skills
 const skillSchemaHelpers = {
-  normalizeLevels: function(levels) {
-    if (!levels) return {};
-    
-    const normalized = {};
-    
-    // Handle numbered keys (1, 2, 3, 4) from JS files
-    for (let i = 1; i <= 4; i++) {
-      if (levels[i]) {
-        normalized[i.toString()] = levels[i];
-      }
-    }
-    
-    // Handle L1, L2, L3 keys from markdown files
-    ['L1', 'L2', 'L3'].forEach(key => {
-      if (levels[key]) {
-        normalized[key] = levels[key];
-      }
-    });
-    
-    // Handle any other string keys
-    Object.keys(levels).forEach(key => {
-      if (!['1', '2', '3', '4', 'L1', 'L2', 'L3'].includes(key)) {
-        normalized[key] = levels[key];
-      }
-    });
-    
-    return normalized;
-  },
-  
-  createSkillFromMarkdown: function(id, metadata, filePath) {
-    return {
-      id,
-      title: metadata.title || id.split('/').pop() || 'Untitled',
-      category: metadata.category || id.split('/')[0] || 'uncategorized',
-      path: filePath,
-      description: metadata.description,
-      apAlignment: metadata.apAlignment || {},
-      levels: this.normalizeLevels(metadata.levels),
-      prerequisites: metadata.prerequisites || [],
-      status: metadata.status || 'draft',
-      lastUpdated: metadata.lastUpdated,
-      source: 'markdown',
-      hasContent: true
-    };
-  },
-  
   createSkillFromJavaScript: function(skillObject, filePath) {
     return {
       id: skillObject.id,
@@ -118,14 +72,13 @@ const skillSchemaHelpers = {
       path: filePath,
       description: skillObject.description,
       apAlignment: skillObject.apAlignment || {},
-      levels: this.normalizeLevels(skillObject.levels),
+      levels: skillObject.levels || {},
       prerequisites: skillObject.prerequisites || [],
       status: skillObject.status || 'current',
       lastUpdated: new Date().toISOString().split('T')[0],
       learn: skillObject.learn,
       practice: skillObject.practice,
       projectsUsing: skillObject.projectsUsing || [],
-      source: 'javascript',
       hasContent: true
     };
   },
@@ -141,7 +94,6 @@ const skillSchemaHelpers = {
       prerequisites: [],
       status: 'missing',
       lastUpdated: new Date().toISOString().split('T')[0],
-      source: 'catalog',
       hasContent: false
     };
   }
@@ -192,56 +144,36 @@ function scanSkills() {
     }
   }
 
-  // Scan for all skill files recursively
+  // Scan for JavaScript skill files only
   const scanSkillsRecursively = async (dir, prefix = '') => {
     const items = fs.readdirSync(dir, { withFileTypes: true });
     
     for (const item of items) {
       if (item.isDirectory() && !item.name.startsWith('_')) {
         await scanSkillsRecursively(path.join(dir, item.name), prefix ? `${prefix}/${item.name}` : item.name);
-      } else if (item.name === 'index.md' || item.name === 'index.js') {
+      } else if (item.name === 'index.js') {
         const skillId = prefix;
         if (!skillId) continue; // Skip root level files
         
         const filePath = path.join(dir, item.name);
-        const relativeFilePath = `skills/${skillId}/${item.name}`;
+        const relativeFilePath = `skills/${skillId}/index.js`;
         
         // Check if already processed
         if (skills.find(s => s.id === skillId)) {
           continue;
         }
         
-        if (item.name === 'index.md') {
-          // Process markdown skill
-          try {
-            const content = fs.readFileSync(filePath, 'utf8');
-            const { data: metadata } = matter(content);
-            
-            const skill = skillSchemaHelpers.createSkillFromMarkdown(skillId, metadata, relativeFilePath);
+        // Process JavaScript skill
+        try {
+          const skillObject = await loadJavaScriptSkill(filePath);
+          if (skillObject) {
+            const skill = skillSchemaHelpers.createSkillFromJavaScript(skillObject, relativeFilePath);
             skills.push(skill);
-          } catch (error) {
-            console.warn(`Error parsing markdown skill ${skillId}:`, error.message);
-            
-            // Try to fall back to catalog info
-            const catalogEntry = catalogSkills.find(s => s.id === skillId);
-            if (catalogEntry) {
-              const skill = skillSchemaHelpers.createSkillFromCatalog(catalogEntry, relativeFilePath);
-              skills.push(skill);
-            }
+          } else {
+            console.warn(`No valid skill export found in ${filePath}`);
           }
-        } else if (item.name === 'index.js') {
-          // Process JavaScript skill
-          try {
-            const skillObject = await loadJavaScriptSkill(filePath);
-            if (skillObject) {
-              const skill = skillSchemaHelpers.createSkillFromJavaScript(skillObject, relativeFilePath);
-              skills.push(skill);
-            } else {
-              console.warn(`No valid skill export found in ${filePath}`);
-            }
-          } catch (error) {
-            console.warn(`Error parsing JavaScript skill ${skillId}:`, error.message);
-          }
+        } catch (error) {
+          console.warn(`Error parsing JavaScript skill ${skillId}:`, error.message);
         }
       }
     }
@@ -254,7 +186,7 @@ function scanSkills() {
         console.warn(`Skill file not found for ${catalogEntry.id}`);
         const skill = skillSchemaHelpers.createSkillFromCatalog(
           catalogEntry, 
-          `skills/${catalogEntry.id}/index.md`
+          `skills/${catalogEntry.id}/index.js`
         );
         skills.push(skill);
       }
@@ -275,7 +207,7 @@ function generateContentIndex() {
       projects,
       skills,
       generated: new Date().toISOString(),
-      version: '1.0'
+      version: '2.0'
     };
 
     // Ensure static/data directory exists
@@ -290,10 +222,7 @@ function generateContentIndex() {
 
     console.log(`✓ Generated content index with ${projects.length} projects and ${skills.length} skills`);
     console.log(`  Projects: ${projects.map(p => p.slug).join(', ')}`);
-    console.log(`  Skills by source: ${JSON.stringify(skills.reduce((acc, s) => {
-      acc[s.source] = (acc[s.source] || 0) + 1;
-      return acc;
-    }, {}))}`);
+    console.log(`  All skills are JavaScript-based`);
     console.log(`  Output: ${outputPath}`);
   });
 }

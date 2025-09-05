@@ -1,15 +1,15 @@
-# Unified Skill Schema
+# JavaScript Skill Schema
 
-This document describes the unified skill schema that supports both `index.md` (markdown) and `index.js` (JavaScript) skill files.
+This document describes the JavaScript-based skill schema for WoodstockCS skills.
 
 ## Overview
 
-The WoodstockCS site now supports skills defined in two formats:
+All skills are defined as JavaScript modules that export skill objects. This format provides:
 
-1. **Markdown format** (`index.md`): YAML frontmatter with markdown content
-2. **JavaScript format** (`index.js`): Rich JavaScript objects with embedded content
-
-The unified schema normalizes both formats into a consistent structure while preserving the unique features of each format.
+- **Rich Content**: Support for complex learning materials, explanations, and practice activities
+- **Structured Data**: Programmatic access to skill metadata and relationships
+- **Type Safety**: Clear schema definitions for consistency
+- **Future Extensibility**: Easy to add new fields and functionality
 
 ## Schema Structure
 
@@ -21,37 +21,25 @@ interface SkillSchema {
   path: string;                  // Required: file path
   
   // Core metadata
-  description?: string;          // Rich description (mainly from JS files)
+  description?: string;          // Rich description
   apAlignment?: APAlignment;     // AP/CSA/CSP alignment
-  levels?: SkillLevel;          // Learning levels (normalized)
+  levels?: SkillLevel;          // Learning levels (1, 2, 3, 4)
   prerequisites?: string[];      // Required prerequisite skills
   status: SkillStatus;          // draft | current | deprecated | missing
-  lastUpdated?: string;         // ISO date string
   
-  // Rich content (primarily from JS files)
+  // Rich content
   learn?: LearnSection;         // Learning resources and explanations
   practice?: PracticeSection;   // Practice activities
   projectsUsing?: string[];     // Projects that use this skill
   
-  // Source tracking
-  source: 'markdown' | 'javascript' | 'catalog';
-  hasContent?: boolean;         // Whether actual content exists
+  hasContent: boolean;          // Whether actual content exists
 }
 ```
 
-## Level Normalization
+## Level System
 
-The schema normalizes different level formats:
+Skills use numbered levels (1, 2, 3, 4) to indicate increasing complexity:
 
-### Markdown Format (L1, L2, L3)
-```yaml
-levels:
-  L1: 'Write simple if/else statements using boolean expressions.'
-  L2: 'Combine logical operators; structure nested conditionals for clarity.'
-  L3: 'Refactor complex conditionals using guard clauses or polymorphism.'
-```
-
-### JavaScript Format (1, 2, 3, 4)
 ```javascript
 levels: {
   1: 'Calculate remainders and identify when remainder is 0',
@@ -61,40 +49,13 @@ levels: {
 }
 ```
 
-Both are preserved in the unified schema as-is, allowing consumers to handle the different formats appropriately.
+## File Format
 
-## File Formats
-
-### Markdown Skills (`index.md`)
-
-```markdown
----
-title: 'Conditionals'
-category: 'programming'
-apAlignment:
-  csaUnit: '03-booleans-if'
-  cspBigIdea: 'Algorithms & Programming'
-levels:
-  L1: 'Write simple if/else statements using boolean expressions.'
-  L2: 'Combine logical operators; structure nested conditionals for clarity.'
-  L3: 'Refactor complex conditionals using guard clauses or polymorphism.'
-prerequisites: ['programming/variables']
-status: 'current'
-lastUpdated: '2025-09-05'
----
-
-### Learn
-- If/else basics in Java
-- Boolean operators (&&, ||, !)
-
-### Practice
-- Write a method that returns different strings based in input value
-- Implement a simple number-guessing game
-```
-
-### JavaScript Skills (`index.js`)
+All skills are defined in `skills/category/skill-name/index.js` files:
 
 ```javascript
+// skills/math/modular-arithmetic/index.js
+
 export const modularArithmeticSkill = {
   id: 'math/modular-arithmetic',
   title: 'Modular Arithmetic',
@@ -140,40 +101,72 @@ export const modularArithmeticSkill = {
 };
 ```
 
+## Rich Content Sections
+
+### Learn Section
+Provides learning resources and explanations:
+
+```javascript
+learn: {
+  explainer: `Multi-line explanation with examples...`,
+  references: [
+    { title: 'Resource Title', url: 'https://...' }
+  ],
+  interactiveDemo: 'demo-component-name'
+}
+```
+
+### Practice Section
+Defines practice activities:
+
+```javascript
+practice: {
+  shortDrill: 'quick-practice-activity',
+  conceptCheck: 'understanding-check',
+  miniTask: 'small-coding-task',
+  projectTask: 'larger-project-based-task',
+  apStyle: 'ap-exam-style-question'
+}
+```
+
 ## Build Process
 
-The build script (`scripts/build-content-index.mjs`) now:
+The build script (`scripts/build-content-index.mjs`):
 
-1. **Scans for both formats**: Looks for both `index.md` and `index.js` files
-2. **Processes JavaScript**: Uses dynamic imports to load and validate JS skill exports
-3. **Normalizes data**: Converts both formats into the unified schema
-4. **Preserves rich content**: Maintains `learn`, `practice`, and `projectsUsing` sections from JS files
-5. **Tracks sources**: Records whether each skill came from markdown, JavaScript, or catalog
+1. **Scans for JavaScript files**: Looks for `index.js` files in the skills directory
+2. **Loads and validates**: Uses dynamic imports to load skill objects
+3. **Generates index**: Creates a unified content index for consumption
 
 ## Usage
 
-To add a new skill:
+### Adding a New Skill
 
-### Simple Skill (Markdown)
-Create `skills/category/skill-name/index.md` with frontmatter.
-
-### Rich Skill (JavaScript)
-Create `skills/category/skill-name/index.js` with an exported skill object.
+1. Create directory: `skills/category/skill-name/`
+2. Create file: `skills/category/skill-name/index.js`
+3. Export skill object with required fields
+4. Run `npm run build:index` to rebuild the index
 
 ### Validation
-Run `npm run build:index` to rebuild the index and `node scripts/test-skill-schema.mjs` to validate.
+
+Run the build script to validate all skills:
+
+```bash
+npm run build:index
+```
+
+Any validation errors will be reported in the console.
 
 ## Benefits
 
-1. **Backward Compatibility**: Existing markdown skills continue to work unchanged
-2. **Rich Content Support**: JavaScript skills can include complex learning materials and practice activities
-3. **Consistent API**: All skills are normalized into a predictable structure
-4. **Source Tracking**: Consumers can handle different source types appropriately
-5. **Future Extensibility**: Easy to add new skill formats or fields
+1. **Consistent Format**: Single format eliminates complexity and confusion
+2. **Rich Content**: Support for detailed explanations, examples, and practice activities
+3. **Programmatic Access**: Easy to consume and manipulate skill data
+4. **Type Safety**: Clear schema definitions prevent errors
+5. **Future-Proof**: Easy to extend with new fields and functionality
 
-## Migration
+## Migration Complete
 
-No migration is required. The unified schema:
-- Preserves all existing markdown skills as-is
-- Automatically includes JavaScript skills that were previously ignored
-- Maintains backward compatibility with existing consumers
+All existing skills have been converted to the JavaScript format, providing:
+- Consistent structure across all skills
+- Enhanced content capabilities
+- Simplified build and validation process

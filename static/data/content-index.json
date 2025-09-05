@@ -232,7 +232,6 @@
         "smart-rockets",
         "maze-solver"
       ],
-      "source": "javascript",
       "hasContent": true
     },
     {
@@ -280,21 +279,21 @@
         "cryptography-basics",
         "hash-tables"
       ],
-      "source": "javascript",
       "hasContent": true
     },
     {
       "id": "oop/classes-objects",
       "title": "Classes & Objects",
       "category": "oop",
-      "path": "skills/oop/classes-objects/index.md",
+      "path": "skills/oop/classes-objects/index.js",
+      "description": "Create and use classes to model objects with state and behavior",
       "apAlignment": {
         "csaUnit": "05-writing-classes"
       },
       "levels": {
-        "L1": "Instantiate objects and access fields/methods.",
-        "L2": "Design a class with state and behavior; enforce encapsulation.",
-        "L3": "Decompose a system into cooperating classes with clear contracts."
+        "1": "Instantiate objects and access fields/methods.",
+        "2": "Design a class with state and behavior; enforce encapsulation.",
+        "3": "Decompose a system into cooperating classes with clear contracts."
       },
       "prerequisites": [
         "programming/variables",
@@ -302,21 +301,43 @@
       ],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Classes are blueprints for creating objects. An object is an instance of a class\n      that has its own state (fields) and behavior (methods).\n      \n      In Java: class Car { ... }  →  Car myCar = new Car();\n    ",
+        "references": [
+          {
+            "title": "Java class & object basics",
+            "url": "https://docs.oracle.com/javase/tutorial/java/javaOO/"
+          },
+          {
+            "title": "Greenfoot/Processing docs: creating objects",
+            "url": "https://www.greenfoot.org/doc"
+          }
+        ]
+      },
+      "practice": {
+        "conceptCheck": "identify-class-vs-object",
+        "miniTask": "write-simple-car-class",
+        "projectTask": "design-cooperating-classes"
+      },
+      "projectsUsing": [
+        "greenfoot-scenarios",
+        "processing-animations"
+      ],
       "hasContent": true
     },
     {
       "id": "oop/inheritance",
       "title": "Inheritance",
       "category": "oop",
-      "path": "skills/oop/inheritance/index.md",
+      "path": "skills/oop/inheritance/index.js",
+      "description": "Use inheritance to create specialized classes that extend base functionality",
       "apAlignment": {
         "csaUnit": "09-inheritance"
       },
       "levels": {
-        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
-        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
-        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
+        "1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
+        "2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
+        "3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
       },
       "prerequisites": [
         "oop/classes-objects",
@@ -324,21 +345,43 @@
       ],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Inheritance lets you create specialized classes based on existing classes.\n      The subclass inherits all non-private fields and methods from the superclass\n      and can override methods to change behavior.\n      \n      Example: class Student extends Person { ... }\n    ",
+        "references": [
+          {
+            "title": "Official Java tutorials on inheritance",
+            "url": "https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html"
+          },
+          {
+            "title": "Greenfoot docs: subclassing Actor",
+            "url": "https://www.greenfoot.org/doc"
+          }
+        ]
+      },
+      "practice": {
+        "conceptCheck": "inheritance-vs-composition",
+        "miniTask": "extend-actor-add-movement",
+        "projectTask": "refactor-similar-classes-superclass"
+      },
+      "projectsUsing": [
+        "greenfoot-scenarios",
+        "game-entities"
+      ],
       "hasContent": true
     },
     {
       "id": "programming/arrays",
       "title": "Arrays",
       "category": "programming",
-      "path": "skills/programming/arrays/index.md",
+      "path": "skills/programming/arrays/index.js",
+      "description": "Store and manipulate collections of data using arrays",
       "apAlignment": {
         "csaUnit": "06-arrays"
       },
       "levels": {
-        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
-        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
-        "L3": "Design array-based models with invariants and clear ownership of state."
+        "1": "Declare, allocate, index, and update arrays of primitives/objects.",
+        "2": "Traverse with indices and for-each; write search/count/transform patterns.",
+        "3": "Design array-based models with invariants and clear ownership of state."
       },
       "prerequisites": [
         "programming/variables",
@@ -346,44 +389,86 @@
       ],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Arrays store multiple values of the same type in a single variable.\n      Access elements by index: arr[0] is the first element.\n      Arrays have fixed size once created: int[] numbers = new int[10];\n    ",
+        "references": [
+          {
+            "title": "Array declaration and traversal patterns",
+            "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html"
+          }
+        ]
+      },
+      "practice": {
+        "shortDrill": "array-indexing-practice",
+        "miniTask": "reverse-array-in-place",
+        "projectTask": "compute-running-totals"
+      },
+      "projectsUsing": [
+        "data-analysis",
+        "game-high-scores",
+        "sorting-algorithms"
+      ],
       "hasContent": true
     },
     {
       "id": "programming/conditionals",
       "title": "Conditionals",
       "category": "programming",
-      "path": "skills/programming/conditionals/index.md",
+      "path": "skills/programming/conditionals/index.js",
+      "description": "Control program flow using boolean expressions and conditional statements",
       "apAlignment": {
         "csaUnit": "03-booleans-if",
         "cspBigIdea": "Algorithms & Programming"
       },
       "levels": {
-        "L1": "Write simple if/else statements using boolean expressions.",
-        "L2": "Combine logical operators; structure nested conditionals for clarity.",
-        "L3": "Refactor complex conditionals using guard clauses or polymorphism."
+        "1": "Write simple if/else statements using boolean expressions.",
+        "2": "Combine logical operators; structure nested conditionals for clarity.",
+        "3": "Refactor complex conditionals using guard clauses or polymorphism."
       },
       "prerequisites": [
         "programming/variables"
       ],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Conditionals let your program make decisions based on data.\n      Use if/else to execute different code paths:\n      \n      if (score >= 90) {\n          grade = \"A\";\n      } else if (score >= 80) {\n          grade = \"B\";\n      } else {\n          grade = \"C\";\n      }\n    ",
+        "references": [
+          {
+            "title": "If/else basics in Java",
+            "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html"
+          },
+          {
+            "title": "Boolean operators (&&, ||, !)",
+            "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html"
+          }
+        ]
+      },
+      "practice": {
+        "shortDrill": "boolean-expression-evaluation",
+        "miniTask": "method-returns-different-strings",
+        "projectTask": "number-guessing-game"
+      },
+      "projectsUsing": [
+        "text-adventure",
+        "grade-calculator",
+        "game-logic"
+      ],
       "hasContent": true
     },
     {
       "id": "programming/iteration",
       "title": "Iteration",
       "category": "programming",
-      "path": "skills/programming/iteration/index.md",
+      "path": "skills/programming/iteration/index.js",
+      "description": "Repeat actions using loops and understand iteration patterns",
       "apAlignment": {
         "csaUnit": "04-iteration",
         "cspBigIdea": "Algorithms & Programming"
       },
       "levels": {
-        "L1": "Use counted and conditional loops to repeat actions a fixed/unknown number of times.",
-        "L2": "Traverse arrays/collections safely; avoid off-by-one; choose while/for/for-each appropriately.",
-        "L3": "Restructure nested loops for complexity/clarity; explain loop invariants."
+        "1": "Use counted and conditional loops to repeat actions a fixed/unknown number of times.",
+        "2": "Traverse arrays/collections safely; avoid off-by-one; choose while/for/for-each appropriately.",
+        "3": "Restructure nested loops for complexity/clarity; explain loop invariants."
       },
       "prerequisites": [
         "programming/variables",
@@ -391,71 +476,154 @@
       ],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Loops let you repeat code efficiently. Three main types:\n      \n      for (int i = 0; i < 10; i++) { ... }     // counted loop\n      while (condition) { ... }                // conditional loop  \n      for (String item : collection) { ... }   // for-each loop\n    ",
+        "references": [
+          {
+            "title": "For/while/for-each overview",
+            "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html"
+          }
+        ]
+      },
+      "practice": {
+        "shortDrill": "loop-tracing-exercises",
+        "miniTask": "count-occurrences-in-array",
+        "projectTask": "animate-stepwise-random-walk"
+      },
+      "projectsUsing": [
+        "simulation",
+        "data-processing",
+        "animation"
+      ],
       "hasContent": true
     },
     {
       "id": "tooling/git-basics",
       "title": "Git & GitHub Basics",
       "category": "tooling",
-      "path": "skills/tooling/git-basics/index.md",
+      "path": "skills/tooling/git-basics/index.js",
+      "description": "Use Git for version control and GitHub for collaboration",
       "apAlignment": {},
       "levels": {
-        "L1": "Clone/fork, commit, push; submit via GitHub link.",
-        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
-        "L3": "Structure repos; write actionable commits and READMEs."
+        "1": "Clone/fork, commit, push; submit via GitHub link.",
+        "2": "Branch for features; open pull requests; resolve simple conflicts.",
+        "3": "Structure repos; write actionable commits and READMEs."
       },
       "prerequisites": [],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Git tracks changes to your code over time. Key workflow:\n      1. Clone a repository: git clone <url>\n      2. Make changes to files\n      3. Stage changes: git add .\n      4. Commit changes: git commit -m \"Description\"\n      5. Push to GitHub: git push\n    ",
+        "references": [
+          {
+            "title": "Git basics: add/commit/push",
+            "url": "https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository"
+          },
+          {
+            "title": "GitHub workflow guide",
+            "url": "https://guides.github.com/introduction/flow/"
+          }
+        ]
+      },
+      "practice": {
+        "conceptCheck": "git-workflow-understanding",
+        "miniTask": "make-change-on-branch-open-pr",
+        "projectTask": "structure-repo-with-readme"
+      },
+      "projectsUsing": [
+        "all-coding-projects"
+      ],
       "hasContent": true
     },
     {
       "id": "web/html-basics",
       "title": "HTML Basics",
       "category": "web",
-      "path": "skills/web/html-basics/index.md",
+      "path": "skills/web/html-basics/index.js",
+      "description": "Structure web pages using HTML elements and semantic markup",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
       "levels": {
-        "L1": "Structure a page with semantic elements and valid nesting; link assets.",
-        "L2": "Compose multi-page sites with consistent layout and accessible markup.",
-        "L3": "Author reusable fragments; reason about document outline and ARIA basics."
+        "1": "Structure a page with semantic elements and valid nesting; link assets.",
+        "2": "Compose multi-page sites with consistent layout and accessible markup.",
+        "3": "Author reusable fragments; reason about document outline and ARIA basics."
       },
       "prerequisites": [],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      HTML (HyperText Markup Language) structures web content using elements:\n      \n      <h1>Title</h1>\n      <p>Paragraph with <a href=\"url\">link</a></p>\n      <img src=\"image.jpg\" alt=\"Description\">\n      \n      Use semantic elements like <header>, <main>, <nav>, <article>\n    ",
+        "references": [
+          {
+            "title": "HTML elements and document structure",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          },
+          {
+            "title": "HTML validator",
+            "url": "https://validator.w3.org/"
+          }
+        ]
+      },
+      "practice": {
+        "conceptCheck": "semantic-vs-presentational-markup",
+        "miniTask": "build-simple-multi-section-page",
+        "projectTask": "validate-accessible-markup"
+      },
+      "projectsUsing": [
+        "personal-website",
+        "portfolio-site"
+      ],
       "hasContent": true
     },
     {
       "id": "web/hyperlink-graphs",
       "title": "Hyperlink & Navigation",
       "category": "web",
-      "path": "skills/web/hyperlink-graphs/index.md",
+      "path": "skills/web/hyperlink-graphs/index.js",
+      "description": "Design navigable website structures using hyperlinks and understanding information architecture",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
       "levels": {
-        "L1": "Create internal/external links and a simple branching structure.",
-        "L2": "Design navigable graphs (breadcrumbs, back-links) minimizing dead ends.",
-        "L3": "Model complex flows; visualize and test link graphs for UX clarity."
+        "1": "Create internal/external links and a simple branching structure.",
+        "2": "Design navigable graphs (breadcrumbs, back-links) minimizing dead ends.",
+        "3": "Model complex flows; visualize and test link graphs for UX clarity."
       },
       "prerequisites": [
         "web/html-basics"
       ],
       "status": "current",
       "lastUpdated": "2025-09-05",
-      "source": "markdown",
+      "learn": {
+        "explainer": "\n      Web navigation is about creating logical paths between pages:\n      \n      <a href=\"page.html\">Internal link</a>\n      <a href=\"https://example.com\">External link</a>\n      <a href=\"../parent/file.html\">Relative path</a>\n      \n      Think of your site as a graph where nodes are pages and edges are links.\n    ",
+        "references": [
+          {
+            "title": "Internal vs external links, relative paths",
+            "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks"
+          },
+          {
+            "title": "Information architecture basics",
+            "url": "https://www.usability.gov/what-and-why/information-architecture.html"
+          }
+        ]
+      },
+      "practice": {
+        "conceptCheck": "link-types-and-paths",
+        "miniTask": "turn-sketch-into-6-page-link-graph",
+        "projectTask": "design-complex-site-navigation"
+      },
+      "projectsUsing": [
+        "multi-page-website",
+        "documentation-site"
+      ],
       "hasContent": true
     },
     {
       "id": "programming/variables",
       "title": "Variables & Types",
       "category": "programming",
-      "path": "skills/programming/variables/index.md",
+      "path": "skills/programming/variables/index.js",
       "apAlignment": {
         "csaUnit": "01-primitive-types"
       },
@@ -463,14 +631,13 @@
       "prerequisites": [],
       "status": "missing",
       "lastUpdated": "2025-09-05",
-      "source": "catalog",
       "hasContent": false
     },
     {
       "id": "programming/methods",
       "title": "Methods & Parameters",
       "category": "programming",
-      "path": "skills/programming/methods/index.md",
+      "path": "skills/programming/methods/index.js",
       "apAlignment": {
         "csaUnit": "05-writing-classes"
       },
@@ -478,14 +645,13 @@
       "prerequisites": [],
       "status": "missing",
       "lastUpdated": "2025-09-05",
-      "source": "catalog",
       "hasContent": false
     },
     {
       "id": "oop/polymorphism",
       "title": "Polymorphism",
       "category": "oop",
-      "path": "skills/oop/polymorphism/index.md",
+      "path": "skills/oop/polymorphism/index.js",
       "apAlignment": {
         "csaUnit": "09-inheritance"
       },
@@ -493,14 +659,13 @@
       "prerequisites": [],
       "status": "missing",
       "lastUpdated": "2025-09-05",
-      "source": "catalog",
       "hasContent": false
     },
     {
       "id": "web/css-basics",
       "title": "CSS Basics",
       "category": "web",
-      "path": "skills/web/css-basics/index.md",
+      "path": "skills/web/css-basics/index.js",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
@@ -508,10 +673,9 @@
       "prerequisites": [],
       "status": "missing",
       "lastUpdated": "2025-09-05",
-      "source": "catalog",
       "hasContent": false
     }
   ],
-  "generated": "2025-09-05T20:12:37.444Z",
-  "version": "1.0"
+  "generated": "2025-09-05T20:26:22.658Z",
+  "version": "2.0"
 }
