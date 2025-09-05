@@ -48,6 +48,14 @@ function observerCallback(mutationsList, observer) {
   }
 }
 
+function removeOverlay(id) {
+  var overlay = document.getElementById(id);
+  console.log(overlay);
+  if (overlay) {
+    overlay.remove(); // Remove the overlay
+  }
+}
+
 // Create an observer instance linked to the callback function
 var observer = new MutationObserver(observerCallback);
 
@@ -59,6 +67,24 @@ var buttons = document.querySelectorAll('.submit-button');
 
 buttons.forEach((button) => {
   button.addEventListener('click', function (e) {
+    let exampleSection = this.closest('.example');
+    let actualSection =
+      exampleSection.querySelector('.actual-section');
+
+    // Hide the button
+    this.style.display = 'none';
+
+    // Create a new message element
+    let message = document.createElement('p');
+    message.textContent = 'Press the play button ⬇️⬇️';
+    message.className = 'play-message';
+
+    // Insert the message after the button
+    this.parentNode.insertBefore(message, this.nextSibling);
+
+    // Show the actual results section
+    actualSection.style.display = 'block';
+
     let exampleId = button.closest('.example').id.split('-')[1];
     let overlayId = 'code-' + exampleId + '-overlay';
     console.log(overlayId);
@@ -77,11 +103,3 @@ buttons.forEach((button) => {
     }
   });
 });
-
-function removeOverlay(id) {
-  var overlay = document.getElementById(id);
-  console.log(overlay);
-  if (overlay) {
-    overlay.remove(); // Remove the overlay
-  }
-}
