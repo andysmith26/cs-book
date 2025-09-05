@@ -1,5 +1,6 @@
 ---
 title: "Choose Your Own Adventure (CYOA)"
+layout: project
 courseFit:
   - { course: "csp", unit: "03-algorithms-programming" }
   - { course: "csp", unit: "04-computer-systems-networks" }

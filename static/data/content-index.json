@@ -6,6 +6,7 @@
       "slug": "asteroids",
       "path": "projects/asteroids/index.md",
       "title": "Asteroids",
+      "layout": "project",
       "courseFit": [
         {
           "course": "csa",
@@ -61,6 +62,7 @@
       "slug": "chemotaxis",
       "path": "projects/chemotaxis/index.md",
       "title": "Chemotaxis",
+      "layout": "project",
       "courseFit": [
         {
           "course": "csa",
@@ -91,7 +93,6 @@
           "level": 1
         }
       ],
-      "prerequisites": [],
       "status": "current",
       "tags": [
         "java",
@@ -106,6 +107,7 @@
       "slug": "cyoa",
       "path": "projects/cyoa/index.md",
       "title": "Choose Your Own Adventure (CYOA)",
+      "layout": "project",
       "courseFit": [
         {
           "course": "csp",
@@ -136,7 +138,6 @@
           "level": 1
         }
       ],
-      "prerequisites": [],
       "status": "current",
       "tags": [
         "html",
@@ -146,37 +147,110 @@
       ],
       "legacySource": "instructions/cyoa/",
       "lastUpdated": "2025-09-05"
+    },
+    {
+      "slug": "game-of-sticks",
+      "path": "projects/game-of-sticks/index.md",
+      "title": "Game of Sticks: Build an AI That Learns",
+      "layout": "project",
+      "courseFit": [
+        {
+          "course": "ai",
+          "unit": "02-reinforcement-learning"
+        },
+        {
+          "course": "csp",
+          "unit": "03-algorithms-programming"
+        },
+        {
+          "course": "math",
+          "unit": "discrete-probability"
+        }
+      ],
+      "skillsRequired": [
+        {
+          "id": "programming/iteration",
+          "level": 1
+        },
+        {
+          "id": "programming/conditionals",
+          "level": 1
+        }
+      ],
+      "skillsSuggested": [
+        {
+          "id": "programming/arrays",
+          "level": 1
+        },
+        {
+          "id": "tooling/debugging",
+          "level": 1
+        }
+      ],
+      "status": "current",
+      "tags": [
+        "ai",
+        "game",
+        "interactive",
+        "learning"
+      ],
+      "lastUpdated": "2025-01-14"
     }
   ],
   "skills": [
     {
       "id": "programming/variables",
+      "path": "skills/programming/variables/index.md",
       "title": "Variables & Types",
       "category": "programming",
       "apAlignment": {
         "csaUnit": "01-primitive-types"
       },
-      "status": "draft"
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "programming/conditionals",
+      "path": "skills/programming/conditionals/index.md",
       "title": "Conditionals",
       "category": "programming",
       "apAlignment": {
         "csaUnit": "03-booleans-if",
         "cspBigIdea": "Algorithms & Programming"
       },
-      "status": "draft"
+      "levels": {
+        "L1": "Write simple if/else statements using boolean expressions.",
+        "L2": "Combine logical operators; structure nested conditionals for clarity.",
+        "L3": "Refactor complex conditionals using guard clauses or polymorphism."
+      },
+      "prerequisites": [
+        "programming/variables"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "programming/iteration",
+      "path": "skills/programming/iteration/index.md",
       "title": "Iteration",
       "category": "programming",
       "apAlignment": {
         "csaUnit": "04-iteration",
         "cspBigIdea": "Algorithms & Programming"
       },
-      "status": "current"
+      "levels": {
+        "L1": "Use counted and conditional loops to repeat actions a fixed/unknown number of times.",
+        "L2": "Traverse arrays/collections safely; avoid off-by-one; choose while/for/for-each appropriately.",
+        "L3": "Restructure nested loops for complexity/clarity; explain loop invariants."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/conditionals"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "programming/arrays",
@@ -189,39 +263,69 @@
     },
     {
       "id": "programming/methods",
+      "path": "skills/programming/methods/index.md",
       "title": "Methods & Parameters",
       "category": "programming",
       "apAlignment": {
         "csaUnit": "05-writing-classes"
       },
-      "status": "draft"
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "oop/classes-objects",
+      "path": "skills/oop/classes-objects/index.md",
       "title": "Classes & Objects",
       "category": "oop",
       "apAlignment": {
         "csaUnit": "05-writing-classes"
       },
-      "status": "current"
+      "levels": {
+        "L1": "Instantiate objects and access fields/methods.",
+        "L2": "Design a class with state and behavior; enforce encapsulation.",
+        "L3": "Decompose a system into cooperating classes with clear contracts."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "oop/inheritance",
+      "path": "skills/oop/inheritance/index.md",
       "title": "Inheritance",
       "category": "oop",
       "apAlignment": {
         "csaUnit": "09-inheritance"
       },
-      "status": "current"
+      "levels": {
+        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
+        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
+        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
+      },
+      "prerequisites": [
+        "oop/classes-objects",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "oop/polymorphism",
+      "path": "skills/oop/polymorphism/index.md",
       "title": "Polymorphism",
       "category": "oop",
       "apAlignment": {
         "csaUnit": "09-inheritance"
       },
-      "status": "draft"
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "web/html-basics",
@@ -242,20 +346,52 @@
       "status": "draft"
     },
     {
+      "id": "web/css-basics",
+      "path": "skills/web/css-basics/index.md",
+      "title": "CSS Basics",
+      "category": "web",
+      "apAlignment": {
+        "cspBigIdea": "Computer Systems & Networks"
+      },
+      "levels": {},
+      "prerequisites": [],
+      "status": "missing",
+      "lastUpdated": "2025-09-05"
+    },
+    {
       "id": "web/hyperlink-graphs",
       "title": "Hyperlink & Navigation",
       "category": "web",
       "apAlignment": {
         "cspBigIdea": "Computer Systems & Networks"
       },
-      "status": "current"
+      "levels": {
+        "L1": "Create internal/external links and a simple branching structure.",
+        "L2": "Design navigable graphs (breadcrumbs, back-links) minimizing dead ends.",
+        "L3": "Model complex flows; visualize and test link graphs for UX clarity."
+      },
+      "prerequisites": [
+        "web/html-basics"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     },
     {
       "id": "tooling/git-basics",
+      "path": "skills/tooling/git-basics/index.md",
       "title": "Git & GitHub Basics",
       "category": "tooling",
       "apAlignment": {},
-      "status": "current"
+      "levels": {
+        "L1": "Clone/fork, commit, push; submit via GitHub link.",
+        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
+        "L3": "Structure repos; write actionable commits and READMEs."
+      },
+      "prerequisites": [],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
     }
-  ]
+  ],
+  "generated": "2025-09-05T19:41:46.178Z",
+  "version": "1.0"
 }
