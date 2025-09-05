@@ -1,0 +1,303 @@
+{
+  "projects": [
+    {
+      "slug": "asteroids",
+      "path": "projects/asteroids/index.md",
+      "title": "Asteroids",
+      "courseFit": [
+        {
+          "course": "csa",
+          "unit": "09-inheritance"
+        }
+      ],
+      "skillsRequired": [
+        {
+          "id": "oop/classes-objects",
+          "level": 2
+        },
+        {
+          "id": "oop/inheritance",
+          "level": 2
+        },
+        {
+          "id": "programming/conditionals",
+          "level": 2
+        },
+        {
+          "id": "programming/iteration",
+          "level": 2
+        }
+      ],
+      "skillsSuggested": [
+        {
+          "id": "oop/polymorphism",
+          "level": 1
+        },
+        {
+          "id": "tooling/git-basics",
+          "level": 1
+        }
+      ],
+      "prerequisites": [
+        {
+          "type": "skill",
+          "id": "programming/methods",
+          "level": 1
+        }
+      ],
+      "status": "current",
+      "tags": [
+        "java",
+        "greenfoot",
+        "oop",
+        "game"
+      ],
+      "legacySource": "instructions/Asteroids/",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "slug": "chemotaxis",
+      "path": "projects/chemotaxis/index.md",
+      "title": "Chemotaxis",
+      "courseFit": [
+        {
+          "course": "csa",
+          "unit": "06-arrays"
+        }
+      ],
+      "skillsRequired": [
+        {
+          "id": "programming/arrays",
+          "level": 2
+        },
+        {
+          "id": "programming/iteration",
+          "level": 2
+        },
+        {
+          "id": "oop/classes-objects",
+          "level": 1
+        }
+      ],
+      "skillsSuggested": [
+        {
+          "id": "programming/methods",
+          "level": 1
+        },
+        {
+          "id": "tooling/git-basics",
+          "level": 1
+        }
+      ],
+      "prerequisites": [],
+      "status": "current",
+      "tags": [
+        "java",
+        "processing",
+        "simulation",
+        "arrays"
+      ],
+      "legacySource": "instructions/Chemotaxis/",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "slug": "cyoa",
+      "path": "projects/cyoa/index.md",
+      "title": "Choose Your Own Adventure (CYOA)",
+      "courseFit": [
+        {
+          "course": "csp",
+          "unit": "03-algorithms-programming"
+        },
+        {
+          "course": "csp",
+          "unit": "04-computer-systems-networks"
+        }
+      ],
+      "skillsRequired": [
+        {
+          "id": "web/html-basics",
+          "level": 1
+        },
+        {
+          "id": "web/hyperlink-graphs",
+          "level": 1
+        }
+      ],
+      "skillsSuggested": [
+        {
+          "id": "web/css-basics",
+          "level": 1
+        },
+        {
+          "id": "tooling/git-basics",
+          "level": 1
+        }
+      ],
+      "prerequisites": [],
+      "status": "current",
+      "tags": [
+        "html",
+        "css",
+        "ux",
+        "narrative"
+      ],
+      "legacySource": "instructions/cyoa/",
+      "lastUpdated": "2025-09-05"
+    }
+  ],
+  "skills": [
+    {
+      "id": "oop/classes-objects",
+      "path": "skills/oop/classes-objects/index.md",
+      "title": "Classes & Objects",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "05-writing-classes"
+      },
+      "levels": {
+        "L1": "Instantiate objects and access fields/methods.",
+        "L2": "Design a class with state and behavior; enforce encapsulation.",
+        "L3": "Decompose a system into cooperating classes with clear contracts."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "oop/inheritance",
+      "path": "skills/oop/inheritance/index.md",
+      "title": "Inheritance",
+      "category": "oop",
+      "apAlignment": {
+        "csaUnit": "09-inheritance"
+      },
+      "levels": {
+        "L1": "Create a simple subclass that extends a concrete superclass and overrides one method correctly.",
+        "L2": "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts.",
+        "L3": "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
+      },
+      "prerequisites": [
+        "oop/classes-objects",
+        "programming/methods"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "programming/arrays",
+      "path": "skills/programming/arrays/index.md",
+      "title": "Arrays",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "06-arrays"
+      },
+      "levels": {
+        "L1": "Declare, allocate, index, and update arrays of primitives/objects.",
+        "L2": "Traverse with indices and for-each; write search/count/transform patterns.",
+        "L3": "Design array-based models with invariants and clear ownership of state."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/iteration"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "programming/conditionals",
+      "path": "skills/programming/conditionals/index.md",
+      "title": "Conditionals",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "03-booleans-if",
+        "cspBigIdea": "Algorithms & Programming"
+      },
+      "levels": {
+        "L1": "Write simple if/else statements using boolean expressions.",
+        "L2": "Combine logical operators; structure nested conditionals for clarity.",
+        "L3": "Refactor complex conditionals using guard clauses or polymorphism."
+      },
+      "prerequisites": [
+        "programming/variables"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "programming/iteration",
+      "path": "skills/programming/iteration/index.md",
+      "title": "Iteration",
+      "category": "programming",
+      "apAlignment": {
+        "csaUnit": "04-iteration",
+        "cspBigIdea": "Algorithms & Programming"
+      },
+      "levels": {
+        "L1": "Use counted and conditional loops to repeat actions a fixed/unknown number of times.",
+        "L2": "Traverse arrays/collections safely; avoid off-by-one; choose while/for/for-each appropriately.",
+        "L3": "Restructure nested loops for complexity/clarity; explain loop invariants."
+      },
+      "prerequisites": [
+        "programming/variables",
+        "programming/conditionals"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "tooling/git-basics",
+      "path": "skills/tooling/git-basics/index.md",
+      "title": "Git & GitHub Basics",
+      "category": "tooling",
+      "apAlignment": {},
+      "levels": {
+        "L1": "Clone/fork, commit, push; submit via GitHub link.",
+        "L2": "Branch for features; open pull requests; resolve simple conflicts.",
+        "L3": "Structure repos; write actionable commits and READMEs."
+      },
+      "prerequisites": [],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "web/html-basics",
+      "path": "skills/web/html-basics/index.md",
+      "title": "HTML Basics",
+      "category": "web",
+      "apAlignment": {
+        "cspBigIdea": "Computer Systems & Networks"
+      },
+      "levels": {
+        "L1": "Structure a page with semantic elements and valid nesting; link assets.",
+        "L2": "Compose multi-page sites with consistent layout and accessible markup.",
+        "L3": "Author reusable fragments; reason about document outline and ARIA basics."
+      },
+      "prerequisites": [],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    },
+    {
+      "id": "web/hyperlink-graphs",
+      "path": "skills/web/hyperlink-graphs/index.md",
+      "title": "Hyperlink & Navigation",
+      "category": "web",
+      "apAlignment": {
+        "cspBigIdea": "Computer Systems & Networks"
+      },
+      "levels": {
+        "L1": "Create internal/external links and a simple branching structure.",
+        "L2": "Design navigable graphs (breadcrumbs, back-links) minimizing dead ends.",
+        "L3": "Model complex flows; visualize and test link graphs for UX clarity."
+      },
+      "prerequisites": [
+        "web/html-basics"
+      ],
+      "status": "current",
+      "lastUpdated": "2025-09-05"
+    }
+  ]
+}

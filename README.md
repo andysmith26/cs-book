@@ -1,12 +1,31 @@
+# Woodstock CS — Pilot (SvelteKit skeleton)
+
+- Static by default using `@sveltejs/adapter-static`.
+- Content lives in Markdown under `/projects` and `/skills` with frontmatter.
+- A build step creates `static/data/content-index.json` used by list pages.
+- Ready to deploy to Vercel (adapter-vercel) when server features are needed.
+
+## Scripts
+
+- `npm run dev` — local dev
+- `npm run build` — builds index + prerenders site
+- `npm run preview` — preview static output
+
+## Notes
+
+- Svelte 5 runes ($state, $derived, $effect) used for filters and preflight.
+
+## Old
+
 [https://editor.p5js.org/woodstock-cs/sketches](https://editor.p5js.org/woodstock-cs/sketches)
 https://www.youtube.com/watch?v=7A5tKW9HGoM&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=8
 
-
-
 # links
+
 - [slides](https://drive.google.com/drive/folders/1F9__gYl5KsTkBanZyMpxCoFBB6xBhVeO?usp=sharing)
 
 # week of Feb 3 - 7
+
 - [plans](https://docs.google.com/document/d/1hZAr-LYABAlmxLymH8Bd0QJFkPy6tBsWJJY6bMVcHVA/edit?tab=t.0)
 - [slides A](https://docs.google.com/presentation/d/1gA9SazR_jIYf7NcEIK_c4Nw520miUSTnd1XK3CLFhqY/edit#slide=id.g3294a3c0d3c_1_238)
 - [slides B](https://docs.google.com/presentation/d/1fkNkC-ubw65LkVz-oW_Pc1APlGimskEg0mx_JpZGmFE/edit#slide=id.g3294a3c0d3c_1_238)
@@ -14,6 +33,7 @@ https://www.youtube.com/watch?v=7A5tKW9HGoM&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOF
 - [slides E](https://docs.google.com/presentation/d/1T6kS8VMptIM36GFJmhruKayulNvIr7FKHshlYYaWsb4/edit#slide=id.g3294a3c0d3c_1_238)
 
 # week of Jan 27 - 31
+
 - [plans](https://docs.google.com/document/d/1vhZCReljC0GpJmFkKJOQdB5dvOHc0FwFiQJ6JPh8jXI/edit?tab=t.0)
 - [slides A](https://docs.google.com/presentation/d/1Kn1s1J5e9hdvNC0p6Gxh7qoyrWw1kPkCxkucHLAEbmw/edit#slide=id.g3294a3c0d3c_1_238)
 - [slides B](https://docs.google.com/presentation/d/1wEQ2xAriRHKvgEdDRMKIgBo2HlNJ8Z7hbykC4lf7IiY/edit#slide=id.g3294a3c0d3c_1_238)
@@ -28,4 +48,3 @@ https://www.youtube.com/watch?v=7A5tKW9HGoM&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOF
 - slides C
 - slides E
 - [study hall](https://docs.google.com/presentation/d/1nZjeu8dggAEPaEierEv4sidj-802j7TGRmdDbcR-UMk/edit#slide=id.g327f32d82ac_0_49)
-
