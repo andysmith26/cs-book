@@ -1,1 +1,0 @@
-![solutions](assets/JavaArithmeticSolutions.png)
