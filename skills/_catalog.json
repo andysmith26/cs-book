@@ -1,0 +1,17 @@
+{
+  "version": "0.1",
+  "skills": [
+    { "id": "programming/variables", "title": "Variables & Types", "category": "programming", "apAlignment": { "csaUnit": "01-primitive-types" }, "status": "draft" },
+    { "id": "programming/conditionals", "title": "Conditionals", "category": "programming", "apAlignment": { "csaUnit": "03-booleans-if", "cspBigIdea": "Algorithms & Programming" }, "status": "draft" },
+    { "id": "programming/iteration", "title": "Iteration", "category": "programming", "apAlignment": { "csaUnit": "04-iteration", "cspBigIdea": "Algorithms & Programming" }, "status": "current" },
+    { "id": "programming/arrays", "title": "Arrays", "category": "programming", "apAlignment": { "csaUnit": "06-arrays" }, "status": "current" },
+    { "id": "programming/methods", "title": "Methods & Parameters", "category": "programming", "apAlignment": { "csaUnit": "05-writing-classes" }, "status": "draft" },
+    { "id": "oop/classes-objects", "title": "Classes & Objects", "category": "oop", "apAlignment": { "csaUnit": "05-writing-classes" }, "status": "current" },
+    { "id": "oop/inheritance", "title": "Inheritance", "category": "oop", "apAlignment": { "csaUnit": "09-inheritance" }, "status": "current" },
+    { "id": "oop/polymorphism", "title": "Polymorphism", "category": "oop", "apAlignment": { "csaUnit": "09-inheritance" }, "status": "draft" },
+    { "id": "web/html-basics", "title": "HTML Basics", "category": "web", "apAlignment": { "cspBigIdea": "Computer Systems & Networks" }, "status": "current" },
+    { "id": "web/css-basics", "title": "CSS Basics", "category": "web", "apAlignment": { "cspBigIdea": "Computer Systems & Networks" }, "status": "draft" },
+    { "id": "web/hyperlink-graphs", "title": "Hyperlink & Navigation", "category": "web", "apAlignment": { "cspBigIdea": "Computer Systems & Networks" }, "status": "current" },
+    { "id": "tooling/git-basics", "title": "Git & GitHub Basics", "category": "tooling", "apAlignment": {}, "status": "current" }
+  ]
+}

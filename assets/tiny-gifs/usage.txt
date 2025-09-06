@@ -1,3 +1,0 @@
-<div class='w-100 text-center'><img height='50' src='/assets/tiny-gifs/spidey-dancing.gif'></div>
-
-<h4 class="card-title">Looking Ahead<img height="25" class="float-right" src="assets/c3po-dancing.gif"></h4>

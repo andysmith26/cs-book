@@ -1,0 +1,2 @@
+- Greenfoot name and materials are trademarks of their respective owners. Links provided for educational use.
+- Include attributions for any third-party images or packets you link here.

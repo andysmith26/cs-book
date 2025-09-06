@@ -1,0 +1,787 @@
+# File: package.json
+{
+  "name": "woodstockcs-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "npm run build:index && vite build",
+    "preview": "vite preview",
+    "build:index": "node scripts/build-content-index.mjs",
+    "check-links": "node scripts/check-links.mjs || true"
+  },
+  "dependencies": {
+    "@sveltejs/adapter-static": "^3.0.0",
+    "@sveltejs/adapter-vercel": "^5.0.0",
+    "@sveltejs/kit": "^2.6.0",
+    "gray-matter": "^4.0.3",
+    "mdsvex": "^0.11.0",
+    "svelte": "^5.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vite": "^5.4.0"
+  }
+}
+
+# File: svelte.config.js
+import { mdsvex } from 'mdsvex';
+import adapter from '@sveltejs/adapter-static';
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  extensions: ['.svelte', '.md', '.svx'],
+  preprocess: [
+    mdsvex({
+      extensions: ['.md', '.svx']
+    })
+  ],
+  kit: {
+    adapter: adapter({
+      // fallback: '200.html' // enable if you want SPA-style fallback
+    }),
+    prerender: {
+      handleHttpError: 'warn'
+    }
+  }
+};
+
+export default config;
+
+# File: mdsvex.config.js
+import { defineMDSveXConfig as defineConfig } from 'mdsvex';
+
+const config = defineConfig({
+  extensions: ['.md', '.svx']
+});
+
+export default config;
+
+# File: vite.config.ts
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  plugins: [sveltekit()],
+  // If you later deploy to GitHub Pages under a subpath, set base accordingly
+  // base: '/woodstockcs.github.io/',
+  server: {
+    fs: {
+      // allow reading markdown content from project root
+      allow: ['.']
+    }
+  }
+});
+
+# File: scripts/build-content-index.mjs
+import fs from 'node:fs';
+import path from 'node:path';
+import matter from 'gray-matter';
+import { z } from 'zod';
+
+const root = process.cwd();
+const projectsDir = path.join(root, 'projects');
+const skillsDir = path.join(root, 'skills');
+const outDir = path.join(root, 'static', 'data');
+const outPath = path.join(outDir, 'content-index.json');
+
+const SkillRef = z.object({ id: z.string(), level: z.number().int().min(1).max(3) });
+const CourseFit = z.object({ course: z.string(), unit: z.string().optional() });
+
+const ProjectFM = z.object({
+  title: z.string(),
+  courseFit: z.array(CourseFit).default([]),
+  skillsRequired: z.array(SkillRef).default([]),
+  skillsSuggested: z.array(SkillRef).default([]),
+  prerequisites: z.array(z.any()).default([]),
+  status: z.string().default('current'),
+  tags: z.array(z.string()).default([]),
+  legacySource: z.string().optional(),
+  lastUpdated: z.string().optional(),
+  timeToComplete: z.string().optional(),
+  difficulty: z.string().optional()
+});
+
+const SkillFM = z.object({
+  title: z.string(),
+  category: z.string(),
+  apAlignment: z.record(z.string()).optional(),
+  levels: z.record(z.string()),
+  prerequisites: z.array(z.string()).default([]),
+  aliases: z.array(z.string()).optional(),
+  status: z.string().default('current'),
+  lastUpdated: z.string().optional()
+});
+
+function readAllMarkdown(dir) {
+  if (!fs.existsSync(dir)) return [];
+  const files = [];
+  const walk = (p) => {
+    for (const entry of fs.readdirSync(p, { withFileTypes: true })) {
+      const full = path.join(p, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (entry.isFile() && /index\.(md|svx)$/.test(entry.name)) files.push(full);
+    }
+  };
+  walk(dir);
+  return files;
+}
+
+function slugFromFile(fp, baseDir) {
+  const rel = path.relative(baseDir, fp); // e.g. asteroids/index.md
+  const parts = rel.split(path.sep);
+  return parts[0];
+}
+
+function skillSlugFromFile(fp, baseDir) {
+  const rel = path.relative(baseDir, fp); // e.g. oop/inheritance/index.md
+  return rel.replace(/\\/g, '/').replace(/\/index\.(md|svx)$/i, '');
+}
+
+function parseFrontmatter(file, schema) {
+  const raw = fs.readFileSync(file, 'utf8');
+  const { data } = matter(raw);
+  return schema.parse(data);
+}
+
+const projects = readAllMarkdown(projectsDir).map((file) => {
+  const fm = parseFrontmatter(file, ProjectFM);
+  return {
+    slug: slugFromFile(file, projectsDir),
+    path: path.relative(root, file).replace(/\\/g, '/'),
+    ...fm
+  };
+});
+
+const skills = readAllMarkdown(skillsDir).map((file) => {
+  const fm = parseFrontmatter(file, SkillFM);
+  return {
+    id: skillSlugFromFile(file, skillsDir),
+    path: path.relative(root, file).replace(/\\/g, '/'),
+    ...fm
+  };
+});
+
+fs.mkdirSync(outDir, { recursive: true });
+fs.writeFileSync(outPath, JSON.stringify({ projects, skills }, null, 2));
+console.log(`Wrote ${outPath} with ${projects.length} projects and ${skills.length} skills`);
+
+# File: scripts/check-links.mjs
+// Extremely light stub; replace with a real checker later
+console.log('check-links: (stub) skip');
+
+# File: static/data/.gitkeep
+
+# File: src/routes/+layout.ts
+export const prerender = true;
+
+# File: src/routes/+layout.svelte
+<script>
+  // Svelte 5 runes are available in components where needed; layout is static
+</script>
+
+<nav class="w-full border-b">
+  <div class="max-w-6xl mx-auto flex items-center gap-6 p-4 text-sm">
+    <a href="/">Home</a>
+    <a href="/projects">Projects</a>
+    <a href="/skills">Skills</a>
+    <div class="flex items-center gap-3">
+      <span>Courses:</span>
+      <a href="/courses/csp/units/03-algorithms-programming">CSP</a>
+      <a href="/courses/csa/units/06-arrays">CSA</a>
+    </div>
+    <a href="/shared/guides">Guides</a>
+    <a href="/archive">Archive</a>
+  </div>
+</nav>
+
+<slot />
+
+<style>
+  nav a { text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+</style>
+
+# File: src/routes/+page.svelte
+<h1>Woodstock CS</h1>
+<p>Start with <a href="/projects">Projects</a> (goals) or browse <a href="/skills">Skills</a> (means). Course-aligned unit views live under Courses.</p>
+
+# File: src/routes/projects/+page.ts
+import type { PageLoad } from './$types';
+
+export const load: PageLoad = async ({ fetch }) => {
+  const res = await fetch('/data/content-index.json');
+  const index = await res.json();
+  return { index };
+};
+
+# File: src/routes/projects/+page.svelte
+<script>
+  import FilterBar from '$lib/components/FilterBar.svelte';
+  import ProjectCard from '$lib/components/ProjectCard.svelte';
+  export let data;
+
+  const filters = $state({ course: 'all', text: '', skill: '' });
+
+  const list = $derived(() => {
+    const projects = data.index.projects;
+    return projects.filter((p) => {
+      if (filters.course !== 'all' && !p.courseFit?.some((c) => c.course === filters.course)) return false;
+      if (filters.text && !(`${p.title} ${p.tags?.join(' ')}`.toLowerCase().includes(filters.text.toLowerCase()))) return false;
+      if (filters.skill && !p.skillsRequired?.some((s) => s.id === filters.skill)) return false;
+      return true;
+    });
+  });
+
+  $effect(() => {
+    // Persist filters locally
+    localStorage.setItem('projectFilters', JSON.stringify(filters));
+  });
+</script>
+
+<h1>Projects</h1>
+<FilterBar bind:filters {data} />
+
+<div class="grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+  {#each list as p}
+    <ProjectCard {p} />
+  {/each}
+</div>
+
+# File: src/routes/projects/[slug]/+page.ts
+import type { PageLoad } from './$types';
+
+const modules = import.meta.glob('/projects/**/index.md');
+
+export const load: PageLoad = async ({ params }) => {
+  const entries = Object.entries(modules);
+  const match = entries.find(([p]) => p.includes(`/projects/${params.slug}/index.md`));
+  if (!match) return { notFound: true };
+  const mod = await match[1]();
+  return { mod };
+};
+
+# File: src/routes/projects/[slug]/+page.svelte
+<script>
+  import PreflightChecklist from '$lib/components/PreflightChecklist.svelte';
+  export let data;
+  const { default: Content, metadata } = data.mod;
+</script>
+
+<svelte:head>
+  <title>{metadata.title} — Project</title>
+</svelte:head>
+
+<h1>{metadata.title}</h1>
+<PreflightChecklist required={metadata.skillsRequired ?? []} projectSlug={metadata.title} />
+
+<!-- Render mdsvex content -->
+<Content />
+
+# File: src/routes/skills/+page.ts
+import type { PageLoad } from './$types';
+export const load: PageLoad = async ({ fetch }) => {
+  const res = await fetch('/data/content-index.json');
+  const index = await res.json();
+  return { index };
+};
+
+# File: src/routes/skills/+page.svelte
+<script>
+  export let data;
+  const categories = $derived(() => {
+    const map = new Map();
+    for (const s of data.index.skills) {
+      const arr = map.get(s.category) ?? [];
+      arr.push(s);
+      map.set(s.category, arr);
+    }
+    return Array.from(map.entries());
+  });
+</script>
+
+<h1>Skills</h1>
+{#each categories as [cat, items]}
+  <h2>{cat}</h2>
+  <ul>
+    {#each items as s}
+      <li><a href={'/skills/' + s.id}>{s.title}</a></li>
+    {/each}
+  </ul>
+{/each}
+
+# File: src/routes/skills/[...path]/+page.ts
+import type { PageLoad } from './$types';
+const modules = import.meta.glob('/skills/**/index.md');
+
+export const load: PageLoad = async ({ params }) => {
+  const full = params.path; // e.g. 'oop/inheritance'
+  const key = `/skills/${full}/index.md`;
+  const loader = modules[key];
+  if (!loader) return { notFound: true };
+  const mod = await loader();
+  return { mod };
+};
+
+# File: src/routes/skills/[...path]/+page.svelte
+<script>
+  export let data;
+  const { default: Content, metadata } = data.mod;
+</script>
+
+<svelte:head>
+  <title>{metadata.title} — Skill</title>
+</svelte:head>
+
+<h1>{metadata.title}</h1>
+<Content />
+
+# File: src/routes/courses/csa/units/06-arrays/+page.ts
+import type { PageLoad } from './$types';
+export const load: PageLoad = async ({ fetch }) => {
+  const res = await fetch('/data/content-index.json');
+  const index = await res.json();
+  const skills = index.skills.filter((s) => ['programming/arrays','programming/iteration','oop/classes-objects'].includes(s.id));
+  const projects = index.projects.filter((p) => p.slug === 'chemotaxis');
+  return { skills, projects };
+};
+
+# File: src/routes/courses/csa/units/06-arrays/+page.svelte
+<script>
+  export let data;
+</script>
+<h1>CSA Unit 6 — Arrays</h1>
+<h2>Skills</h2>
+<ul>
+  {#each data.skills as s}
+    <li><a href={'/skills/' + s.id}>{s.title}</a></li>
+  {/each}
+</ul>
+<h2>Projects</h2>
+<ul>
+  {#each data.projects as p}
+    <li><a href={'/projects/' + p.slug}>{p.title}</a></li>
+  {/each}
+</ul>
+
+# File: src/routes/courses/csa/units/09-inheritance/+page.ts
+import type { PageLoad } from './$types';
+export const load: PageLoad = async ({ fetch }) => {
+  const res = await fetch('/data/content-index.json');
+  const index = await res.json();
+  const skills = index.skills.filter((s) => ['oop/inheritance','oop/polymorphism','oop/classes-objects'].includes(s.id));
+  const projects = index.projects.filter((p) => p.slug === 'asteroids');
+  return { skills, projects };
+};
+
+# File: src/routes/courses/csa/units/09-inheritance/+page.svelte
+<script> export let data; </script>
+<h1>CSA Unit 9 — Inheritance</h1>
+<h2>Skills</h2>
+<ul>
+  {#each data.skills as s}
+    <li><a href={'/skills/' + s.id}>{s.title}</a></li>
+  {/each}
+</ul>
+<h2>Projects</h2>
+<ul>
+  {#each data.projects as p}
+    <li><a href={'/projects/' + p.slug}>{p.title}</a></li>
+  {/each}
+</ul>
+
+# File: src/routes/courses/csp/units/03-algorithms-programming/+page.ts
+import type { PageLoad } from './$types';
+export const load: PageLoad = async ({ fetch }) => {
+  const res = await fetch('/data/content-index.json');
+  const index = await res.json();
+  const skills = index.skills.filter((s) => ['web/html-basics','web/hyperlink-graphs'].includes(s.id));
+  const projects = index.projects.filter((p) => p.slug === 'cyoa');
+  return { skills, projects };
+};
+
+# File: src/routes/courses/csp/units/03-algorithms-programming/+page.svelte
+<script> export let data; </script>
+<h1>CSP Unit 3 — Algorithms & Programming</h1>
+<h2>Skills</h2>
+<ul>
+  {#each data.skills as s}
+    <li><a href={'/skills/' + s.id}>{s.title}</a></li>
+  {/each}
+</ul>
+<h2>Projects</h2>
+<ul>
+  {#each data.projects as p}
+    <li><a href={'/projects/' + p.slug}>{p.title}</a></li>
+  {/each}
+</ul>
+
+# File: src/lib/components/FilterBar.svelte
+<script>
+  export let filters;
+  export let data; // has index with skills
+  const courses = ['all','csp','csa'];
+</script>
+<div class="filters" style="display:flex; gap: 0.5rem; align-items:center; margin: 0.5rem 0 1rem;">
+  <input placeholder="Search..." value={filters.text} on:input={(e)=> filters.text = e.currentTarget.value} />
+  <select bind:value={filters.course}>
+    {#each courses as c}
+      <option value={c}>{c.toUpperCase()}</option>
+    {/each}
+  </select>
+  <select bind:value={filters.skill}>
+    <option value="">Any skill</option>
+    {#each data.index.skills as s}
+      <option value={s.id}>{s.title}</option>
+    {/each}
+  </select>
+</div>
+
+# File: src/lib/components/ProjectCard.svelte
+<script>
+  export let p;
+</script>
+<a href={'/projects/' + p.slug} class="card" style="display:block; border:1px solid #ddd; border-radius:8px; padding:12px;">
+  <h3 style="margin:0 0 6px;">{p.title}</h3>
+  <div style="font-size:12px; opacity:0.8;">{p.tags?.join(', ')}</div>
+  <div style="margin-top:8px; font-size:12px;">
+    {#if p.courseFit?.length}
+      Courses: {p.courseFit.map(c=>c.course).join(', ')}
+    {/if}
+  </div>
+</a>
+
+# File: src/lib/components/PreflightChecklist.svelte
+<script>
+  export let required = [];
+  export let projectSlug = '';
+  const key = `preflight:${projectSlug}`;
+  const checks = $state({});
+
+  // initialize from localStorage
+  $effect(() => {
+    const saved = localStorage.getItem(key);
+    if (saved) Object.assign(checks, JSON.parse(saved));
+  });
+  $effect(() => {
+    localStorage.setItem(key, JSON.stringify(checks));
+  });
+</script>
+
+{#if required.length}
+  <aside style="border:1px solid #ddd; padding:12px; border-radius:8px; margin: 1rem 0;">
+    <strong>Preflight: required skills</strong>
+    <ul>
+      {#each required as r}
+        <li>
+          <label style="display:flex; gap:.5rem; align-items:center;">
+            <input type="checkbox" bind:checked={checks[r.id]} />
+            <span>{r.id} (L{r.level})</span>
+            <a style="margin-left:auto; font-size:12px;" href={'/skills/' + r.id}>review</a>
+          </label>
+        </li>
+      {/each}
+    </ul>
+  </aside>
+{/if}
+
+# File: projects/asteroids/index.md
+---
+title: "Asteroids"
+courseFit:
+  - { course: "csa", unit: "09-inheritance" }
+skillsRequired:
+  - { id: "oop/classes-objects", level: 2 }
+  - { id: "oop/inheritance", level: 2 }
+  - { id: "programming/conditionals", level: 2 }
+  - { id: "programming/iteration", level: 2 }
+skillsSuggested:
+  - { id: "oop/polymorphism", level: 1 }
+  - { id: "tooling/git-basics", level: 1 }
+prerequisites:
+  - { type: "skill", id: "programming/methods", level: 1 }
+status: "current"
+tags: ["java","greenfoot","oop","game"]
+legacySource: "instructions/Asteroids/"
+lastUpdated: "2025-09-05"
+---
+
+## Brief
+Build a simplified Asteroids game in Java/Greenfoot demonstrating classes/objects, inheritance, conditionals, and iteration.
+
+## Preflight
+Tick the checklist above. Review any skills you’re unsure about.
+
+## Build Steps
+1. Design your class diagram (Ship, Asteroid, Bullet, World).
+2. Implement base behaviors; then extend with specialized subclasses.
+3. Add game loop rules (spawn, collide, score).
+
+## Rubric (skill-linked)
+- Inheritance hierarchy designed and used (`oop/inheritance` L2)
+- Loop logic drives game reliably (`programming/iteration` L2)
+- Class responsibilities clear (`oop/classes-objects` L2)
+
+## Submit
+- GitHub repo link, short demo video, one-page poster.
+
+# File: projects/chemotaxis/index.md
+---
+title: "Chemotaxis"
+courseFit:
+  - { course: "csa", unit: "06-arrays" }
+skillsRequired:
+  - { id: "programming/arrays", level: 2 }
+  - { id: "programming/iteration", level: 2 }
+  - { id: "oop/classes-objects", level: 1 }
+skillsSuggested:
+  - { id: "programming/methods", level: 1 }
+  - { id: "tooling/git-basics", level: 1 }
+status: "current"
+tags: ["java","processing","simulation","arrays"]
+legacySource: "instructions/Chemotaxis/"
+lastUpdated: "2025-09-05"
+---
+
+## Brief
+Simulate bacteria movement toward/away from a stimulus using arrays of agents and iterative updates.
+
+## Build Steps
+1. Define a `Bacteria` class with state and `update()`.
+2. Create an array of bacteria; iterate to update and draw.
+3. Add stimulus logic (attract/repel) and parameters.
+
+## Rubric (skill-linked)
+- Correct array traversal and updates (`programming/arrays` L2)
+- Loop structure avoids off-by-one errors (`programming/iteration` L2)
+- Object encapsulation (`oop/classes-objects` L1)
+
+## Submit
+- GitHub repo link; short write-up of parameters tested.
+
+# File: projects/cyoa/index.md
+---
+title: "Choose Your Own Adventure (CYOA)"
+courseFit:
+  - { course: "csp", unit: "03-algorithms-programming" }
+  - { course: "csp", unit: "04-computer-systems-networks" }
+skillsRequired:
+  - { id: "web/html-basics", level: 1 }
+  - { id: "web/hyperlink-graphs", level: 1 }
+skillsSuggested:
+  - { id: "web/css-basics", level: 1 }
+  - { id: "tooling/git-basics", level: 1 }
+status: "current"
+tags: ["html","css","ux","narrative"]
+legacySource: "instructions/cyoa/"
+lastUpdated: "2025-09-05"
+---
+
+## Brief
+Create a multi-page branching narrative website with clear navigation and no dead ends.
+
+## Preflight
+Sketch your link graph. Ensure every page has a way *forward* and *back*.
+
+## Build Steps
+1. `index.html` introduces the story and choices.
+2. Create branch pages; ensure consistent nav/breadcrumbs.
+3. Validate HTML; basic responsive CSS.
+
+## Rubric (skill-linked)
+- Semantic HTML and valid structure (`web/html-basics` L1)
+- Navigable link graph (`web/hyperlink-graphs` L1)
+
+## Submit
+- GitHub Pages URL.
+
+# File: skills/oop/inheritance/index.md
+---
+title: "Inheritance"
+category: "oop"
+apAlignment: { csaUnit: "09-inheritance" }
+levels:
+  L1: "Create a simple subclass that extends a concrete superclass and overrides one method correctly."
+  L2: "Design a shallow hierarchy with appropriate fields/methods; use super and override with correct access and contracts."
+  L3: "Refactor a hierarchy for reuse; choose inheritance vs composition and justify."
+prerequisites: ["oop/classes-objects", "programming/methods"]
+status: "current"
+lastUpdated: "2025-09-05"
+---
+
+### Learn
+- Official Java tutorials on inheritance
+- Greenfoot docs: subclassing `Actor`
+
+### Practice
+- Extend a base `Actor` to add movement.
+- Refactor two similar classes by extracting a superclass.
+
+# File: skills/programming/iteration/index.md
+---
+title: "Iteration"
+category: "programming"
+apAlignment: { csaUnit: "04-iteration", cspBigIdea: "Algorithms & Programming" }
+levels:
+  L1: "Use counted and conditional loops to repeat actions a fixed/unknown number of times."
+  L2: "Traverse arrays/collections safely; avoid off-by-one; choose while/for/for-each appropriately."
+  L3: "Restructure nested loops for complexity/clarity; explain loop invariants."
+prerequisites: ["programming/variables","programming/conditionals"]
+status: "current"
+lastUpdated: "2025-09-05"
+---
+
+### Learn
+- For/while/for-each overview
+
+### Practice
+- Count occurrences in an array
+- Animate a stepwise random walk
+
+# File: skills/programming/arrays/index.md
+---
+title: "Arrays"
+category: "programming"
+apAlignment: { csaUnit: "06-arrays" }
+levels:
+  L1: "Declare, allocate, index, and update arrays of primitives/objects."
+  L2: "Traverse with indices and for-each; write search/count/transform patterns."
+  L3: "Design array-based models with invariants and clear ownership of state."
+prerequisites: ["programming/variables","programming/iteration"]
+status: "current"
+lastUpdated: "2025-09-05"
+---
+
+### Learn
+- Array declaration and traversal patterns
+
+### Practice
+- Reverse an array in-place
+- Compute running totals
+
+# File: skills/web/html-basics/index.md
+---
+title: "HTML Basics"
+category: "web"
+apAlignment: { cspBigIdea: "Computer Systems & Networks" }
+levels:
+  L1: "Structure a page with semantic elements and valid nesting; link assets."
+  L2: "Compose multi-page sites with consistent layout and accessible markup."
+  L3: "Author reusable fragments; reason about document outline and ARIA basics."
+prerequisites: []
+status: "current"
+lastUpdated: "2025-09-05"
+---
+
+### Learn
+- HTML elements and document structure
+
+### Practice
+- Build a simple multi-section page and validate it
+
+# File: skills/web/hyperlink-graphs/index.md
+---
+title: "Hyperlink & Navigation"
+category: "web"
+apAlignment: { cspBigIdea: "Computer Systems & Networks" }
+levels:
+  L1: "Create internal/external links and a simple branching structure."
+  L2: "Design navigable graphs (breadcrumbs, back-links) minimizing dead ends."
+  L3: "Model complex flows; visualize and test link graphs for UX clarity."
+prerequisites: ["web/html-basics"]
+status: "current"
+lastUpdated: "2025-09-05"
+---
+
+### Learn
+- Internal vs external links, relative paths
+
+### Practice
+- Turn a sketch into a 6-page link graph
+
+# File: skills/tooling/git-basics/index.md
+---
+title: "Git & GitHub Basics"
+category: "tooling"
+apAlignment: {}
+levels:
+  L1: "Clone/fork, commit, push; submit via GitHub link."
+  L2: "Branch for features; open pull requests; resolve simple conflicts."
+  L3: "Structure repos; write actionable commits and READMEs."
+prerequisites: []
+status: "current"
+lastUpdated: "2025-09-05"
+---
+
+### Learn
+- Git basics: add/commit/push
+
+### Practice
+- Make a change on a branch; open a PR; merge it
+
+# File: skills/_catalog.json
+{
+  "version": "0.1",
+  "skills": [
+    { "id": "programming/variables", "title": "Variables & Types", "category": "programming", "apAlignment": { "csaUnit": "01-primitive-types" }, "status": "draft" },
+    { "id": "programming/conditionals", "title": "Conditionals", "category": "programming", "apAlignment": { "csaUnit": "03-booleans-if", "cspBigIdea": "Algorithms & Programming" }, "status": "draft" },
+    { "id": "programming/iteration", "title": "Iteration", "category": "programming", "apAlignment": { "csaUnit": "04-iteration", "cspBigIdea": "Algorithms & Programming" }, "status": "current" },
+    { "id": "programming/arrays", "title": "Arrays", "category": "programming", "apAlignment": { "csaUnit": "06-arrays" }, "status": "current" },
+    { "id": "programming/methods", "title": "Methods & Parameters", "category": "programming", "apAlignment": { "csaUnit": "05-writing-classes" }, "status": "draft" },
+    { "id": "oop/classes-objects", "title": "Classes & Objects", "category": "oop", "apAlignment": { "csaUnit": "05-writing-classes" }, "status": "current" },
+    { "id": "oop/inheritance", "title": "Inheritance", "category": "oop", "apAlignment": { "csaUnit": "09-inheritance" }, "status": "current" },
+    { "id": "oop/polymorphism", "title": "Polymorphism", "category": "oop", "apAlignment": { "csaUnit": "09-inheritance" }, "status": "draft" },
+    { "id": "web/html-basics", "title": "HTML Basics", "category": "web", "apAlignment": { "cspBigIdea": "Computer Systems & Networks" }, "status": "current" },
+    { "id": "web/css-basics", "title": "CSS Basics", "category": "web", "apAlignment": { "cspBigIdea": "Computer Systems & Networks" }, "status": "draft" },
+    { "id": "web/hyperlink-graphs", "title": "Hyperlink & Navigation", "category": "web", "apAlignment": { "cspBigIdea": "Computer Systems & Networks" }, "status": "current" },
+    { "id": "tooling/git-basics", "title": "Git & GitHub Basics", "category": "tooling", "apAlignment": {}, "status": "current" }
+  ]
+}
+
+# File: LICENSE
+MIT License
+
+Copyright (c) 2025 Woodstock CS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+# File: ATTRIBUTIONS.md
+- Greenfoot name and materials are trademarks of their respective owners. Links provided for educational use.
+- Include attributions for any third-party images or packets you link here.
+
+# File: PRIVACY.md
+This site does not collect personal information. Any progress indicators in the pilot (e.g., project preflight checklists) are stored only in your browser via localStorage and are never transmitted.
+
+# File: README.md
+# Woodstock CS — Pilot (SvelteKit skeleton)
+
+- Static by default using `@sveltejs/adapter-static`.
+- Content lives in Markdown under `/projects` and `/skills` with frontmatter.
+- A build step creates `static/data/content-index.json` used by list pages.
+- Ready to deploy to Vercel (adapter-vercel) when server features are needed.
+
+## Scripts
+- `npm run dev` — local dev
+- `npm run build` — builds index + prerenders site
+- `npm run preview` — preview static output
+
+## Notes
+- Svelte 5 runes ($state, $derived, $effect) used for filters and preflight.
+`
