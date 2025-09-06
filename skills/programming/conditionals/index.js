@@ -10,7 +10,8 @@ export const conditionalsSkill = {
     cspBigIdea: 'Algorithms & Programming',
   },
 
-  description: 'Control program flow using boolean expressions and conditional statements',
+  description:
+    'Control program flow using boolean expressions and conditional statements',
 
   levels: {
     1: 'Write simple if/else statements using boolean expressions.',
@@ -34,8 +35,14 @@ export const conditionalsSkill = {
       }
     `,
     references: [
-      { title: 'If/else basics in Java', url: 'https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html' },
-      { title: 'Boolean operators (&&, ||, !)', url: 'https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html' },
+      {
+        title: 'If/else basics in Java',
+        url: 'https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html',
+      },
+      {
+        title: 'Boolean operators (&&, ||, !)',
+        url: 'https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html',
+      },
     ],
   },
 
@@ -44,12 +51,6 @@ export const conditionalsSkill = {
     miniTask: 'method-returns-different-strings',
     projectTask: 'number-guessing-game',
   },
-
-  projectsUsing: [
-    'text-adventure',
-    'grade-calculator',
-    'game-logic',
-  ],
 
   status: 'current',
 };

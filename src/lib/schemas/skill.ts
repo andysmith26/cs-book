@@ -50,7 +50,6 @@ export interface SkillSchema {
   // Rich content
   learn?: LearnSection;
   practice?: PracticeSection;
-  projectsUsing?: string[];
   
   hasContent: boolean;
 }
@@ -75,7 +74,6 @@ export function createSkillFromJavaScript(
     lastUpdated: new Date().toISOString().split('T')[0],
     learn: skillObject.learn,
     practice: skillObject.practice,
-    projectsUsing: skillObject.projectsUsing || [],
     hasContent: true
   };
 }

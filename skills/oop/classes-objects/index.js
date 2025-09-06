@@ -9,7 +9,8 @@ export const classesObjectsSkill = {
     csaUnit: '05-writing-classes',
   },
 
-  description: 'Create and use classes to model objects with state and behavior',
+  description:
+    'Create and use classes to model objects with state and behavior',
 
   levels: {
     1: 'Instantiate objects and access fields/methods.',
@@ -27,8 +28,14 @@ export const classesObjectsSkill = {
       In Java: class Car { ... }  →  Car myCar = new Car();
     `,
     references: [
-      { title: 'Java class & object basics', url: 'https://docs.oracle.com/javase/tutorial/java/javaOO/' },
-      { title: 'Greenfoot/Processing docs: creating objects', url: 'https://www.greenfoot.org/doc' },
+      {
+        title: 'Java class & object basics',
+        url: 'https://docs.oracle.com/javase/tutorial/java/javaOO/',
+      },
+      {
+        title: 'Greenfoot/Processing docs: creating objects',
+        url: 'https://www.greenfoot.org/doc',
+      },
     ],
   },
 
@@ -37,11 +44,6 @@ export const classesObjectsSkill = {
     miniTask: 'write-simple-car-class',
     projectTask: 'design-cooperating-classes',
   },
-
-  projectsUsing: [
-    'greenfoot-scenarios',
-    'processing-animations',
-  ],
 
   status: 'current',
 };

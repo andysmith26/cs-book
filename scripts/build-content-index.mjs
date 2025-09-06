@@ -1,238 +1,204 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import matter from 'gray-matter';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 
-function scanProjects() {
-  const projectsDir = path.join(projectRoot, 'projects');
-  const projects = [];
-
-  if (!fs.existsSync(projectsDir)) {
-    console.warn('Projects directory not found');
-    return projects;
-  }
-
-  const projectFolders = fs.readdirSync(projectsDir, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name);
-
-  for (const folder of projectFolders) {
-    const projectPath = path.join(projectsDir, folder);
-    const indexMdPath = path.join(projectPath, 'index.md');
-    
-    // Check for markdown file
-    if (fs.existsSync(indexMdPath)) {
-      try {
-        const content = fs.readFileSync(indexMdPath, 'utf8');
-        const { data: metadata } = matter(content);
-        
-        projects.push({
-          slug: folder,
-          path: `projects/${folder}/index.md`,
-          title: metadata.title || folder,
-          ...metadata
-        });
-      } catch (error) {
-        console.warn(`Error parsing project ${folder}:`, error.message);
-      }
-    } else {
-      // Check for Svelte component or JS file for interactive projects
-      const svelteIndexPath = path.join(projectPath, 'index.svelte');
-      const jsIndexPath = path.join(projectPath, 'index.js');
-      
-      if (fs.existsSync(svelteIndexPath) || fs.existsSync(jsIndexPath)) {
-        // For interactive projects without markdown, create a basic entry
-        console.warn(`Project ${folder} has components but no index.md - creating basic entry`);
-        projects.push({
-          slug: folder,
-          path: `projects/${folder}/`,
-          title: folder.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-          status: 'component-only',
-          tags: ['interactive'],
-          type: 'interactive'
-        });
-      }
-    }
-  }
-
-  return projects;
+function isInside(parent, child) {
+  const rel = path.relative(parent, child);
+  return !!rel && !rel.startsWith('..') && !path.isAbsolute(rel);
 }
 
-// Simplified skill schema helpers for JavaScript-only skills
-const skillSchemaHelpers = {
-  createSkillFromJavaScript: function(skillObject, filePath) {
-    return {
-      id: skillObject.id,
-      title: skillObject.title,
-      category: skillObject.category,
-      path: filePath,
-      description: skillObject.description,
-      apAlignment: skillObject.apAlignment || {},
-      levels: skillObject.levels || {},
-      prerequisites: skillObject.prerequisites || [],
-      status: skillObject.status || 'current',
-      lastUpdated: new Date().toISOString().split('T')[0],
-      learn: skillObject.learn,
-      practice: skillObject.practice,
-      projectsUsing: skillObject.projectsUsing || [],
-      hasContent: true
-    };
-  },
-  
-  createSkillFromCatalog: function(catalogEntry, filePath) {
-    return {
-      id: catalogEntry.id,
-      title: catalogEntry.title,
-      category: catalogEntry.category,
-      path: filePath,
-      apAlignment: catalogEntry.apAlignment || {},
-      levels: {},
-      prerequisites: [],
-      status: 'missing',
-      lastUpdated: new Date().toISOString().split('T')[0],
-      hasContent: false
-    };
-  }
-};
-
-async function loadJavaScriptSkill(skillPath) {
-  try {
-    // Validate that skillPath is within the expected skills directory
-    const skillsDir = path.join(projectRoot, 'skills');
-    const resolvedSkillPath = path.resolve(skillPath);
-    if (!resolvedSkillPath.startsWith(skillsDir + path.sep)) {
-      throw new Error(`Refusing to load skill outside of skills directory: ${skillPath}`);
-    }
-    // Use dynamic import to load the JavaScript skill file
-    const fullPath = `file://${resolvedSkillPath}`;
-    const module = await import(fullPath);
-    
-    // Look for exported skill objects
-    const skillExports = Object.values(module).filter(exp => 
-      exp && typeof exp === 'object' && exp.id && exp.title && exp.category
-    );
-    
-    if (skillExports.length > 0) {
-      return skillExports[0]; // Take the first valid skill export
-    }
-    
-    return null;
-  } catch (error) {
-    console.warn(`Error loading JavaScript skill from ${skillPath}:`, error.message);
-    return null;
-  }
-}
-
-function scanSkills() {
-  const skillsDir = path.join(projectRoot, 'skills');
-  const skills = [];
-
-  if (!fs.existsSync(skillsDir)) {
-    console.warn('Skills directory not found');
-    return skills;
-  }
-
-  // Check for catalog file first
-  const catalogPath = path.join(skillsDir, '_catalog.json');
-  let catalogSkills = [];
-  
-  if (fs.existsSync(catalogPath)) {
-    try {
-      const catalogContent = fs.readFileSync(catalogPath, 'utf8');
-      const catalog = JSON.parse(catalogContent);
-      catalogSkills = catalog.skills || [];
-    } catch (error) {
-      console.warn('Error reading skills catalog:', error.message);
-    }
-  }
-
-  // Scan for JavaScript skill files only
-  const scanSkillsRecursively = async (dir, prefix = '') => {
-    const items = fs.readdirSync(dir, { withFileTypes: true });
-    
-    for (const item of items) {
-      if (item.isDirectory() && !item.name.startsWith('_')) {
-        await scanSkillsRecursively(path.join(dir, item.name), prefix ? `${prefix}/${item.name}` : item.name);
-      } else if (item.name === 'index.js') {
-        const skillId = prefix;
-        if (!skillId) continue; // Skip root level files
-        
-        const filePath = path.join(dir, item.name);
-        const relativeFilePath = `skills/${skillId}/index.js`;
-        
-        // Check if already processed
-        if (skills.find(s => s.id === skillId)) {
-          continue;
-        }
-        
-        // Process JavaScript skill
-        try {
-          const skillObject = await loadJavaScriptSkill(filePath);
-          if (skillObject) {
-            const skill = skillSchemaHelpers.createSkillFromJavaScript(skillObject, relativeFilePath);
-            skills.push(skill);
-          } else {
-            console.warn(`No valid skill export found in ${filePath}`);
-          }
-        } catch (error) {
-          console.warn(`Error parsing JavaScript skill ${skillId}:`, error.message);
-        }
+function findIndexJsFiles(baseDir) {
+  const results = [];
+  if (!fs.existsSync(baseDir)) return results;
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(dir, {
+      withFileTypes: true,
+    })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name.startsWith('_')) continue; // ignore underscored folders
+        walk(full);
+      } else if (entry.isFile() && entry.name === 'index.js') {
+        results.push(full);
       }
     }
   };
+  walk(baseDir);
+  return results;
+}
 
-  return scanSkillsRecursively(skillsDir).then(() => {
-    // Add missing skills from catalog that weren't found as files
-    for (const catalogEntry of catalogSkills) {
-      if (!skills.find(s => s.id === catalogEntry.id)) {
-        console.warn(`Skill file not found for ${catalogEntry.id}`);
-        const skill = skillSchemaHelpers.createSkillFromCatalog(
-          catalogEntry, 
-          `skills/${catalogEntry.id}/index.js`
-        );
-        skills.push(skill);
+async function loadJsObject(filePath, allowedBase) {
+  try {
+    const resolved = path.resolve(filePath);
+    if (!isInside(allowedBase, resolved)) {
+      console.warn(
+        `Refusing to load ${filePath} (outside ${allowedBase})`
+      );
+      return null;
+    }
+    const url = `file://${resolved}`;
+    const mod = await import(url);
+    const exports = Object.values(mod).filter(
+      (e) => e && typeof e === 'object'
+    );
+    if (
+      exports.length === 0 &&
+      mod.default &&
+      typeof mod.default === 'object'
+    ) {
+      exports.unshift(mod.default);
+    }
+    // pick first export that looks like a content object
+    for (const ex of exports) {
+      if (ex.id && ex.title) return ex;
+    }
+    return null;
+  } catch (err) {
+    console.warn(`Failed to import ${filePath}: ${err.message}`);
+    return null;
+  }
+}
+
+function normalizeSkill(skill, relPath) {
+  // light normalization and required fields check
+  if (!skill.id || !skill.title || !skill.category) {
+    throw new Error(
+      `Invalid skill object (missing id/title/category) at ${relPath}`
+    );
+  }
+  return {
+    id: String(skill.id),
+    title: String(skill.title),
+    category: String(skill.category),
+    path: relPath,
+    description: skill.description || undefined,
+    apAlignment: skill.apAlignment || {},
+    levels: skill.levels || {},
+    prerequisites: Array.isArray(skill.prerequisites)
+      ? skill.prerequisites
+      : [],
+    status: skill.status || 'current',
+    lastUpdated:
+      skill.lastUpdated || new Date().toISOString().split('T')[0],
+    learn: skill.learn || undefined,
+    practice: skill.practice || undefined,
+    hasContent: true,
+  };
+}
+
+function normalizeProject(proj, relPath) {
+  if (!proj.id || !proj.title) {
+    throw new Error(
+      `Invalid project object (missing id/title) at ${relPath}`
+    );
+  }
+  return {
+    id: String(proj.id),
+    title: String(proj.title),
+    path: relPath,
+    slug: String(proj.id), // Add slug field derived from id
+    courseFit: Array.isArray(proj.courseFit) ? proj.courseFit : [],
+    skillsRequired: Array.isArray(proj.skillsRequired)
+      ? proj.skillsRequired
+      : [],
+    skillsSuggested: Array.isArray(proj.skillsSuggested)
+      ? proj.skillsSuggested
+      : [],
+    prerequisites: Array.isArray(proj.prerequisites)
+      ? proj.prerequisites
+      : [],
+    status: proj.status || 'current',
+    tags: Array.isArray(proj.tags) ? proj.tags : [],
+    legacySource: proj.legacySource || undefined,
+    lastUpdated:
+      proj.lastUpdated || new Date().toISOString().split('T')[0],
+    timeToComplete: proj.timeToComplete || undefined,
+    difficulty: proj.difficulty || undefined,
+  };
+}
+
+async function buildIndex() {
+  console.log('Building content index (JS-only) ...');
+
+  const projectsDir = path.join(projectRoot, 'projects');
+  const skillsDir = path.join(projectRoot, 'skills');
+
+  const projectFiles = findIndexJsFiles(projectsDir);
+  const skillFiles = findIndexJsFiles(skillsDir);
+
+  const projects = [];
+  for (const file of projectFiles) {
+    const rel = path.relative(projectRoot, file).replace(/\\/g, '/');
+    const obj = await loadJsObject(file, projectsDir);
+    if (!obj) {
+      console.warn(`No valid project export found in ${rel}`);
+      continue;
+    }
+    try {
+      projects.push(normalizeProject(obj, rel));
+    } catch (err) {
+      console.warn(err.message);
+    }
+  }
+
+  const skills = [];
+  for (const file of skillFiles) {
+    const rel = path.relative(projectRoot, file).replace(/\\/g, '/');
+    const obj = await loadJsObject(file, skillsDir);
+    if (!obj) {
+      console.warn(`No valid skill export found in ${rel}`);
+      continue;
+    }
+    try {
+      skills.push(normalizeSkill(obj, rel));
+    } catch (err) {
+      console.warn(err.message);
+    }
+  }
+
+  // derive projectsUsing for skills (do not require it in skill sources)
+  const skillToProjects = new Map();
+  for (const s of skills) skillToProjects.set(s.id, []);
+  for (const p of projects) {
+    const collect = (list) => {
+      if (!Array.isArray(list)) return;
+      for (const ref of list) {
+        const id = ref?.id || ref;
+        if (!id) continue;
+        if (!skillToProjects.has(id)) skillToProjects.set(id, []);
+        skillToProjects.get(id).push(p.id);
       }
-    }
-    
-    return skills;
-  });
-}
-
-function generateContentIndex() {
-  console.log('Building content index...');
-  
-  const projects = scanProjects();
-  
-  // scanSkills now returns a Promise
-  return scanSkills().then(skills => {
-    const index = {
-      projects,
-      skills,
-      generated: new Date().toISOString(),
-      version: '2.0'
     };
+    collect(p.skillsRequired);
+    collect(p.skillsSuggested);
+  }
+  // attach projectsUsing (optional) to skill objects
+  for (const sk of skills) {
+    sk.projectsUsing = skillToProjects.get(sk.id) || [];
+  }
 
-    // Ensure static/data directory exists
-    const outputDir = path.join(projectRoot, 'static', 'data');
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
+  const index = {
+    projects,
+    skills,
+    generated: new Date().toISOString(),
+    version: '1.0-js-only',
+  };
 
-    // Write the index
-    const outputPath = path.join(outputDir, 'content-index.json');
-    fs.writeFileSync(outputPath, JSON.stringify(index, null, 2));
+  const outDir = path.join(projectRoot, 'static', 'data');
+  fs.mkdirSync(outDir, { recursive: true });
+  const outPath = path.join(outDir, 'content-index.json');
+  fs.writeFileSync(outPath, JSON.stringify(index, null, 2), 'utf8');
 
-    console.log(`✓ Generated content index with ${projects.length} projects and ${skills.length} skills`);
-    console.log(`  Projects: ${projects.map(p => p.slug).join(', ')}`);
-    console.log(`  All skills are JavaScript-based`);
-    console.log(`  Output: ${outputPath}`);
-  });
+  console.log(
+    `✓ Wrote ${outPath} — ${projects.length} projects, ${skills.length} skills.`
+  );
 }
 
-// Run the script
-generateContentIndex();
-
+buildIndex().catch((err) => {
+  console.error('Error building content index:', err);
+  process.exitCode = 1;
+});

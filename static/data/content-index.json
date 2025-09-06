@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "slug": "asteroids",
-      "path": "projects/asteroids/index.md",
+      "id": "asteroids",
       "title": "Asteroids",
-      "layout": "project",
+      "path": "projects/asteroids/index.js",
+      "slug": "asteroids",
       "courseFit": [
         {
           "course": "csa",
@@ -54,13 +54,15 @@
         "game"
       ],
       "legacySource": "instructions/Asteroids/",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "timeToComplete": "2-3 weeks",
+      "difficulty": "intermediate"
     },
     {
-      "slug": "chemotaxis",
-      "path": "projects/chemotaxis/index.md",
+      "id": "chemotaxis",
       "title": "Chemotaxis",
-      "layout": "project",
+      "path": "projects/chemotaxis/index.js",
+      "slug": "chemotaxis",
       "courseFit": [
         {
           "course": "csa",
@@ -91,6 +93,7 @@
           "level": 1
         }
       ],
+      "prerequisites": [],
       "status": "current",
       "tags": [
         "java",
@@ -99,13 +102,15 @@
         "arrays"
       ],
       "legacySource": "instructions/Chemotaxis/",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "timeToComplete": "1-2 weeks",
+      "difficulty": "beginner"
     },
     {
-      "slug": "cyoa",
-      "path": "projects/cyoa/index.md",
+      "id": "cyoa",
       "title": "Choose Your Own Adventure (CYOA)",
-      "layout": "project",
+      "path": "projects/cyoa/index.js",
+      "slug": "cyoa",
       "courseFit": [
         {
           "course": "csp",
@@ -136,6 +141,7 @@
           "level": 1
         }
       ],
+      "prerequisites": [],
       "status": "current",
       "tags": [
         "html",
@@ -144,13 +150,15 @@
         "narrative"
       ],
       "legacySource": "instructions/cyoa/",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "timeToComplete": "1 week",
+      "difficulty": "beginner"
     },
     {
-      "slug": "game-of-sticks",
-      "path": "projects/game-of-sticks/index.md",
+      "id": "game-of-sticks",
       "title": "Game of Sticks: Build an AI That Learns",
-      "layout": "project",
+      "path": "projects/game-of-sticks/index.js",
+      "slug": "game-of-sticks",
       "courseFit": [
         {
           "course": "ai",
@@ -167,32 +175,50 @@
       ],
       "skillsRequired": [
         {
-          "id": "programming/iteration",
+          "skillId": "programming/iteration",
           "level": 1
         },
         {
-          "id": "programming/conditionals",
+          "skillId": "programming/conditionals",
           "level": 1
+        },
+        {
+          "skillId": "math/modular-arithmetic",
+          "level": 2
+        },
+        {
+          "skillId": "math/probability-basics",
+          "level": 2
+        },
+        {
+          "skillId": "ai/reinforcement-learning",
+          "level": 2
         }
       ],
       "skillsSuggested": [
         {
-          "id": "programming/arrays",
+          "skillId": "math/pattern-recognition",
           "level": 1
         },
         {
-          "id": "tooling/debugging",
+          "skillId": "programming/arrays",
+          "level": 1
+        },
+        {
+          "skillId": "data/visualize",
+          "level": 1
+        },
+        {
+          "skillId": "tooling/debugging",
           "level": 1
         }
       ],
-      "status": "current",
-      "tags": [
-        "ai",
-        "game",
-        "interactive",
-        "learning"
+      "prerequisites": [
+        "programming/variables"
       ],
-      "lastUpdated": "2025-01-14"
+      "status": "current",
+      "tags": [],
+      "lastUpdated": "2025-09-06"
     }
   ],
   "skills": [
@@ -227,12 +253,8 @@
         "conceptCheck": "identify-rl-components",
         "miniTask": "train-simple-agent"
       },
-      "projectsUsing": [
-        "game-of-sticks",
-        "smart-rockets",
-        "maze-solver"
-      ],
-      "hasContent": true
+      "hasContent": true,
+      "projectsUsing": []
     },
     {
       "id": "math/modular-arithmetic",
@@ -274,12 +296,8 @@
         "apStyle": "pattern-finding-mcq",
         "miniTask": "find-cycle-length"
       },
-      "projectsUsing": [
-        "game-of-sticks",
-        "cryptography-basics",
-        "hash-tables"
-      ],
-      "hasContent": true
+      "hasContent": true,
+      "projectsUsing": []
     },
     {
       "id": "oop/classes-objects",
@@ -319,11 +337,11 @@
         "miniTask": "write-simple-car-class",
         "projectTask": "design-cooperating-classes"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "greenfoot-scenarios",
-        "processing-animations"
-      ],
-      "hasContent": true
+        "asteroids",
+        "chemotaxis"
+      ]
     },
     {
       "id": "oop/inheritance",
@@ -363,11 +381,10 @@
         "miniTask": "extend-actor-add-movement",
         "projectTask": "refactor-similar-classes-superclass"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "greenfoot-scenarios",
-        "game-entities"
-      ],
-      "hasContent": true
+        "asteroids"
+      ]
     },
     {
       "id": "programming/arrays",
@@ -403,12 +420,10 @@
         "miniTask": "reverse-array-in-place",
         "projectTask": "compute-running-totals"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "data-analysis",
-        "game-high-scores",
-        "sorting-algorithms"
-      ],
-      "hasContent": true
+        "chemotaxis"
+      ]
     },
     {
       "id": "programming/conditionals",
@@ -448,12 +463,10 @@
         "miniTask": "method-returns-different-strings",
         "projectTask": "number-guessing-game"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "text-adventure",
-        "grade-calculator",
-        "game-logic"
-      ],
-      "hasContent": true
+        "asteroids"
+      ]
     },
     {
       "id": "programming/iteration",
@@ -490,12 +503,11 @@
         "miniTask": "count-occurrences-in-array",
         "projectTask": "animate-stepwise-random-walk"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "simulation",
-        "data-processing",
-        "animation"
-      ],
-      "hasContent": true
+        "asteroids",
+        "chemotaxis"
+      ]
     },
     {
       "id": "tooling/git-basics",
@@ -530,10 +542,12 @@
         "miniTask": "make-change-on-branch-open-pr",
         "projectTask": "structure-repo-with-readme"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "all-coding-projects"
-      ],
-      "hasContent": true
+        "asteroids",
+        "chemotaxis",
+        "cyoa"
+      ]
     },
     {
       "id": "web/html-basics",
@@ -570,11 +584,10 @@
         "miniTask": "build-simple-multi-section-page",
         "projectTask": "validate-accessible-markup"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "personal-website",
-        "portfolio-site"
-      ],
-      "hasContent": true
+        "cyoa"
+      ]
     },
     {
       "id": "web/hyperlink-graphs",
@@ -613,69 +626,12 @@
         "miniTask": "turn-sketch-into-6-page-link-graph",
         "projectTask": "design-complex-site-navigation"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "multi-page-website",
-        "documentation-site"
-      ],
-      "hasContent": true
-    },
-    {
-      "id": "programming/variables",
-      "title": "Variables & Types",
-      "category": "programming",
-      "path": "skills/programming/variables/index.js",
-      "apAlignment": {
-        "csaUnit": "01-primitive-types"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-06",
-      "hasContent": false
-    },
-    {
-      "id": "programming/methods",
-      "title": "Methods & Parameters",
-      "category": "programming",
-      "path": "skills/programming/methods/index.js",
-      "apAlignment": {
-        "csaUnit": "05-writing-classes"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-06",
-      "hasContent": false
-    },
-    {
-      "id": "oop/polymorphism",
-      "title": "Polymorphism",
-      "category": "oop",
-      "path": "skills/oop/polymorphism/index.js",
-      "apAlignment": {
-        "csaUnit": "09-inheritance"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-06",
-      "hasContent": false
-    },
-    {
-      "id": "web/css-basics",
-      "title": "CSS Basics",
-      "category": "web",
-      "path": "skills/web/css-basics/index.js",
-      "apAlignment": {
-        "cspBigIdea": "Computer Systems & Networks"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-06",
-      "hasContent": false
+        "cyoa"
+      ]
     }
   ],
-  "generated": "2025-09-06T20:46:07.491Z",
-  "version": "2.0"
+  "generated": "2025-09-06T21:22:25.861Z",
+  "version": "1.0-js-only"
 }
