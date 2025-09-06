@@ -12,8 +12,8 @@ export const load: PageLoad = async ({ params }) => {
   try {
     const mod = await match[1]();
     // Access the named export (e.g., mod.asteroidsProject)
-    const projectKey = Object.keys(mod).find(key => key.endsWith('Project')); // Find the project export dynamically
-    if (!projectKey || !mod[projectKey]) {
+    const projectKey = `${params.slug}Project`; // Construct the expected export name explicitly
+    if (!mod[projectKey]) {
       console.error(`No project export found in module for slug: ${params.slug}`);
       return { notFound: true };
     }
