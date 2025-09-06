@@ -101,8 +101,14 @@ const skillSchemaHelpers = {
 
 async function loadJavaScriptSkill(skillPath) {
   try {
+    // Validate that skillPath is within the expected skills directory
+    const skillsDir = path.join(projectRoot, 'skills');
+    const resolvedSkillPath = path.resolve(skillPath);
+    if (!resolvedSkillPath.startsWith(skillsDir + path.sep)) {
+      throw new Error(`Refusing to load skill outside of skills directory: ${skillPath}`);
+    }
     // Use dynamic import to load the JavaScript skill file
-    const fullPath = `file://${path.resolve(skillPath)}`;
+    const fullPath = `file://${resolvedSkillPath}`;
     const module = await import(fullPath);
     
     // Look for exported skill objects
