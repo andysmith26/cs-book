@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "slug": "asteroids",
-      "path": "projects/asteroids/index.md",
+      "id": "asteroids",
       "title": "Asteroids",
-      "layout": "project",
+      "path": "projects/asteroids/index.js",
+      "slug": "asteroids",
       "courseFit": [
         {
           "course": "csa",
@@ -54,13 +54,15 @@
         "game"
       ],
       "legacySource": "instructions/Asteroids/",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "timeToComplete": "2-3 weeks",
+      "difficulty": "intermediate"
     },
     {
-      "slug": "chemotaxis",
-      "path": "projects/chemotaxis/index.md",
+      "id": "chemotaxis",
       "title": "Chemotaxis",
-      "layout": "project",
+      "path": "projects/chemotaxis/index.js",
+      "slug": "chemotaxis",
       "courseFit": [
         {
           "course": "csa",
@@ -91,6 +93,7 @@
           "level": 1
         }
       ],
+      "prerequisites": [],
       "status": "current",
       "tags": [
         "java",
@@ -99,13 +102,15 @@
         "arrays"
       ],
       "legacySource": "instructions/Chemotaxis/",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "timeToComplete": "1-2 weeks",
+      "difficulty": "beginner"
     },
     {
-      "slug": "cyoa",
-      "path": "projects/cyoa/index.md",
+      "id": "cyoa",
       "title": "Choose Your Own Adventure (CYOA)",
-      "layout": "project",
+      "path": "projects/cyoa/index.js",
+      "slug": "cyoa",
       "courseFit": [
         {
           "course": "csp",
@@ -136,6 +141,7 @@
           "level": 1
         }
       ],
+      "prerequisites": [],
       "status": "current",
       "tags": [
         "html",
@@ -144,13 +150,15 @@
         "narrative"
       ],
       "legacySource": "instructions/cyoa/",
-      "lastUpdated": "2025-09-05"
+      "lastUpdated": "2025-09-05",
+      "timeToComplete": "1 week",
+      "difficulty": "beginner"
     },
     {
-      "slug": "game-of-sticks",
-      "path": "projects/game-of-sticks/index.md",
+      "id": "game-of-sticks",
       "title": "Game of Sticks: Build an AI That Learns",
-      "layout": "project",
+      "path": "projects/game-of-sticks/index.js",
+      "slug": "game-of-sticks",
       "courseFit": [
         {
           "course": "ai",
@@ -167,32 +175,50 @@
       ],
       "skillsRequired": [
         {
-          "id": "programming/iteration",
+          "skillId": "programming/iteration",
           "level": 1
         },
         {
-          "id": "programming/conditionals",
+          "skillId": "programming/conditionals",
           "level": 1
+        },
+        {
+          "skillId": "math/modular-arithmetic",
+          "level": 2
+        },
+        {
+          "skillId": "math/probability-basics",
+          "level": 2
+        },
+        {
+          "skillId": "ai/reinforcement-learning",
+          "level": 2
         }
       ],
       "skillsSuggested": [
         {
-          "id": "programming/arrays",
+          "skillId": "math/pattern-recognition",
           "level": 1
         },
         {
-          "id": "tooling/debugging",
+          "skillId": "programming/arrays",
+          "level": 1
+        },
+        {
+          "skillId": "data/visualize",
+          "level": 1
+        },
+        {
+          "skillId": "tooling/debugging",
           "level": 1
         }
       ],
-      "status": "current",
-      "tags": [
-        "ai",
-        "game",
-        "interactive",
-        "learning"
+      "prerequisites": [
+        "programming/variables"
       ],
-      "lastUpdated": "2025-01-14"
+      "status": "current",
+      "tags": [],
+      "lastUpdated": "2025-09-06"
     }
   ],
   "skills": [
@@ -217,7 +243,7 @@
         "programming/arrays"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Reinforcement learning: AI learns by trying actions and \n      remembering what worked. Like training a pet - reward \n      good behavior, discourage bad behavior.\n    ",
         "interactiveDemo": "rl-ball-and-hat-simulator"
@@ -227,12 +253,8 @@
         "conceptCheck": "identify-rl-components",
         "miniTask": "train-simple-agent"
       },
-      "projectsUsing": [
-        "game-of-sticks",
-        "smart-rockets",
-        "maze-solver"
-      ],
-      "hasContent": true
+      "hasContent": true,
+      "projectsUsing": []
     },
     {
       "id": "math/modular-arithmetic",
@@ -255,7 +277,7 @@
         "math/division"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Modular arithmetic finds the remainder after division.\n      17 mod 4 = 1 (because 17 = 4×4 + 1)\n      \n      In Game of Sticks, positions where (n-1) mod 4 = 0 are losing positions!\n    ",
         "references": [
@@ -274,12 +296,8 @@
         "apStyle": "pattern-finding-mcq",
         "miniTask": "find-cycle-length"
       },
-      "projectsUsing": [
-        "game-of-sticks",
-        "cryptography-basics",
-        "hash-tables"
-      ],
-      "hasContent": true
+      "hasContent": true,
+      "projectsUsing": []
     },
     {
       "id": "oop/classes-objects",
@@ -300,7 +318,7 @@
         "programming/methods"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Classes are blueprints for creating objects. An object is an instance of a class\n      that has its own state (fields) and behavior (methods).\n      \n      In Java: class Car { ... }  →  Car myCar = new Car();\n    ",
         "references": [
@@ -319,11 +337,11 @@
         "miniTask": "write-simple-car-class",
         "projectTask": "design-cooperating-classes"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "greenfoot-scenarios",
-        "processing-animations"
-      ],
-      "hasContent": true
+        "asteroids",
+        "chemotaxis"
+      ]
     },
     {
       "id": "oop/inheritance",
@@ -344,7 +362,7 @@
         "programming/methods"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Inheritance lets you create specialized classes based on existing classes.\n      The subclass inherits all non-private fields and methods from the superclass\n      and can override methods to change behavior.\n      \n      Example: class Student extends Person { ... }\n    ",
         "references": [
@@ -363,11 +381,10 @@
         "miniTask": "extend-actor-add-movement",
         "projectTask": "refactor-similar-classes-superclass"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "greenfoot-scenarios",
-        "game-entities"
-      ],
-      "hasContent": true
+        "asteroids"
+      ]
     },
     {
       "id": "programming/arrays",
@@ -388,7 +405,7 @@
         "programming/iteration"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Arrays store multiple values of the same type in a single variable.\n      Access elements by index: arr[0] is the first element.\n      Arrays have fixed size once created: int[] numbers = new int[10];\n    ",
         "references": [
@@ -403,12 +420,10 @@
         "miniTask": "reverse-array-in-place",
         "projectTask": "compute-running-totals"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "data-analysis",
-        "game-high-scores",
-        "sorting-algorithms"
-      ],
-      "hasContent": true
+        "chemotaxis"
+      ]
     },
     {
       "id": "programming/conditionals",
@@ -429,7 +444,7 @@
         "programming/variables"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Conditionals let your program make decisions based on data.\n      Use if/else to execute different code paths:\n      \n      if (score >= 90) {\n          grade = \"A\";\n      } else if (score >= 80) {\n          grade = \"B\";\n      } else {\n          grade = \"C\";\n      }\n    ",
         "references": [
@@ -448,12 +463,10 @@
         "miniTask": "method-returns-different-strings",
         "projectTask": "number-guessing-game"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "text-adventure",
-        "grade-calculator",
-        "game-logic"
-      ],
-      "hasContent": true
+        "asteroids"
+      ]
     },
     {
       "id": "programming/iteration",
@@ -475,7 +488,7 @@
         "programming/conditionals"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Loops let you repeat code efficiently. Three main types:\n      \n      for (int i = 0; i < 10; i++) { ... }     // counted loop\n      while (condition) { ... }                // conditional loop  \n      for (String item : collection) { ... }   // for-each loop\n    ",
         "references": [
@@ -490,12 +503,11 @@
         "miniTask": "count-occurrences-in-array",
         "projectTask": "animate-stepwise-random-walk"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "simulation",
-        "data-processing",
-        "animation"
-      ],
-      "hasContent": true
+        "asteroids",
+        "chemotaxis"
+      ]
     },
     {
       "id": "tooling/git-basics",
@@ -511,7 +523,7 @@
       },
       "prerequisites": [],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Git tracks changes to your code over time. Key workflow:\n      1. Clone a repository: git clone <url>\n      2. Make changes to files\n      3. Stage changes: git add .\n      4. Commit changes: git commit -m \"Description\"\n      5. Push to GitHub: git push\n    ",
         "references": [
@@ -530,10 +542,12 @@
         "miniTask": "make-change-on-branch-open-pr",
         "projectTask": "structure-repo-with-readme"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "all-coding-projects"
-      ],
-      "hasContent": true
+        "asteroids",
+        "chemotaxis",
+        "cyoa"
+      ]
     },
     {
       "id": "web/html-basics",
@@ -551,7 +565,7 @@
       },
       "prerequisites": [],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      HTML (HyperText Markup Language) structures web content using elements:\n      \n      <h1>Title</h1>\n      <p>Paragraph with <a href=\"url\">link</a></p>\n      <img src=\"image.jpg\" alt=\"Description\">\n      \n      Use semantic elements like <header>, <main>, <nav>, <article>\n    ",
         "references": [
@@ -570,11 +584,10 @@
         "miniTask": "build-simple-multi-section-page",
         "projectTask": "validate-accessible-markup"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "personal-website",
-        "portfolio-site"
-      ],
-      "hasContent": true
+        "cyoa"
+      ]
     },
     {
       "id": "web/hyperlink-graphs",
@@ -594,7 +607,7 @@
         "web/html-basics"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-05",
+      "lastUpdated": "2025-09-06",
       "learn": {
         "explainer": "\n      Web navigation is about creating logical paths between pages:\n      \n      <a href=\"page.html\">Internal link</a>\n      <a href=\"https://example.com\">External link</a>\n      <a href=\"../parent/file.html\">Relative path</a>\n      \n      Think of your site as a graph where nodes are pages and edges are links.\n    ",
         "references": [
@@ -613,69 +626,12 @@
         "miniTask": "turn-sketch-into-6-page-link-graph",
         "projectTask": "design-complex-site-navigation"
       },
+      "hasContent": true,
       "projectsUsing": [
-        "multi-page-website",
-        "documentation-site"
-      ],
-      "hasContent": true
-    },
-    {
-      "id": "programming/variables",
-      "title": "Variables & Types",
-      "category": "programming",
-      "path": "skills/programming/variables/index.js",
-      "apAlignment": {
-        "csaUnit": "01-primitive-types"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05",
-      "hasContent": false
-    },
-    {
-      "id": "programming/methods",
-      "title": "Methods & Parameters",
-      "category": "programming",
-      "path": "skills/programming/methods/index.js",
-      "apAlignment": {
-        "csaUnit": "05-writing-classes"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05",
-      "hasContent": false
-    },
-    {
-      "id": "oop/polymorphism",
-      "title": "Polymorphism",
-      "category": "oop",
-      "path": "skills/oop/polymorphism/index.js",
-      "apAlignment": {
-        "csaUnit": "09-inheritance"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05",
-      "hasContent": false
-    },
-    {
-      "id": "web/css-basics",
-      "title": "CSS Basics",
-      "category": "web",
-      "path": "skills/web/css-basics/index.js",
-      "apAlignment": {
-        "cspBigIdea": "Computer Systems & Networks"
-      },
-      "levels": {},
-      "prerequisites": [],
-      "status": "missing",
-      "lastUpdated": "2025-09-05",
-      "hasContent": false
+        "cyoa"
+      ]
     }
   ],
-  "generated": "2025-09-05T20:26:22.658Z",
-  "version": "2.0"
+  "generated": "2025-09-06T21:27:04.514Z",
+  "version": "1.0-js-only"
 }

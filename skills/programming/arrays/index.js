@@ -9,7 +9,8 @@ export const arraysSkill = {
     csaUnit: '06-arrays',
   },
 
-  description: 'Store and manipulate collections of data using arrays',
+  description:
+    'Store and manipulate collections of data using arrays',
 
   levels: {
     1: 'Declare, allocate, index, and update arrays of primitives/objects.',
@@ -26,7 +27,10 @@ export const arraysSkill = {
       Arrays have fixed size once created: int[] numbers = new int[10];
     `,
     references: [
-      { title: 'Array declaration and traversal patterns', url: 'https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html' },
+      {
+        title: 'Array declaration and traversal patterns',
+        url: 'https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html',
+      },
     ],
   },
 
@@ -35,12 +39,6 @@ export const arraysSkill = {
     miniTask: 'reverse-array-in-place',
     projectTask: 'compute-running-totals',
   },
-
-  projectsUsing: [
-    'data-analysis',
-    'game-high-scores',
-    'sorting-algorithms',
-  ],
 
   status: 'current',
 };

@@ -9,7 +9,8 @@ export const inheritanceSkill = {
     csaUnit: '09-inheritance',
   },
 
-  description: 'Use inheritance to create specialized classes that extend base functionality',
+  description:
+    'Use inheritance to create specialized classes that extend base functionality',
 
   levels: {
     1: 'Create a simple subclass that extends a concrete superclass and overrides one method correctly.',
@@ -28,8 +29,14 @@ export const inheritanceSkill = {
       Example: class Student extends Person { ... }
     `,
     references: [
-      { title: 'Official Java tutorials on inheritance', url: 'https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html' },
-      { title: 'Greenfoot docs: subclassing Actor', url: 'https://www.greenfoot.org/doc' },
+      {
+        title: 'Official Java tutorials on inheritance',
+        url: 'https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html',
+      },
+      {
+        title: 'Greenfoot docs: subclassing Actor',
+        url: 'https://www.greenfoot.org/doc',
+      },
     ],
   },
 
@@ -38,11 +45,6 @@ export const inheritanceSkill = {
     miniTask: 'extend-actor-add-movement',
     projectTask: 'refactor-similar-classes-superclass',
   },
-
-  projectsUsing: [
-    'greenfoot-scenarios',
-    'game-entities',
-  ],
 
   status: 'current',
 };

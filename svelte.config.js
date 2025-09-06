@@ -5,20 +5,22 @@ import adapter from '@sveltejs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: ['.svelte', '.md', '.svx'],
-  preprocess: [
-    mdsvex(mdsvexConfig)
-  ],
+  preprocess: [mdsvex(mdsvexConfig)],
   kit: {
     adapter: adapter({
       // fallback: '200.html' // enable if you want SPA-style fallback
     }),
     prerender: {
-      handleHttpError: 'warn'
+      handleHttpError: 'warn',
     },
     alias: {
-      '$shared': 'src/lib/shared'
-    }
-  }
+      $shared: 'src/lib/shared',
+    },
+  },
 };
+
+// Disable MDSvex for projects by removing it from preprocess if causing issues
+// Uncomment the line below if prerendering still fails:
+// config.preprocess = []; // Temporarily disable MDSvex entirely
 
 export default config;

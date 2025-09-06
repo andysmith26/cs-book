@@ -9,7 +9,8 @@ export const htmlBasicsSkill = {
     cspBigIdea: 'Computer Systems & Networks',
   },
 
-  description: 'Structure web pages using HTML elements and semantic markup',
+  description:
+    'Structure web pages using HTML elements and semantic markup',
 
   levels: {
     1: 'Structure a page with semantic elements and valid nesting; link assets.',
@@ -30,7 +31,10 @@ export const htmlBasicsSkill = {
       Use semantic elements like <header>, <main>, <nav>, <article>
     `,
     references: [
-      { title: 'HTML elements and document structure', url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+      {
+        title: 'HTML elements and document structure',
+        url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
+      },
       { title: 'HTML validator', url: 'https://validator.w3.org/' },
     ],
   },
@@ -40,11 +44,6 @@ export const htmlBasicsSkill = {
     miniTask: 'build-simple-multi-section-page',
     projectTask: 'validate-accessible-markup',
   },
-
-  projectsUsing: [
-    'personal-website',
-    'portfolio-site',
-  ],
 
   status: 'current',
 };

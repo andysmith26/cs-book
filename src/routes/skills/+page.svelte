@@ -13,12 +13,14 @@
 {:else}
   <ul>
     {#each skills as s}
-      <li>
-        <a href={'/skills/' + s.id}>{s.title}</a>
-        <span style="font-size: 0.85em; opacity: 0.7;"
-          >({s.category})</span
-        >
-      </li>
+      {#if s && s.title && s.id}
+        <li>
+          <a href={'/skills/' + s.id}>{s.title}</a>
+          <span style="font-size: 0.85em; opacity: 0.7;"
+            >({s.category})</span
+          >
+        </li>
+      {/if}
     {/each}
   </ul>
 {/if}
