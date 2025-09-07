@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "npm run build:index && vite build",
+    "build": "npm run build:index && vite build --output public",
     "preview": "vite preview",
     "build:index": "node scripts/build-content-index.mjs",
     "check-links": "node scripts/check-links.mjs || true"
