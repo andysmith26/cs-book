@@ -34,3 +34,5 @@ export const asteroidsProject = {
     'Inheritance hierarchy designed and used (oop/inheritance L2); Loop logic drives game reliably (programming/iteration L2); Class responsibilities clear (oop/classes-objects L2)',
   submit: 'GitHub repo link, short demo video, one-page poster.',
 };
+
+export default asteroidsProject;

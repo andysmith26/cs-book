@@ -28,3 +28,5 @@ export const chemotaxisProject = {
     'Correct array traversal and updates (programming/arrays L2); Loop structure avoids off-by-one errors (programming/iteration L2); Object encapsulation (oop/classes-objects L1)',
   submit: 'GitHub repo link; short write-up of parameters tested.',
 };
+
+export default chemotaxisProject;

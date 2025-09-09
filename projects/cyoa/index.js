@@ -32,3 +32,5 @@ export const cyoaProject = {
     'Semantic HTML and valid structure (web/html-basics L1); Navigable link graph (web/hyperlink-graphs L1)',
   submit: 'GitHub Pages URL.',
 };
+
+export default cyoaProject;

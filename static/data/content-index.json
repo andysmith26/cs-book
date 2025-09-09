@@ -218,7 +218,7 @@
       ],
       "status": "current",
       "tags": [],
-      "lastUpdated": "2025-09-06"
+      "lastUpdated": "2025-09-09"
     }
   ],
   "skills": [
@@ -243,7 +243,7 @@
         "programming/arrays"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Reinforcement learning: AI learns by trying actions and \n      remembering what worked. Like training a pet - reward \n      good behavior, discourage bad behavior.\n    ",
         "interactiveDemo": "rl-ball-and-hat-simulator"
@@ -277,7 +277,7 @@
         "math/division"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Modular arithmetic finds the remainder after division.\n      17 mod 4 = 1 (because 17 = 4×4 + 1)\n      \n      In Game of Sticks, positions where (n-1) mod 4 = 0 are losing positions!\n    ",
         "references": [
@@ -318,7 +318,7 @@
         "programming/methods"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Classes are blueprints for creating objects. An object is an instance of a class\n      that has its own state (fields) and behavior (methods).\n      \n      In Java: class Car { ... }  →  Car myCar = new Car();\n    ",
         "references": [
@@ -362,7 +362,7 @@
         "programming/methods"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Inheritance lets you create specialized classes based on existing classes.\n      The subclass inherits all non-private fields and methods from the superclass\n      and can override methods to change behavior.\n      \n      Example: class Student extends Person { ... }\n    ",
         "references": [
@@ -405,7 +405,7 @@
         "programming/iteration"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Arrays store multiple values of the same type in a single variable.\n      Access elements by index: arr[0] is the first element.\n      Arrays have fixed size once created: int[] numbers = new int[10];\n    ",
         "references": [
@@ -444,7 +444,7 @@
         "programming/variables"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Conditionals let your program make decisions based on data.\n      Use if/else to execute different code paths:\n      \n      if (score >= 90) {\n          grade = \"A\";\n      } else if (score >= 80) {\n          grade = \"B\";\n      } else {\n          grade = \"C\";\n      }\n    ",
         "references": [
@@ -488,7 +488,7 @@
         "programming/conditionals"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Loops let you repeat code efficiently. Three main types:\n      \n      for (int i = 0; i < 10; i++) { ... }     // counted loop\n      while (condition) { ... }                // conditional loop  \n      for (String item : collection) { ... }   // for-each loop\n    ",
         "references": [
@@ -523,7 +523,7 @@
       },
       "prerequisites": [],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Git tracks changes to your code over time. Key workflow:\n      1. Clone a repository: git clone <url>\n      2. Make changes to files\n      3. Stage changes: git add .\n      4. Commit changes: git commit -m \"Description\"\n      5. Push to GitHub: git push\n    ",
         "references": [
@@ -565,7 +565,7 @@
       },
       "prerequisites": [],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      HTML (HyperText Markup Language) structures web content using elements:\n      \n      <h1>Title</h1>\n      <p>Paragraph with <a href=\"url\">link</a></p>\n      <img src=\"image.jpg\" alt=\"Description\">\n      \n      Use semantic elements like <header>, <main>, <nav>, <article>\n    ",
         "references": [
@@ -607,7 +607,7 @@
         "web/html-basics"
       ],
       "status": "current",
-      "lastUpdated": "2025-09-06",
+      "lastUpdated": "2025-09-09",
       "learn": {
         "explainer": "\n      Web navigation is about creating logical paths between pages:\n      \n      <a href=\"page.html\">Internal link</a>\n      <a href=\"https://example.com\">External link</a>\n      <a href=\"../parent/file.html\">Relative path</a>\n      \n      Think of your site as a graph where nodes are pages and edges are links.\n    ",
         "references": [
@@ -632,6 +632,6 @@
       ]
     }
   ],
-  "generated": "2025-09-06T21:32:09.130Z",
+  "generated": "2025-09-09T00:59:12.707Z",
   "version": "1.0-js-only"
 }

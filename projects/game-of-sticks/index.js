@@ -104,3 +104,5 @@ export const gameOfSticksProject = {
     'Mathematical Proof Techniques (placeholder link)',
   ],
 };
+
+export default gameOfSticksProject;
